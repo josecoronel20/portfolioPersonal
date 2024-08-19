@@ -1,0 +1,58 @@
+{
+  "urlImage": "url",
+  "title": "portfolio personal",
+  "techs": [
+    "html",
+    "css",
+    "react",
+    "redux",
+    "git",
+    "github",
+    "tailwind",
+    "npm",
+    "javascript"
+  ],
+  "description": "Este portfolio personal muestra una colección de proyectos y habilidades en desarrollo web. Incluye ejemplos prácticos de diseño, desarrollo y despliegue de aplicaciones web utilizando tecnologías modernas.",
+  "urlSitio": "https://short.url/portfolio",
+  "urlRepo": "https://short.url/repo",
+  "urlDetalle": "https://short.url/detalle",
+  "isfinish": false,
+  "detail": {
+    "procesoPlanificacion": {
+      "arquitectura de informacion": [
+        "https://short.url/arch1",
+        "https://short.url/arch2",
+        "https://short.url/arch3"
+      ],
+      "diseño visual": [
+        "https://short.url/dis1",
+        "https://short.url/dis2",
+        "https://short.url/dis3"
+      ],
+      "planificacion de funcionalidades": [
+        "https://short.url/plan1",
+        "https://short.url/plan2",
+        "https://short.url/plan3"
+      ]
+    },
+    "funcionalidades principales": {
+      "Interfaz de usuario interactiva": "Diseño responsivo y moderno con interacciones suaves.",
+      "Gestión de proyectos": "Permite a los usuarios agregar, editar y eliminar proyectos.",
+      "Panel de administración": "Herramienta para gestionar y visualizar los proyectos desde una vista centralizada."
+    },
+    "problematicas": [
+      {
+        "titulo": "Problemas de rendimiento",
+        "descripcion": "Dificultades para optimizar el tiempo de carga de la página, especialmente en dispositivos móviles."
+      },
+      {
+        "titulo": "Compatibilidad entre navegadores",
+        "descripcion": "Inconsistencias en la visualización y el comportamiento en diferentes navegadores web, requiriendo ajustes adicionales."
+      },
+      {
+        "titulo": "Integración de API",
+        "descripcion": "Desafíos en la integración con servicios externos, lo que requirió una revisión detallada de la documentación y ajustes en el código."
+      }
+    ]
+  }
+}
