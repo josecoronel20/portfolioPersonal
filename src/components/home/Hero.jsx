@@ -8,7 +8,7 @@ const Hero = () => {
   const { lenguage } = useLanguage();
 
   return (
-    <section className="bg-darkDark px-10 pt-20 min-h-screen">
+    <section className="custom-container">
       <div className="flex flex-col justify-center h-full items-center text-center pt-5">
         <div className="order-2 md:order-1">
           <div>
