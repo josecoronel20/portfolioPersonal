@@ -10,7 +10,7 @@ const Header = () => {
     <header className="fixed top-0 left-0 w-full z-10">
       <div className="p-3  flex justify-between bg-gradient-to-b from-darkDark from-80%">
         <Link to="/">
-          <div className="inline-block text-green text-xl tracking-widest font-mcLaren py-1 px-4 order-solid border-green border-2 rounded-xl">
+          <div className="inline-block text-green text-xl tracking-widest font-mcLaren py-1 px-5 order-solid border-green border-2 rounded-xl">
             {logo}
           </div>
         </Link>
