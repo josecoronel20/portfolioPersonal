@@ -1,0 +1,54 @@
+{
+    "nav": {
+      "home": "Home",
+      "projects": "Projects",
+      "blog": "Blog",
+      "contact": "Contact Me"
+    },
+    "home": {
+      "hero": {
+        "title": "I'm Jose Coronel",
+        "subtitle": "Frontend developer specializing in React",
+        "button": "SEE PROJECTS",
+        "altImg":"illustration of @josecoronel20"
+      },
+  
+      "carrousel": {
+        "title": "LATEST PROJECTS"
+      },
+      "aboutMe": {
+        "title": "ABOUT ME",
+        "text": {
+          "paragraph1": {
+            "text": "Hello, I'm José María Coronel, a web developer working with React. I'm 24 years old and from Argentina, currently living in Portugal."
+          },
+  
+          "paragraph2": {
+            "title": "MY JOURNEY",
+            "text": "My interest in programming began unexpectedly when I stumbled upon a video about it on YouTube. Since then, my curiosity led me to explore further. I started by taking online courses in HTML, CSS, JavaScript, and React. From there, I adopted a self-taught approach, complementing my knowledge with books like Fundamentals of Programming and Eloquent JavaScript. Additionally, I continue to expand my skills through documentation, videos, and constant practice."
+          },
+  
+          "paragraph3": {
+            "title": "MY APPROACH AND ASPIRATIONS",
+            "text": "I am committed to accessibility and code reusability. I constantly work on improving my skills in implementing inclusive design practices, as well as creating reusable components and scalable solutions. I strive to follow best practices, writing clean and well-documented code, and using tools that ensure quality and clarity in my work."
+          },
+          "paragraph4": {
+            "title": "KNOWLEDGE AND TOOLS",
+            "text": "My experience includes development with React, with a focus on creating interactive and efficient interfaces. I have basic knowledge of modern tools like Vite and Create React App, as well as testing using Jest and React Testing Library. These skills allow me to build robust and reliable applications."
+          },
+          "paragraph5": {
+            "title": "PASSION FOR DESIGN",
+            "text": "In addition to programming, I am also passionate about design. I have designed all my projects, including this one. I like to maintain a clean and minimalist style, both in code and design, ensuring that visual information is controlled in terms of quantity and effectiveness."
+          }
+        }
+      },
+      "Techs": {
+        "title": "TECHNOLOGIES AND SKILLS",
+        "techs": "Technologies",
+        "frameworks": "Frameworks and Libraries",
+        "tools": "Tools",
+        "concepts": "Concepts and Methodologies"
+      }
+    }
+  }
+  

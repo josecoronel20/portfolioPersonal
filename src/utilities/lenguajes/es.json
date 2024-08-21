@@ -1,15 +1,16 @@
 {
   "nav": {
-    "home": "Inicio",
-    "projects": "Proyectos",
-    "blog": "Blog",
-    "contact": "Contactame"
+    "home": "INICIO",
+    "projects": "PROYECTOS",
+    "blog": "BLOG",
+    "contact": "CONTACTAME"
   },
   "home": {
     "hero": {
-      "title": "Soy Jose Coronel",
+      "title": "Soy Jose Maria Coronel",
       "subtitle": "desarrollador frontend especializado en React",
-      "button": "VER PROYECTOS"
+      "button": "VER PROYECTOS",
+      "altImg":"ilustracion de @josecoronel20"
     },
 
     "carrousel": {
