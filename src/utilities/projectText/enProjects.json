@@ -1,0 +1,231 @@
+[
+    {
+      "id": 1,
+      "imageUrl": "../../../public/img/projectsImg/project1.png",
+      "title": "Personal Portfolio",
+      "techs": [
+        "html",
+        "css",
+        "react",
+        "redux",
+        "git",
+        "github",
+        "tailwind",
+        "npm",
+        "javascript"
+      ],
+      "description": "This personal portfolio showcases a collection of projects and skills in web development. It includes practical examples of designing, developing, and deploying web applications using modern technologies.",
+      "siteUrl": "https://short.url/portfolio",
+      "repoUrl": "https://short.url/repo",
+      "detailUrl": "https://short.url/detail",
+      "isFinished": false,
+      "details": {
+        "planningProcess": {
+          "informationArchitecture": [
+            "https://short.url/arch1",
+            "https://short.url/arch2",
+            "https://short.url/arch3"
+          ],
+          "visualDesign": [
+            "https://short.url/dis1",
+            "https://short.url/dis2",
+            "https://short.url/dis3"
+          ],
+          "functionalityPlanning": [
+            "https://short.url/plan1",
+            "https://short.url/plan2",
+            "https://short.url/plan3"
+          ]
+        },
+        "mainFeatures": {
+          "interactiveUserInterface": "Responsive and modern design with smooth interactions.",
+          "projectManagement": "Allows users to add, edit, and delete projects.",
+          "adminPanel": "Tool to manage and visualize projects from a centralized view."
+        },
+        "issues": [
+          {
+            "title": "Performance Issues",
+            "description": "Difficulties optimizing the page load time, especially on mobile devices."
+          },
+          {
+            "title": "Browser Compatibility",
+            "description": "Inconsistencies in display and behavior across different web browsers, requiring additional adjustments."
+          },
+          {
+            "title": "API Integration",
+            "description": "Challenges integrating with external services, which required a detailed review of the documentation and code adjustments."
+          }
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "imageUrl": "../../../public/img/projectsImg/project1.png",
+      "title": "E-Commerce Site",
+      "techs": [
+        "html",
+        "css",
+        "react",
+        "node.js",
+        "express",
+        "mongodb",
+        "bootstrap",
+        "npm",
+        "javascript"
+      ],
+      "description": "An online store that allows users to purchase products, with an integrated payment system and inventory management.",
+      "siteUrl": "https://short.url/ecommerce",
+      "repoUrl": "https://short.url/ecommerce-repo",
+      "detailUrl": "https://short.url/ecommerce-detail",
+      "isFinished": true,
+      "details": {
+        "planningProcess": {
+          "informationArchitecture": [
+            "https://short.url/ecom-arch1",
+            "https://short.url/ecom-arch2",
+            "https://short.url/ecom-arch3"
+          ],
+          "visualDesign": [
+            "https://short.url/ecom-dis1",
+            "https://short.url/ecom-dis2",
+            "https://short.url/ecom-dis3"
+          ],
+          "functionalityPlanning": [
+            "https://short.url/ecom-plan1",
+            "https://short.url/ecom-plan2",
+            "https://short.url/ecom-plan3"
+          ]
+        },
+        "mainFeatures": {
+          "securePaymentSystem": "Integration with payment gateways for secure transactions.",
+          "productManagement": "Features to add, edit, and delete products from the inventory.",
+          "orderHistory": "Allows users to view their purchase history and order status."
+        },
+        "issues": [
+          {
+            "title": "Payment Security",
+            "description": "Ensuring all transactions are conducted securely and meet security standards."
+          },
+          {
+            "title": "System Scalability",
+            "description": "Challenges handling a large number of users and transactions simultaneously."
+          },
+          {
+            "title": "Integration with External Services",
+            "description": "Challenges integrating with third-party services for payment processing and inventory management."
+          }
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "imageUrl": "../../../public/img/projectsImg/project1.png",
+      "title": "Tech Blog",
+      "techs": [
+        "html",
+        "css",
+        "react",
+        "firebase",
+        "javascript"
+      ],
+      "description": "A blog that allows users to read and publish articles about technology, with features like comments and tags.",
+      "siteUrl": "https://short.url/blog",
+      "repoUrl": "https://short.url/blog-repo",
+      "detailUrl": "https://short.url/blog-detail",
+      "isFinished": true,
+      "details": {
+        "planningProcess": {
+          "informationArchitecture": [
+            "https://short.url/blog-arch1",
+            "https://short.url/blog-arch2",
+            "https://short.url/blog-arch3"
+          ],
+          "visualDesign": [
+            "https://short.url/blog-dis1",
+            "https://short.url/blog-dis2",
+            "https://short.url/blog-dis3"
+          ],
+          "functionalityPlanning": [
+            "https://short.url/blog-plan1",
+            "https://short.url/blog-plan2",
+            "https://short.url/blog-plan3"
+          ]
+        },
+        "mainFeatures": {
+          "commentSystem": "Allows users to comment on articles and respond to other comments.",
+          "tagsAndCategories": "Organizes articles into tags and categories for easier searching.",
+          "authenticationSystem": "Allows users to register and log in to post and manage their articles."
+        },
+        "issues": [
+          {
+            "title": "Loading Performance",
+            "description": "Issues with loading times, especially when there are many comments."
+          },
+          {
+            "title": "User Management",
+            "description": "Challenges in managing and authenticating users, including data protection."
+          },
+          {
+            "title": "Database Scalability",
+            "description": "Problems scaling the database to handle a large number of articles and users."
+          }
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "imageUrl": "../../../public/img/projectsImg/project1.png",
+      "title": "Task Management App",
+      "techs": [
+        "html",
+        "css",
+        "vue",
+        "vuex",
+        "javascript"
+      ],
+      "description": "An application for managing daily tasks with features to add, edit, delete tasks, and organize them by priority.",
+      "siteUrl": "https://short.url/tasks",
+      "repoUrl": "https://short.url/tasks-repo",
+      "detailUrl": "https://short.url/tasks-detail",
+      "isFinished": true,
+      "details": {
+        "planningProcess": {
+          "informationArchitecture": [
+            "https://short.url/tasks-arch1",
+            "https://short.url/tasks-arch2",
+            "https://short.url/tasks-arch3"
+          ],
+          "visualDesign": [
+            "https://short.url/tasks-dis1",
+            "https://short.url/tasks-dis2",
+            "https://short.url/tasks-dis3"
+          ],
+          "functionalityPlanning": [
+            "https://short.url/tasks-plan1",
+            "https://short.url/tasks-plan2",
+            "https://short.url/tasks-plan3"
+          ]
+        },
+        "mainFeatures": {
+          "priorityOrganization": "Allows users to organize tasks by priority levels.",
+          "reminders": "Reminder system for upcoming tasks.",
+          "intuitiveInterface": "Easy-to-use design for quickly adding, editing, and deleting tasks."
+        },
+        "issues": [
+          {
+            "title": "State Management",
+            "description": "Issues managing the state of tasks efficiently as the number of tasks increases."
+          },
+          {
+            "title": "User Interface",
+            "description": "Challenges creating a user interface that is both functional and intuitive."
+          },
+          {
+            "title": "Data Persistence",
+            "description": "Problems maintaining data persistence between user sessions."
+          }
+        ]
+      }
+    }
+  ]
+  

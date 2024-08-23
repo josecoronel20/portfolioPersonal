@@ -1,0 +1,230 @@
+[
+  {
+    "id": 1,
+    "imageUrl": "../../../public/img/projectsImg/project1.png",
+    "title": "Portfolio Personal",
+    "techs": [
+      "html",
+      "css",
+      "react",
+      "redux",
+      "git",
+      "github",
+      "tailwind",
+      "npm",
+      "javascript"
+    ],
+    "description": "Este portafolio personal muestra una colección de proyectos y habilidades en desarrollo web. Incluye ejemplos prácticos de diseño, desarrollo y despliegue de aplicaciones web utilizando tecnologías modernas.",
+    "siteUrl": "https://short.url/portfolio",
+    "repoUrl": "https://short.url/repo",
+    "detailUrl": "https://short.url/detalle",
+    "isFinished": false,
+    "details": {
+      "planningProcess": {
+        "informationArchitecture": [
+          "https://short.url/arch1",
+          "https://short.url/arch2",
+          "https://short.url/arch3"
+        ],
+        "visualDesign": [
+          "https://short.url/dis1",
+          "https://short.url/dis2",
+          "https://short.url/dis3"
+        ],
+        "functionalityPlanning": [
+          "https://short.url/plan1",
+          "https://short.url/plan2",
+          "https://short.url/plan3"
+        ]
+      },
+      "mainFeatures": {
+        "interactiveUserInterface": "Diseño responsivo y moderno con interacciones suaves.",
+        "projectManagement": "Permite a los usuarios agregar, editar y eliminar proyectos.",
+        "adminPanel": "Herramienta para gestionar y visualizar los proyectos desde una vista centralizada."
+      },
+      "issues": [
+        {
+          "title": "Problemas de rendimiento",
+          "description": "Dificultades para optimizar el tiempo de carga de la página, especialmente en dispositivos móviles."
+        },
+        {
+          "title": "Compatibilidad entre navegadores",
+          "description": "Inconsistencias en la visualización y el comportamiento en diferentes navegadores web, requiriendo ajustes adicionales."
+        },
+        {
+          "title": "Integración de API",
+          "description": "Desafíos en la integración con servicios externos, lo que requirió una revisión detallada de la documentación y ajustes en el código."
+        }
+      ]
+    }
+  },
+  {
+    "id": 2,
+    "imageUrl": "../../../public/img/projectsImg/project1.png",
+    "title": "Sitio de E-Commerce",
+    "techs": [
+      "html",
+      "css",
+      "react",
+      "node.js",
+      "express",
+      "mongodb",
+      "bootstrap",
+      "npm",
+      "javascript"
+    ],
+    "description": "Una tienda en línea que permite a los usuarios comprar productos, con un sistema de pago integrado y gestión de inventario.",
+    "siteUrl": "https://short.url/ecommerce",
+    "repoUrl": "https://short.url/ecommerce-repo",
+    "detailUrl": "https://short.url/ecommerce-detalle",
+    "isFinished": true,
+    "details": {
+      "planningProcess": {
+        "informationArchitecture": [
+          "https://short.url/ecom-arch1",
+          "https://short.url/ecom-arch2",
+          "https://short.url/ecom-arch3"
+        ],
+        "visualDesign": [
+          "https://short.url/ecom-dis1",
+          "https://short.url/ecom-dis2",
+          "https://short.url/ecom-dis3"
+        ],
+        "functionalityPlanning": [
+          "https://short.url/ecom-plan1",
+          "https://short.url/ecom-plan2",
+          "https://short.url/ecom-plan3"
+        ]
+      },
+      "mainFeatures": {
+        "securePaymentSystem": "Integración con pasarelas de pago para realizar transacciones seguras.",
+        "productManagement": "Funcionalidades para añadir, editar y eliminar productos del inventario.",
+        "orderHistory": "Permite a los usuarios ver el historial de sus compras y el estado de sus pedidos."
+      },
+      "issues": [
+        {
+          "title": "Seguridad de pagos",
+          "description": "Asegurar que todas las transacciones se realicen de manera segura y cumplan con los estándares de seguridad."
+        },
+        {
+          "title": "Escalabilidad del sistema",
+          "description": "Problemas para manejar un gran número de usuarios y transacciones simultáneamente."
+        },
+        {
+          "title": "Integración con servicios externos",
+          "description": "Desafíos al integrar con servicios de terceros para el procesamiento de pagos y la gestión de inventarios."
+        }
+      ]
+    }
+  },
+  {
+    "id": 3,
+    "imageUrl": "../../../public/img/projectsImg/project1.png",
+    "title": "Blog de Tecnología",
+    "techs": [
+      "html",
+      "css",
+      "react",
+      "firebase",
+      "javascript"
+    ],
+    "description": "Un blog que permite a los usuarios leer y publicar artículos sobre tecnología, con características como comentarios y etiquetas.",
+    "siteUrl": "https://short.url/blog",
+    "repoUrl": "https://short.url/blog-repo",
+    "detailUrl": "https://short.url/blog-detalle",
+    "isFinished": true,
+    "details": {
+      "planningProcess": {
+        "informationArchitecture": [
+          "https://short.url/blog-arch1",
+          "https://short.url/blog-arch2",
+          "https://short.url/blog-arch3"
+        ],
+        "visualDesign": [
+          "https://short.url/blog-dis1",
+          "https://short.url/blog-dis2",
+          "https://short.url/blog-dis3"
+        ],
+        "functionalityPlanning": [
+          "https://short.url/blog-plan1",
+          "https://short.url/blog-plan2",
+          "https://short.url/blog-plan3"
+        ]
+      },
+      "mainFeatures": {
+        "commentSystem": "Permite a los usuarios comentar en los artículos y responder a otros comentarios.",
+        "tagsAndCategories": "Organiza los artículos en etiquetas y categorías para facilitar la búsqueda.",
+        "authenticationSystem": "Permite a los usuarios registrarse e iniciar sesión para publicar y gestionar sus artículos."
+      },
+      "issues": [
+        {
+          "title": "Rendimiento de carga",
+          "description": "Problemas con el tiempo de carga de los artículos, especialmente cuando hay muchos comentarios."
+        },
+        {
+          "title": "Gestión de usuarios",
+          "description": "Desafíos en la gestión y autenticación de usuarios, incluyendo la protección de datos personales."
+        },
+        {
+          "title": "Escalabilidad de la base de datos",
+          "description": "Problemas con la base de datos al escalar a un gran número de artículos y usuarios."
+        }
+      ]
+    }
+  },
+  {
+    "id": 4,
+    "imageUrl": "../../../public/img/projectsImg/project1.png",
+    "title": "Aplicación de Tareas",
+    "techs": [
+      "html",
+      "css",
+      "vue",
+      "vuex",
+      "javascript"
+    ],
+    "description": "Una aplicación para gestionar tareas diarias con funcionalidades para agregar, editar y eliminar tareas, y organizarlas por prioridad.",
+    "siteUrl": "https://short.url/tareas",
+    "repoUrl": "https://short.url/tareas-repo",
+    "detailUrl": "https://short.url/tareas-detalle",
+    "isFinished": true,
+    "details": {
+      "planningProcess": {
+        "informationArchitecture": [
+          "https://short.url/tareas-arch1",
+          "https://short.url/tareas-arch2",
+          "https://short.url/tareas-arch3"
+        ],
+        "visualDesign": [
+          "https://short.url/tareas-dis1",
+          "https://short.url/tareas-dis2",
+          "https://short.url/tareas-dis3"
+        ],
+        "functionalityPlanning": [
+          "https://short.url/tareas-plan1",
+          "https://short.url/tareas-plan2",
+          "https://short.url/tareas-plan3"
+        ]
+      },
+      "mainFeatures": {
+        "priorityOrganization": "Permite a los usuarios organizar tareas por niveles de prioridad.",
+        "reminders": "Sistema de recordatorios para tareas próximas a vencer.",
+        "intuitiveInterface": "Diseño fácil de usar para agregar, editar y eliminar tareas rápidamente."
+      },
+      "issues": [
+        {
+          "title": "Gestión de estado",
+          "description": "Problemas para manejar el estado de las tareas de manera eficiente a medida que aumenta el número de tareas."
+        },
+        {
+          "title": "Interfaz de usuario",
+          "description": "Desafíos para crear una interfaz de usuario que sea a la vez funcional e intuitiva."
+        },
+        {
+          "title": "Persistencia de datos",
+          "description": "Problemas para mantener la persistencia de datos entre sesiones del usuario."
+        }
+      ]
+    }
+  }
+]

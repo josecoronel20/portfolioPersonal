@@ -9,16 +9,16 @@ const Translate = () => {
   const { isToggleOpen, handlerToggle, setIsToggleOpen } = useToggle();
 
   //llamada al context del lenguaje
-  const lenguage = useSelector((state) => state);
+  const language = useSelector((state) => state);
 
   return (
     <div className="">
       <div
-        className="flex align-middle gap-1 text-lightLight content-center"
+        className="flex align-middle gap-1 text-lightLight content-center cursor-pointer"
         onClick={handlerToggle}
       >
         <div>{iconTranslate}</div>
-        <div>{lenguage.toUpperCase()}</div>
+        <div>{language.toUpperCase()}</div>
       </div>
       <div className={`${isToggleOpen === false && "hidden"}`}>
         <p className="text-darkLight" onClick={() => {handlerChangeSpanish();setIsToggleOpen(false);}}>ESPAÑOL</p>

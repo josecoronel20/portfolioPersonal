@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import es from "../../utilities/lenguajes/es.json";
 import { iconMenu } from "../../utilities/Icons";
 import { useToggle } from "../customHooks/useToggle";
-import Modal from "./Modal";
+import Modal from "../globalComponents/Modal";
 
 const Nav = () => {
   // Estado para obtener el tamaño de la pantalla y renderizar/aplicar estilos dependiendo de este
@@ -29,14 +29,14 @@ const Nav = () => {
   return (
     <Modal toggle={isToggleOpen} setToggle={setIsToggleOpen}>
       <nav>
-        <div onClick={handlerToggle} className="relative z-30">
+        <div onClick={handlerToggle} className="relative z-30 cursor-pointer">
           {windowSize < 768 && iconMenu}
         </div>
 
         <ul
           className={`${
             isToggleOpen === false && "hidden"
-          } fixed z-20 bg-darkLight top-0 right-0 h-full w-2/3 flex flex-col justify-center gap-5 text-center text-lightLight`}
+          } fixed z-20 bg-darkDark top-0 right-0 h-full w-2/3 flex flex-col justify-center gap-5 text-center text-lightLight `}
         >
           <li>
             <Link to="/">{es.nav.home}</Link>

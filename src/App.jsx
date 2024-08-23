@@ -4,7 +4,7 @@ import Home from "./routes/Home";
 import Projects from "./routes/Projects";
 import Blog from "./routes/Blog";
 import Contact from "./routes/Contact";
-import Header from "./components/globalComponents/Header";
+import Header from "./components/header/Header";
 import { store } from "./components/context/store";
 import { Provider } from "react-redux";
 
