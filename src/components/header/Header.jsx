@@ -7,7 +7,7 @@ const Header = () => {
   const logo = "<JC>";
 
   return (
-    <header className=" bg-gradient-to-b from-darkDark from-80% fixed top-0 left-0 w-full z-10">
+    <header className=" bg-gradient-to-b from-darkDark from-80% fixed top-0 left-0 w-full z-20">
       <div className="p-3  flex justify-between">
         <Link to="/">
           <div className="inline-block text-green text-xl tracking-widest font-mcLaren py-1 px-5 order-solid border-green border-2 rounded-xl">

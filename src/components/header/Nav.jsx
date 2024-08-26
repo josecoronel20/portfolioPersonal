@@ -1,13 +1,16 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import es from "../../utilities/lenguajes/es.json";
 import { iconMenu } from "../../utilities/Icons";
-import { useToggle } from "../customHooks/useToggle";
+import { useToggle } from "../Hooks/useToggle";
 import Modal from "../globalComponents/Modal";
+import useLanguage from "../Hooks/useLanguage";
 
 const Nav = () => {
   // Estado para obtener el tamaño de la pantalla y renderizar/aplicar estilos dependiendo de este
   const [windowSize, setWindowSize] = useState(window.innerWidth);
+
+  //lenguaje
+  const {language} = useLanguage();
 
   // Uso de custom hook para manejar el estado toggle
   const { isToggleOpen, handlerToggle, setIsToggleOpen } = useToggle();
@@ -39,16 +42,16 @@ const Nav = () => {
           } fixed z-20 bg-darkDark top-0 right-0 h-full w-2/3 flex flex-col justify-center gap-5 text-center text-lightLight `}
         >
           <li>
-            <Link to="/">{es.nav.home}</Link>
+            <Link to="/">{language.nav.home}</Link>
           </li>
           <li>
-            <Link to="/projects">{es.nav.projects}</Link>
+            <Link to="/projects">{language.nav.projects}</Link>
           </li>
           <li>
-            <Link to="/blog">{es.nav.blog}</Link>
+            <Link to="/blog">{language.nav.blog}</Link>
           </li>
           <li>
-            <Link to="/contact">{es.nav.contact}</Link>
+            <Link to="/contact">{language.nav.contact}</Link>
           </li>
         </ul>
       </nav>

@@ -2,7 +2,7 @@ import React from "react";
 import DescriptionToggle from "./DescriptionToggle";
 import TechToggle from "./TechToggle";
 import ButtonsCardProject from "./ButtonsCardProject";
-import useQuickTraduction from "../../customHooks/useQuickTraduction";
+import useQuickTraduction from "../../Hooks/useQuickTraduction";
 
 const CardProject = (
  { id,
@@ -25,7 +25,7 @@ const CardProject = (
   });
 
   return (
-    <div key={id} className="rounded-md overflow-hidden bg-lightLight min-h-72">
+    <div key={id} className="rounded-md overflow-hidden bg-lightLight max-w-72 ">
       <div>
         <img src={imageUrl} alt={`img de portada de ${title}`} />
       </div>

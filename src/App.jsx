@@ -7,6 +7,7 @@ import Contact from "./routes/Contact";
 import Header from "./components/header/Header";
 import { store } from "./components/context/store";
 import { Provider } from "react-redux";
+import Footer from "./components/footer/Footer";
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
             <Route path="/blog" element={<Blog />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
+          <Footer />
         </Provider>
       </BrowserRouter>
     </div>

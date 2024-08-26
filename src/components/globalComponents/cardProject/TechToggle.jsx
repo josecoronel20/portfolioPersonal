@@ -1,5 +1,5 @@
 import React from "react";
-import { useToggle } from "../../customHooks/useToggle";
+import { useToggle } from "../../Hooks/useToggle";
 import SeeMore from "../SeeMore";
 
 const TechToggle = ({ children }) => {

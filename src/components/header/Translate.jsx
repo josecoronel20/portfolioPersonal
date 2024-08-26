@@ -1,7 +1,7 @@
 import React from "react";
 import { iconTranslate } from "../../utilities/Icons";
 import { handlerChangeEnglish, handlerChangeSpanish } from "../context/store";
-import { useToggle } from "../customHooks/useToggle";
+import { useToggle } from "../Hooks/useToggle";
 import { useSelector } from "react-redux";
 
 const Translate = () => {
@@ -21,8 +21,8 @@ const Translate = () => {
         <div>{language.toUpperCase()}</div>
       </div>
       <div className={`${isToggleOpen === false && "hidden"}`}>
-        <p className="text-darkLight" onClick={() => {handlerChangeSpanish();setIsToggleOpen(false);}}>ESPAÑOL</p>
-        <p className="text-darkLight" onClick={() => {handlerChangeEnglish();setIsToggleOpen(false);}}>ENGLISH</p>
+        <p className="text-darkLight cursor-pointer" onClick={() => {handlerChangeSpanish();setIsToggleOpen(false);}}>ESPAÑOL</p>
+        <p className="text-darkLight cursor-pointer" onClick={() => {handlerChangeEnglish();setIsToggleOpen(false);}}>ENGLISH</p>
       </div>
     </div>
   );

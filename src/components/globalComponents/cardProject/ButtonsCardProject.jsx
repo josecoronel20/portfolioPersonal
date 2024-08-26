@@ -1,7 +1,7 @@
 import React from "react";
 import { styleButtonCard } from "../../../utilities/styles";
 import { Link } from "react-router-dom";
-import useQuickTraduction from "../../customHooks/useQuickTraduction";
+import useQuickTraduction from "../../Hooks/useQuickTraduction";
 
 const ButtonsCardProject = (urlSite, urlRepo, urlDetail) => {
   const textVisite = useQuickTraduction({textEs:"VISITAR SITIO", textEn:"VISIT SITE"});

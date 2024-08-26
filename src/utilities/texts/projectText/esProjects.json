@@ -121,13 +121,7 @@
     "id": 3,
     "imageUrl": "../../../public/img/projectsImg/project1.png",
     "title": "Blog de Tecnología",
-    "techs": [
-      "html",
-      "css",
-      "react",
-      "firebase",
-      "javascript"
-    ],
+    "techs": ["html", "css", "react", "firebase", "javascript"],
     "description": "Un blog que permite a los usuarios leer y publicar artículos sobre tecnología, con características como comentarios y etiquetas.",
     "siteUrl": "https://short.url/blog",
     "repoUrl": "https://short.url/blog-repo",
@@ -176,13 +170,7 @@
     "id": 4,
     "imageUrl": "../../../public/img/projectsImg/project1.png",
     "title": "Aplicación de Tareas",
-    "techs": [
-      "html",
-      "css",
-      "vue",
-      "vuex",
-      "javascript"
-    ],
+    "techs": ["html", "css", "vue", "vuex", "javascript"],
     "description": "Una aplicación para gestionar tareas diarias con funcionalidades para agregar, editar y eliminar tareas, y organizarlas por prioridad.",
     "siteUrl": "https://short.url/tareas",
     "repoUrl": "https://short.url/tareas-repo",

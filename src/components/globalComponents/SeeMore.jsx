@@ -1,5 +1,5 @@
 import React from "react";
-import useQuickTraduction from "../customHooks/useQuickTraduction";
+import useQuickTraduction from "../Hooks/useQuickTraduction";
 
 const SeeMore = ({state, handler}) => {
 

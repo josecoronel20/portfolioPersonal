@@ -25,7 +25,7 @@ const Modal = ({ children, toggle, setToggle }) => {
       {toggle && (
         <div
           ref={elementRef}
-          className="fixed inset-0 bg-black bg-opacity-30 z-10  backdrop-blur-sm"
+          className="fixed inset-0 bg-black bg-opacity-30 z-20  backdrop-blur-sm"
         ></div>
       )}
       {children}
