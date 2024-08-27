@@ -41,16 +41,16 @@ const Nav = () => {
             isToggleOpen === false && "hidden"
           } fixed z-20 bg-darkDark top-0 right-0 h-full w-2/3 flex flex-col justify-center gap-5 text-center text-lightLight `}
         >
-          <li>
+          <li onClick={handlerToggle}>
             <Link to="/">{language.nav.home}</Link>
           </li>
-          <li>
+          <li onClick={handlerToggle}>
             <Link to="/projects">{language.nav.projects}</Link>
           </li>
-          <li>
+          <li onClick={handlerToggle}>
             <Link to="/blog">{language.nav.blog}</Link>
           </li>
-          <li>
+          <li onClick={handlerToggle}>
             <Link to="/contact">{language.nav.contact}</Link>
           </li>
         </ul>

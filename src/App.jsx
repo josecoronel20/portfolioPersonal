@@ -8,6 +8,7 @@ import Header from "./components/header/Header";
 import { store } from "./components/context/store";
 import { Provider } from "react-redux";
 import Footer from "./components/footer/Footer";
+import ProjectsDetail from "./components/projects/ProjectsDetail"
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
             <Route path="/projects" element={<Projects />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/projects/:id" element={<ProjectsDetail />} />
           </Routes>
           <Footer />
         </Provider>

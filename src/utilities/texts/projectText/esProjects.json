@@ -1,7 +1,8 @@
 [
   {
     "id": 1,
-    "imageUrl": "../../../public/img/projectsImg/project1.png",
+    "imagePcUrl": "../../../public/img/projectsImg/project1.png",
+    "imageMobileUrl": "../../../public/img/projectsImg/project1-mobile.png",
     "title": "Portfolio Personal",
     "techs": [
       "html",
@@ -21,198 +22,273 @@
     "isFinished": false,
     "details": {
       "planningProcess": {
-        "informationArchitecture": [
-          "https://short.url/arch1",
-          "https://short.url/arch2",
-          "https://short.url/arch3"
-        ],
-        "visualDesign": [
-          "https://short.url/dis1",
-          "https://short.url/dis2",
-          "https://short.url/dis3"
-        ],
-        "functionalityPlanning": [
-          "https://short.url/plan1",
-          "https://short.url/plan2",
-          "https://short.url/plan3"
-        ]
+        "title": "PROCESO DE PLANIFICACIÓN",
+        "objetive": "Mi objetivo fue 1desarrollar un sitio web que refleje mi identidad como diseñador y desarrollador, destacando mis habilidades y trabajos.",
+        "informationArchitecture": {
+          "title": "Arquitectura de la información",
+          "description": "Empecé con un archivo TXT para esbozar las secciones clave: 'Inicio', 'Sobre Mí', 'Proyectos', 'Blog', y 'Contacto'.",
+          "imageUrl": "../../../public/img/projectsImg/project1.png"
+        },
+        "visualDesign": {
+          "title": "Diseño visual",
+          "description": "Creé el diseño visual en Figma, optando por un estilo minimalista con una paleta de colores neutros y detalles en azul claro.",
+          "imageUrl": "../../../public/img/projectsImg/project1.png"
+        },
+        "functionalityPlanning": {
+          "title": "Planificación de funcionalidades",
+          "description": "Desarrollé un diagrama que conectaba los componentes clave, como la galería interactiva de proyectos y el blog con sistema de comentarios.",
+          "imageUrl": "../../../public/img/projectsImg/project1.png"
+        }
       },
       "mainFeatures": {
-        "interactiveUserInterface": "Diseño responsivo y moderno con interacciones suaves.",
-        "projectManagement": "Permite a los usuarios agregar, editar y eliminar proyectos.",
-        "adminPanel": "Herramienta para gestionar y visualizar los proyectos desde una vista centralizada."
-      },
-      "issues": [
-        {
-          "title": "Problemas de rendimiento",
-          "description": "Dificultades para optimizar el tiempo de carga de la página, especialmente en dispositivos móviles."
+        "title": "IMPLEMENTACIONES PRINCIPALES",
+        "feature1": {
+          "title": "Diseño responsivo",
+          "description": "Diseño responsivo y moderno con interacciones suaves."
         },
-        {
-          "title": "Compatibilidad entre navegadores",
-          "description": "Inconsistencias en la visualización y el comportamiento en diferentes navegadores web, requiriendo ajustes adicionales."
+        "feature2": {
+          "title": "Seguridad avanzada",
+          "description": "Implementación de medidas de seguridad avanzadas para proteger los datos de los usuarios."
         },
-        {
-          "title": "Integración de API",
-          "description": "Desafíos en la integración con servicios externos, lo que requirió una revisión detallada de la documentación y ajustes en el código."
+        "feature3": {
+          "title": "Alto rendimiento",
+          "description": "Optimización de la carga y procesamiento de datos para una experiencia fluida y rápida."
         }
-      ]
+      },
+      "issues": {
+        "title": "PROBLEMAS ENFRENTADOS",
+        "issue1": {
+          "title": "Diseño responsivo",
+          "description": "Diseño responsivo y moderno con interacciones suaves."
+        },
+        "issue2": {
+          "title": "Seguridad avanzada",
+          "description": "Implementación de medidas de seguridad avanzadas para proteger los datos de los usuarios."
+        },
+        "issue3": {
+          "title": "Alto rendimiento",
+          "description": "Optimización de la carga y procesamiento de datos para una experiencia fluida y rápida."
+        }
+      }
     }
-  },
-  {
+  },{
     "id": 2,
-    "imageUrl": "../../../public/img/projectsImg/project1.png",
-    "title": "Sitio de E-Commerce",
+    "imagePcUrl": "../../../public/img/projectsImg/project2.png",
+    "imageMobileUrl": "../../../public/img/projectsImg/project2-mobile.png",
+    "title": "Aplicación de Recetas",
     "techs": [
       "html",
       "css",
       "react",
-      "node.js",
-      "express",
-      "mongodb",
-      "bootstrap",
-      "npm",
+      "redux",
+      "firebase",
+      "git",
+      "github",
+      "tailwind",
       "javascript"
     ],
-    "description": "Una tienda en línea que permite a los usuarios comprar productos, con un sistema de pago integrado y gestión de inventario.",
-    "siteUrl": "https://short.url/ecommerce",
-    "repoUrl": "https://short.url/ecommerce-repo",
-    "detailUrl": "https://short.url/ecommerce-detalle",
+    "description": "Una aplicación interactiva de recetas que permite a los usuarios buscar, guardar y compartir sus recetas favoritas. Incluye una funcionalidad de filtro por ingredientes y categorías.",
+    "siteUrl": "https://short.url/recetas",
+    "repoUrl": "https://short.url/repo2",
+    "detailUrl": "https://short.url/detalle2",
     "isFinished": true,
     "details": {
       "planningProcess": {
-        "informationArchitecture": [
-          "https://short.url/ecom-arch1",
-          "https://short.url/ecom-arch2",
-          "https://short.url/ecom-arch3"
-        ],
-        "visualDesign": [
-          "https://short.url/ecom-dis1",
-          "https://short.url/ecom-dis2",
-          "https://short.url/ecom-dis3"
-        ],
-        "functionalityPlanning": [
-          "https://short.url/ecom-plan1",
-          "https://short.url/ecom-plan2",
-          "https://short.url/ecom-plan3"
-        ]
+        "title": "PROCESO DE PLANIFICACIÓN",
+        "objetive": "Crear una plataforma accesible para que los usuarios descubran nuevas recetas y organicen sus favoritas.",
+        "informationArchitecture": {
+          "title": "Arquitectura de la información",
+          "description": "Organización de secciones como 'Recetas', 'Mis Recetas', 'Favoritas' y 'Perfil'.",
+          "imageUrl": "../../../public/img/projectsImg/project2.png"
+        },
+        "visualDesign": {
+          "title": "Diseño visual",
+          "description": "Diseño intuitivo y atractivo, con un enfoque en la usabilidad y la presentación clara de las recetas.",
+          "imageUrl": "../../../public/img/projectsImg/project2.png"
+        },
+        "functionalityPlanning": {
+          "title": "Planificación de funcionalidades",
+          "description": "Implementación de un sistema de búsqueda avanzada y la capacidad de guardar recetas personalizadas.",
+          "imageUrl": "../../../public/img/projectsImg/project2.png"
+        }
       },
       "mainFeatures": {
-        "securePaymentSystem": "Integración con pasarelas de pago para realizar transacciones seguras.",
-        "productManagement": "Funcionalidades para añadir, editar y eliminar productos del inventario.",
-        "orderHistory": "Permite a los usuarios ver el historial de sus compras y el estado de sus pedidos."
-      },
-      "issues": [
-        {
-          "title": "Seguridad de pagos",
-          "description": "Asegurar que todas las transacciones se realicen de manera segura y cumplan con los estándares de seguridad."
+        "title": "IMPLEMENTACIONES PRINCIPALES",
+        "feature1": {
+          "title": "Búsqueda avanzada",
+          "description": "Permite a los usuarios buscar recetas por ingredientes, tiempo de preparación y categoría."
         },
-        {
-          "title": "Escalabilidad del sistema",
-          "description": "Problemas para manejar un gran número de usuarios y transacciones simultáneamente."
+        "feature2": {
+          "title": "Guardado de recetas",
+          "description": "Los usuarios pueden guardar sus recetas favoritas en su perfil para acceso rápido."
         },
-        {
-          "title": "Integración con servicios externos",
-          "description": "Desafíos al integrar con servicios de terceros para el procesamiento de pagos y la gestión de inventarios."
+        "feature3": {
+          "title": "Interfaz amigable",
+          "description": "Interfaz de usuario simple y clara, diseñada para ser intuitiva y fácil de navegar."
         }
-      ]
+      },
+      "issues": {
+        "title": "PROBLEMAS ENFRENTADOS",
+        "issue1": {
+          "title": "Integración con Firebase",
+          "description": "Hubo desafíos al integrar la autenticación de Firebase con la funcionalidad de guardado de recetas."
+        },
+        "issue2": {
+          "title": "Optimización de búsqueda",
+          "description": "Optimizar el rendimiento del sistema de búsqueda para grandes volúmenes de datos fue un reto."
+        },
+        "issue3": {
+          "title": "Diseño responsivo",
+          "description": "Asegurarse de que la aplicación se vea bien en todos los dispositivos requirió varios ajustes."
+        }
+      }
     }
   },
   {
     "id": 3,
-    "imageUrl": "../../../public/img/projectsImg/project1.png",
-    "title": "Blog de Tecnología",
-    "techs": ["html", "css", "react", "firebase", "javascript"],
-    "description": "Un blog que permite a los usuarios leer y publicar artículos sobre tecnología, con características como comentarios y etiquetas.",
-    "siteUrl": "https://short.url/blog",
-    "repoUrl": "https://short.url/blog-repo",
-    "detailUrl": "https://short.url/blog-detalle",
+    "imagePcUrl": "../../../public/img/projectsImg/project3.png",
+    "imageMobileUrl": "../../../public/img/projectsImg/project3-mobile.png",
+    "title": "Tienda de E-commerce",
+    "techs": [
+      "html",
+      "css",
+      "react",
+      "nodejs",
+      "mongodb",
+      "git",
+      "github",
+      "tailwind",
+      "javascript"
+    ],
+    "description": "Una tienda en línea completa con funcionalidades de carrito de compras, pasarela de pagos, y sistema de inventario. Diseñada para pequeñas y medianas empresas que buscan vender en línea.",
+    "siteUrl": "https://short.url/tienda",
+    "repoUrl": "https://short.url/repo3",
+    "detailUrl": "https://short.url/detalle3",
     "isFinished": true,
     "details": {
       "planningProcess": {
-        "informationArchitecture": [
-          "https://short.url/blog-arch1",
-          "https://short.url/blog-arch2",
-          "https://short.url/blog-arch3"
-        ],
-        "visualDesign": [
-          "https://short.url/blog-dis1",
-          "https://short.url/blog-dis2",
-          "https://short.url/blog-dis3"
-        ],
-        "functionalityPlanning": [
-          "https://short.url/blog-plan1",
-          "https://short.url/blog-plan2",
-          "https://short.url/blog-plan3"
-        ]
+        "title": "PROCESO DE PLANIFICACIÓN",
+        "objetive": "Desarrollar una plataforma de e-commerce que sea escalable y fácil de usar, con todas las funcionalidades necesarias para una tienda en línea.",
+        "informationArchitecture": {
+          "title": "Arquitectura de la información",
+          "description": "Secciones principales como 'Productos', 'Carrito', 'Checkout' y 'Perfil'.",
+          "imageUrl": "../../../public/img/projectsImg/project3.png"
+        },
+        "visualDesign": {
+          "title": "Diseño visual",
+          "description": "El diseño se centró en la simplicidad y la claridad, con un enfoque en la facilidad de navegación.",
+          "imageUrl": "../../../public/img/projectsImg/project3.png"
+        },
+        "functionalityPlanning": {
+          "title": "Planificación de funcionalidades",
+          "description": "Desarrollé un flujo de usuario claro desde la navegación de productos hasta la finalización de la compra.",
+          "imageUrl": "../../../public/img/projectsImg/project3.png"
+        }
       },
       "mainFeatures": {
-        "commentSystem": "Permite a los usuarios comentar en los artículos y responder a otros comentarios.",
-        "tagsAndCategories": "Organiza los artículos en etiquetas y categorías para facilitar la búsqueda.",
-        "authenticationSystem": "Permite a los usuarios registrarse e iniciar sesión para publicar y gestionar sus artículos."
-      },
-      "issues": [
-        {
-          "title": "Rendimiento de carga",
-          "description": "Problemas con el tiempo de carga de los artículos, especialmente cuando hay muchos comentarios."
+        "title": "IMPLEMENTACIONES PRINCIPALES",
+        "feature1": {
+          "title": "Carrito de compras",
+          "description": "Funcionalidad completa de carrito de compras con opciones para agregar, eliminar y modificar productos."
         },
-        {
-          "title": "Gestión de usuarios",
-          "description": "Desafíos en la gestión y autenticación de usuarios, incluyendo la protección de datos personales."
+        "feature2": {
+          "title": "Pasarela de pagos",
+          "description": "Integración con diversas pasarelas de pago para una experiencia de compra segura y sencilla."
         },
-        {
-          "title": "Escalabilidad de la base de datos",
-          "description": "Problemas con la base de datos al escalar a un gran número de artículos y usuarios."
+        "feature3": {
+          "title": "Sistema de inventario",
+          "description": "Gestión automática de inventario para mantener actualizada la disponibilidad de productos."
         }
-      ]
+      },
+      "issues": {
+        "title": "PROBLEMAS ENFRENTADOS",
+        "issue1": {
+          "title": "Integración de pagos",
+          "description": "La integración con múltiples pasarelas de pago presentó desafíos técnicos."
+        },
+        "issue2": {
+          "title": "Manejo del inventario",
+          "description": "Asegurarse de que el inventario se actualizara correctamente en tiempo real fue complicado."
+        },
+        "issue3": {
+          "title": "Optimización para dispositivos móviles",
+          "description": "Hacer que la tienda funcionara sin problemas en dispositivos móviles requirió optimizaciones adicionales."
+        }
+      }
     }
   },
   {
     "id": 4,
-    "imageUrl": "../../../public/img/projectsImg/project1.png",
+    "imagePcUrl": "../../../public/img/projectsImg/project4.png",
+    "imageMobileUrl": "../../../public/img/projectsImg/project4-mobile.png",
     "title": "Aplicación de Tareas",
-    "techs": ["html", "css", "vue", "vuex", "javascript"],
-    "description": "Una aplicación para gestionar tareas diarias con funcionalidades para agregar, editar y eliminar tareas, y organizarlas por prioridad.",
+    "techs": [
+      "html",
+      "css",
+      "react",
+      "redux",
+      "nodejs",
+      "express",
+      "mongodb",
+      "git",
+      "github",
+      "javascript"
+    ],
+    "description": "Una aplicación de gestión de tareas que permite a los usuarios crear, editar y organizar sus tareas diarias. Incluye recordatorios y categorización por prioridades.",
     "siteUrl": "https://short.url/tareas",
-    "repoUrl": "https://short.url/tareas-repo",
-    "detailUrl": "https://short.url/tareas-detalle",
+    "repoUrl": "https://short.url/repo4",
+    "detailUrl": "https://short.url/detalle4",
     "isFinished": true,
     "details": {
       "planningProcess": {
-        "informationArchitecture": [
-          "https://short.url/tareas-arch1",
-          "https://short.url/tareas-arch2",
-          "https://short.url/tareas-arch3"
-        ],
-        "visualDesign": [
-          "https://short.url/tareas-dis1",
-          "https://short.url/tareas-dis2",
-          "https://short.url/tareas-dis3"
-        ],
-        "functionalityPlanning": [
-          "https://short.url/tareas-plan1",
-          "https://short.url/tareas-plan2",
-          "https://short.url/tareas-plan3"
-        ]
+        "title": "PROCESO DE PLANIFICACIÓN",
+        "objetive": "Desarrollar una aplicación simple y eficiente para ayudar a los usuarios a organizar su día a día y aumentar su productividad.",
+        "informationArchitecture": {
+          "title": "Arquitectura de la información",
+          "description": "Definición de secciones como 'Tareas Pendientes', 'Completadas', y 'Configuración'.",
+          "imageUrl": "../../../public/img/projectsImg/project4.png"
+        },
+        "visualDesign": {
+          "title": "Diseño visual",
+          "description": "Un diseño limpio y organizado, enfocado en la simplicidad para evitar distracciones.",
+          "imageUrl": "../../../public/img/projectsImg/project4.png"
+        },
+        "functionalityPlanning": {
+          "title": "Planificación de funcionalidades",
+          "description": "Implementación de recordatorios y categorización de tareas por urgencia e importancia.",
+          "imageUrl": "../../../public/img/projectsImg/project4.png"
+        }
       },
       "mainFeatures": {
-        "priorityOrganization": "Permite a los usuarios organizar tareas por niveles de prioridad.",
-        "reminders": "Sistema de recordatorios para tareas próximas a vencer.",
-        "intuitiveInterface": "Diseño fácil de usar para agregar, editar y eliminar tareas rápidamente."
-      },
-      "issues": [
-        {
-          "title": "Gestión de estado",
-          "description": "Problemas para manejar el estado de las tareas de manera eficiente a medida que aumenta el número de tareas."
+        "title": "IMPLEMENTACIONES PRINCIPALES",
+        "feature1": {
+          "title": "Gestión de tareas",
+          "description": "Los usuarios pueden crear, editar, eliminar y reorganizar sus tareas según sus necesidades."
         },
-        {
-          "title": "Interfaz de usuario",
-          "description": "Desafíos para crear una interfaz de usuario que sea a la vez funcional e intuitiva."
+        "feature2": {
+          "title": "Recordatorios",
+          "description": "Recordatorios automáticos para asegurar que ninguna tarea importante se pase por alto."
         },
-        {
-          "title": "Persistencia de datos",
-          "description": "Problemas para mantener la persistencia de datos entre sesiones del usuario."
+        "feature3": {
+          "title": "Categorización por prioridad",
+          "description": "Organización de tareas por nivel de prioridad para ayudar a los usuarios a enfocarse en lo más importante."
         }
-      ]
+      },
+      "issues": {
+        "title": "PROBLEMAS ENFRENTADOS",
+        "issue1": {
+          "title": "Sincronización de datos",
+          "description": "Hubo dificultades para mantener la sincronización de datos en tiempo real entre diferentes dispositivos."
+        },
+        "issue2": {
+          "title": "Notificaciones push",
+          "description": "Implementar notificaciones push para recordatorios fue más complejo de lo esperado."
+        },
+        "issue3": {
+          "title": "Optimización de la base de datos",
+          "description": "Optimizar la base de datos para un acceso rápido y eficiente a las tareas fue un desafío importante."
+        }
+      }
     }
   }
 ]

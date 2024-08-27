@@ -12,7 +12,6 @@ const CardProject = (
   techs,
   description,
   siteUrl,
-  detailUrl,
   repoUrl}
 ) => {
   const textFinish = useQuickTraduction({
@@ -54,7 +53,7 @@ const CardProject = (
         <ButtonsCardProject
           urlSite={siteUrl}
           urlRepo={repoUrl}
-          urlDetail={detailUrl}
+          id={id}
         />
       </div>
     </div>
