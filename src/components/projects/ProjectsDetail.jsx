@@ -1,6 +1,5 @@
 import React from "react";
 import {
-  styleCustomContainer,
   styleCustomContainerTop,
 } from "../../utilities/styles";
 import { useSelector } from "react-redux";

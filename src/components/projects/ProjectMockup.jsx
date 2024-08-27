@@ -20,7 +20,7 @@ const ProjectMockup = ({ imagePcUrl, imageMobileUrl, siteUrl, repoUrl }) => {
           <div className="flex flex-col items-center justify-end  w-4/6">
           
             <img
-              className="border-x-[6px] border-t-[8px] rounded-md w-10/12 border-lightLight"
+              className="border-x-[6px] border-t-[8px] rounded-t-md w-10/12 border-lightLight"
               src={imagePcUrl}
               alt=""
             />

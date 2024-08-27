@@ -1,0 +1,27 @@
+{
+    "title": "POSTS FROM MY PERSONAL BLOG",
+    "posts": [
+      {
+        "id":1,
+        "title": "The Future of AI in Web Development",
+        "image": "../../../public/img/projectsImg/project1.png",
+        "description": "Explore how artificial intelligence is revolutionizing web development, from automated coding tools to enhanced user experiences.",
+        "content": "Artificial intelligence (AI) is transforming numerous aspects of technology, and web development is no exception. From automated coding tools that can write code on their own to recommendation systems that personalize user experiences, AI is changing the way developers work. In this article, we will explore the main applications of AI in web development, how they are improving workflows, and what to expect in the near future."
+      },
+      {
+        "id":2,
+        "title": "Top 10 JavaScript Frameworks in 2024",
+        "image": "../../../public/img/projectsImg/project1.png",
+        "description": "A comprehensive review of the top JavaScript frameworks for 2024, helping developers choose the best tools for their projects.",
+        "content": "JavaScript continues to be one of the most popular and powerful programming languages, and JavaScript frameworks play a crucial role in modern development. With the arrival of 2024, several frameworks stand out for their innovative features and ability to simplify development. In this article, we will review the top 10 JavaScript frameworks for this year, analyzing their features, advantages, and disadvantages to help developers make informed decisions for their projects."
+      },
+      {
+        "id":3,
+        "title": "Design Trends for Modern Websites",
+        "image": "../../../public/img/projectsImg/project1.png",
+        "description": "Discover the latest design trends shaping the look and feel of modern websites, from minimalist layouts to bold typography.",
+        "content": "Web design is constantly evolving, and each year brings new trends that affect how designers create websites. In 2024, some of the main trends include the use of minimalist designs that focus on simplicity and functionality, as well as bold typography that captures the user's attention. Additionally, adaptive design and intuitive interfaces continue to be fundamental for providing an exceptional user experience. This article explores current trends and how they can be applied to create attractive and effective websites."
+      }
+    ]
+  }
+  

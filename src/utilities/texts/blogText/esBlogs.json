@@ -1,0 +1,26 @@
+{
+  "title": "POSTEOS DE MI BLOG PERSONAL",
+  "posts": [
+    {
+        "id":1,
+      "title": "El Futuro de la IA en el Desarrollo Web",
+      "image": "../../../public/img/projectsImg/project1.png",
+      "description": "Explora cómo la inteligencia artificial está revolucionando el desarrollo web, desde herramientas de codificación automatizadas hasta experiencias de usuario mejoradas.",
+      "content": "La inteligencia artificial (IA) está transformando numerosos aspectos de la tecnología, y el desarrollo web no es una excepción. Desde herramientas de codificación automatizadas que pueden escribir código por sí solas hasta sistemas de recomendación que personalizan las experiencias de usuario, la IA está cambiando la forma en que los desarrolladores trabajan. En este artículo, exploraremos las principales aplicaciones de la IA en el desarrollo web, cómo están mejorando los flujos de trabajo y qué esperar en el futuro cercano."
+    },
+    {
+        "id":2,
+      "title": "Los 10 Mejores Frameworks de JavaScript en 2024",
+      "image": "../../../public/img/projectsImg/project1.png",
+      "description": "Una revisión completa de los mejores frameworks de JavaScript para 2024, ayudando a los desarrolladores a elegir las mejores herramientas para sus proyectos.",
+      "content": "JavaScript sigue siendo uno de los lenguajes de programación más populares y poderosos, y los frameworks de JavaScript juegan un papel crucial en el desarrollo moderno. Con la llegada de 2024, varios frameworks se destacan por sus características innovadoras y su capacidad para simplificar el desarrollo. En este artículo, revisaremos los 10 mejores frameworks de JavaScript para este año, analizando sus características, ventajas y desventajas para ayudar a los desarrolladores a tomar decisiones informadas para sus proyectos."
+    },
+    {
+        "id":3,
+      "title": "Tendencias de Diseño para Sitios Web Modernos",
+      "image": "../../../public/img/projectsImg/project1.png",
+      "description": "Descubre las últimas tendencias de diseño que están moldeando la apariencia y sensación de los sitios web modernos, desde diseños minimalistas hasta tipografías audaces.",
+      "content": "El diseño web está en constante evolución, y cada año trae nuevas tendencias que afectan la forma en que los diseñadores crean sitios web. En 2024, algunas de las principales tendencias incluyen el uso de diseños minimalistas que se centran en la simplicidad y la funcionalidad, así como el uso de tipografías audaces que capturan la atención del usuario. Además, el diseño adaptable y las interfaces intuitivas continúan siendo fundamentales para ofrecer una experiencia de usuario excepcional. Este artículo explora las tendencias actuales y cómo pueden aplicarse para crear sitios web atractivos y efectivos."
+    }
+  ]
+}
