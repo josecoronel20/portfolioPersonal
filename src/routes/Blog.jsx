@@ -15,7 +15,8 @@ const Blog = () => {
       <h1>{blog.title}</h1>
       <div className="flex flex-col gap-5">
         {blog.posts.map((post) => {
-          return <PostCard postInfo={post} />;
+          return <PostCard key={
+          post.id}postInfo={post} />;
         })}
       </div>
     </main>
