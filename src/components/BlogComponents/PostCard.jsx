@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { styleButtonCard } from "../../utilities/styles";
+import { styleButtonCard } from "../../Utilities/customStyles";
 
 const PostCard = ({ postInfo }) => {
   return (

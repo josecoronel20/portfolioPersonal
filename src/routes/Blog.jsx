@@ -1,9 +1,9 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import enBlogs from "../utilities/texts/blogText/enBlogs.json";
-import esBlogs from "../utilities/texts/blogText/esBlogs.json";
+import enBlogs from "../utilities/texts/TextBlogPage/enBlogs.json";
+import esBlogs from "../utilities/texts/TextBlogPage/esBlogs.json";
 import PostCard from "../components/BlogComponents/PostCard";
-import { styleCustomContainerTop } from "../utilities/styles";
+import { styleCustomContainerTop } from "../Utilities/customStyles";
 
 const Blog = () => {
   const language = useSelector((state) => state);

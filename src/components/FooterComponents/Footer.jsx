@@ -1,8 +1,8 @@
 import React from "react";
-import ContactContent from "../header/ContactComponents/ContactContent";
+import ContactContent from "../HeaderComponents/ContactComponents/ContactContent";
 import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
-import useLanguage from "../Hooks/useLanguage";
+import useLanguage from "../../Hooks/useLanguage";
 
 const Footer = () => {
   const actualPath = useLocation().pathname;

@@ -1,13 +1,13 @@
 import React from "react";
 import {
   styleCustomContainerTop,
-} from "../../utilities/styles";
+} from "../../utilities/customStyles";
 import { useSelector } from "react-redux";
-import esProjects from "../../utilities/texts/projectText/esProjects.json";
-import enProjects from "../../utilities/texts/projectText/enProjects.json";
+import esProjects from "../../utilities/texts/TextProjectPage/esProjects.json";
+import enProjects from "../../utilities/texts/TextProjectPage/enProjects.json";
 import { useParams } from "react-router-dom";
-import ProjectMockup from "../projects/ProjectMockup";
-import useQuickTraduction from "../Hooks/useQuickTraduction";
+import ProjectMockup from "../ProjectsComponents/ProjectMockup";
+import useQuickTraduction from "../../Hooks/useQuickTraduction";
 import ProjectsDetailPlanning from "./ProjectsDetailPlanning";
 
 const ProjectsDetail = () => {

@@ -1,6 +1,6 @@
 import React from "react";
 import useQuickTraduction from "../../Hooks/useQuickTraduction";
-import { iconClose } from "../../../utilities/Icons";
+import { iconClose } from "../../utilities/Icons";
 
 const TechCard = ({ infoTech, handlerToggle }) => {
   const textLevel = useQuickTraduction({

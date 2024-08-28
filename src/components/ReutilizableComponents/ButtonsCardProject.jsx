@@ -1,5 +1,5 @@
 import React from "react";
-import { styleButtonCard } from "../../../utilities/styles";
+import { styleButtonCard } from "../../../Utilities/customStyles";
 import { Link } from "react-router-dom";
 import useQuickTraduction from "../../Hooks/useQuickTraduction";
 

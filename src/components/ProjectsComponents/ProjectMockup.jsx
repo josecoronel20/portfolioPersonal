@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { styleButtonLight } from "../../utilities/styles";
-import useQuickTraduction from "../Hooks/useQuickTraduction";
+import { styleButtonLight } from "../../utilities/customStyles";
+import useQuickTraduction from "../../Hooks/useQuickTraduction";
 
 const ProjectMockup = ({ imagePcUrl, imageMobileUrl, siteUrl, repoUrl }) => {
   const textVisite = useQuickTraduction({

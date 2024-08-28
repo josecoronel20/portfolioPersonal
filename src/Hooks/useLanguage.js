@@ -1,4 +1,4 @@
-import text from "../../utilities/texts/texts.json"
+import text from "../Utilities/texts/TextApp/texts.json"
 
 import { useSelector } from "react-redux";
 

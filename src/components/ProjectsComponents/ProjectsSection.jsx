@@ -1,8 +1,8 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import esProjects from "../../utilities/texts/projectText/esProjects.json";
-import enProjects from "../../utilities/texts/projectText/enProjects.json";
-import CardProject from "../globalComponents/cardProject/CardProject";
+import esProjects from "../../utilities/texts/TextProjectPage/esProjects.json";
+import enProjects from "../../utilities/texts/TextProjectPage/enProjects.json";
+import CardProject from "../ReutilizableComponents/CardProject";
 
 const ProjectsSection = () => {
   const languageContext = useSelector((state) => state);

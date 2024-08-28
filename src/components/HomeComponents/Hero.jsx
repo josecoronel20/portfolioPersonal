@@ -1,8 +1,8 @@
 import React from "react";
-import useLanguage from "../Hooks/useLanguage";
+import useLanguage from "../../Hooks/useLanguage";
 import illustration from "../../../public/img/illustration.png";
 import { Link } from "react-router-dom";
-import { styleButtonPrincipal, styleCustomContainerTop } from "../../utilities/styles";
+import { styleButtonPrincipal, styleCustomContainerTop } from "../../utilities/customStyles";
 
 const Hero = () => {
   //custom hook de lengiuaje para importar el json con textos en es o en

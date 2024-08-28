@@ -1,6 +1,5 @@
 import React from "react";
-import { styleCustomContainerTop } from "../utilities/styles";
-import ContactContent from "../components/header/ContactComponents/ContactContent";
+import { styleCustomContainerTop } from "../Utilities/customStyles";
 
 const Contact = () => {
   return (

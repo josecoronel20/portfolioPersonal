@@ -1,7 +1,7 @@
 import React from "react";
-import { styleCustomContainerTop } from "../../utilities/styles";
-import enBlogs from "../../utilities/texts/blogText/enBlogs.json";
-import esBlogs from "../../utilities/texts/blogText/esBlogs.json";
+import { styleCustomContainerTop } from "../../Utilities/customStyles";
+import enBlogs from "../../utilities/texts/TextBlogPage/enBlogs.json";
+import esBlogs from "../../utilities/texts/TextBlogPage/esBlogs.json";
 import { useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 

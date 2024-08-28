@@ -1,6 +1,6 @@
 import React from "react";
-import useLanguage from "../Hooks/useLanguage";
-import { styleCustomContainer } from "../../utilities/styles";
+import useLanguage from "../../Hooks/useLanguage";
+import { styleCustomContainer } from "../../Utilities/customStyles";
 
 const AboutMe = () => {
   const { language } = useLanguage();

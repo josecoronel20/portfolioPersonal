@@ -1,11 +1,11 @@
 import React, { useRef, useState, useEffect } from "react";
-import esProjects from "../../utilities/texts/projectText/esProjects.json";
-import enProjects from "../../utilities/texts/projectText/enProjects.json";
+import esProjects from "../../utilities/texts/TextProjectPage/esProjects.json";
+import enProjects from "../../utilities/texts/TextProjectPage/enProjects.json";
 import { useSelector } from "react-redux";
-import CardProject from "../globalComponents/cardProject/CardProject";
-import { styleCustomContainer } from "../../utilities/styles";
+import CardProject from "../../components/ReutilizableComponents/CardProject";
+import { styleCustomContainer } from "../../utilities/customStyles";
 import { iconArrowLeft, iconArrowRight } from "../../utilities/Icons";
-import useLanguage from "../Hooks/useLanguage";
+import useLanguage from "../../Hooks/useLanguage";
 
 const Carrousel = () => {
   const languageContext = useSelector((state) => state);

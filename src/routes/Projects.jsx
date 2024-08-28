@@ -1,7 +1,7 @@
 import React from "react";
-import { styleCustomContainerTop } from "../utilities/styles";
-import useLanguage from "../components/Hooks/useLanguage";
-import ProjectsSection from "../components/projects/ProjectsSection";
+import { styleCustomContainerTop } from "../Utilities/customStyles";
+import useLanguage from "../Hooks/useLanguage";
+import ProjectsSection from "../components/ProjectsComponents/ProjectsSection";
 
 const Projects = () => {
   const { language } = useLanguage();

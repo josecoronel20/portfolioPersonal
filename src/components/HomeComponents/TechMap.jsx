@@ -1,5 +1,5 @@
 import React from "react";
-import Modal from "../../globalComponents/Modal";
+import Modal from "../../components/ReutilizableComponents/Modal";
 import {useToggle} from "../../Hooks/useToggle";
 import TechCard from "./TechCard";
 

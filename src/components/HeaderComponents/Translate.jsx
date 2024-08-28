@@ -1,7 +1,7 @@
 import React from "react";
 import { iconTranslate } from "../../utilities/Icons";
-import { handlerChangeEnglish, handlerChangeSpanish } from "../context/store";
-import { useToggle } from "../Hooks/useToggle";
+import { handlerChangeEnglish, handlerChangeSpanish } from "../../languageContext";
+import { useToggle } from "../../Hooks/useToggle";
 import { useSelector } from "react-redux";
 
 const Translate = () => {

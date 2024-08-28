@@ -1,10 +1,10 @@
 import React from "react";
-import { styleCustomContainer } from "../../../utilities/styles";
-import useLanguage from "../../Hooks/useLanguage";
-import TechMap from "./TechMap";
+import { styleCustomContainer } from "../../Utilities/customStyles.js";
+import useLanguage from "../../Hooks/useLanguage.js";
+import TechMap from "./TechMap.jsx";
 import { useSelector } from "react-redux";
-import techTextEn from "../../../utilities/texts/techsText/techsEn.jsx";
-import techTextEs from "../../../utilities/texts/techsText/techsEs.jsx";
+import techTextEn from "../../Utilities/texts/TextTechsPage/techsEn.jsx";
+import techTextEs from "../../Utilities/texts/TextTechsPage/techsEs.jsx";
 
 const Techs = () => {
   const { language } = useLanguage();
