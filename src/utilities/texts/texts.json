@@ -51,18 +51,32 @@
         "titleConcepts": "Conceptos y metodologías"
       }
     },
+
     "footer": {
       "contactMe": {
-        "title": "CONTACTAME",
-        "mail": "josecoronel20@outlook.com",
-        "number": "+351 912 981 851"
+        "sectionTitle": "Contact Information",
+        "email": {
+          "title": "Email",
+          "value": "josecoronel20@outlook.com"
+        },
+        "phone": {
+          "title": "Número de teléfono",
+          "value": "+351 912 981 851"
+        }
       },
       "followMe": {
-        "title": "SEGUIME",
-        "github": "https://github.com/josecoronel20",
-        "linkedin": "https://www.linkedin.com/in/jose-maria-coronel/"
+        "sectionTitle": "Follow Me",
+        "github": {
+          "title": "GitHub",
+          "url": "https://github.com/josecoronel20"
+        },
+        "linkedin": {
+          "title": "LinkedIn",
+          "url": "https://www.linkedin.com/in/jose-maria-coronel/"
+        }
       }
     },
+
     "projects": {
       "title": "PROYECTOS"
     }

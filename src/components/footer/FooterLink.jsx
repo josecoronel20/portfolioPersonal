@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { iconCopy } from "../../utilities/Icons";
 import useQuickTraduction from "../Hooks/useQuickTraduction";
 
-const FooterLink = ({ icon, text, url }) => {
+const FooterLink = ({ icon, textForCopy, url, text }) => {
   const [copyAlert, setCopyAlert] = useState(false);
 
   const textCopyAlert = useQuickTraduction({
@@ -19,7 +19,7 @@ const FooterLink = ({ icon, text, url }) => {
   };
 
   const copyClipBoard = () => {
-    navigator.clipboard.writeText(text);
+    navigator.clipboard.writeText(textForCopy);
     handlerCopyAlert();
   };
 

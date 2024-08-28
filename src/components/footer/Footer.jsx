@@ -1,47 +1,33 @@
 import React from "react";
+import ContactContent from "../header/ContactComponents/ContactContent";
+import { useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import useLanguage from "../Hooks/useLanguage";
-import {
-  iconGithub,
-  iconLinkedin,
-  iconMail,
-  iconWpp,
-} from "../../utilities/Icons";
-import FooterLink from "./FooterLink";
 
 const Footer = () => {
+  const actualPath = useLocation().pathname;
   const { language } = useLanguage();
 
-  return (
-    <section className="bg-darkFooter px-2 py-10 flex flex-col items-center">
-      <div className="flex flex-col gap-5">
-        <div className="flex flex-col gap-1">
-          <h3>{language.footer.contactMe.title}</h3>
-          <FooterLink
-            icon={iconMail}
-            text={language.footer.contactMe.mail}
-            url={"mailto:josecoronel20@outlook.com"}
-          />
-          <FooterLink
-            icon={iconWpp}
-            text={language.footer.contactMe.number}
-            url={"https://wa.me/351912981851"}
-          />
-        </div>
-        <div className="flex flex-col gap-1">
-          <h3>{language.footer.followMe.title}</h3>
-          <FooterLink
-            icon={iconGithub}
-            text={language.footer.followMe.github}
-            url={"https://github.com/josecoronel20"}
-          />
+  const ListItem = ({ to, children }) => (
+    <li className="text-sm opacity-50 hover:opacity-100 hover:scale-105 ease-in-out transition-transform duration-200">
+      <Link to={to}>{children}</Link>
+    </li>
+  );
 
-          <FooterLink
-            icon={iconLinkedin}
-            text={language.footer.followMe.linkedin}
-            url={"https://www.linkedin.com/in/jose-maria-coronel/"}
-          />
-        </div>
-      </div>
+  return (
+    <section className="bg-darkFooter px-2 py-10 flex justify-center">
+      <div className="flex flex-col gap-10">
+      {actualPath.includes("contact") === false && <ContactContent />}
+
+      <div className="flex flex-col gap-5">
+        <h3>Navegación rápida</h3>
+        <ul className="flex flex-col gap-1">
+          <ListItem to={"/"}>{language.nav.home}</ListItem>
+          <ListItem to={"/projects"}>{language.nav.projects}</ListItem>
+          <ListItem to={"/blog"}>{language.nav.blog}</ListItem>
+          <ListItem to={"/contact"}>{language.nav.contact}</ListItem>
+        </ul>
+      </div></div>
     </section>
   );
 };
