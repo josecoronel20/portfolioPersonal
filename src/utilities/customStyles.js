@@ -1,4 +1,4 @@
-export const styleContainerTop = "bg-darkDark pt-24 px-5 pb-2 min-h-screen";
+export const styleContainerTop = "bg-darkDark pt-24 px-5 pb-2 min-h-screen flex justify-center item-center";
   
 export const styleContainer = "bg-darkDark px-5 py-10 min-h-screen w-full";
 

@@ -19,9 +19,9 @@ const Nav = () => {
   //componetiza li
   const Li = ({ to, text }) => {
     return (
-      <li className="hover:scale-105 transition-transform ease-in-out duration-200" onClick={handlerToggle}>
+      <li onClick={handlerToggle}>
         <Link
-          className={`${location !== to && "opacity-40"}`}
+          className={`${location !== to && " opacity-40 "} hover:scale-105 hover:opacity-100 transition-transform ease-in-out duration-200`}
           to={to}
         >
           {text}

@@ -13,8 +13,8 @@ const NavFullScreen = () => {
   //componetiza li
   const Li = ({ to, text }) => {
     return (
-      <li className="hover:scale-105 transition-transform ease-in-out duration-200">
-        <Link className={`${location !== to && "opacity-40"} hover:opacity-100`} to={to}>{text}</Link>
+      <li>
+        <Link className={`${location !== to && "opacity-40"} hover:opacity-100 hover:scale-105 transition-transform ease-in-out duration-200`} to={to}>{text}</Link>
       </li>
     );
   };
