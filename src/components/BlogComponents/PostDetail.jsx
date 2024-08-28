@@ -1,5 +1,5 @@
 import React from "react";
-import { styleCustomContainerTop } from "../../Utilities/customStyles";
+import { styleContainerTop } from "../../Utilities/customStyles";
 import enBlogs from "../../utilities/texts/TextBlogPage/enBlogs.json";
 import esBlogs from "../../utilities/texts/TextBlogPage/esBlogs.json";
 import { useSelector } from "react-redux";
@@ -15,7 +15,7 @@ const PostDetail = () => {
   const post = blog.posts.find((post) => post.id === parseInt(id));
 
   return (
-    <div className={styleCustomContainerTop}>
+    <div className={styleContainerTop}>
       <div className="flex flex-col gap-10">
         <h1>{post.title.toUpperCase()}</h1>
         <div className="flex flex-col gap-5">

@@ -1,12 +1,12 @@
 import React from "react";
 import useLanguage from "../../Hooks/useLanguage";
-import { styleCustomContainer } from "../../Utilities/customStyles";
+import { styleContainer } from "../../Utilities/customStyles";
 
 const AboutMe = () => {
   const { language } = useLanguage();
 
   return (
-    <section className={`${styleCustomContainer} flex flex-col gap-10`}>
+    <section className={`${styleContainer} flex flex-col gap-10`}>
       <h2 className="text-center">{language.home.aboutMe.title}</h2>
       <div className="flex flex-col gap-5 font-light">
         <div>

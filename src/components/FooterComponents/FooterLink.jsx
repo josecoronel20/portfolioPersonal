@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { iconCopy } from "../../utilities/Icons";
-import useQuickTraduction from "../Hooks/useQuickTraduction";
+import useQuickTraduction from "../../Hooks/useQuickTraduction";
 
 const FooterLink = ({ icon, textForCopy, url, text }) => {
   const [copyAlert, setCopyAlert] = useState(false);

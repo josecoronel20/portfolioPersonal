@@ -1,5 +1,5 @@
 import React from "react";
-import { styleCustomContainer } from "../../Utilities/customStyles.js";
+import { styleContainer } from "../../Utilities/customStyles.js";
 import useLanguage from "../../Hooks/useLanguage.js";
 import TechMap from "./TechMap.jsx";
 import { useSelector } from "react-redux";
@@ -14,7 +14,7 @@ const Techs = () => {
 
   //se mapean todas las techs dentro de cada categoria
   return (
-    <section className={styleCustomContainer}>
+    <section className={styleContainer}>
       <h2>{language.home.Techs.title}</h2>
       <div className="font-light flex flex-col gap-5">
         <div>

@@ -1,6 +1,6 @@
 import React from "react";
 import {
-  styleCustomContainerTop,
+  styleContainerTop,
 } from "../../utilities/customStyles";
 import { useSelector } from "react-redux";
 import esProjects from "../../utilities/texts/TextProjectPage/esProjects.json";
@@ -22,7 +22,7 @@ const ProjectsDetail = () => {
   });
 
   return (
-    <main className={styleCustomContainerTop}>
+    <main className={styleContainerTop}>
       <div className="flex flex-col gap-20">
         <div>
           <h2>

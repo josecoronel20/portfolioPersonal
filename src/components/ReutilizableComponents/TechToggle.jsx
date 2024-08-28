@@ -1,6 +1,6 @@
 import React from "react";
 import { useToggle } from "../../Hooks/useToggle";
-import SeeMore from "../SeeMore";
+import SeeMore from "./SeeMore";
 
 const TechToggle = ({ children }) => {
   const { isToggleOpen: isTechOpen, handlerToggle: handlerTechOpen } =

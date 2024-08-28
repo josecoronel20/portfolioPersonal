@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { iconMenu } from "../../utilities/Icons";
 import { useToggle } from "../../Hooks/useToggle";
 import Modal from "../ReutilizableComponents/Modal";
@@ -10,7 +10,7 @@ const Nav = () => {
   const [windowSize, setWindowSize] = useState(window.innerWidth);
 
   //lenguaje
-  const {language} = useLanguage();
+  const { language } = useLanguage();
 
   // Uso de custom hook para manejar el estado toggle
   const { isToggleOpen, handlerToggle, setIsToggleOpen } = useToggle();
@@ -29,6 +29,23 @@ const Nav = () => {
     };
   }, [isToggleOpen, handlerToggle]);
 
+  const location = useLocation().pathname;
+
+  //componetiza li
+
+  const Li = ({ to, text }) => {
+    return (
+      <li onClick={handlerToggle}>
+        <Link
+          className={`${location !== to && "opacity-40"}`}
+          to={to}
+        >
+          {text}
+        </Link>
+      </li>
+    );
+  };
+
   return (
     <Modal toggle={isToggleOpen} setToggle={setIsToggleOpen}>
       <nav>
@@ -41,18 +58,10 @@ const Nav = () => {
             isToggleOpen === false && "hidden"
           } fixed z-20 bg-darkDark top-0 right-0 h-full w-2/3 flex flex-col justify-center gap-5 text-center text-lightLight `}
         >
-          <li onClick={handlerToggle}>
-            <Link to="/">{language.nav.home}</Link>
-          </li>
-          <li onClick={handlerToggle}>
-            <Link to="/projects">{language.nav.projects}</Link>
-          </li>
-          <li onClick={handlerToggle}>
-            <Link to="/blog">{language.nav.blog}</Link>
-          </li>
-          <li onClick={handlerToggle}>
-            <Link to="/contact">{language.nav.contact}</Link>
-          </li>
+          <Li to={"/"} text={language.nav.home} />
+          <Li to={"/projects"} text={language.nav.projects} />
+          <Li to={"/blog"} text={language.nav.blog} />
+          <Li to={"/contact"} text={language.nav.contact} />
         </ul>
       </nav>
     </Modal>

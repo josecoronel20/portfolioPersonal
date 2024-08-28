@@ -3,7 +3,7 @@ import { useSelector } from "react-redux";
 import enBlogs from "../utilities/texts/TextBlogPage/enBlogs.json";
 import esBlogs from "../utilities/texts/TextBlogPage/esBlogs.json";
 import PostCard from "../components/BlogComponents/PostCard";
-import { styleCustomContainerTop } from "../Utilities/customStyles";
+import { styleContainerTop } from "../Utilities/customStyles";
 
 const Blog = () => {
   const language = useSelector((state) => state);
@@ -11,7 +11,7 @@ const Blog = () => {
   const blog = language === "es" ? esBlogs : enBlogs;
 
   return (
-    <main className={styleCustomContainerTop}>
+    <main className={styleContainerTop}>
       <div className="flex flex-col gap-10">
         <h1>{blog.title}</h1>
         <div className="flex flex-col gap-20">

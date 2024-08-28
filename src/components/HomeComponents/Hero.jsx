@@ -2,14 +2,14 @@ import React from "react";
 import useLanguage from "../../Hooks/useLanguage";
 import illustration from "../../../public/img/illustration.png";
 import { Link } from "react-router-dom";
-import { styleButtonPrincipal, styleCustomContainerTop } from "../../utilities/customStyles";
+import { styleButtonPrincipal, styleContainerTop } from "../../utilities/customStyles";
 
 const Hero = () => {
   //custom hook de lengiuaje para importar el json con textos en es o en
   const { language } = useLanguage();
 
   return (
-    <section className={styleCustomContainerTop}>
+    <section className={styleContainerTop}>
       <div className="flex flex-col justify-center w-full h-full items-center text-center pt-5">
         <div className="order-2 md:order-1 flex flex-col gap-4">
           <h1 className="text-3xl">{language.home.hero.title}</h1>

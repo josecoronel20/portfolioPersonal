@@ -1,9 +1,9 @@
 import React from "react";
-import { styleCustomContainerTop } from "../Utilities/customStyles";
+import { styleContainerTop } from "../Utilities/customStyles";
 
 const Contact = () => {
   return (
-    <main className={styleCustomContainerTop}>
+    <main className={styleContainerTop}>
       <div className="flex justify-center">
         <ContactContent />
       </div>

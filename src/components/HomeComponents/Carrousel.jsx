@@ -3,7 +3,7 @@ import esProjects from "../../utilities/texts/TextProjectPage/esProjects.json";
 import enProjects from "../../utilities/texts/TextProjectPage/enProjects.json";
 import { useSelector } from "react-redux";
 import CardProject from "../../components/ReutilizableComponents/CardProject";
-import { styleCustomContainer } from "../../utilities/customStyles";
+import { styleContainer } from "../../utilities/customStyles";
 import { iconArrowLeft, iconArrowRight } from "../../utilities/Icons";
 import useLanguage from "../../Hooks/useLanguage";
 
@@ -42,7 +42,7 @@ const Carrousel = () => {
 
   return (
     <main
-      className={`${styleCustomContainer} flex flex-col gap-5`}
+      className={`${styleContainer} flex flex-col gap-5`}
     >
       <h2>{language.home.carrousel.title}</h2>
       <div className='flex justify-center items-center relative'>
