@@ -1,10 +1,28 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import { Link } from "react-router-dom";
-import Nav from "./Nav";
+import NavMobile from "../HeaderComponents/NavMobile"
 import Translate from "./Translate";
+import NavFullScreen from "./NavFullScreen";
 
 const Header = () => {
   const logo = "<JC>";
+
+    // Estado para obtener el tamaño de la pantalla y renderizar/aplicar estilos dependiendo de este
+  const [windowSize, setWindowSize] = useState(window.innerWidth);
+
+  // Lógica para manejar el tamaño de pantalla
+  const handlerWindowSize = () => {
+    setWindowSize(window.innerWidth);
+  };
+
+  // Efecto para manejar cambios de tamaño de pantalla y clics fuera del nav
+  useEffect(() => {
+    window.addEventListener("resize", handlerWindowSize);
+
+    return () => {
+      window.removeEventListener("resize", handlerWindowSize);
+    };
+  }, []);
 
   return (
     <header className=" bg-gradient-to-b from-darkDark from-80% fixed top-0 left-0 w-full z-20">
@@ -14,9 +32,9 @@ const Header = () => {
             {logo}
           </div>
         </Link>
-        <div className="flex gap-2">
+        <div className="flex gap-2 md:gap-16">
           <div className="order-2 md:order-1">
-            <Nav />
+            {windowSize < 768 ? <NavMobile /> : <NavFullScreen />}
           </div>
           <div className="order-1 md:order-2">
             <Translate />

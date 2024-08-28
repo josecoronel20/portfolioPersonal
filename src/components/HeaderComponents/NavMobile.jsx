@@ -1,13 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { iconMenu } from "../../utilities/Icons";
+import { iconMenu } from "../../Utilities/Icons";
 import { useToggle } from "../../Hooks/useToggle";
 import Modal from "../ReutilizableComponents/Modal";
 import useLanguage from "../../Hooks/useLanguage";
 
 const Nav = () => {
-  // Estado para obtener el tamaño de la pantalla y renderizar/aplicar estilos dependiendo de este
-  const [windowSize, setWindowSize] = useState(window.innerWidth);
 
   //lenguaje
   const { language } = useLanguage();
@@ -15,27 +13,13 @@ const Nav = () => {
   // Uso de custom hook para manejar el estado toggle
   const { isToggleOpen, handlerToggle, setIsToggleOpen } = useToggle();
 
-  // Lógica para manejar el tamaño de pantalla
-  const handlerWindowSize = () => {
-    setWindowSize(window.innerWidth);
-  };
-
-  // Efecto para manejar cambios de tamaño de pantalla y clics fuera del nav
-  useEffect(() => {
-    window.addEventListener("resize", handlerWindowSize);
-
-    return () => {
-      window.removeEventListener("resize", handlerWindowSize);
-    };
-  }, [isToggleOpen, handlerToggle]);
-
+  //extrae el path
   const location = useLocation().pathname;
 
   //componetiza li
-
   const Li = ({ to, text }) => {
     return (
-      <li onClick={handlerToggle}>
+      <li className="hover:scale-105 transition-transform ease-in-out duration-200" onClick={handlerToggle}>
         <Link
           className={`${location !== to && "opacity-40"}`}
           to={to}
@@ -50,7 +34,7 @@ const Nav = () => {
     <Modal toggle={isToggleOpen} setToggle={setIsToggleOpen}>
       <nav>
         <div onClick={handlerToggle} className="relative z-30 cursor-pointer">
-          {windowSize < 768 && iconMenu}
+          {iconMenu}
         </div>
 
         <ul

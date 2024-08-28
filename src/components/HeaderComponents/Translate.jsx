@@ -21,8 +21,8 @@ const Translate = () => {
         <div>{language.toUpperCase()}</div>
       </div>
       <div className={`${isToggleOpen === false && "hidden"}`}>
-        <p className="text-darkLight cursor-pointer" onClick={() => {handlerChangeSpanish();setIsToggleOpen(false);}}>ESPAÑOL</p>
-        <p className="text-darkLight cursor-pointer" onClick={() => {handlerChangeEnglish();setIsToggleOpen(false);}}>ENGLISH</p>
+        <p className="text-lightLight opacity-40 cursor-pointer hover:opacity-100" onClick={() => {handlerChangeSpanish();setIsToggleOpen(false);}}>ESPAÑOL</p>
+        <p className="text-lightLight opacity-40 cursor-pointer hover:opacity-100" onClick={() => {handlerChangeEnglish();setIsToggleOpen(false);}}>ENGLISH</p>
       </div>
     </div>
   );
