@@ -11,9 +11,10 @@ const PostCard = ({ postInfo }) => {
           {postInfo.title.toUpperCase()}
         </h2>
         <p className="font-light text-darkDark">{postInfo.description}</p>
-        <div className={styleButtonCard}>
-          <Link to={`/blog/${postInfo.id}`}>VER POST</Link>
-        </div>
+
+        <Link className={styleButtonCard} to={`/blog/${postInfo.id}`}>
+          VER POST
+        </Link>
       </div>
     </div>
   );

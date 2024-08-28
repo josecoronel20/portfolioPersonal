@@ -16,11 +16,11 @@ const PostDetail = () => {
 
   return (
     <div className={styleCustomContainerTop}>
-      <div className="flex flex-col gap-5">
-        <h1>{post.title}</h1>{" "}
-        <div className="flex">
-          <p className=" float-start">{post.content}</p>
-          <img className="rounded w-2/5" src={post.image} alt="" />
+      <div className="flex flex-col gap-10">
+        <h1>{post.title.toUpperCase()}</h1>
+        <div className="flex flex-col gap-5">
+          <img className="rounded-xl float-left" src={post.image} alt="" />
+          <p className="font-light">{post.content}</p>
         </div>
       </div>
     </div>

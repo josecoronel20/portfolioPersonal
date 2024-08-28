@@ -12,12 +12,13 @@ const Blog = () => {
 
   return (
     <main className={styleCustomContainerTop}>
-      <h1>{blog.title}</h1>
-      <div className="flex flex-col gap-5">
-        {blog.posts.map((post) => {
-          return <PostCard key={
-          post.id}postInfo={post} />;
-        })}
+      <div className="flex flex-col gap-10">
+        <h1>{blog.title}</h1>
+        <div className="flex flex-col gap-20">
+          {blog.posts.map((post) => {
+            return <PostCard key={post.id} postInfo={post} />;
+          })}
+        </div>
       </div>
     </main>
   );
