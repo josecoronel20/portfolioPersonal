@@ -1201,4 +1201,32 @@ body{
   .md\:order-2{
     order: 2;
   }
+
+  .md\:w-full{
+    width: 100%;
+  }
+
+  .md\:justify-between{
+    justify-content: space-between;
+  }
+
+  .md\:justify-around{
+    justify-content: space-around;
+  }
+
+  .md\:gap-5{
+    gap: 1.25rem;
+  }
+
+  .md\:gap-10{
+    gap: 2.5rem;
+  }
+
+  .md\:gap-14{
+    gap: 3.5rem;
+  }
+
+  .md\:gap-16{
+    gap: 4rem;
+  }
 }
