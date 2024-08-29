@@ -1,8 +1,8 @@
 [
   {
     "id": 1,
-    "imagePcUrl": "../../../public/img/projectsImg/project1.png",
-    "imageMobileUrl": "../../../public/img/projectsImg/project1-mobile.png",
+    "imagePcUrl": "../../../../public/img/projectsImg/project1.png",
+    "imageMobileUrl": "../../../../public/img/projectsImg/project1-mobile.png",
     "title": "Portfolio Personal",
     "techs": [
       "html",
@@ -73,8 +73,8 @@
     }
   },{
     "id": 2,
-    "imagePcUrl": "../../../public/img/projectsImg/project2.png",
-    "imageMobileUrl": "../../../public/img/projectsImg/project2-mobile.png",
+    "imagePcUrl": "../../../../public/img/projectsImg/project1.png",
+    "imageMobileUrl": "../../../../public/img/projectsImg/project2-mobile.png",
     "title": "Aplicación de Recetas",
     "techs": [
       "html",
@@ -146,8 +146,8 @@
   },
   {
     "id": 3,
-    "imagePcUrl": "../../../public/img/projectsImg/project3.png",
-    "imageMobileUrl": "../../../public/img/projectsImg/project3-mobile.png",
+    "imagePcUrl": "../../../../public/img/projectsImg/project1.png",
+    "imageMobileUrl": "../../../../public/img/projectsImg/project3-mobile.png",
     "title": "Tienda de E-commerce",
     "techs": [
       "html",
@@ -219,8 +219,8 @@
   },
   {
     "id": 4,
-    "imagePcUrl": "../../../public/img/projectsImg/project4.png",
-    "imageMobileUrl": "../../../public/img/projectsImg/project4-mobile.png",
+    "imagePcUrl": "../../../../public/img/projectsImg/project1.png",
+    "imageMobileUrl": "../../../../public/img/projectsImg/project4-mobile.png",
     "title": "Aplicación de Tareas",
     "techs": [
       "html",

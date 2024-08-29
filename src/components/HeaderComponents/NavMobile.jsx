@@ -1,14 +1,14 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import { iconMenu } from "../../Utilities/Icons";
 import { useToggle } from "../../Hooks/useToggle";
 import Modal from "../ReutilizableComponents/Modal";
 import useLanguage from "../../Hooks/useLanguage";
 
-const Nav = () => {
+const NavMobile = () => {
 
-  //lenguaje
-  const { language } = useLanguage();
+  //texto global
+  const { globalText } = useLanguage({typeText: "globalText"});
 
   // Uso de custom hook para manejar el estado toggle
   const { isToggleOpen, handlerToggle, setIsToggleOpen } = useToggle();
@@ -42,14 +42,14 @@ const Nav = () => {
             isToggleOpen === false && "hidden"
           } fixed z-20 bg-darkDark top-0 right-0 h-full w-2/3 flex flex-col justify-center gap-5 text-center text-lightLight `}
         >
-          <Li to={"/"} text={language.nav.home} />
-          <Li to={"/projects"} text={language.nav.projects} />
-          <Li to={"/blog"} text={language.nav.blog} />
-          <Li to={"/contact"} text={language.nav.contact} />
+          <Li to={"/"} text={globalText.nav.home} />
+          <Li to={"/projects"} text={globalText.nav.projects} />
+          <Li to={"/blog"} text={globalText.nav.blog} />
+          <Li to={"/contact"} text={globalText.nav.contact} />
         </ul>
       </nav>
     </Modal>
   );
 };
 
-export default Nav;
+export default NavMobile;

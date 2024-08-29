@@ -1,16 +1,13 @@
 import React from "react";
-import { useSelector } from "react-redux";
-import esProjects from "../../utilities/texts/TextProjectPage/esProjects.json";
-import enProjects from "../../utilities/texts/TextProjectPage/enProjects.json";
 import CardProject from "../ReutilizableComponents/CardProject";
+import useLanguage from "../../Hooks/useLanguage";
 
 const ProjectsSection = () => {
-  const languageContext = useSelector((state) => state);
-  let projects = languageContext === "es" ? esProjects : enProjects;
+  const {projectText} = useLanguage({typeText: "projectText"})
 
   return (
     <section className="flex flex-col gap-10 py-10">
-      {projects.map((project) => (
+      {projectText.map((project) => (
         <div key={project.id} className="flex justify-center">
           <CardProject
             key={project.id}

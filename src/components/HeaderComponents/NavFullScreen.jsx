@@ -5,7 +5,7 @@ import { useLocation } from "react-router-dom";
 
 const NavFullScreen = () => {
     //accede al lenguaje global
-  const { language } = useLanguage();
+  const { globalText } = useLanguage({typeText:"globalText"});
 
   //extrae el path
   const location = useLocation().pathname;
@@ -22,10 +22,10 @@ const NavFullScreen = () => {
   return (
     <nav>
       <ul className="flex gap-10">
-        <Li to={"/"} text={language.nav.home} />
-        <Li to={"/projects"} text={language.nav.projects} />
-        <Li to={"/blog"} text={language.nav.blog} />
-        <Li to={"/contact"} text={language.nav.contact} />
+        <Li to={"/"} text={globalText.nav.home} />
+        <Li to={"/projects"} text={globalText.nav.projects} />
+        <Li to={"/blog"} text={globalText.nav.blog} />
+        <Li to={"/contact"} text={globalText.nav.contact} />
       </ul>
     </nav>
   );
