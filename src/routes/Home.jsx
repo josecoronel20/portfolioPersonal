@@ -8,8 +8,10 @@ const Home = () => {
   return (
     <>
       <Hero />
-      <Carrousel />
-      <AboutMe />
+      <div className="bg-darkDark flex flex-col md:flex-row md:items-start">
+        <Carrousel />
+        <AboutMe />
+      </div>
       <Techs />
     </>
   );

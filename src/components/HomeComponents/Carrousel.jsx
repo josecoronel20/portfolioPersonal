@@ -53,7 +53,7 @@ const Carrousel = () => {
   };
 
   return (
-    <main className={`${styleContainer} flex flex-col gap-10`}>
+    <main className={`${styleContainer} flex flex-col gap-10  md:justify-between md:w-1/2`}>
       <h2>{globalText.home.carrousel.title}</h2>
 
       <div className="w-full flex justify-center">
@@ -64,9 +64,7 @@ const Carrousel = () => {
 
           <div className="flex flex-col items-center justify-center gap-5">
             <div
-              className={`
-          ${stylePrev} ${styleNext} 
-            transition-transform ease-in-out duration-300 w-full flex justify-center 
+              className={`${stylePrev} ${styleNext} transition-transform ease-in-out duration-300 w-full flex justify-center 
           `}
             >
               <CardProject project={currentCard} />
