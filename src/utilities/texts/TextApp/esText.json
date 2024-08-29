@@ -1,0 +1,82 @@
+{
+  "nav": {
+    "home": "INICIO",
+    "projects": "PROYECTOS",
+    "blog": "BLOG",
+    "contact": "CONTACTAME"
+  },
+  "home": {
+    "hero": {
+      "title": "Soy ",
+      "subtitle": "desarrollador frontend especializado en ",
+      "button": "VER PROYECTOS",
+      "altImg": "ilustracion de @josecoronel20"
+    },
+
+    "carrousel": {
+      "title": "ÚLTIMOS PROYECTOS"
+    },
+    "aboutMe": {
+      "title": "SOBRE MÍ",
+      "text": {
+        "paragraph1": {
+          "text": "Hola, soy José María Coronel y soy desarrollador web y trabajo con React. Tengo 24 años y soy argentino, actualmente viviendo en Portugal."
+        },
+
+        "paragraph2": {
+          "title": "MI CAMINO",
+          "text": "Mi interés por la programación comenzó de manera inesperada un dia que me apareció un video sobre el tema en YouTube. Desde ese momento, mi curiosidad me llevó a explorar más a fondo. Comencé tomando cursos en línea sobre HTML, CSS, JavaScript y React. A partir de ahí, adopté un enfoque autodidacta, complementando mis conocimientos con libros como Fundamentos de la Programación y Eloquent JavaScript. Además, continúo ampliando mis habilidades a través de documentación, videos y práctica constante."
+        },
+
+        "paragraph3": {
+          "title": "MI ENFOQUE Y ASPIRACIONES",
+          "text": "Estoy comprometido con la accesibilidad y la reutilización del código. Trabajo constantemente para mejorar mis habilidades en la implementación de prácticas de diseño inclusivo, así como en la creación de componentes reutilizables y soluciones escalables. Me esfuerzo por seguir las mejores prácticas, escribiendo código limpio y bien documentado, y utilizando herramientas que aseguran la calidad y claridad del trabajo."
+        },
+        "paragraph4": {
+          "title": "CONOCIMIENTOS Y HERRAMIENTAS",
+          "text": "Mi experiencia incluye el desarrollo con React, con un enfoque en la creación de interfaces interactivas y eficientes. Tengo conocimientos básicos en herramientas modernas como Vite y Create React App, así como en testing utilizando Jest y React Testing Library. Estas habilidades me permiten construir aplicaciones robustas y confiables."
+        },
+        "paragraph5": {
+          "title": "PASIÓN POR EL DISEÑO",
+          "text": "Además de la programación, también me apasiona el diseño. He diseñado todos mis proyectos, incluyendo este. Me gusta mantener un estilo limpio y minimalista, tanto en el código como en el diseño, asegurando que la información visual esté controlada en cuanto a cantidad y efectividad."
+        }
+      }
+    },
+    "Techs": {
+      "title": "TECNOLOGIAS Y HABILIDADES",
+      "titleTechs": "Tecnologías",
+      "titleFrameworks": "Frameworks y librerías",
+      "titleTools": "Herramientas",
+      "titleConcepts": "Conceptos y metodologías"
+    }
+  },
+
+  "footer": {
+    "contactMe": {
+      "sectionTitle": "Contact Information",
+      "email": {
+        "title": "Email",
+        "value": "josecoronel20@outlook.com"
+      },
+      "phone": {
+        "title": "Número de teléfono",
+        "value": "+351 912 981 851"
+      }
+    },
+    "followMe": {
+      "sectionTitle": "Follow Me",
+      "github": {
+        "title": "GitHub",
+        "url": "https://github.com/josecoronel20"
+      },
+      "linkedin": {
+        "title": "LinkedIn",
+        "url": "https://www.linkedin.com/in/jose-maria-coronel/"
+      }
+    }
+  },
+
+  "projects": {
+    "title": "PROYECTOS"
+  }
+}

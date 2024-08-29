@@ -6,7 +6,7 @@ import useLanguage from "../../Hooks/useLanguage";
 
 const Footer = () => {
   const actualPath = useLocation().pathname;
-  const { language } = useLanguage();
+  const { globalText } = useLanguage({typeText:"globalText"});
 
   const ListItem = ({ to, children }) => (
     <li className="text-sm opacity-50 hover:opacity-100 hover:scale-105 ease-in-out transition-transform duration-200">
@@ -22,10 +22,10 @@ const Footer = () => {
       <div className="flex flex-col gap-5">
         <h3>Navegación rápida</h3>
         <ul className="flex flex-col gap-1">
-          <ListItem to={"/"}>{language.nav.home}</ListItem>
-          <ListItem to={"/projects"}>{language.nav.projects}</ListItem>
-          <ListItem to={"/blog"}>{language.nav.blog}</ListItem>
-          <ListItem to={"/contact"}>{language.nav.contact}</ListItem>
+          <ListItem to={"/"}>{globalText.nav.home}</ListItem>
+          <ListItem to={"/projects"}>{globalText.nav.projects}</ListItem>
+          <ListItem to={"/blog"}>{globalText.nav.blog}</ListItem>
+          <ListItem to={"/contact"}>{globalText.nav.contact}</ListItem>
         </ul>
       </div></div>
     </section>

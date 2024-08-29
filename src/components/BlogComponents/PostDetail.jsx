@@ -1,18 +1,12 @@
 import React from "react";
 import { styleContainerTop } from "../../Utilities/customStyles";
-import enBlogs from "../../utilities/texts/TextBlogPage/enBlogs.json";
-import esBlogs from "../../utilities/texts/TextBlogPage/esBlogs.json";
-import { useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
+import useLanguage from "../../Hooks/useLanguage";
 
 const PostDetail = () => {
   const { id } = useParams();
-
-  const language = useSelector((state) => state);
-
-  const blog = language === "es" ? esBlogs : enBlogs;
-
-  const post = blog.posts.find((post) => post.id === parseInt(id));
+  const { blogtext } = useLanguage({ typeText: "blogText" });
+  const post = blogtext.posts.find((post) => post.id === parseInt(id));
 
   return (
     <div className={styleContainerTop}>

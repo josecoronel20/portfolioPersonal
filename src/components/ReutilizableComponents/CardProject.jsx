@@ -5,14 +5,7 @@ import ButtonsCardProject from "./ButtonsCardProject";
 import useQuickTraduction from "../../Hooks/useQuickTraduction";
 
 const CardProject = (
- { id,
-  title,
-  imageUrl,
-  isFinish,
-  techs,
-  description,
-  siteUrl,
-  repoUrl}
+ { project}
 ) => {
   const textFinish = useQuickTraduction({
     textEs: "Finalizado",
@@ -24,21 +17,21 @@ const CardProject = (
   });
 
   return (
-    <div key={id} className="rounded-md overflow-hidden bg-lightLight max-w-72 ">
+    <div key={project.id} className="rounded-md overflow-hidden bg-lightLight w-full max-w-72 ">
       <div>
-        <img src={imageUrl} alt={`img de portada de ${title}`} />
+        <img src={project.imagePcUrl} alt={`img de portada de ${project.title}`} />
       </div>
       <div className="p-4 gap-4 flex flex-col">
         <div>
-          <h3 className="text-lg font-bold text-darkDark">{`PROYECTO: ${title.toUpperCase()}`}</h3>
+          <h3 className="text-lg font-bold text-darkDark">{`PROYECTO: ${project.title.toUpperCase()}`}</h3>
 
           <p className="text-darkLight">
-            {isFinish === true ? textFinish : textInProces}
+            {project.isFinish === true ? textFinish : textInProces}
           </p>
         </div>
 
         <TechToggle>
-          {techs.map((tech) => (
+          {project.techs.map((tech) => (
             <div
               key={tech}
               className="bg-[#BCC0B9] font-light rounded text-darkLight px-3 inline-block"
@@ -48,12 +41,12 @@ const CardProject = (
           ))}
         </TechToggle>
 
-        <DescriptionToggle description={description} />
+        <DescriptionToggle description={project.description} />
 
         <ButtonsCardProject
-          urlSite={siteUrl}
-          urlRepo={repoUrl}
-          id={id}
+          urlSite={project.siteUrl}
+          urlRepo={project.repoUrl}
+          id={project.id}
         />
       </div>
     </div>

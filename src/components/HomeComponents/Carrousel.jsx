@@ -1,85 +1,84 @@
-import React, { useRef, useState, useEffect } from "react";
-import esProjects from "../../utilities/texts/TextProjectPage/esProjects.json";
-import enProjects from "../../utilities/texts/TextProjectPage/enProjects.json";
-import { useSelector } from "react-redux";
-import CardProject from "../../components/ReutilizableComponents/CardProject";
-import { styleContainer } from "../../utilities/customStyles";
-import { iconArrowLeft, iconArrowRight } from "../../utilities/Icons";
+import React, { useState } from "react";
 import useLanguage from "../../Hooks/useLanguage";
+import CardProject from "../../components/ReutilizableComponents/CardProject";
+import { styleContainer } from "../../Utilities/customStyles";
+import { iconArrowLeft, iconArrowRight } from "../../Utilities/Icons";
+import CarouselDots from "./CarouselDots";
 
 const Carrousel = () => {
-  const languageContext = useSelector((state) => state);
-  let projects = languageContext === "es" ? esProjects : enProjects;
+  // Se importan los textos con sus traducciones
+  const { projectText } = useLanguage({ typeText: "projectText" });
+  const { globalText } = useLanguage({ typeText: "globalText" });
 
-  const {language} = useLanguage();
+  //estado para la card que se quiere visualizar
+  const [indexCurrentCard, setIndexCurrentCard] = useState(0);
+  const currentCard = projectText[indexCurrentCard];
 
-  const [cardFocus, setCardFocus] = useState(2);
-  const cardRef = useRef(null);
+  //estilo para la animacion
+  const [styleNext, setStyleNext] = useState("");
+  const [stylePrev, setStylePrev] = useState("");
 
-
-  //todo:arreglar scroll
-  const handlerScrollIntoView = () => {
-    if (cardRef[cardFocus]) {
-      cardRef[cardFocus].scrollIntoView({
-        behavior: "smooth",
-        block: "center",
-        inline: "center",
-      });
-    }
-  };
-
-  useEffect(() => {
-    handlerScrollIntoView();
-  }, [cardFocus]);
-
+  //logica y animacion para mover carousel hacia atras
   const handlerPrev = () => {
-    setCardFocus((prev) => (prev > 1 ? prev - 1 : projects.length));
+    setStylePrev("-translate-x-full");
+
+    setTimeout(() => {
+      setStylePrev("opacity-0 translate-x-full");
+
+      setIndexCurrentCard((prev) =>
+        prev > 0 ? prev - 1 : projectText.length - 1
+      );
+
+      setTimeout(() => {
+        setStylePrev("");
+      }, "200");
+    }, "200");
   };
 
+  //logica y animacion para mover carousel hacia adelante
   const handlerNext = () => {
-    setCardFocus((prev) => (prev <= projects.length - 1 ? prev + 1 : 1));
+    setStyleNext("translate-x-full");
+
+    setTimeout(() => {
+      setStyleNext("opacity-0 -translate-x-full");
+
+      setIndexCurrentCard((prev) =>
+        prev ===  projectText.length - 1 ? 0 : prev + 1
+      );
+
+      setTimeout(() => {
+        setStyleNext("");
+      }, "200");
+    }, "200");
   };
 
   return (
-    <main
-      className={`${styleContainer} flex flex-col gap-5`}
-    >
-      <h2>{language.home.carrousel.title}</h2>
-      <div className='flex justify-center items-center relative'>
-      <div
-        onClick={handlerPrev}
-        className="absolute left-0 h-full content-center cursor-pointer p-5 bg-gradient-to-r from-darkDark from-50%"
-      >
-        {iconArrowLeft}
-      </div>
-      <div className="flex overflow-scroll no-scrollbar">
-        {projects.map((project) => (
-          <div
-            key={project.id}
-            ref={ cardRef[project.id]}
-            className={`${cardFocus !== project.id ? "scale-75" : ""}`}
-          >
-            <CardProject
-              key={project.id}
-              id={project.id}
-              title={project.title}
-              imageUrl={project.imageUrl}
-              isFinish={project.isFinish}
-              techs={project.techs}
-              description={project.description}
-              siteUrl={project.siteUrl}
-              detailUrl={project.detailUrl}
-              repoUrl={project.repoUrl}
-            />
+    <main className={`${styleContainer} flex flex-col gap-10`}>
+      <h2>{globalText.home.carrousel.title}</h2>
+
+      <div className="w-full flex justify-center">
+        <div className="flex justify-between items-center overflow-hidden w-full max-w-md">
+          <div onClick={handlerPrev} className=" cursor-pointer">
+            {iconArrowLeft}
           </div>
-        ))}
-      </div>
-      <div
-        onClick={handlerNext}
-        className="absolute z-10 right-0 h-full content-center cursor-pointer p-5 bg-gradient-to-l from-darkDark from-50%"
-      >
-        {iconArrowRight}
-      </div>
+
+          <div className="flex flex-col items-center justify-center gap-5">
+            <div
+              className={`
+          ${stylePrev} ${styleNext} 
+            transition-transform ease-in-out duration-300 w-full flex justify-center 
+          `}
+            >
+              <CardProject project={currentCard} />
+            </div>
+
+            <CarouselDots numberDots={projectText} currentDot={indexCurrentCard}/>
+          </div>
+
+          <div onClick={handlerNext} className=" cursor-pointer">
+            {iconArrowRight}
+          </div>
+        </div>
       </div>
     </main>
   );

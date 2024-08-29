@@ -9,38 +9,38 @@ import {
 } from "../../Utilities/Icons";
 
 const ContactContent = () => {
-  const { language } = useLanguage();
+  const { globalText } = useLanguage({typeText:"globalText"});
 
   return (
     <div className="flex flex-col gap-5">
       <div className="flex flex-col gap-1">
-        <h3>{language.footer.contactMe.sectionTitle}</h3>
+        <h3>{globalText.footer.contactMe.sectionTitle}</h3>
         <FooterLink
           icon={iconMail}
-          text={language.footer.contactMe.email.title}
-          textForCopy={language.footer.contactMe.email.value}
+          text={globalText.footer.contactMe.email.title}
+          textForCopy={globalText.footer.contactMe.email.value}
           url={"mailto:josecoronel20@outlook.com"}
         />
         <FooterLink
           icon={iconWpp}
-          text={language.footer.contactMe.phone.title}
-          textForCopy={language.footer.contactMe.phone.value}
+          text={globalText.footer.contactMe.phone.title}
+          textForCopy={globalText.footer.contactMe.phone.value}
           url={"https://wa.me/351912981851"}
         />
       </div>
       <div className="flex flex-col gap-1">
-        <h3>{language.footer.followMe.sectionTitle}</h3>
+        <h3>{globalText.footer.followMe.sectionTitle}</h3>
         <FooterLink
           icon={iconGithub}
-          text={language.footer.followMe.github.title}
-          textForCopy={language.footer.followMe.github.value}
+          text={globalText.footer.followMe.github.title}
+          textForCopy={globalText.footer.followMe.github.value}
           url={"https://github.com/josecoronel20"}
         />
 
         <FooterLink
           icon={iconLinkedin}
-          text={language.footer.followMe.linkedin.title}
-          textForCopy={language.footer.followMe.linkedin.value}
+          text={globalText.footer.followMe.linkedin.title}
+          textForCopy={globalText.footer.followMe.linkedin.value}
           url={"https://www.linkedin.com/in/jose-maria-coronel/"}
         />
       </div>
