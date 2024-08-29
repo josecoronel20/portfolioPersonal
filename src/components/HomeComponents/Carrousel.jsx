@@ -58,7 +58,7 @@ const Carrousel = () => {
 
       <div className="w-full flex justify-center">
         <div className="flex justify-between items-center overflow-hidden w-full max-w-md">
-          <div onClick={handlerPrev} className=" cursor-pointer">
+          <div onClick={handlerPrev} className="cursor-pointer hover:scale-110 transition-transform ease-in-out duration-300">
             {iconArrowLeft}
           </div>
 
@@ -73,7 +73,7 @@ const Carrousel = () => {
             <CarouselDots numberDots={projectText} currentDot={indexCurrentCard}/>
           </div>
 
-          <div onClick={handlerNext} className=" cursor-pointer">
+          <div onClick={handlerNext} className="cursor-pointer hover:scale-110 transition-transform ease-in-out duration-300">
             {iconArrowRight}
           </div>
         </div>
