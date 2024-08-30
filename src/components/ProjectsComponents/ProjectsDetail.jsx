@@ -1,10 +1,8 @@
 import React from "react";
-import {
-  styleContainerTop,
-} from "../../utilities/customStyles";
+import { styleContainerTop } from "../../Utilities/customStyles";
 import { useSelector } from "react-redux";
-import esProjects from "../../utilities/texts/TextProjectPage/esProjects.json";
-import enProjects from "../../utilities/texts/TextProjectPage/enProjects.json";
+import esProjects from "../../Utilities/texts/TextProjectPage/esProjects.json";
+import enProjects from "../../Utilities/texts/TextProjectPage/enProjects.json";
 import { useParams } from "react-router-dom";
 import ProjectMockup from "../ProjectsComponents/ProjectMockup";
 import useQuickTraduction from "../../Hooks/useQuickTraduction";
@@ -38,17 +36,21 @@ const ProjectsDetail = () => {
           </p>
         </div>
 
-        <ProjectMockup
-          imagePcUrl={projectFind.imagePcUrl}
-          imageMobileUrl={projectFind.imageMobileUrl}
-          siteUrl={projectFind.repoUrl}
-          repoUrl={projectFind.repoUrl}
-        />
+        <div className="flex flex-col justify-center sm:flex-row">
+          <div className="order-1 sm:order-2 w-full min-w-1/2">
+            <ProjectMockup
+              imagePcUrl={projectFind.imagePcUrl}
+              imageMobileUrl={projectFind.imageMobileUrl}
+              siteUrl={projectFind.repoUrl}
+              repoUrl={projectFind.repoUrl}
+            />
+          </div>
 
-        <section className="flex flex-col">
-          <h2 className="text-green">{textDescriptionTitle}</h2>
-          <p className="font-light">{projectFind.description}</p>
-        </section>
+          <section className="flex flex-col order-2 sm:order-1 w-1/2">
+            <h2 className="text-green">{textDescriptionTitle}</h2>
+            <p className="font-light">{projectFind.description}</p>
+          </section>
+        </div>
 
         <ProjectsDetailPlanning project={projectFind} />
 
@@ -81,20 +83,21 @@ const ProjectsDetail = () => {
         <section>
           <h2>TECNOLOGIAS PRINCIPALES</h2>
           <div className="flex flex-wrap gap-3">
-          {projectFind.techs.map((tech) => {
-           return <div
-              key={tech}
-              className="bg-[#BCC0B9] font-light rounded text-darkLight px-3 inline-block"
-            >
-              {tech}
-            </div>;
-          })}</div>
+            {projectFind.techs.map((tech) => {
+              return (
+                <div
+                  key={tech}
+                  className="bg-[#BCC0B9] font-light rounded text-darkLight px-3 inline-block"
+                >
+                  {tech}
+                </div>
+              );
+            })}
+          </div>
         </section>
 
         <section className="flex flex-col gap-1">
-          <h3 className="text-green">
-            {projectFind.details.issues.title}
-          </h3>
+          <h3 className="text-green">{projectFind.details.issues.title}</h3>
           <div className="flex flex-col gap-5">
             <div>
               <h4>{projectFind.details.issues.issue1.title}</h4>

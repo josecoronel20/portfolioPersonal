@@ -7,8 +7,9 @@ import esTechs from "../Utilities/texts/TextTechsPage/esTechs";
 import enTechs from "../Utilities/texts/TextTechsPage/enTechs";
 import esBlog from "../Utilities/texts/TextBlogPage/esBlog.json";
 import enBlog from "../Utilities/texts/TextBlogPage/enBlog.json";
+import { string } from "prop-types";
 
-const useLanguage = ({ typeText = ""}) => {
+const useLanguage = ({ typeText = string}) => {
   const languageContext = useSelector((state) => state);
 
   switch (typeText) {

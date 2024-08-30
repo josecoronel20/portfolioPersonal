@@ -6,19 +6,11 @@ const ProjectsSection = () => {
   const {projectText} = useLanguage({typeText: "projectText"})
 
   return (
-    <section className="flex flex-col gap-10 py-10">
+    <section className="flex flex-col gap-20 w-full py-10 md:grid md:grid-cols-2 xl:grid-cols-3">
       {projectText.map((project) => (
         <div key={project.id} className="flex justify-center">
           <CardProject
-            key={project.id}
-            id={project.id}
-            title={project.title}
-            imageUrl={project.imageUrl}
-            isFinish={project.isFinish}
-            techs={project.techs}
-            description={project.description}
-            siteUrl={project.siteUrl}
-            repoUrl={project.repoUrl}
+            project={project}
           />
         </div>
       ))}

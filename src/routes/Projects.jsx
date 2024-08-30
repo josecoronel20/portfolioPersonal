@@ -4,12 +4,12 @@ import useLanguage from "../Hooks/useLanguage";
 import ProjectsSection from "../components/ProjectsComponents/ProjectsSection";
 
 const Projects = () => {
-  const { language } = useLanguage();
+  const { globalText } = useLanguage({typeText: "globalText"});
 
   return (
     <main className={styleContainerTop}>
       <div>
-        <h1>{language.projects.title}</h1>
+        <h1>{globalText.projects.title}</h1>
         <ProjectsSection />
       </div>
     </main>

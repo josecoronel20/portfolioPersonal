@@ -14,8 +14,8 @@ const ProjectMockup = ({ imagePcUrl, imageMobileUrl, siteUrl, repoUrl }) => {
   });
 
   return (
-    <section>
-      <div className="flex flex-col gap-5">
+    <section className="w-fit">
+      <div className="flex flex-col gap-5 min-w-fit">
         <div className="flex max-w-72 gap-5 justify-end">
           <div className="flex flex-col items-center justify-end  w-4/6">
           
@@ -36,7 +36,7 @@ const ProjectMockup = ({ imagePcUrl, imageMobileUrl, siteUrl, repoUrl }) => {
           </div>
         </div>
 
-        <div className="flex gap-1">
+        <div className="flex gap-1 w-full">
           <div className={styleButtonLight}>
             <Link to={siteUrl}>{textVisite}</Link>
           </div>
