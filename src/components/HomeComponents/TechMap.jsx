@@ -1,49 +1,63 @@
-import React from "react";
+import React, { useState } from "react";
 import Modal from "../../components/ReutilizableComponents/Modal";
-import {useToggle} from "../../Hooks/useToggle";
+import { useToggle } from "../../Hooks/useToggle";
 import TechCard from "./TechCard";
 
 const TechMap = ({ category }) => {
   return (
-    <div className="flex flex-wrap justify-around items-start">
+    <div className="grid grid-cols-2 justify-center items-center ">
       {/* creacion de estado individual para cada elemento al crear el estado dentro de el mapeo */}
       {category.map((item) => {
-        const [iconHover, setIconHover] = React.useState("iconWhite");
-
+        //toggle para abrir o cerrar el modal
         const { isToggleOpen, handlerToggle, setIsToggleOpen } = useToggle();
 
+        //estados para manejar el hover
+        const [styleHoverShow, setstyleHoverShow] = useState("block");
+        const [styleHoverHidden, setstyleHoverHidden] = useState("hidden");
+
         const handlerIconEnter = () => {
-          setIconHover("iconColor");
+          setstyleHoverHidden("block");
+          setstyleHoverShow("hidden");
         };
         const handlerIconLeave = () => {
-          setIconHover("iconWhite");
+          setstyleHoverHidden("hidden");
+          setstyleHoverShow("block");
         };
+
+        //contenido de item con iconos
+        const itemContent1 = (
+          <>
+            <div className={`${styleHoverShow}`}>{item.iconWhite}</div>
+            <div className={`${styleHoverHidden}`}>{item.iconColor}</div>
+
+            <h4
+              className={` ${
+                styleHoverHidden === "hidden" ? "opacity-0" : ""
+              } `}
+            >
+              {item.title}
+            </h4>
+          </>
+        );
+
+        //contenido de item sin iconos
+        const itemContent2 = <h4>{`-${item.title}`}</h4>;
 
         return (
           <div key={item.title}>
             <Modal toggle={isToggleOpen} setToggle={setIsToggleOpen}>
-
               {/*si toggle esta abierto se renderiza la card*/}
 
-              {isToggleOpen === true && <TechCard infoTech={item} handlerToggle={handlerToggle} />}
+              {isToggleOpen === true && (
+                <TechCard infoTech={item} handlerToggle={handlerToggle} />
+              )}
               <div
                 onClick={handlerToggle}
                 onMouseEnter={handlerIconEnter}
                 onMouseLeave={handlerIconLeave}
-                className="flex flex-col justify-center items-center cursor-pointer hover:scale-105 transition-transform duration-300 ease-in-out "
+                className={`flex flex-col justify-center cursor-pointer hover:scale-105 transition-transform duration-300 ease-in-out p-5 ${item.iconColor ? "items-center" : "items-start" }`}
               >
-                <div>{item[iconHover]}</div>
-                <h4
-                  className={`${
-                    category !== "conceptsMethodologies"
-                      ? iconHover === "iconColor"
-                        ? "opacity-100"
-                        : "opacity-0"
-                      : null
-                  }`}
-                >
-                  {item.title}
-                </h4>
+                {item.iconColor ? itemContent1 : itemContent2}
               </div>
             </Modal>
           </div>

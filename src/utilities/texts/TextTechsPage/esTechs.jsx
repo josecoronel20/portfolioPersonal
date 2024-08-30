@@ -236,30 +236,7 @@ const techTextEs = {
       mainTopics: ["Peticiones HTTP", "Promesas", "Manejo de errores"],
       mainProjects: ["blog de tecnología", "sitio de e-commerce"],
     },
-    {
-      title: "APIs RESTful",
-      color: "#FFC107",
 
-      level: "Intermedio",
-      mainTopics: [
-        "Principios de REST",
-        "CRUD",
-        "Autenticación y autorización",
-      ],
-      mainProjects: ["aplicación de tareas", "sitio de e-commerce"],
-    },
-    {
-      title: "Cross-Browser Compatibility",
-      color: "#607D8B",
-
-      level: "Básico",
-      mainTopics: [
-        "Pruebas en diferentes navegadores",
-        "Polyfills",
-        "Herramientas de desarrollo",
-      ],
-      mainProjects: [],
-    },
     {
       title: "SEO Básico",
       color: "#2196F3",
@@ -272,26 +249,7 @@ const techTextEs = {
       ],
       mainProjects: ["portfolio personal", "blog de tecnología"],
     },
-    {
-      title: "Web Accessibility (a11y)",
-      color: "#9C27B0",
 
-      level: "Básico",
-      mainTopics: [
-        "Teclado accesible",
-        "Etiquetas aria",
-        "Contraste de colores",
-      ],
-      mainProjects: [],
-    },
-    {
-      title: "Testing",
-      color: "#FFEB3B",
-
-      level: "Básico",
-      mainTopics: ["Unit tests", "Jest", "React Testing Library"],
-      mainProjects: [],
-    },
     {
       title: "Agile/Scrum",
       color: "#795548",
@@ -307,14 +265,6 @@ const techTextEs = {
       level: "Intermedio",
       mainTopics: ["Branches", "Pull requests", "Merge conflicts"],
       mainProjects: ["portfolio personal", "aplicación de tareas"],
-    },
-    {
-      title: "Continuous Integration/Continuous Deployment (CI/CD)",
-      color: "#00BCD4",
-
-      level: "Básico",
-      mainTopics: ["Pipelines", "Automated testing", "Deployment"],
-      mainProjects: [],
     },
   ],
 };

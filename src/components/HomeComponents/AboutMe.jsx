@@ -3,8 +3,10 @@ import useLanguage from "../../Hooks/useLanguage";
 import { styleContainer } from "../../Utilities/customStyles";
 
 const AboutMe = () => {
+  //variable con texto dependiendo del lenguaje
   const { globalText } = useLanguage({ typeText: "globalText" });
 
+  //componetizacion de parrafos
   const Paragraph = ({ title, text }) => {
     return (
       <div>
