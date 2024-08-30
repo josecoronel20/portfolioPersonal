@@ -791,10 +791,6 @@ video {
   align-items: center;
 }
 
-.justify-start{
-  justify-content: flex-start;
-}
-
 .justify-end{
   justify-content: flex-end;
 }
@@ -805,6 +801,10 @@ video {
 
 .justify-between{
   justify-content: space-between;
+}
+
+.justify-around{
+  justify-content: space-around;
 }
 
 .justify-evenly{
@@ -1033,10 +1033,6 @@ video {
 
 .text-center{
   text-align: center;
-}
-
-.text-start{
-  text-align: start;
 }
 
 .align-middle{

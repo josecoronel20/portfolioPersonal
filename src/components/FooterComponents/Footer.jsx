@@ -16,7 +16,7 @@ const Footer = () => {
 
   return (
     <section className="bg-darkFooter px-2 py-10 flex justify-center">
-      <div className="flex flex-col gap-10">
+      <div className="flex flex-wrap gap-10 w-full justify-around">
       {actualPath.includes("contact") === false && <ContactContent />}
 
       <div className="flex flex-col gap-5">
