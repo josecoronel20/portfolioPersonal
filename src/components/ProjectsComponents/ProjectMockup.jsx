@@ -14,22 +14,22 @@ const ProjectMockup = ({ imagePcUrl, imageMobileUrl, siteUrl, repoUrl }) => {
   });
 
   return (
-    <section className="w-fit">
+    <section className="w-fit ">
       <div className="flex flex-col gap-5 min-w-fit">
-        <div className="flex max-w-72 gap-5 justify-end">
+        <div className="flex  gap-5 justify-end max-w-lg">
           <div className="flex flex-col items-center justify-end  w-4/6">
           
             <img
-              className="border-x-[6px] border-t-[8px] rounded-t-md w-10/12 border-lightLight"
+              className="border-x-[6px] border-t-[8px] md:border-x-[10px] md:border-t-[14px] rounded-t-md w-10/12 border-lightLight"
               src={imagePcUrl}
               alt=""
             />
-            <div className="w-full h-[10px] rounded-sm bg-lightLight" />
+            <div className="w-full h-[12px] rounded-sm bg-lightLight" />
           </div>
           <div className="items-center w-2/6 relative">
           <div className="absolute p-[3px] bg-darkDark rounded-full left-1 top-[1px]" />
             <img
-              className="border-x-4 border-y-8 rounded-lg h-full border-lightLight"
+              className="border-x-4 border-y-8 md:border-x-[8px] md:border-y-[12px] rounded-lg h-full border-lightLight"
               src={imageMobileUrl}
               alt=""
             />

@@ -21,7 +21,7 @@ const CardProject = (
       <div>
         <img src={project.imagePcUrl} alt={`img de portada de ${project.title}`} />
       </div>
-      <div className="p-4 gap-4 flex flex-col">
+      <div className="p-4 gap-4 flex flex-col justify-between">
         <div>
           <h3 className="text-lg font-bold text-darkDark">{`PROYECTO: ${project.title.toUpperCase()}`}</h3>
 

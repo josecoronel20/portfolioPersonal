@@ -21,40 +21,37 @@
     "detailUrl": "https://short.url/detalle",
     "isFinished": false,
     "details": {
-      "planningProcess": {
-        "title": "PROCESO DE PLANIFICACIÓN",
-        "objetive": "Mi objetivo fue 1desarrollar un sitio web que refleje mi identidad como diseñador y desarrollador, destacando mis habilidades y trabajos.",
-        "informationArchitecture": {
+      "planningProcess": [
+        {
           "title": "Arquitectura de la información",
           "description": "Empecé con un archivo TXT para esbozar las secciones clave: 'Inicio', 'Sobre Mí', 'Proyectos', 'Blog', y 'Contacto'.",
           "imageUrl": "../../../public/img/projectsImg/project1.png"
         },
-        "visualDesign": {
+        {
           "title": "Diseño visual",
           "description": "Creé el diseño visual en Figma, optando por un estilo minimalista con una paleta de colores neutros y detalles en azul claro.",
           "imageUrl": "../../../public/img/projectsImg/project1.png"
         },
-        "functionalityPlanning": {
+        {
           "title": "Planificación de funcionalidades",
           "description": "Desarrollé un diagrama que conectaba los componentes clave, como la galería interactiva de proyectos y el blog con sistema de comentarios.",
           "imageUrl": "../../../public/img/projectsImg/project1.png"
         }
-      },
-      "mainFeatures": {
-        "title": "IMPLEMENTACIONES PRINCIPALES",
-        "feature1": {
-          "title": "Diseño responsivo",
-          "description": "Diseño responsivo y moderno con interacciones suaves."
+      ],
+      "mainFeatures": [
+        {
+          "title": "Búsqueda avanzada",
+          "description": "Permite a los usuarios buscar recetas por ingredientes, tiempo de preparación y categoría."
         },
-        "feature2": {
-          "title": "Seguridad avanzada",
-          "description": "Implementación de medidas de seguridad avanzadas para proteger los datos de los usuarios."
+        {
+          "title": "Guardado de recetas",
+          "description": "Los usuarios pueden guardar sus recetas favoritas en su perfil para acceso rápido."
         },
-        "feature3": {
-          "title": "Alto rendimiento",
-          "description": "Optimización de la carga y procesamiento de datos para una experiencia fluida y rápida."
+        {
+          "title": "Interfaz amigable",
+          "description": "Interfaz de usuario simple y clara, diseñada para ser intuitiva y fácil de navegar."
         }
-      },
+      ],
       "issues": {
         "title": "PROBLEMAS ENFRENTADOS",
         "issue1": {
@@ -71,7 +68,8 @@
         }
       }
     }
-  },{
+  },
+  {
     "id": 2,
     "imagePcUrl": "../../../../public/img/projectsImg/project1.png",
     "imageMobileUrl": "../../../../public/img/projectsImg/project2-mobile.png",
@@ -93,40 +91,39 @@
     "detailUrl": "https://short.url/detalle2",
     "isFinished": true,
     "details": {
-      "planningProcess": {
-        "title": "PROCESO DE PLANIFICACIÓN",
-        "objetive": "Crear una plataforma accesible para que los usuarios descubran nuevas recetas y organicen sus favoritas.",
-        "informationArchitecture": {
+      "planningProcess": [
+        {
           "title": "Arquitectura de la información",
-          "description": "Organización de secciones como 'Recetas', 'Mis Recetas', 'Favoritas' y 'Perfil'.",
-          "imageUrl": "../../../public/img/projectsImg/project2.png"
+          "description": "Empecé con un archivo TXT para esbozar las secciones clave: 'Inicio', 'Sobre Mí', 'Proyectos', 'Blog', y 'Contacto'.",
+          "imageUrl": "../../../public/img/projectsImg/project1.png"
         },
-        "visualDesign": {
+        {
           "title": "Diseño visual",
-          "description": "Diseño intuitivo y atractivo, con un enfoque en la usabilidad y la presentación clara de las recetas.",
-          "imageUrl": "../../../public/img/projectsImg/project2.png"
+          "description": "Creé el diseño visual en Figma, optando por un estilo minimalista con una paleta de colores neutros y detalles en azul claro.",
+          "imageUrl": "../../../public/img/projectsImg/project1.png"
         },
-        "functionalityPlanning": {
+        {
           "title": "Planificación de funcionalidades",
-          "description": "Implementación de un sistema de búsqueda avanzada y la capacidad de guardar recetas personalizadas.",
-          "imageUrl": "../../../public/img/projectsImg/project2.png"
+          "description": "Desarrollé un diagrama que conectaba los componentes clave, como la galería interactiva de proyectos y el blog con sistema de comentarios.",
+          "imageUrl": "../../../public/img/projectsImg/project1.png"
         }
-      },
-      "mainFeatures": {
-        "title": "IMPLEMENTACIONES PRINCIPALES",
-        "feature1": {
+      ],
+
+      "mainFeatures": [
+        {
           "title": "Búsqueda avanzada",
           "description": "Permite a los usuarios buscar recetas por ingredientes, tiempo de preparación y categoría."
         },
-        "feature2": {
+        {
           "title": "Guardado de recetas",
           "description": "Los usuarios pueden guardar sus recetas favoritas en su perfil para acceso rápido."
         },
-        "feature3": {
+        {
           "title": "Interfaz amigable",
           "description": "Interfaz de usuario simple y clara, diseñada para ser intuitiva y fácil de navegar."
         }
-      },
+      ],
+
       "issues": {
         "title": "PROBLEMAS ENFRENTADOS",
         "issue1": {
@@ -166,40 +163,39 @@
     "detailUrl": "https://short.url/detalle3",
     "isFinished": true,
     "details": {
-      "planningProcess": {
-        "title": "PROCESO DE PLANIFICACIÓN",
-        "objetive": "Desarrollar una plataforma de e-commerce que sea escalable y fácil de usar, con todas las funcionalidades necesarias para una tienda en línea.",
-        "informationArchitecture": {
+      "planningProcess": [
+        {
           "title": "Arquitectura de la información",
-          "description": "Secciones principales como 'Productos', 'Carrito', 'Checkout' y 'Perfil'.",
-          "imageUrl": "../../../public/img/projectsImg/project3.png"
+          "description": "Empecé con un archivo TXT para esbozar las secciones clave: 'Inicio', 'Sobre Mí', 'Proyectos', 'Blog', y 'Contacto'.",
+          "imageUrl": "../../../public/img/projectsImg/project1.png"
         },
-        "visualDesign": {
+        {
           "title": "Diseño visual",
-          "description": "El diseño se centró en la simplicidad y la claridad, con un enfoque en la facilidad de navegación.",
-          "imageUrl": "../../../public/img/projectsImg/project3.png"
+          "description": "Creé el diseño visual en Figma, optando por un estilo minimalista con una paleta de colores neutros y detalles en azul claro.",
+          "imageUrl": "../../../public/img/projectsImg/project1.png"
         },
-        "functionalityPlanning": {
+        {
           "title": "Planificación de funcionalidades",
-          "description": "Desarrollé un flujo de usuario claro desde la navegación de productos hasta la finalización de la compra.",
-          "imageUrl": "../../../public/img/projectsImg/project3.png"
+          "description": "Desarrollé un diagrama que conectaba los componentes clave, como la galería interactiva de proyectos y el blog con sistema de comentarios.",
+          "imageUrl": "../../../public/img/projectsImg/project1.png"
         }
-      },
-      "mainFeatures": {
-        "title": "IMPLEMENTACIONES PRINCIPALES",
-        "feature1": {
-          "title": "Carrito de compras",
-          "description": "Funcionalidad completa de carrito de compras con opciones para agregar, eliminar y modificar productos."
+      ],
+
+      "mainFeatures": [
+        {
+          "title": "Búsqueda avanzada",
+          "description": "Permite a los usuarios buscar recetas por ingredientes, tiempo de preparación y categoría."
         },
-        "feature2": {
-          "title": "Pasarela de pagos",
-          "description": "Integración con diversas pasarelas de pago para una experiencia de compra segura y sencilla."
+        {
+          "title": "Guardado de recetas",
+          "description": "Los usuarios pueden guardar sus recetas favoritas en su perfil para acceso rápido."
         },
-        "feature3": {
-          "title": "Sistema de inventario",
-          "description": "Gestión automática de inventario para mantener actualizada la disponibilidad de productos."
+        {
+          "title": "Interfaz amigable",
+          "description": "Interfaz de usuario simple y clara, diseñada para ser intuitiva y fácil de navegar."
         }
-      },
+      ],
+
       "issues": {
         "title": "PROBLEMAS ENFRENTADOS",
         "issue1": {
@@ -240,40 +236,37 @@
     "detailUrl": "https://short.url/detalle4",
     "isFinished": true,
     "details": {
-      "planningProcess": {
-        "title": "PROCESO DE PLANIFICACIÓN",
-        "objetive": "Desarrollar una aplicación simple y eficiente para ayudar a los usuarios a organizar su día a día y aumentar su productividad.",
-        "informationArchitecture": {
+      "planningProcess": [
+        {
           "title": "Arquitectura de la información",
-          "description": "Definición de secciones como 'Tareas Pendientes', 'Completadas', y 'Configuración'.",
-          "imageUrl": "../../../public/img/projectsImg/project4.png"
+          "description": "Empecé con un archivo TXT para esbozar las secciones clave: 'Inicio', 'Sobre Mí', 'Proyectos', 'Blog', y 'Contacto'.",
+          "imageUrl": "../../../public/img/projectsImg/project1.png"
         },
-        "visualDesign": {
+        {
           "title": "Diseño visual",
-          "description": "Un diseño limpio y organizado, enfocado en la simplicidad para evitar distracciones.",
-          "imageUrl": "../../../public/img/projectsImg/project4.png"
+          "description": "Creé el diseño visual en Figma, optando por un estilo minimalista con una paleta de colores neutros y detalles en azul claro.",
+          "imageUrl": "../../../public/img/projectsImg/project1.png"
         },
-        "functionalityPlanning": {
+        {
           "title": "Planificación de funcionalidades",
-          "description": "Implementación de recordatorios y categorización de tareas por urgencia e importancia.",
-          "imageUrl": "../../../public/img/projectsImg/project4.png"
+          "description": "Desarrollé un diagrama que conectaba los componentes clave, como la galería interactiva de proyectos y el blog con sistema de comentarios.",
+          "imageUrl": "../../../public/img/projectsImg/project1.png"
         }
-      },
-      "mainFeatures": {
-        "title": "IMPLEMENTACIONES PRINCIPALES",
-        "feature1": {
-          "title": "Gestión de tareas",
-          "description": "Los usuarios pueden crear, editar, eliminar y reorganizar sus tareas según sus necesidades."
+      ],
+      "mainFeatures": [
+        {
+          "title": "Búsqueda avanzada",
+          "description": "Permite a los usuarios buscar recetas por ingredientes, tiempo de preparación y categoría."
         },
-        "feature2": {
-          "title": "Recordatorios",
-          "description": "Recordatorios automáticos para asegurar que ninguna tarea importante se pase por alto."
+        {
+          "title": "Guardado de recetas",
+          "description": "Los usuarios pueden guardar sus recetas favoritas en su perfil para acceso rápido."
         },
-        "feature3": {
-          "title": "Categorización por prioridad",
-          "description": "Organización de tareas por nivel de prioridad para ayudar a los usuarios a enfocarse en lo más importante."
+        {
+          "title": "Interfaz amigable",
+          "description": "Interfaz de usuario simple y clara, diseñada para ser intuitiva y fácil de navegar."
         }
-      },
+      ],
       "issues": {
         "title": "PROBLEMAS ENFRENTADOS",
         "issue1": {
