@@ -1,6 +1,6 @@
-export const styleContainerTop = "bg-darkDark pt-24 px-5 pb-2 min-h-screen flex flex-col justify-center items-center";
+export const styleContainerTop = "bg-darkDark pt-24 px-5 pb-2 md:px-16 min-h-screen flex flex-col justify-center items-center";
   
-export const styleContainer = "bg-darkDark px-5 py-2 min-h-screen flex justify-center items-center";
+export const styleContainer = "bg-darkDark px-5 py-2  md:px-16 min-h-screen flex justify-center items-center";
 
 export const styleButtonPrincipal = "bg-lightLight text-darkDark rounded-full p-2 transition-transform duration-300 ease-in-out transform hover:scale-105 hover:bg-green  ";
 
