@@ -17,7 +17,7 @@ const CardProject = (
   });
 
   return (
-    <div key={project.id} className="rounded-md overflow-hidden bg-lightLight w-full max-w-72 custom-shadow">
+    <div key={project.id} className="rounded-md overflow-hidden bg-lightLight w-fit max-w-72 custom-shadow">
       <div>
         <img src={project.imagePcUrl} alt={`img de portada de ${project.title}`} />
       </div>

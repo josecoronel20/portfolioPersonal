@@ -748,6 +748,16 @@ video {
   width: 50%;
 }
 
+.w-min{
+  width: -moz-min-content;
+  width: min-content;
+}
+
+.w-max{
+  width: -moz-max-content;
+  width: max-content;
+}
+
 .min-w-fit{
   min-width: -moz-fit-content;
   min-width: fit-content;
