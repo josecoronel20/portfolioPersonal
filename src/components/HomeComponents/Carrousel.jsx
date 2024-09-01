@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import useLanguage from "../../Hooks/useLanguage";
-import CardProject from "../../components/ReutilizableComponents/CardProject";
+import CardProject from "../../components/ProjectsComponents/CardProject";
 import { styleContainer } from "../../Utilities/customStyles";
 import { iconArrowLeft, iconArrowRight } from "../../Utilities/Icons";
 import CarouselDots from "./CarouselDots";
@@ -62,7 +62,7 @@ const Carrousel = () => {
             {iconArrowLeft}
           </div>
 
-          <div className="flex flex-col items-center justify-center gap-5">
+          <div className="flex flex-col items-center justify-center gap-5 h-full">
             <div
               className={`${stylePrev} ${styleNext} transition-transform ease-in-out duration-300 w-full flex justify-center 
           `}

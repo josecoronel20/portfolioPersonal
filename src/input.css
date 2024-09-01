@@ -28,3 +28,7 @@ body {
 .no-scrollbar::-webkit-scrollbar {
   @apply hidden; /* Chrome, Safari, Opera */
 }
+
+.shape-outside{ 
+  float: left;
+  shape-outside:content-box();}

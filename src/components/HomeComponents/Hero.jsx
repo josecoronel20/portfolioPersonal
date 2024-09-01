@@ -9,7 +9,7 @@ import {
 
 const Hero = () => {
   //custom hook de lengiuaje para importar el json con textos en es o en
-  const { globalText } = useLanguage({typeText:"globalText"});
+  const { globalText } = useLanguage({ typeText: "globalText" });
 
   return (
     <section className={styleContainerTop}>
@@ -24,9 +24,10 @@ const Hero = () => {
             <span className="text-green">React</span>
           </h3>
 
-          <button className={styleButtonPrincipal}>
-            <Link to="/projects">{globalText.home.hero.button}</Link>
-          </button>
+          <Link className={styleButtonPrincipal} to="/projects">
+            {globalText.home.hero.button}
+          </Link>
+          
         </div>
         <div className="order-1 md:order-2 w-5/6 custom-shadow max-w-xs md:max-w-md">
           <img src={illustration} alt={globalText.home.hero.altImg} />

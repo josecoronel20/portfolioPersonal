@@ -1,8 +1,8 @@
 import React from "react";
-import DescriptionToggle from "./DescriptionToggle";
-import TechToggle from "./TechToggle";
+import TechToggle from "../ReutilizableComponents/TechToggle";
 import ButtonsCardProject from "./ButtonsCardProject";
 import useQuickTraduction from "../../Hooks/useQuickTraduction";
+import DescriptionToggle from "../ReutilizableComponents/DescriptionToggle"
 
 const CardProject = (
  {project}

@@ -1,10 +1,13 @@
 import { useSelector } from "react-redux";
 import esText from "../Utilities/texts/TextApp/esText.json";
 import enText from "../Utilities/texts/TextApp/enText.json";
+
 import esProject from "../Utilities/texts/TextProjectPage/esProjects.json";
 import enProject from "../Utilities/texts/TextProjectPage/enProjects.json";
+
 import esTechs from "../Utilities/texts/TextTechsPage/esTechs";
 import enTechs from "../Utilities/texts/TextTechsPage/enTechs";
+
 import esBlog from "../Utilities/texts/TextBlogPage/esBlog.json";
 import enBlog from "../Utilities/texts/TextBlogPage/enBlog.json";
 import { string } from "prop-types";

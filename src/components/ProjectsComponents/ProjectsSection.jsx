@@ -1,6 +1,6 @@
 import React from "react";
-import CardProject from "../ReutilizableComponents/CardProject";
 import useLanguage from "../../Hooks/useLanguage";
+import CardProject from "./CardProject";
 
 const ProjectsSection = () => {
   const {projectText} = useLanguage({typeText: "projectText"})

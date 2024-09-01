@@ -4,14 +4,13 @@ import PostCard from "../components/BlogComponents/PostCard";
 import { styleContainerTop } from "../Utilities/customStyles";
 
 const Blog = () => {
-  const { blogtext } = useLanguage({ typeText: "blogText" });
-
+  const { blogText } = useLanguage({ typeText:"blogText"});
   return (
     <main className={styleContainerTop}>
       <div className="flex flex-col gap-10">
-        <h1>{blogtext.title}</h1>
-        <div className="flex flex-col gap-20">
-          {blogtext.posts.map((post) => {
+        <h1>{blogText.title}</h1>
+        <div className="flex flex-col gap-20 md:grid md:grid-cols-2 lg:grid-cols-3">
+          {blogText.posts.map((post) => {
             return <PostCard key={post.id} postInfo={post} />;
           })}
         </div>
