@@ -8,7 +8,7 @@
   "home": {
     "hero": {
       "title": "I am ",
-      "subtitle": "Frontend developer specializing in ",
+      "subtitle": "a frontend developer specialized in ",
       "button": "VIEW PROJECTS",
       "altImg": "illustration by @josecoronel20"
     },
@@ -20,25 +20,22 @@
       "title": "ABOUT ME",
       "text": {
         "paragraph1": {
-          "text": "Hello, I'm José María Coronel, a web developer working with React. I am 24 years old and I'm from Argentina, currently living in Portugal."
+          "text": "I am José María Coronel, a web developer specialized in React, 24 years old, currently living in Portugal. My focus is on creating interactive and efficient interfaces."
         },
 
         "paragraph2": {
-          "title": "MY JOURNEY",
-          "text": "My interest in programming began unexpectedly one day when a video about the topic appeared on YouTube. From that moment, my curiosity led me to explore further. I started taking online courses on HTML, CSS, JavaScript, and React. From there, I adopted a self-taught approach, supplementing my knowledge with books like Fundamentals of Programming and Eloquent JavaScript. I also continue to expand my skills through documentation, videos, and constant practice."
+          "title": "MY BACKGROUND",
+          "text": "I discovered programming out of curiosity and became self-taught in HTML, CSS, JavaScript, and React, complementing with books and official documentation. I continue to expand my skills through constant practice."
         },
 
         "paragraph3": {
-          "title": "MY APPROACH AND ASPIRATIONS",
-          "text": "I am committed to accessibility and code reuse. I constantly work to improve my skills in implementing inclusive design practices, as well as creating reusable components and scalable solutions. I strive to follow best practices by writing clean and well-documented code and using tools that ensure quality and clarity of work."
+          "title": "FOCUS ON QUALITY AND ORGANIZATION",
+          "text": "I am committed to accessibility, code reusability, and best practices. I am improving my Git management, especially in branch organization. Currently, I am exploring testing with Jest and React Testing Library, as well as Vite and Redux."
         },
+
         "paragraph4": {
-          "title": "KNOWLEDGE AND TOOLS",
-          "text": "My experience includes development with React, focusing on creating interactive and efficient interfaces. I have basic knowledge in modern tools like Vite and Create React App, as well as testing using Jest and React Testing Library. These skills allow me to build robust and reliable applications."
-        },
-        "paragraph5": {
-          "title": "PASSION FOR DESIGN",
-          "text": "In addition to programming, I am also passionate about design. I have designed all my projects, including this one. I like to maintain a clean and minimalist style, both in code and design, ensuring that visual information is controlled in terms of quantity and effectiveness."
+          "title": "TOOLS AND DESIGN",
+          "text": "I use Figma to design and prototype my projects, prioritizing a clean and minimalist style that optimizes user experience."
         }
       }
     },
@@ -50,7 +47,6 @@
       "titleConcepts": "Concepts and Methodologies"
     }
   },
-
   "footer": {
     "contactMe": {
       "sectionTitle": "Contact Information",

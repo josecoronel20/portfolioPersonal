@@ -19,7 +19,7 @@ const CardProject = (
   return (
     <div key={project.id} className="rounded-md overflow-hidden bg-lightLight w-fit max-w-72 custom-shadow">
       <div>
-        <img src={project.imagePcUrl} alt={`img de portada de ${project.title}`} />
+        <img src={project.imagePcUrl} alt={`img de portada de ${project.imageDesktopAlt}`} />
       </div>
       <div className="p-4 gap-4 flex flex-col justify-between">
         <div>

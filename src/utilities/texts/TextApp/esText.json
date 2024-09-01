@@ -49,7 +49,7 @@
   },
   "footer": {
     "contactMe": {
-      "sectionTitle": "Contact Information",
+      "sectionTitle": "Información de contácto",
       "email": {
         "title": "Email",
         "value": "josecoronel20@outlook.com"
@@ -60,7 +60,7 @@
       }
     },
     "followMe": {
-      "sectionTitle": "Follow Me",
+      "sectionTitle": "Sígueme",
       "github": {
         "title": "GitHub",
         "url": "https://github.com/josecoronel20"

@@ -25,6 +25,11 @@ const ProjectsDetail = () => {
     textEn: "MAIN FEATURES",
   });
 
+  const textTechsTitle = useQuickTraduction({
+    textEs: "TECNOLOGIAS UTILIZADAS",
+    textEn: "TECHNOLOGIES USED",
+  });
+
   //componetizacion de title y paragraph
   const Subtitle = ({ title, paragraph }) => {
     return (
@@ -55,8 +60,10 @@ const ProjectsDetail = () => {
         <div className="order-1 sm:order-2 flex justify-center md:col-span-2 lg:col-span-1">
           <ProjectMockup
             imagePcUrl={projectFind.imagePcUrl}
+            imageDesktopAlt={projectFind.imageDesktopAlt}
             imageMobileUrl={projectFind.imageMobileUrl}
-            siteUrl={projectFind.repoUrl}
+            imageMobileAlt={projectFind.imageMobileAlt}
+            siteUrl={projectFind.siteUrl}
             repoUrl={projectFind.repoUrl}
           />
         </div>
@@ -66,27 +73,12 @@ const ProjectsDetail = () => {
           <p className="font-light">{projectFind.description}</p>
         </section>
 
-        <div className="order-4 row-span-2 sm:row-span-4 md:row-span-1 md:col-span-3">
+        <div className="order-3 row-span-2  md:row-span-1 md:col-span-3">
           <ProjectsDetailPlanning project={projectFind} />
         </div>
 
-        <section className="order-5 flex flex-col gap-1 md:row-span-2">
-          <h3 className="text-green">
-            {textMainFeaturesTitle}
-          </h3>
-
-          <div className="flex flex-col gap-5">
-            {projectFind.details.mainFeatures.map((feature) => {
-              return <div key={feature.title}><Subtitle
-                title={feature.title}
-                paragraph={feature.description}
-              /></div>;
-            })}
-          </div>
-        </section>
-
-        <section className="order-6 md:col-span-2">
-          <h2 className="text-green">TECNOLOGIAS PRINCIPALES</h2>
+        <section className="order-4  md:col-span-3 lg:col-span-2">
+          <h2 className="text-green">{textTechsTitle}</h2>
           <div className="flex flex-wrap gap-3">
             {projectFind.techs.map((tech) => {
               return (
@@ -101,7 +93,23 @@ const ProjectsDetail = () => {
           </div>
         </section>
 
-        <section className="order-7 flex flex-col gap-1 md:col-span-2">
+        <section className="order-5 flex flex-col gap-1 md:col-span-3 ">
+          <h3 className="text-green">
+            {textMainFeaturesTitle}
+          </h3>
+
+          <div className="flex flex-col gap-5 ">
+            {projectFind.details.mainFeatures.map((feature) => {
+              return <div key={feature.title}><Subtitle
+                title={feature.title}
+                paragraph={feature.description}
+              /></div>;
+            })}
+          </div>
+        </section>
+
+
+        <section className="order-6 flex flex-col gap-1 sm:col-span-2 md:col-span-3 ">
           <h3 className="text-green">{projectFind.details.issues.title}</h3>
           <div className="flex flex-col gap-5">
             <div>

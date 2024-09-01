@@ -618,6 +618,10 @@ video {
   order: 2;
 }
 
+.order-3{
+  order: 3;
+}
+
 .order-4{
   order: 4;
 }
@@ -628,10 +632,6 @@ video {
 
 .order-6{
   order: 6;
-}
-
-.order-7{
-  order: 7;
 }
 
 .row-span-2{
@@ -683,6 +683,14 @@ video {
   max-height: 4rem;
 }
 
+.max-h-44{
+  max-height: 11rem;
+}
+
+.max-h-60{
+  max-height: 15rem;
+}
+
 .min-h-96{
   min-height: 24rem;
 }
@@ -732,9 +740,17 @@ video {
   width: 100vw;
 }
 
+.w-1\/2{
+  width: 50%;
+}
+
 .min-w-fit{
   min-width: -moz-fit-content;
   min-width: fit-content;
+}
+
+.max-w-44{
+  max-width: 11rem;
 }
 
 .max-w-72{
@@ -991,6 +1007,16 @@ video {
 
 .from-80\%{
   --tw-gradient-from-position: 80%;
+}
+
+.object-contain{
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.object-none{
+  -o-object-fit: none;
+     object-fit: none;
 }
 
 .p-2{
@@ -1268,8 +1294,8 @@ body{
     order: 2;
   }
 
-  .sm\:row-span-4{
-    grid-row: span 4 / span 4;
+  .sm\:col-span-2{
+    grid-column: span 2 / span 2;
   }
 
   .sm\:grid{
@@ -1278,6 +1304,10 @@ body{
 
   .sm\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .sm\:flex-row{
+    flex-direction: row;
   }
 
   .sm\:p-16{
@@ -1304,10 +1334,6 @@ body{
 
   .md\:row-span-1{
     grid-row: span 1 / span 1;
-  }
-
-  .md\:row-span-2{
-    grid-row: span 2 / span 2;
   }
 
   .md\:grid{
@@ -1394,6 +1420,10 @@ body{
 
   .lg\:w-7\/12{
     width: 58.333333%;
+  }
+
+  .lg\:w-1\/2{
+    width: 50%;
   }
 
   .lg\:grid-cols-3{

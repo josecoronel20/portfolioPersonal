@@ -2,12 +2,14 @@ import React from "react";
 import FooterLink from "../../components/FooterComponents/FooterLink";
 import useLanguage from "../../Hooks/useLanguage";
 import { iconLinkedin, iconMail, iconWpp } from "../../Utilities/Icons";
+import { useLocation } from "react-router-dom";
 
 const ContactContent = () => {
   const { globalText } = useLanguage({ typeText: "globalText" });
+  const currentPath = useLocation().pathname;
 
   return (
-    <div className="flex flex-col gap-5">
+    <div className={`flex gap-10 ${currentPath === "/contact" ? "flex-col sm:flex-row" : "flex-col"}`}>
       <div className="flex flex-col gap-5">
         <h3>{globalText.footer.contactMe.sectionTitle}</h3>
         <FooterLink

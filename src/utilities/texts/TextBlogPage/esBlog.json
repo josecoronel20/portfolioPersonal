@@ -2,28 +2,15 @@
   "title": "POSTEOS DE MI BLOG PERSONAL",
   "posts": [
     {
-        "id":1,
-      "title": "El Futuro de la IA en el Desarrollo Web",
-      "image": "../../../public/img/projectsImg/project1.png",
-      "description": "Explora cómo la inteligencia artificial está revolucionando el desarrollo web, desde herramientas de codificación automatizadas hasta experiencias de usuario mejoradas.",
-      "subtitle":"ldasldlasld",
-      "content": "La inteligencia artificial (IA) está transformando numerosos aspectos de la tecnología, y el desarrollo web no es una excepción. Desde herramientas de codificación automatizadas que pueden escribir código por sí solas hasta sistemas de recomendación que personalizan las experiencias de usuario, la IA está cambiando la forma en que los desarrolladores trabajan. En este artículo, exploraremos las principales aplicaciones de la IA en el desarrollo web, cómo están mejorando los flujos de trabajo y qué esperar en el futuro cercano."
-    },
-    {
-        "id":2,
-      "title": "El Futuro de la IA en el Desarrollo Web",
-      "image": "../../../public/img/projectsImg/project1.png",
-      "description": "Explora cómo la inteligencia artificial está revolucionando el desarrollo web, desde herramientas de codificación automatizadas hasta experiencias de usuario mejoradas.",
-      "subtitle":"ldasldlasld",
-      "content": "La inteligencia artificial (IA) está transformando numerosos aspectos de la tecnología, y el desarrollo web no es una excepción. Desde herramientas de codificación automatizadas que pueden escribir código por sí solas hasta sistemas de recomendación que personalizan las experiencias de usuario, la IA está cambiando la forma en que los desarrolladores trabajan. En este artículo, exploraremos las principales aplicaciones de la IA en el desarrollo web, cómo están mejorando los flujos de trabajo y qué esperar en el futuro cercano."
-    },
-    {
-        "id":3,
-      "title": "El Futuro de la IA en el Desarrollo Web",
-      "image": "../../../public/img/projectsImg/project1.png",
-      "description": "Explora cómo la inteligencia artificial está revolucionando el desarrollo web, desde herramientas de codificación automatizadas hasta experiencias de usuario mejoradas.",
-      "subtitle":"ldasldlasld",
-      "content": "La inteligencia artificial (IA) está transformando numerosos aspectos de la tecnología, y el desarrollo web no es una excepción. Desde herramientas de codificación automatizadas que pueden escribir código por sí solas hasta sistemas de recomendación que personalizan las experiencias de usuario, la IA está cambiando la forma en que los desarrolladores trabajan. En este artículo, exploraremos las principales aplicaciones de la IA en el desarrollo web, cómo están mejorando los flujos de trabajo y qué esperar en el futuro cercano."
+      "id": 1,
+      "title": "Construyendo Fundamentos Sólidos",
+      "image": "../../../public/img/blogImg/post1-formacion.jpg",
+      "altImg":"Ímagen de posteo de programador estudiando",
+      "shortDescription": "Al mudarme a Portugal en abril sin computadora, utilicé libros, videos y documentación en línea para fortalecer mis conocimientos en desarrollo web. Con 'Fundamentos de Programación: Estructura de Datos y Algoritmos' y 'Eloquent JavaScript', construí una base sólida. Finalmente, adquirí una computadora y apliqué lo aprendido en mi primer proyecto: un portfolio personal.",
+      "description": "En abril, al mudarme sin una computadora, enfrenté el desafío de continuar mi formación en desarrollo web. Aproveché una variedad de recursos, incluidos libros, videos y documentación en línea, para construir una base sólida en programación. Con una computadora finalmente disponible, pude aplicar lo aprendido en un proyecto práctico: el desarrollo de mi portfolio personal.",
+      "subtitle": "De la Teoría a la Práctica: Cómo Una Formación Diversificada Potenció Mi Primer Proyecto Web",
+      "content": "Al mudarme a Portugal enfrenté el reto de continuar mi formación como desarrollador web. Para superar esta limitación, recurrí a diversos recursos educativos, incluyendo libros, videos y documentación en línea, para construir una base sólida en programación. Primero, me sumergí en el libro 'Fundamentos de Programación: Estructura de Datos y Algoritmos', que me proporcionó una comprensión profunda de conceptos clave como algoritmos, estructuras de control y recursión. También aprendí sobre estructuras de datos lineales y obtuve una introducción a las estructuras de datos no lineales. La programación orientada a objetos (POO) fue otro foco de estudio, donde profundicé en temas como encapsulamiento, herencia y polimorfismo. Más adelante, leí 'Eloquent JavaScript', que expandió mi conocimiento hacia el desarrollo web con JavaScript. Este libro cubrió la sintaxis de JavaScript, tipos de datos y estructuras, funciones y el manejo del ámbito y los cierres (closures). Además, me introdujo a los objetos y prototipos en JavaScript, la programación asíncrona, la manipulación del DOM, el manejo de eventos, y la modularización y gestión de paquetes. También exploré conceptos de programación funcional aplicados en JavaScript. Con toda esta formación teórica, finalmente adquirí una computadora, lo que me permitió profundizar más en React, enfocándome en la componentización y los custom Hooks, y poner en práctica lo aprendido. Desarrollé mi primer proyecto, un portfolio personal, que consolidó mis conocimientos y demostró mi capacidad para aplicar los conceptos adquiridos en un entorno real. Esta experiencia subraya cómo una preparación integral y diversificada puede facilitar una transición exitosa de la teoría a la práctica en el desarrollo web.",
+      "conclusion": "La combinación de estudios teóricos y recursos variados como libros, videos y documentación en línea fue clave para construir una base sólida en desarrollo web. Esta preparación exhaustiva me permitió enfrentar con éxito mi primer proyecto práctico. Al aplicar los conceptos aprendidos en 'Fundamentos de Programación: Estructura de Datos y Algoritmos' y 'Eloquent JavaScript', junto con otros recursos educativos, pude desarrollar un portfolio personal que refleja tanto mi formación como mi capacidad para implementar lo aprendido. Esta experiencia destaca la importancia de una formación integral y bien fundamentada para lograr una transición efectiva a la práctica profesional."
     }
   ]
 }

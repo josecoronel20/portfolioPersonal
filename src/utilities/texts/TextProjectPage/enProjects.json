@@ -1,231 +1,73 @@
 [
-    {
-      "id": 1,
-      "imageUrl": "../../../public/img/projectsImg/project1.png",
-      "title": "Personal Portfolio",
-      "techs": [
-        "html",
-        "css",
-        "react",
-        "redux",
-        "git",
-        "github",
-        "tailwind",
-        "npm",
-        "javascript"
+  {
+    "id": 1,
+    "imagePcUrl": "../../../../public/img/projectsImg/portfolio/screenShotDesktop.png",
+    "imageDesktopAlt": "screenshot of desktop view of personal portfolio website",
+    "imageMobileUrl": "../../../../public/img/projectsImg/portfolio/screenShotMobile.png",
+    "imageMobileAlt": "screenshot of mobile view of personal portfolio website",
+    "title": "Personal Portfolio",
+    "techs": [
+      "html",
+      "css",
+      "react",
+      "redux",
+      "git",
+      "github",
+      "tailwind",
+      "npm",
+      "javascript"
+    ],
+    "description": "This personal portfolio showcases a collection of projects and web development skills. It stands out for its focus on providing detailed and relevant information about each project, including initial planning, visual design, achieved goals, and more.",
+    "siteUrl": "https://josecoronel20.github.io/portfolioPersonal/",
+    "repoUrl": "https://github.com/josecoronel20/portfolioPersonal",
+    "isFinished": false,
+    "details": {
+      "planningProcess": [
+        {
+          "title": "Information Architecture",
+          "description": "I started with a TXT file to outline the main sections: 'Home', 'Projects', 'Blog', and 'Contact'. I progressively developed each section and its subsections, creating a clear and relevant structure.",
+          "imageUrl": "../../../public/img/projectsImg/portfolio/projectDetail/txt.png"
+        },
+        {
+          "title": "Visual Design",
+          "description": "The visual design aimed to reflect my personal and professional identity. Initially, I chose a striking color palette using shades of violet, a color that I strongly identify with. However, I eventually settled on a light and simple palette that ensures the relevant information is the focus, facilitating effective visual communication without distractions.",
+          "imageUrl": "../../../public/img/projectsImg/portfolio/projectDetail/design.png"
+        },
+        {
+          "title": "Feature Planning",
+          "description": "I developed a diagram to plan features like the carousel. Initially, I thought of displaying three projects from the JSON, but I decided to show only one based on the JSON index. I also planned a 'translate' component, which led to using global context and exploring Redux.",
+          "imageUrl": "../../../public/img/projectsImg/portfolio/projectDetail/features.png"
+        }
       ],
-      "description": "This personal portfolio showcases a collection of projects and skills in web development. It includes practical examples of designing, developing, and deploying web applications using modern technologies.",
-      "siteUrl": "https://short.url/portfolio",
-      "repoUrl": "https://short.url/repo",
-      "detailUrl": "https://short.url/detail",
-      "isFinished": false,
-      "details": {
-        "planningProcess": {
-          "informationArchitecture": [
-            "https://short.url/arch1",
-            "https://short.url/arch2",
-            "https://short.url/arch3"
-          ],
-          "visualDesign": [
-            "https://short.url/dis1",
-            "https://short.url/dis2",
-            "https://short.url/dis3"
-          ],
-          "functionalityPlanning": [
-            "https://short.url/plan1",
-            "https://short.url/plan2",
-            "https://short.url/plan3"
-          ]
+      "mainFeatures": [
+        {
+          "title": "Carousel",
+          "description": "This section is designed for users to explore my projects quickly and easily. Its main goal is to capture attention by presenting an interactive interface that highlights my work at first glance."
         },
-        "mainFeatures": {
-          "interactiveUserInterface": "Responsive and modern design with smooth interactions.",
-          "projectManagement": "Allows users to add, edit, and delete projects.",
-          "adminPanel": "Tool to manage and visualize projects from a centralized view."
+        {
+          "title": "Technology Mapping",
+          "description": "In the technologies section, representative icons of each technology are displayed. When hovering over an icon, it changes appearance, and clicking on it opens a modal window. Implementing this functionality required complex logic to render each icon with its respective functionalities, based on information mapped from a JSON file containing the details of each technology."
         },
-        "issues": [
-          {
-            "title": "Performance Issues",
-            "description": "Difficulties optimizing the page load time, especially on mobile devices."
-          },
-          {
-            "title": "Browser Compatibility",
-            "description": "Inconsistencies in display and behavior across different web browsers, requiring additional adjustments."
-          },
-          {
-            "title": "API Integration",
-            "description": "Challenges integrating with external services, which required a detailed review of the documentation and code adjustments."
-          }
-        ]
-      }
-    },
-    {
-      "id": 2,
-      "imageUrl": "../../../public/img/projectsImg/project1.png",
-      "title": "E-Commerce Site",
-      "techs": [
-        "html",
-        "css",
-        "react",
-        "node.js",
-        "express",
-        "mongodb",
-        "bootstrap",
-        "npm",
-        "javascript"
+        {
+          "title": "Modal Window",
+          "description": "In the technologies section, each technology is linked to a popup window ('Modal'). Clicking on any technology displays information about my level of knowledge and a detailed section explaining the main topics and concepts I handle."
+        }
       ],
-      "description": "An online store that allows users to purchase products, with an integrated payment system and inventory management.",
-      "siteUrl": "https://short.url/ecommerce",
-      "repoUrl": "https://short.url/ecommerce-repo",
-      "detailUrl": "https://short.url/ecommerce-detail",
-      "isFinished": true,
-      "details": {
-        "planningProcess": {
-          "informationArchitecture": [
-            "https://short.url/ecom-arch1",
-            "https://short.url/ecom-arch2",
-            "https://short.url/ecom-arch3"
-          ],
-          "visualDesign": [
-            "https://short.url/ecom-dis1",
-            "https://short.url/ecom-dis2",
-            "https://short.url/ecom-dis3"
-          ],
-          "functionalityPlanning": [
-            "https://short.url/ecom-plan1",
-            "https://short.url/ecom-plan2",
-            "https://short.url/ecom-plan3"
-          ]
+      "issues": {
+        "title": "MAIN CHALLENGES FACED",
+        "issue1": {
+          "title": "Technology Icon Mapping",
+          "description": "When mapping each technology, it was necessary to implement the hover logic and modal window functionality individually for each icon. This was done to ensure that each feature operated correctly and specifically. If the logic were applied globally, it could cause erratic and undesired behavior in the interaction with the icons."
         },
-        "mainFeatures": {
-          "securePaymentSystem": "Integration with payment gateways for secure transactions.",
-          "productManagement": "Features to add, edit, and delete products from the inventory.",
-          "orderHistory": "Allows users to view their purchase history and order status."
+        "issue2": {
+          "title": "Carousel",
+          "description": "Initially, the carousel was designed to be more visually striking, rendering three cards and adding animations for navigation between them. However, after trying several options to implement this complexity with unsatisfactory results, I decided to simplify the functionality. Now, the carousel displays only one card at a time, but with animations that add dynamism and appeal, maintaining visual interest without complicating the implementation."
         },
-        "issues": [
-          {
-            "title": "Payment Security",
-            "description": "Ensuring all transactions are conducted securely and meet security standards."
-          },
-          {
-            "title": "System Scalability",
-            "description": "Challenges handling a large number of users and transactions simultaneously."
-          },
-          {
-            "title": "Integration with External Services",
-            "description": "Challenges integrating with third-party services for payment processing and inventory management."
-          }
-        ]
-      }
-    },
-    {
-      "id": 3,
-      "imageUrl": "../../../public/img/projectsImg/project1.png",
-      "title": "Tech Blog",
-      "techs": [
-        "html",
-        "css",
-        "react",
-        "firebase",
-        "javascript"
-      ],
-      "description": "A blog that allows users to read and publish articles about technology, with features like comments and tags.",
-      "siteUrl": "https://short.url/blog",
-      "repoUrl": "https://short.url/blog-repo",
-      "detailUrl": "https://short.url/blog-detail",
-      "isFinished": true,
-      "details": {
-        "planningProcess": {
-          "informationArchitecture": [
-            "https://short.url/blog-arch1",
-            "https://short.url/blog-arch2",
-            "https://short.url/blog-arch3"
-          ],
-          "visualDesign": [
-            "https://short.url/blog-dis1",
-            "https://short.url/blog-dis2",
-            "https://short.url/blog-dis3"
-          ],
-          "functionalityPlanning": [
-            "https://short.url/blog-plan1",
-            "https://short.url/blog-plan2",
-            "https://short.url/blog-plan3"
-          ]
-        },
-        "mainFeatures": {
-          "commentSystem": "Allows users to comment on articles and respond to other comments.",
-          "tagsAndCategories": "Organizes articles into tags and categories for easier searching.",
-          "authenticationSystem": "Allows users to register and log in to post and manage their articles."
-        },
-        "issues": [
-          {
-            "title": "Loading Performance",
-            "description": "Issues with loading times, especially when there are many comments."
-          },
-          {
-            "title": "User Management",
-            "description": "Challenges in managing and authenticating users, including data protection."
-          },
-          {
-            "title": "Database Scalability",
-            "description": "Problems scaling the database to handle a large number of articles and users."
-          }
-        ]
-      }
-    },
-    {
-      "id": 4,
-      "imageUrl": "../../../public/img/projectsImg/project1.png",
-      "title": "Task Management App",
-      "techs": [
-        "html",
-        "css",
-        "vue",
-        "vuex",
-        "javascript"
-      ],
-      "description": "An application for managing daily tasks with features to add, edit, delete tasks, and organize them by priority.",
-      "siteUrl": "https://short.url/tasks",
-      "repoUrl": "https://short.url/tasks-repo",
-      "detailUrl": "https://short.url/tasks-detail",
-      "isFinished": true,
-      "details": {
-        "planningProcess": {
-          "informationArchitecture": [
-            "https://short.url/tasks-arch1",
-            "https://short.url/tasks-arch2",
-            "https://short.url/tasks-arch3"
-          ],
-          "visualDesign": [
-            "https://short.url/tasks-dis1",
-            "https://short.url/tasks-dis2",
-            "https://short.url/tasks-dis3"
-          ],
-          "functionalityPlanning": [
-            "https://short.url/tasks-plan1",
-            "https://short.url/tasks-plan2",
-            "https://short.url/tasks-plan3"
-          ]
-        },
-        "mainFeatures": {
-          "priorityOrganization": "Allows users to organize tasks by priority levels.",
-          "reminders": "Reminder system for upcoming tasks.",
-          "intuitiveInterface": "Easy-to-use design for quickly adding, editing, and deleting tasks."
-        },
-        "issues": [
-          {
-            "title": "State Management",
-            "description": "Issues managing the state of tasks efficiently as the number of tasks increases."
-          },
-          {
-            "title": "User Interface",
-            "description": "Challenges creating a user interface that is both functional and intuitive."
-          },
-          {
-            "title": "Data Persistence",
-            "description": "Problems maintaining data persistence between user sessions."
-          }
-        ]
+        "issue3": {
+          "title": "Applying What I've Learned",
+          "description": "After developing web applications in a disorganized manner with basic knowledge, I decided to improve my skills through books, videos, and readings. This led me to adopt a more professional approach, better structuring my files and using Git more effectively. I learned to build projects modularly, reduce code with hooks, and manage development in separate branches to avoid code mixing and focus on each section individually."
+        }
       }
     }
-  ]
-  
+  }
+]

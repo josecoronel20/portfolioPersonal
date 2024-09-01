@@ -19,11 +19,12 @@ const PostDetail = () => {
             idPar === 0 ? "md:flex-row-reverse" : "md:flex-row"
           }`}
         >
-          <p className="font-light">{post.description}</p>
 
-          <div className="lg:w-7/12">
+          <p  className="font-light w-full">{post.description}</p>
+
+          <div className="w-1/2">
             <ImageModal>
-              <img className="rounded-xl" src={post.image} alt="" />
+              <img className="rounded-xl" src={post.image} alt={post.altImg} />
             </ImageModal>
           </div>
         </div>
@@ -31,6 +32,7 @@ const PostDetail = () => {
           <h2 className="text-green text-lg">{post.subtitle}</h2>
           <p className="font-light">{post.content}</p>
         </div>
+        <p>{post.conclusion}</p>
       </div>
     </div>
   );

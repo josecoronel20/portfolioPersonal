@@ -26,11 +26,10 @@ const FooterLink = ({ icon, textForCopy, url, text }) => {
   return (
     <div className="flex gap-1">
       {icon}
-      <div className=" text-lightLight font-light opacity-50 hover:opacity-100">
-        <Link to={url} target="_blank">
+
+        <Link className=" text-lightLight font-light opacity-50 hover:opacity-100" to={url} target="_blank">
           {text}
         </Link>
-      </div>
       <div
         onClick={copyClipBoard}
         className="hover:scale-105 cursor-pointer opacity-50 hover:opacity-100 flex gap-1"

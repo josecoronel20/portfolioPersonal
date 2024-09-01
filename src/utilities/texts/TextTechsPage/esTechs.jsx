@@ -18,8 +18,6 @@ import {
   iconTailwindWhite,
   iconWebpackColor,
   iconWebpackWhite,
-  iconTsColor,
-  iconTsWhite,
   iconVsCodeWhite,
   iconVsCodeColor,
 } from "../../Icons";
@@ -38,7 +36,7 @@ const techTextEs = {
         "Formularios",
         "Multimedia (audio, video)",
       ],
-      mainProjects: ["portfolio personal", "sitio de e-commerce"],
+      mainProjects: ["portfolio personal"],
     },
     {
       title: "CSS3",
@@ -54,7 +52,7 @@ const techTextEs = {
         "Metodologías de CSS (BEM, SMACSS)",
         "Responsive Design",
       ],
-      mainProjects: ["portfolio personal", "sitio de e-commerce"],
+      mainProjects: ["portfolio personal"],
     },
     {
       title: "JavaScript",
@@ -69,22 +67,9 @@ const techTextEs = {
         "Manipulación del DOM",
         "Módulos ES6",
       ],
-      mainProjects: ["blog de tecnología", "aplicación de tareas"],
+      mainProjects: ["portfolio personal"],
     },
-    {
-      title: "TypeScript",
-      color: "#3178C6",
-      iconWhite: iconTsWhite,
-      iconColor: iconTsColor,
-      level: "Básico",
-      mainTopics: [
-        "Tipos estáticos",
-        "Interfaces",
-        "Tipos genéricos",
-        "Decorators",
-      ],
-      mainProjects: ["aplicación de tareas"],
-    },
+    
   ],
   frameworksLibraries: [
     {
@@ -100,24 +85,21 @@ const techTextEs = {
         "React Router",
         "JSX",
       ],
-      mainProjects: ["portfolio personal", "blog de tecnología"],
+      mainProjects: ["portfolio personal"],
     },
     {
       title: "Redux",
       color: "#764ABC",
       iconWhite: iconReduxWhite,
       iconColor: iconReduxColor,
-      level: "Intermedio",
+      level: "Básico",
       mainTopics: [
         "State Management",
         "Actions",
         "Reducers",
-        "Middleware",
-        "Redux Toolkit",
       ],
       mainProjects: [
-        "Gestión de estado en una aplicación de comercio electrónico",
-        "Aplicación de tareas con gestión de estado global",
+        "portfolio personal",
       ],
     },
 
@@ -146,23 +128,22 @@ const techTextEs = {
         "Comandos básicos (add, commit, push)",
         "Branches",
         "Merge",
-        "Rebase",
       ],
-      mainProjects: ["portfolio personal", "blog de tecnología"],
+      mainProjects: ["portfolio personal"],
     },
-    {
-      title: "GitHub",
-      color: "#181717",
-      iconWhite: iconGithub,
-      iconColor: iconGithub,
-      level: "Intermedio",
-      mainTopics: [
-        "Pull requests",
-        "Colaboración en proyectos",
-        "GitHub Actions",
-      ],
-      mainProjects: ["portfolio personal", "sitio de e-commerce"],
-    },
+    // {
+    //   title: "GitHub",
+    //   color: "#181717",
+    //   iconWhite: iconGithub,
+    //   iconColor: iconGithub,
+    //   level: "Intermedio",
+    //   mainTopics: [
+    //     "Pull requests",
+    //     "Colaboración en proyectos",
+    //     "GitHub Actions",
+    //   ],
+    //   mainProjects: ["portfolio personal", "sitio de e-commerce"],
+    // },
     {
       title: "npm",
       color: "#CB3837",
@@ -174,17 +155,17 @@ const techTextEs = {
         "Scripts",
         "Configuración de proyectos",
       ],
-      mainProjects: ["blog de tecnología", "aplicación de tareas"],
+      mainProjects: ["portfolio personal"],
     },
-    {
-      title: "Webpack",
-      color: "#8DD6F9",
-      iconWhite: iconWebpackWhite,
-      iconColor: iconWebpackColor,
-      level: "Básico",
-      mainTopics: ["Configuración básica", "Loaders", "Plugins"],
-      mainProjects: [],
-    },
+    // {
+    //   title: "Webpack",
+    //   color: "#8DD6F9",
+    //   iconWhite: iconWebpackWhite,
+    //   iconColor: iconWebpackColor,
+    //   level: "Básico",
+    //   mainTopics: ["Configuración básica", "Loaders", "Plugins"],
+    //   mainProjects: [],
+    // },
     {
       title: "VS Code",
       color: "#007ACC",
@@ -196,17 +177,17 @@ const techTextEs = {
         "Atajos de teclado",
         "Configuraciones personalizadas",
       ],
-      mainProjects: ["portfolio personal", "aplicación de tareas"],
+      mainProjects: ["portfolio personal"],
     },
   ],
   conceptsMethodologies: [
     {
-      title: "Responsive Design",
+      title: "Diseño responsivo",
       color: "#34A853",
 
       level: "Intermedio",
       mainTopics: ["Media queries", "Diseño móvil primero", "Flexbox y Grid"],
-      mainProjects: ["portfolio personal", "sitio de e-commerce"],
+      mainProjects: ["portfolio personal"],
     },
     {
       title: "Componentes Reutilizables",
@@ -218,53 +199,53 @@ const techTextEs = {
         "Props y estados",
         "Composición de componentes",
       ],
-      mainProjects: ["portfolio personal", "blog de tecnología"],
+      mainProjects: ["portfolio personal"],
     },
     {
-      title: "State Management",
+      title: "Manejo de Rstados",
       color: "#6A1B9A",
 
       level: "Intermedio",
-      mainTopics: ["React useState/useReducer", "Redux", "Vuex"],
-      mainProjects: ["aplicación de tareas", "blog de tecnología"],
+      mainTopics: ["React useState/useReducer", "Redux"],
+      mainProjects: ["portfolio personal"],
     },
-    {
-      title: "AJAX y Fetch API",
-      color: "#FF5722",
+    // {
+    //   title: "AJAX y Fetch API",
+    //   color: "#FF5722",
 
-      level: "Intermedio",
-      mainTopics: ["Peticiones HTTP", "Promesas", "Manejo de errores"],
-      mainProjects: ["blog de tecnología", "sitio de e-commerce"],
-    },
+    //   level: "Intermedio",
+    //   mainTopics: ["Peticiones HTTP", "Promesas", "Manejo de errores"],
+    //   mainProjects: [""],
+    // },
 
-    {
-      title: "SEO Básico",
-      color: "#2196F3",
+    // {
+    //   title: "SEO Básico",
+    //   color: "#2196F3",
 
-      level: "Básico",
-      mainTopics: [
-        "Optimización de contenido",
-        "Etiquetas meta",
-        "Performance",
-      ],
-      mainProjects: ["portfolio personal", "blog de tecnología"],
-    },
+    //   level: "Básico",
+    //   mainTopics: [
+    //     "Optimización de contenido",
+    //     "Etiquetas meta",
+    //     "Performance",
+    //   ],
+    //   mainProjects: ["portfolio personal"],
+    // },
 
-    {
-      title: "Agile/Scrum",
-      color: "#795548",
+    // {
+    //   title: "Agile/Scrum",
+    //   color: "#795548",
 
-      level: "Básico",
-      mainTopics: ["Sprint Planning", "Daily Standups", "Sprint Review"],
-      mainProjects: [],
-    },
+    //   level: "Básico",
+    //   mainTopics: ["Sprint Planning", "Daily Standups", "Sprint Review"],
+    //   mainProjects: [],
+    // },
     {
       title: "Version Control with Git",
       color: "#F44336",
 
       level: "Intermedio",
       mainTopics: ["Branches", "Pull requests", "Merge conflicts"],
-      mainProjects: ["portfolio personal", "aplicación de tareas"],
+      mainProjects: ["portfolio personal"],
     },
   ],
 };
