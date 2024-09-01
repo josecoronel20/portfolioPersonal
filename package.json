@@ -2,7 +2,7 @@
   "name": "portfolio",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://josecoronel20.github.io/portfolioPersonal",
+  "homepage": "https://josecoronel20.github.io/portfolioPersonal/",
   "type": "module",
   "scripts": {
     "dev": "vite",
