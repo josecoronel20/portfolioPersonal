@@ -4,7 +4,7 @@
     {
       "id": 1,
       "title": "Building Solid Foundations",
-      "image": "/img/blogImg/post1-formacion.jpg",
+      "image": "./img/blogImg/post1-formacion.jpg",
       "altImg": "Image of a post showing a programmer studying",
       "shortDescription": "When I moved to Portugal in April without a computer, I used books, videos, and online documentation to strengthen my web development knowledge. With 'Fundamentals of Programming: Data Structures and Algorithms' and 'Eloquent JavaScript', I built a solid foundation. Finally, I acquired a computer and applied what I learned in my first project: a personal portfolio.",
       "description": "In April, when I moved without a computer, I faced the challenge of continuing my web development education. I took advantage of various resources, including books, videos, and online documentation, to build a solid foundation in programming. Once I finally had a computer available, I was able to apply what I had learned in a practical project: developing my personal portfolio.",

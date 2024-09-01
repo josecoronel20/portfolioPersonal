@@ -40,8 +40,6 @@ const ProjectsDetail = () => {
     );
   };
 
-  console.log(projectFind.details.mainFeatures);
-
   return (
     <main className={styleContainerTop}>
       <div>
