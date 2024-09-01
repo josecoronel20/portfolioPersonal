@@ -1,9 +1,16 @@
-[
+import ImageDesktopUrl1 from "../../../../public/img/projectsImg/portfolio/screenShotDesktop.png"
+import ImageMobileUrl1 from "../../../../public/img/projectsImg/portfolio/screenShotMobile.png"
+import imageTxt1 from "../../../../public/img/projectsImg/portfolio/projectDetail/txt.png"
+import imageDesign1 from "../../../../public/img/projectsImg/portfolio/projectDetail/design.png"
+import imageFeatures1 from "../../../../public/img/projectsImg/portfolio/projectDetail/features.png"
+
+
+const esProjects = [
   {
     "id": 1,
-    "imagePcUrl": "/img/projectsImg/portfolio/screenShotDesktop.png",
+    "imagePcUrl": ImageDesktopUrl1,
     "imageDesktopAlt": "captura de pantalla de vista de escritorio de página web de portfolio personal",
-    "imageMobileUrl": "/img/projectsImg/portfolio/screenShotMobile.png",
+    "imageMobileUrl": ImageMobileUrl1,
     "imageMobileAlt": "captura de pantalla de vista de móbil de página web de portfolio personal",
     "title": "Portfolio Personal",
     "techs": [
@@ -26,17 +33,17 @@
         {
           "title": "Arquitectura de la información",
           "description": "Inicié con un archivo TXT para esbozar las secciones principales: 'Inicio', 'Proyectos', 'Blog', y 'Contacto'. Desarrollé cada sección y sus subsecciones progresivamente, creando un esquema claro y relevante.",
-          "imageUrl": "/img/projectsImg/portfolio/projectDetail/txt.png"
+          "imageUrl": imageTxt1
         },
         {
           "title": "Diseño visual",
           "description": "El diseño visual buscó reflejar mi identidad personal y profesional. En un principio se decidió por una paleta de colores llamativa utilizando tonos violetas que siento que es un color que me representa bastante pero finalmente me decidí por una paleta clara y sencilla que asegura que la información relevante sea el foco, facilitando una comunicación visual efectiva sin distracciones.",
-          "imageUrl": "/img/projectsImg/portfolio/projectDetail/design.png"
+          "imageUrl": imageDesign1
         },
         {
           "title": "Planificación de funcionalidades",
           "description": "Desarrollé un diagrama para planificar funcionalidades, como el carrusel. Inicialmente, pensé en mostrar tres proyectos del JSON, pero decidí mostrar uno solo basado en el índice del JSON. También planeé un componente 'translate', lo que llevó a usar un contexto global y explorar Redux.",
-          "imageUrl": "/img/projectsImg/portfolio/projectDetail/features.png"
+          "imageUrl": imageFeatures1
         }
       ],
       "mainFeatures": [
@@ -71,3 +78,5 @@
     }
   }
 ]
+
+export default esProjects

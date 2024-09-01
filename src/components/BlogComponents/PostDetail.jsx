@@ -7,7 +7,7 @@ import ImageModal from "../ReutilizableComponents/ImageModal";
 const PostDetail = () => {
   const { id } = useParams();
   const { blogText } = useLanguage({ typeText: "blogText" });
-  const post = blogText.posts.find((post) => post.id === parseInt(id));
+  const post = blogText.find((post) => post.id === parseInt(id));
   const idPar = parseInt(post.id) % 2;
 
   return (

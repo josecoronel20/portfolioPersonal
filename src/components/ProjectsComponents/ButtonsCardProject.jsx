@@ -19,14 +19,14 @@ const ButtonsCardProject = ({ urlSite, urlRepo, id }) => {
 
   return (
     <div className="flex flex-col gap-2">
-      <Link className={styleButtonCard} to={urlSite}>
+      <Link target="_blank" className={styleButtonCard} to={urlSite}>
         {textVisite}
       </Link>
       <div className="flex gap-2">
         <Link className={styleButtonCard} to={`/projects/${id}`}>
           {textDetail}
         </Link>
-        <Link className={styleButtonCard} to={urlRepo}>
+        <Link target="_blank" className={styleButtonCard} to={urlRepo}>
           {textRepo}
         </Link>
       </div>

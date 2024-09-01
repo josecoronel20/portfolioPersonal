@@ -1,9 +1,17 @@
-[
+import ImageDesktopUrl1 from "../../../../public/img/projectsImg/portfolio/screenShotDesktop.png"
+import ImageMobileUrl1 from "../../../../public/img/projectsImg/portfolio/screenShotMobile.png"
+import imageTxt1 from "../../../../public/img/projectsImg/portfolio/projectDetail/txt.png"
+import imageDesign1 from "../../../../public/img/projectsImg/portfolio/projectDetail/design.png"
+import imageFeatures1 from "../../../../public/img/projectsImg/portfolio/projectDetail/features.png"
+
+
+
+const enProjects = [
   {
     "id": 1,
-    "imagePcUrl": "/img/projectsImg/portfolio/screenShotDesktop.png",
+    "imagePcUrl": ImageDesktopUrl1,
     "imageDesktopAlt": "screenshot of desktop view of personal portfolio website",
-    "imageMobileUrl": "/img/projectsImg/portfolio/screenShotMobile.png",
+    "imageMobileUrl": ImageMobileUrl1,
     "imageMobileAlt": "screenshot of mobile view of personal portfolio website",
     "title": "Personal Portfolio",
     "techs": [
@@ -26,17 +34,17 @@
         {
           "title": "Information Architecture",
           "description": "I started with a TXT file to outline the main sections: 'Home', 'Projects', 'Blog', and 'Contact'. I progressively developed each section and its subsections, creating a clear and relevant structure.",
-          "imageUrl": "../../../public/img/projectsImg/portfolio/projectDetail/txt.png"
+          "imageUrl": imageTxt1
         },
         {
           "title": "Visual Design",
           "description": "The visual design aimed to reflect my personal and professional identity. Initially, I chose a striking color palette using shades of violet, a color that I strongly identify with. However, I eventually settled on a light and simple palette that ensures the relevant information is the focus, facilitating effective visual communication without distractions.",
-          "imageUrl": "../../../public/img/projectsImg/portfolio/projectDetail/design.png"
+          "imageUrl": imageDesign1
         },
         {
           "title": "Feature Planning",
           "description": "I developed a diagram to plan features like the carousel. Initially, I thought of displaying three projects from the JSON, but I decided to show only one based on the JSON index. I also planned a 'translate' component, which led to using global context and exploring Redux.",
-          "imageUrl": "../../../public/img/projectsImg/portfolio/projectDetail/features.png"
+          "imageUrl": imageFeatures1
         }
       ],
       "mainFeatures": [
@@ -71,3 +79,5 @@
     }
   }
 ]
+
+export default enProjects
