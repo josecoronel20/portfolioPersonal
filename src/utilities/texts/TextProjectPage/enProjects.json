@@ -1,9 +1,9 @@
 [
   {
     "id": 1,
-    "imagePcUrl": "../../../../public/img/projectsImg/portfolio/screenShotDesktop.png",
+    "imagePcUrl": "/img/projectsImg/portfolio/screenShotDesktop.png",
     "imageDesktopAlt": "screenshot of desktop view of personal portfolio website",
-    "imageMobileUrl": "../../../../public/img/projectsImg/portfolio/screenShotMobile.png",
+    "imageMobileUrl": "/img/projectsImg/portfolio/screenShotMobile.png",
     "imageMobileAlt": "screenshot of mobile view of personal portfolio website",
     "title": "Personal Portfolio",
     "techs": [

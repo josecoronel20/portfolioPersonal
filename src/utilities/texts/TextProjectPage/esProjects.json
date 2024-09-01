@@ -1,9 +1,9 @@
 [
   {
     "id": 1,
-    "imagePcUrl": "../../../../public/img/projectsImg/portfolio/screenShotDesktop.png",
+    "imagePcUrl": "/img/projectsImg/portfolio/screenShotDesktop.png",
     "imageDesktopAlt": "captura de pantalla de vista de escritorio de página web de portfolio personal",
-    "imageMobileUrl": "../../../../public/img/projectsImg/portfolio/screenShotMobile.png",
+    "imageMobileUrl": "/img/projectsImg/portfolio/screenShotMobile.png",
     "imageMobileAlt": "captura de pantalla de vista de móbil de página web de portfolio personal",
     "title": "Portfolio Personal",
     "techs": [

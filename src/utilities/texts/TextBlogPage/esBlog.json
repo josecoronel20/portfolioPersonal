@@ -4,7 +4,7 @@
     {
       "id": 1,
       "title": "Construyendo Fundamentos Sólidos",
-      "image": "../../../public/img/blogImg/post1-formacion.jpg",
+      "image": "/img/blogImg/post1-formacion.jpg",
       "altImg":"Ímagen de posteo de programador estudiando",
       "shortDescription": "Al mudarme a Portugal en abril sin computadora, utilicé libros, videos y documentación en línea para fortalecer mis conocimientos en desarrollo web. Con 'Fundamentos de Programación: Estructura de Datos y Algoritmos' y 'Eloquent JavaScript', construí una base sólida. Finalmente, adquirí una computadora y apliqué lo aprendido en mi primer proyecto: un portfolio personal.",
       "description": "En abril, al mudarme sin una computadora, enfrenté el desafío de continuar mi formación en desarrollo web. Aproveché una variedad de recursos, incluidos libros, videos y documentación en línea, para construir una base sólida en programación. Con una computadora finalmente disponible, pude aplicar lo aprendido en un proyecto práctico: el desarrollo de mi portfolio personal.",
