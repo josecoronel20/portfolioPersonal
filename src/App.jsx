@@ -8,13 +8,13 @@ import Header from "./components/HeaderComponents/Header";
 import { store } from "./languageContext";
 import { Provider } from "react-redux";
 import Footer from "./components/FooterComponents/Footer";
-import ProjectsDetail from "./components/ProjectsComponents/ProjectsDetail"
-import PostDetail from "./components/BlogComponents/PostDetail"
+import ProjectsDetail from "./components/ProjectsComponents/ProjectsDetail";
+import PostDetail from "./components/BlogComponents/PostDetail";
 
 const App = () => {
   return (
     <div>
-      <BrowserRouter>
+      <BrowserRouter basename="/portfolioPersonal">
         <Provider store={store}>
           <Header />
           <Routes>
