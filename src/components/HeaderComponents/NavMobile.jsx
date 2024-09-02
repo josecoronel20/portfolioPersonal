@@ -29,7 +29,7 @@ const NavMobile = () => {
       </li>
     );
   };
-
+  
   return (
     <Modal toggle={isToggleOpen} setToggle={setIsToggleOpen}>
       <nav>

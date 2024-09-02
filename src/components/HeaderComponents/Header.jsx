@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import NavMobile from "../HeaderComponents/NavMobile"
 import Translate from "./Translate";
 import NavFullScreen from "./NavFullScreen";
@@ -23,6 +23,16 @@ const Header = () => {
       window.removeEventListener("resize", handlerWindowSize);
     };
   }, []);
+
+  //logica para ir a la parte superior cada vez que se cambia de location
+ const location = useLocation()
+
+ useEffect(() => {
+  window.scrollTo(0, 0);
+
+  //logica de redireccionamiento
+  if(location.pathname === "/portfolioPersonal/"){ window.location.href = '/'};
+ }, [location])
 
   return (
     <header className=" bg-gradient-to-b from-darkDark from-80% fixed top-0 left-0 w-full z-20">

@@ -1,8 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { styleButtonCard } from "../../Utilities/customStyles";
-import { useToggle } from "../../Hooks/useToggle";
-import SeeMore from "../ReutilizableComponents/SeeMore";
 import DescriptionToggle from "../ReutilizableComponents/DescriptionToggle";
 
 const PostCard = ({ postInfo }) => {

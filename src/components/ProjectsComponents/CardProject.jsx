@@ -16,7 +16,6 @@ const CardProject = (
     textEn: "In Proces",
   });
 
-  console.log(project.imagePcUrl)
 
   return (
     <div key={project.id} className="rounded-md overflow-hidden bg-lightLight w-fit max-w-72 custom-shadow">
