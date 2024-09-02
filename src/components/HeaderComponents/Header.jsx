@@ -31,7 +31,6 @@ const Header = () => {
   window.scrollTo(0, 0);
 
   //logica de redireccionamiento
-  // if(location.pathname === "/portfolioPersonal/"){ window.location.href = '/'};
  }, [location])
 
   return (
