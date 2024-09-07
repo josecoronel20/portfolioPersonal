@@ -5,11 +5,11 @@ import enText from "../Utilities/texts/TextApp/enText";
 import esProject from "../Utilities/texts/TextProjectPage/esProjects.js";
 import enProject from "../Utilities/texts/TextProjectPage/enProjects.js";
 
-import esTechs from "../Utilities/texts/TextTechsPage/esTechs";
-import enTechs from "../Utilities/texts/TextTechsPage/enTechs";
+import esTechs from "../Utilities/texts/TextTechsPage/esTechs.jsx";
+import enTechs from "../Utilities/texts/TextTechsPage/enTechs.jsx";
 
-import esBlog from "../Utilities/texts/TextBlogPage/esBlog";
-import enBlog from "../Utilities/texts/TextBlogPage/enBlog";
+import esBlog from "../Utilities/texts/TextBlogPage/esBlog.js";
+import enBlog from "../Utilities/texts/TextBlogPage/enBlog.js";
 import { string } from "prop-types";
 
 const useLanguage = ({ typeText = string}) => {

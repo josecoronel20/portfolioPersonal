@@ -17,6 +17,8 @@ import {
   iconTailwindWhite,
   iconVsCodeWhite,
   iconVsCodeColor,
+  iconChatGptColor,
+  iconChatGptWhite
 } from "../../Icons";
 
 const techTextEs = {
@@ -115,6 +117,23 @@ const techTextEs = {
     },
   ],
   tools: [
+    {
+      title: "ChatGPT",
+      color: "#6C3F9D",
+      iconWhite: iconChatGptWhite,
+      iconColor: iconChatGptColor,
+      level: "Avanzado",
+      mainTopics: [
+        "Asistencia en desarrollo de código",
+        "Generación de ideas y resolución de problemas",
+        "Automatización de tareas repetitivas",
+        "Personalización de respuestas según necesidades del proyecto"
+      ],
+      mainProjects: [
+        "portfolio personal"
+      ]
+    }
+,    
     {
       title: "Git",
       color: "#F05032",
@@ -236,14 +255,6 @@ const techTextEs = {
     //   mainTopics: ["Sprint Planning", "Daily Standups", "Sprint Review"],
     //   mainProjects: [],
     // },
-    {
-      title: "Version Control with Git",
-      color: "#F44336",
-
-      level: "Intermedio",
-      mainTopics: ["Branches", "Pull requests", "Merge conflicts"],
-      mainProjects: ["portfolio personal"],
-    },
   ],
 };
 

@@ -27,7 +27,7 @@ const esProjects = [
     "description": "Este portafolio personal presenta una colección de proyectos y competencias en desarrollo web. Se destaca por su enfoque en proporcionar información detallada y relevante sobre cada proyecto, incluyendo planificación inicial, diseño visual, objetivos alcanzados, y más.",
     "siteUrl": "https://josecoronel20.github.io/portfolioPersonal/",
     "repoUrl": "https://github.com/josecoronel20/portfolioPersonal",
-    "isFinished": false,
+    "isFinished": true,
     "details": {
       "planningProcess": [
         {

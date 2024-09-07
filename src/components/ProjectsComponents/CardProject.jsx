@@ -27,7 +27,7 @@ const CardProject = (
           <h3 className="text-lg font-bold text-darkDark">{`PROYECTO: ${project.title.toUpperCase()}`}</h3>
 
           <p className="text-darkLight">
-            {project.isFinish === true ? textFinish : textInProces}
+            {project.isFinished === true ? textFinish : textInProces}
           </p>
         </div>
 

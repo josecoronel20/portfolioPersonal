@@ -1,4 +1,4 @@
-import imagePost1 from "../../../../public/img/blogImg/post1-formacion.jpg";
+import imagePost1 from "/img/blogImg/OIG4.jpg";
 
 const enBlog = [
   {

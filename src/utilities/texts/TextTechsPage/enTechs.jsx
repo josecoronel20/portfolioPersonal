@@ -17,6 +17,7 @@ import {
   iconTailwindWhite,
   iconVsCodeWhite,
   iconVsCodeColor,
+  iconChatGptColor,iconChatGptWhite
 } from "../../Icons";
 
 const techTextEn = {
@@ -114,6 +115,23 @@ const techTextEn = {
   ],
   tools: [
     {
+      title: "ChatGPT",
+      color: "#6C3F9D",
+      iconWhite: iconChatGptWhite,
+      iconColor: iconChatGptColor,
+      level: "Advanced",
+      mainTopics: [
+        "Code assistance",
+        "Idea generation and problem-solving",
+        "Automation of repetitive tasks",
+        "Customization of responses based on project needs"
+      ],
+      mainProjects: [
+        "personal portfolio"
+      ]
+    }
+,    
+    {
       title: "Git",
       color: "#F05032",
       iconWhite: iconGitWhite,
@@ -179,13 +197,7 @@ const techTextEn = {
       mainTopics: ["React useState/useReducer", "Redux"],
       mainProjects: ["personal portfolio"],
     },
-    {
-      title: "Version Control with Git",
-      color: "#F44336",
-      level: "Intermediate",
-      mainTopics: ["Branches", "Pull requests", "Merge conflicts"],
-      mainProjects: ["personal portfolio"],
-    },
+   
   ],
 };
 

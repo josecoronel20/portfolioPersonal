@@ -28,7 +28,7 @@ const enProjects = [
     "description": "This personal portfolio showcases a collection of projects and web development skills. It stands out for its focus on providing detailed and relevant information about each project, including initial planning, visual design, achieved goals, and more.",
     "siteUrl": "https://josecoronel20.github.io/portfolioPersonal/",
     "repoUrl": "https://github.com/josecoronel20/portfolioPersonal",
-    "isFinished": false,
+    "isFinished": true,
     "details": {
       "planningProcess": [
         {

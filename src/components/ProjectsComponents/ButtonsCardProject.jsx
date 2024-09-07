@@ -9,8 +9,8 @@ const ButtonsCardProject = ({ urlSite, urlRepo, id }) => {
     textEn: "VISIT SITE",
   });
   const textDetail = useQuickTraduction({
-    textEs: "DETALLE",
-    textEn: "DETAIL",
+    textEs: "VER DETALLES",
+    textEn: "SEE DETAILS",
   });
   const textRepo = useQuickTraduction({
     textEs: "VISITAR REPO",
