@@ -18,7 +18,13 @@ import {
   iconVsCodeWhite,
   iconVsCodeColor,
   iconChatGptColor,
-  iconChatGptWhite
+  iconChatGptWhite,
+  iconJestWhite,
+  iconJestColor,
+  iconNextWhite,
+  iconNextColor,
+  iconTsWhite,
+  iconTsColor
 } from "../../Icons";
 
 const techTextEs = {
@@ -68,6 +74,20 @@ const techTextEs = {
       ],
       mainProjects: ["portfolio personal"],
     },
+    {
+      title: "TypeScript",
+      color: "#007ACC", 
+      iconWhite: iconTsWhite, 
+      iconColor: iconTsColor, 
+      level: "Básico",
+      mainTopics: [
+        "Tipado básico (variables y funciones)",
+        "Definición de interfaces simples para componentes",
+        "Uso de tipos primitivos y arrays",
+        "Configuración básica de TypeScript en el proyecto",
+      ],
+      mainProjects: ["portfolio personal", "ecommerce project"],
+    },
     
   ],
   frameworksLibraries: [
@@ -115,6 +135,34 @@ const techTextEs = {
       ],
       mainProjects: ["portfolio personal"],
     },
+    {
+      title: "Next.js",
+      color: "#000000", 
+      iconWhite: iconNextWhite, 
+      iconColor: iconNextColor, 
+      level: "Básico",
+      mainTopics: [
+        "Uso de carpetas para enrutamiento dinámico",
+        "Creación de páginas estáticas con el sistema de archivos",
+        "Implementación de enlaces entre páginas con Link",
+        "Configuración de rutas personalizadas básicas",
+      ],
+      mainProjects: ["portfolio personal", "ecommerce project"],
+    },
+    {
+      title: "Jest y Testing Library",
+      color: "#99424F", 
+      iconWhite: iconJestWhite, 
+      iconColor: iconJestColor, 
+      level: "Básico",
+      mainTopics: [
+        "Escritura de pruebas unitarias básicas para componentes",
+        "Uso de simulaciones de eventos (click, cambio)",
+        "Pruebas de renderizado de componentes",
+        "Verificación de propiedades y estados en pruebas",
+      ],
+      mainProjects: ["portfolio personal", "ecommerce project"],
+    },
   ],
   tools: [
     {
@@ -147,19 +195,7 @@ const techTextEs = {
       ],
       mainProjects: ["portfolio personal"],
     },
-    // {
-    //   title: "GitHub",
-    //   color: "#181717",
-    //   iconWhite: iconGithub,
-    //   iconColor: iconGithub,
-    //   level: "Intermedio",
-    //   mainTopics: [
-    //     "Pull requests",
-    //     "Colaboración en proyectos",
-    //     "GitHub Actions",
-    //   ],
-    //   mainProjects: ["portfolio personal", "sitio de e-commerce"],
-    // },
+    
     {
       title: "npm",
       color: "#CB3837",
@@ -173,15 +209,7 @@ const techTextEs = {
       ],
       mainProjects: ["portfolio personal"],
     },
-    // {
-    //   title: "Webpack",
-    //   color: "#8DD6F9",
-    //   iconWhite: iconWebpackWhite,
-    //   iconColor: iconWebpackColor,
-    //   level: "Básico",
-    //   mainTopics: ["Configuración básica", "Loaders", "Plugins"],
-    //   mainProjects: [],
-    // },
+    
     {
       title: "VS Code",
       color: "#007ACC",
@@ -195,6 +223,9 @@ const techTextEs = {
       ],
       mainProjects: ["portfolio personal"],
     },
+    
+   
+    
   ],
   conceptsMethodologies: [
     {
@@ -218,43 +249,13 @@ const techTextEs = {
       mainProjects: ["portfolio personal"],
     },
     {
-      title: "Manejo de Rstados",
+      title: "Manejo de Estados",
       color: "#6A1B9A",
 
       level: "Intermedio",
       mainTopics: ["React useState/useReducer", "Redux"],
       mainProjects: ["portfolio personal"],
     },
-    // {
-    //   title: "AJAX y Fetch API",
-    //   color: "#FF5722",
-
-    //   level: "Intermedio",
-    //   mainTopics: ["Peticiones HTTP", "Promesas", "Manejo de errores"],
-    //   mainProjects: [""],
-    // },
-
-    // {
-    //   title: "SEO Básico",
-    //   color: "#2196F3",
-
-    //   level: "Básico",
-    //   mainTopics: [
-    //     "Optimización de contenido",
-    //     "Etiquetas meta",
-    //     "Performance",
-    //   ],
-    //   mainProjects: ["portfolio personal"],
-    // },
-
-    // {
-    //   title: "Agile/Scrum",
-    //   color: "#795548",
-
-    //   level: "Básico",
-    //   mainTopics: ["Sprint Planning", "Daily Standups", "Sprint Review"],
-    //   mainProjects: [],
-    // },
   ],
 };
 

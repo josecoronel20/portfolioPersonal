@@ -17,7 +17,14 @@ import {
   iconTailwindWhite,
   iconVsCodeWhite,
   iconVsCodeColor,
-  iconChatGptColor,iconChatGptWhite
+  iconChatGptColor,
+  iconChatGptWhite,
+  iconTsWhite,
+  iconTsColor,
+  iconNextWhite,
+  iconNextColor,
+  iconJestWhite,
+  iconJestColor,
 } from "../../Icons";
 
 const techTextEn = {
@@ -67,6 +74,20 @@ const techTextEn = {
       ],
       mainProjects: ["personal portfolio"],
     },
+    {
+      title: "TypeScript",
+      color: "#007ACC",
+      iconWhite: iconTsWhite,
+      iconColor: iconTsColor,
+      level: "Basic",
+      mainTopics: [
+        "Basic typing (variables and functions)",
+        "Definition of simple interfaces for components",
+        "Use of primitive types and arrays",
+        "Basic TypeScript configuration in the project",
+      ],
+      mainProjects: ["personal portfolio", "ecommerce project"],
+    },
   ],
   frameworksLibraries: [
     {
@@ -90,14 +111,8 @@ const techTextEn = {
       iconWhite: iconReduxWhite,
       iconColor: iconReduxColor,
       level: "Basic",
-      mainTopics: [
-        "State Management",
-        "Actions",
-        "Reducers",
-      ],
-      mainProjects: [
-        "personal portfolio",
-      ],
+      mainTopics: ["State Management", "Actions", "Reducers"],
+      mainProjects: ["personal portfolio"],
     },
     {
       title: "Tailwind",
@@ -105,12 +120,36 @@ const techTextEn = {
       iconWhite: iconTailwindWhite,
       iconColor: iconTailwindColor,
       level: "Intermediate",
-      mainTopics: [
-        "CSS utilities",
-        "Theme customization",
-        "Responsive Design",
-      ],
+      mainTopics: ["CSS utilities", "Theme customization", "Responsive Design"],
       mainProjects: ["personal portfolio"],
+    },
+    {
+      title: "Next.js",
+      color: "#000000",
+      iconWhite: iconNextWhite,
+      iconColor: iconNextColor,
+      level: "Basic",
+      mainTopics: [
+        "Use of folders for dynamic routing",
+        "Creation of static pages using the file system",
+        "Implementation of links between pages using Link",
+        "Basic configuration of custom routes",
+      ],
+      mainProjects: ["personal portfolio", "ecommerce project"],
+    },
+    {
+      title: "Jest and Testing Library",
+      color: "#99424F",
+      iconWhite: iconJestWhite,
+      iconColor: iconJestColor,
+      level: "Basic",
+      mainTopics: [
+        "Writing basic unit tests for components",
+        "Using event simulations (click, change)",
+        "Rendering tests for components",
+        "Verifying properties and states in tests",
+      ],
+      mainProjects: ["personal portfolio", "ecommerce project"],
     },
   ],
   tools: [
@@ -124,24 +163,17 @@ const techTextEn = {
         "Code assistance",
         "Idea generation and problem-solving",
         "Automation of repetitive tasks",
-        "Customization of responses based on project needs"
+        "Customization of responses based on project needs",
       ],
-      mainProjects: [
-        "personal portfolio"
-      ]
-    }
-,    
+      mainProjects: ["personal portfolio"],
+    },
     {
       title: "Git",
       color: "#F05032",
       iconWhite: iconGitWhite,
       iconColor: iconGitColor,
       level: "Intermediate",
-      mainTopics: [
-        "Basic commands (add, commit, push)",
-        "Branches",
-        "Merge",
-      ],
+      mainTopics: ["Basic commands (add, commit, push)", "Branches", "Merge"],
       mainProjects: ["personal portfolio"],
     },
     {
@@ -150,11 +182,7 @@ const techTextEn = {
       iconWhite: iconNpmWhite,
       iconColor: iconNpmColor,
       level: "Intermediate",
-      mainTopics: [
-        "Dependency management",
-        "Scripts",
-        "Project setup",
-      ],
+      mainTopics: ["Dependency management", "Scripts", "Project setup"],
       mainProjects: ["personal portfolio"],
     },
     {
@@ -197,7 +225,6 @@ const techTextEn = {
       mainTopics: ["React useState/useReducer", "Redux"],
       mainProjects: ["personal portfolio"],
     },
-   
   ],
 };
 
