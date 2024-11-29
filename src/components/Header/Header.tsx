@@ -1,11 +1,11 @@
 import React, {useState, useEffect} from "react";
 import { Link, useLocation } from "react-router-dom";
-import NavMobile from "../HeaderComponents/NavMobile"
-import Translate from "./Translate";
-import NavFullScreen from "./NavFullScreen";
+import NavMobile from "./components/NavMobile"
+import Translate from "./components/Translate";
+import NavFullScreen from "./components/NavFullScreen";
 
 const Header = () => {
-  const logo = "<JC>";
+  const logo:string = "<JC>";
 
     // Estado para obtener el tamaño de la pantalla y renderizar/aplicar estilos dependiendo de este
   const [windowSize, setWindowSize] = useState(window.innerWidth);

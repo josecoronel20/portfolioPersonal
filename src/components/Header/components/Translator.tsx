@@ -1,7 +1,7 @@
 import React from "react";
-import { iconTranslate } from "../../utilities/Icons";
-import { handlerChangeEnglish, handlerChangeSpanish } from "../../languageContext";
-import { useToggle } from "../../Hooks/useToggle";
+import { iconTranslate } from "../../../utilities/Icons";
+import { handlerChangeEnglish, handlerChangeSpanish } from "../../../languageContext";
+import { useToggle } from "../../../Hooks/useToggle";
 import { useSelector } from "react-redux";
 
 const Translate = () => {
@@ -9,7 +9,7 @@ const Translate = () => {
   const { isToggleOpen, handlerToggle, setIsToggleOpen } = useToggle();
 
   //llamada al context del lenguaje
-  const language = useSelector((state) => state);
+  const language = "hola"
 
   return (
     <div className="">
