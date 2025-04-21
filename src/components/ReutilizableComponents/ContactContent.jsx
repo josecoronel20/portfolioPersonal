@@ -1,5 +1,5 @@
 import React from "react";
-import FooterLink from "../../components/FooterComponents/FooterLink";
+import FooterLink from "../Footer/FooterLink";
 import useLanguage from "../../Hooks/useLanguage";
 import { iconLinkedin, iconMail, iconWpp } from "../../Utilities/Icons";
 import { useLocation } from "react-router-dom";

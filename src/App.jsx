@@ -4,10 +4,10 @@ import Home from "./Routes/Home";
 import Projects from "./Routes/Projects";
 import Blog from "./routes/Blog";
 import Contact from "./routes/Contact";
-import Header from "./components/HeaderComponents/Header";
+import Header from "./components/Header/Header";
 import { store } from "./languageContext";
 import { Provider } from "react-redux";
-import Footer from "./components/FooterComponents/Footer";
+import Footer from "./components/Footer/Footer";
 import ProjectsDetail from "./components/ProjectsComponents/ProjectsDetail";
 import PostDetail from "./components/BlogComponents/PostDetail";
 
