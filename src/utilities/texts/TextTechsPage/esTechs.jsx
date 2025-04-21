@@ -21,10 +21,8 @@ import {
   iconChatGptWhite,
   iconJestWhite,
   iconJestColor,
-  iconNextWhite,
-  iconNextColor,
   iconTsWhite,
-  iconTsColor
+  iconTsColor,
 } from "../../Icons";
 
 const techTextEs = {
@@ -76,9 +74,9 @@ const techTextEs = {
     },
     {
       title: "TypeScript",
-      color: "#007ACC", 
-      iconWhite: iconTsWhite, 
-      iconColor: iconTsColor, 
+      color: "#007ACC",
+      iconWhite: iconTsWhite,
+      iconColor: iconTsColor,
       level: "Básico",
       mainTopics: [
         "Tipado básico (variables y funciones)",
@@ -88,7 +86,6 @@ const techTextEs = {
       ],
       mainProjects: ["portfolio personal", "ecommerce project"],
     },
-    
   ],
   frameworksLibraries: [
     {
@@ -112,14 +109,8 @@ const techTextEs = {
       iconWhite: iconReduxWhite,
       iconColor: iconReduxColor,
       level: "Básico",
-      mainTopics: [
-        "State Management",
-        "Actions",
-        "Reducers",
-      ],
-      mainProjects: [
-        "portfolio personal",
-      ],
+      mainTopics: ["State Management", "Actions", "Reducers"],
+      mainProjects: ["portfolio personal"],
     },
 
     {
@@ -135,25 +126,12 @@ const techTextEs = {
       ],
       mainProjects: ["portfolio personal"],
     },
-    {
-      title: "Next.js",
-      color: "#000000", 
-      iconWhite: iconNextWhite, 
-      iconColor: iconNextColor, 
-      level: "Básico",
-      mainTopics: [
-        "Uso de carpetas para enrutamiento dinámico",
-        "Creación de páginas estáticas con el sistema de archivos",
-        "Implementación de enlaces entre páginas con Link",
-        "Configuración de rutas personalizadas básicas",
-      ],
-      mainProjects: ["portfolio personal", "ecommerce project"],
-    },
+
     {
       title: "Jest y Testing Library",
-      color: "#99424F", 
-      iconWhite: iconJestWhite, 
-      iconColor: iconJestColor, 
+      color: "#99424F",
+      iconWhite: iconJestWhite,
+      iconColor: iconJestColor,
       level: "Básico",
       mainTopics: [
         "Escritura de pruebas unitarias básicas para componentes",
@@ -175,27 +153,20 @@ const techTextEs = {
         "Asistencia en desarrollo de código",
         "Generación de ideas y resolución de problemas",
         "Automatización de tareas repetitivas",
-        "Personalización de respuestas según necesidades del proyecto"
+        "Personalización de respuestas según necesidades del proyecto",
       ],
-      mainProjects: [
-        "portfolio personal"
-      ]
-    }
-,    
+      mainProjects: ["portfolio personal"],
+    },
     {
       title: "Git",
       color: "#F05032",
       iconWhite: iconGitWhite,
       iconColor: iconGitColor,
       level: "Intermedio",
-      mainTopics: [
-        "Comandos básicos (add, commit, push)",
-        "Branches",
-        "Merge",
-      ],
+      mainTopics: ["Comandos básicos (add, commit, push)", "Branches", "Merge"],
       mainProjects: ["portfolio personal"],
     },
-    
+
     {
       title: "npm",
       color: "#CB3837",
@@ -209,7 +180,7 @@ const techTextEs = {
       ],
       mainProjects: ["portfolio personal"],
     },
-    
+
     {
       title: "VS Code",
       color: "#007ACC",
@@ -223,40 +194,65 @@ const techTextEs = {
       ],
       mainProjects: ["portfolio personal"],
     },
-    
-   
-    
   ],
   conceptsMethodologies: [
     {
       title: "Diseño responsivo",
       color: "#34A853",
-
       level: "Intermedio",
-      mainTopics: ["Media queries", "Diseño móvil primero", "Flexbox y Grid"],
-      mainProjects: ["portfolio personal"],
+      mainTopics: ["Media queries", "Diseño mobile-first", "Flexbox y Grid"],
+      mainProjects: ["Portfolio Personal"],
     },
     {
-      title: "Componentes Reutilizables",
+      title: "Componentes reutilizables",
       color: "#007BFF",
-
       level: "Intermedio",
-      mainTopics: [
-        "Diseño de componentes",
-        "Props y estados",
-        "Composición de componentes",
-      ],
-      mainProjects: ["portfolio personal"],
+      mainTopics: ["Uso de props", "Estados básicos", "Organización de componentes"],
+      mainProjects: ["Portfolio Personal"],
     },
     {
-      title: "Manejo de Estados",
+      title: "Manejo de estados",
       color: "#6A1B9A",
-
-      level: "Intermedio",
-      mainTopics: ["React useState/useReducer", "Redux"],
-      mainProjects: ["portfolio personal"],
+      level: "Básico",
+      mainTopics: ["useState", "useEffect", "Redux (en proceso de aprendizaje)"],
+      mainProjects: ["Ecommerce"],
     },
-  ],
+    {
+      title: "Consumo de APIs",
+      color: "#5C6BC0",
+      level: "Intermedio",
+      mainTopics: ["fetch", "axios", "manejo de loading/errores"],
+      mainProjects: ["Ecommerce"],
+    },
+    {
+      title: "Control de versiones (Git)",
+      color: "#F4511E",
+      level: "Intermedio",
+      mainTopics: ["Commits básicos", "Branches", "Merge a main"],
+      mainProjects: ["Portfolio Personal", "Ecommerce"],
+    },
+    {
+      title: "Testing (aprendiendo)",
+      color: "#9E9D24",
+      level: "Básico",
+      mainTopics: ["Jest", "Testing Library", "Pruebas unitarias simples"],
+      mainProjects: ["Ecommerce"],
+    },
+    {
+      title: "Ruteo en SPA",
+      color: "#C62828",
+      level: "Básico",
+      mainTopics: ["React Router", "Rutas simples", "Navegación entre páginas"],
+      mainProjects: ["Ecommerce"],
+    },
+    {
+      title: "Buenas prácticas",
+      color: "#6D4C41",
+      level: "Básico",
+      mainTopics: ["Código limpio", "Separación por componentes", "Reutilización de lógica"],
+      mainProjects: ["Portfolio Personal"],
+    }
+  ]
 };
 
 export default techTextEs;
