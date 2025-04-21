@@ -19,7 +19,7 @@ const TechCard = ({ infoTech, handlerToggle }) => {
   });
 
   return (
-    <div className="fixed z-30 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-10/12 max-w-96 min-h-96 bg-lightLight flex rounded overflow-hidden">
+    <div className="fixed z-30 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-10/12 max-w-96 min-h-96 bg-lightLight flex rounded overflow-hidden text-gray-800">
       <div style={{ backgroundColor: infoTech.color }} className="w-5/12 flex flex-col items-center justify-evenly">
         <h4 className="text-xl font-semibold text-center">{infoTech.title}</h4>
         <div className="scale-150">{infoTech.iconWhite}</div>
