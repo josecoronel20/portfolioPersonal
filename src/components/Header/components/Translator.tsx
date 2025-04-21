@@ -9,8 +9,7 @@ const Translate = () => {
   const { isToggleOpen, handlerToggle, setIsToggleOpen } = useToggle();
 
   //llamada al context del lenguaje
-  const language = "hola"
-
+  const language = useSelector((state) => state); 
   return (
     <div className="">
       <div
