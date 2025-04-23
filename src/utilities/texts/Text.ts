@@ -351,6 +351,11 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
     },
     projects: {
       title: "PROYECTOS",
+      buttonText:{
+        seeProject:"VER PROYECTO",
+        seeDetails:"DETALLES",
+        seeRepo:"REPO"
+      },
       list: [
         {
           id: 1,

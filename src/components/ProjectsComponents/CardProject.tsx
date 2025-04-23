@@ -1,7 +1,5 @@
 import React from "react";
-import TechToggle from "../ReutilizableComponents/TechToggle";
 import ButtonsCardProject from "./ButtonsCardProject";
-import DescriptionToggle from "../ReutilizableComponents/DescriptionToggle";
 import { project } from "../../types";
 
 const CardProject = ({ project }: { project: project }) => {

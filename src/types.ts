@@ -127,6 +127,11 @@ export type textLanguage = {
   };
   projects: {
     title: string;
+    buttonText: {
+      seeProject: string;
+      seeDetails: string;
+      seeRepo: string;
+    };
     list: project[];
   };
   blog: {

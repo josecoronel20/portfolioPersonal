@@ -21,18 +21,18 @@ const Carrousel = () => {
   );
 
   return (
-    <section className="flex flex-col justify-center items-center py-10">
+    <section className="flex flex-col justify-center items-center py-10 gap-4">
       <h2>{textLanguage.home.lastProyects.title}</h2>
-    <div className="min-w-64 w-full flex flex-row justify-center items-center gap-10">
-      <div className="cursor-pointer" onClick={() => handlerLeftArrow()}>
-        {iconArrowLeft}
+      <div className="min-w-64 w-full flex flex-row justify-center items-center gap-10">
+        <div className="cursor-pointer" onClick={() => handlerLeftArrow()}>
+          {iconArrowLeft}
+        </div>
+        <CardProject project={project} />
+        <div className="cursor-pointer" onClick={() => handlerRightArrow()}>
+          {iconArrowRight}
+        </div>
       </div>
-      <CardProject project={project} />
-      <div className="cursor-pointer" onClick={() => handlerRightArrow()}>
-        {iconArrowRight}
-        </div>
-        </div>
-        </section>
+    </section>
   );
 };
 

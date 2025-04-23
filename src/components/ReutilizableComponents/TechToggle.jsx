@@ -15,7 +15,6 @@ const TechToggle = ({ children }) => {
       >
         {children}
       </div>
-      <SeeMore state={isTechOpen} handler={handlerTechOpen}/>
     </div>
   );
 };
