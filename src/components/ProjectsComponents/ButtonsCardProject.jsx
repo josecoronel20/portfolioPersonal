@@ -1,33 +1,21 @@
 import React from "react";
 import { styleButtonCard } from "../../Utilities/customStyles";
 import { Link } from "react-router-dom";
-import useQuickTraduction from "../../Hooks/useQuickTraduction";
 
 const ButtonsCardProject = ({ urlSite, urlRepo, id }) => {
-  const textVisite = useQuickTraduction({
-    textEs: "VISITAR SITIO",
-    textEn: "VISIT SITE",
-  });
-  const textDetail = useQuickTraduction({
-    textEs: "VER DETALLES",
-    textEn: "SEE DETAILS",
-  });
-  const textRepo = useQuickTraduction({
-    textEs: "VISITAR REPO",
-    textEn: "VISIT REPO",
-  });
-
+  //todo: agregar visitar sitio,ver detalles y visitar repo a text y tipado
+  
   return (
     <div className="flex flex-col gap-2">
       <Link target="_blank" className={styleButtonCard} to={urlSite}>
-        {textVisite}
+        sda
       </Link>
       <div className="flex gap-2">
         <Link className={styleButtonCard} to={`/projects/${id}`}>
-          {textDetail}
+        adsd
         </Link>
         <Link target="_blank" className={styleButtonCard} to={urlRepo}>
-          {textRepo}
+          adsasd
         </Link>
       </div>
     </div>

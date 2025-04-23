@@ -1,34 +1,27 @@
 import React from "react";
 import TechToggle from "../ReutilizableComponents/TechToggle";
 import ButtonsCardProject from "./ButtonsCardProject";
-import useQuickTraduction from "../../Hooks/useQuickTraduction";
-import DescriptionToggle from "../ReutilizableComponents/DescriptionToggle"
+import DescriptionToggle from "../ReutilizableComponents/DescriptionToggle";
 
-const CardProject = (
- {project}
-) => {
-  const textFinish = useQuickTraduction({
-    textEs: "Finalizado",
-    textEn: "Finish",
-  });
-  const textInProces = useQuickTraduction({
-    textEs: "En proceso",
-    textEn: "In Proces",
-  });
-
+const CardProject = ({ project }) => {
+  //todo:agregar finalizado y en proceso al tipado y al text
 
   return (
-    <div key={project.id} className="rounded-md overflow-hidden bg-lightLight w-fit max-w-72 custom-shadow">
+    <div
+      key={project.id}
+      className="rounded-md overflow-hidden bg-lightLight w-fit max-w-72 custom-shadow"
+    >
       <div>
-        <img src={project.imagePcUrl} alt={`img de portada de ${project.imageDesktopAlt}`} />
+        <img
+          src={project.imagePcUrl}
+          alt={`img de portada de ${project.imageDesktopAlt}`}
+        />
       </div>
       <div className="p-4 gap-4 flex flex-col justify-between">
         <div>
           <h3 className="text-lg font-bold text-darkDark">{`PROYECTO: ${project.title.toUpperCase()}`}</h3>
 
-          <p className="text-darkLight">
-            {project.isFinished === true ? textFinish : textInProces}
-          </p>
+          <p className="text-darkLight">en proceso </p>
         </div>
 
         <TechToggle>

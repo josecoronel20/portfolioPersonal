@@ -2,10 +2,11 @@ import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import Translate from "./components/Translator";
 import MenuNav from "./components/MenuNav";
+import { textLanguage } from "../../types";
+import { useLanguage } from "../../Context/LanguageContext";
 
 const Header = () => {
-  const logo: string = "<JC>";
-
+  const {textLanguage} = useLanguage()
   //logica para ir a la parte superior cada vez que se cambia de location
   const location = useLocation();
 
@@ -20,7 +21,7 @@ const Header = () => {
       <div className="p-3  flex justify-between">
         <Link to="/">
           <div className="inline-block text-green text-xl tracking-widest font-mcLaren py-1 px-5 order-solid border-green border-2 rounded-xl">
-            {logo}
+            {textLanguage.header.logo}
           </div>
         </Link>
         <div className="flex gap-2 md:gap-16">

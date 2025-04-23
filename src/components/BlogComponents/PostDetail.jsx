@@ -1,13 +1,14 @@
 import React from "react";
 import { styleContainerTop } from "../../Utilities/customStyles";
 import { useParams } from "react-router-dom";
-import useLanguage from "../../Hooks/useLanguage";
 import ImageModal from "../ReutilizableComponents/ImageModal";
+import { useLanguage } from "../../Context/LanguageContext";
 
 const PostDetail = () => {
   const { id } = useParams();
-  const { blogText } = useLanguage({ typeText: "blogText" });
-  const post = blogText.find((post) => post.id === parseInt(id));
+const {textLanguage} = useLanguage()
+
+  const post = textLanguage.blog.blogList.find((post) => post.id === parseInt(id));
   const idPar = parseInt(post.id) % 2;
 
   return (

@@ -1,60 +1,62 @@
-import React, { useState } from "react";
-import useLanguage from "../../Hooks/useLanguage";
-import CardProject from "../../components/ProjectsComponents/CardProject";
-import { styleContainer } from "../../Utilities/customStyles";
-import { iconArrowLeft, iconArrowRight } from "../../Utilities/Icons";
-import CarouselDots from "./CarouselDots";
+import React
+// ,  { useState }
+  from "react";
+// import CardProject from "../../components/ProjectsComponents/CardProject";
+// import { styleContainer } from "../../Utilities/customStyles";
+// import { iconArrowLeft, iconArrowRight } from "../../Utilities/Icons";
+// import CarouselDots from "./CarouselDots";
+// import { useLanguage } from "../../Context/LanguageContext";
 
 const Carrousel = () => {
-  // Se importan los textos con sus traducciones
-  const { projectText } = useLanguage({ typeText: "projectText" });
-  const { globalText } = useLanguage({ typeText: "globalText" });
+  // // Se importan los textos con sus traducciones
+  // const {textLanguage} = useLanguage()
+  // //estado para la card que se quiere visualizar
+  // const [indexCurrentCard, setIndexCurrentCard] = useState(0);
+  // const currentCard = projectText[indexCurrentCard];
 
-  //estado para la card que se quiere visualizar
-  const [indexCurrentCard, setIndexCurrentCard] = useState(0);
-  const currentCard = projectText[indexCurrentCard];
+  // //estilo para la animacion
+  // const [styleNext, setStyleNext] = useState("");
+  // const [stylePrev, setStylePrev] = useState("");
 
-  //estilo para la animacion
-  const [styleNext, setStyleNext] = useState("");
-  const [stylePrev, setStylePrev] = useState("");
+  // //logica y animacion para mover carousel hacia atras
+  // const handlerPrev = () => {
+  //   setStylePrev("-translate-x-full");
 
-  //logica y animacion para mover carousel hacia atras
-  const handlerPrev = () => {
-    setStylePrev("-translate-x-full");
+  //   setTimeout(() => {
+  //     setStylePrev("opacity-0 translate-x-full");
 
-    setTimeout(() => {
-      setStylePrev("opacity-0 translate-x-full");
+  //     setIndexCurrentCard((prev) =>
+  //       prev > 0 ? prev - 1 : projectText.length - 1
+  //     );
 
-      setIndexCurrentCard((prev) =>
-        prev > 0 ? prev - 1 : projectText.length - 1
-      );
+  //     setTimeout(() => {
+  //       setStylePrev("");
+  //     }, "200");
+  //   }, "200");
+  // };
 
-      setTimeout(() => {
-        setStylePrev("");
-      }, "200");
-    }, "200");
-  };
+  // //logica y animacion para mover carousel hacia adelante
+  // const handlerNext = () => {
+  //   setStyleNext("translate-x-full");
 
-  //logica y animacion para mover carousel hacia adelante
-  const handlerNext = () => {
-    setStyleNext("translate-x-full");
+  //   setTimeout(() => {
+  //     setStyleNext("opacity-0 -translate-x-full");
 
-    setTimeout(() => {
-      setStyleNext("opacity-0 -translate-x-full");
+  //     setIndexCurrentCard((prev) =>
+  //       prev ===  projectText.length - 1 ? 0 : prev + 1
+  //     );
 
-      setIndexCurrentCard((prev) =>
-        prev ===  projectText.length - 1 ? 0 : prev + 1
-      );
-
-      setTimeout(() => {
-        setStyleNext("");
-      }, "200");
-    }, "200");
-  };
+  //     setTimeout(() => {
+  //       setStyleNext("");
+  //     }, "200");
+  //   }, "200");
+  // };
 
   return (
-    <main className={`${styleContainer} flex flex-col gap-10  md:justify-between md:w-1/2`}>
-      <h2>{globalText.home.carrousel.title}</h2>
+    <main className={`
+    
+     flex flex-col gap-10  md:justify-between md:w-1/2`}>
+      {/* <h2>{globalText.home.carrousel.title}</h2>
 
       <div className="w-full flex justify-center">
         <div className="flex justify-between items-center overflow-hidden w-full max-w-md">
@@ -77,7 +79,7 @@ const Carrousel = () => {
             {iconArrowRight}
           </div>
         </div>
-      </div>
+      </div> */}
     </main>
   );
 };

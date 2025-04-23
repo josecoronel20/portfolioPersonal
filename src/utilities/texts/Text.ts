@@ -23,29 +23,18 @@ import {
   iconTsWhite,
   iconVsCodeColor,
   iconVsCodeWhite,
-} from "../../Icons";
+} from "../Icons";
 
-import ImageDesktopUrl1 from "../../../../public/img/projectsImg/portfolio/screenshotDesktop.png";
-import ImageMobileUrl1 from "../../../../public/img/projectsImg/portfolio/screenshotMobile.png";
-import txt1 from "../../../../public/img/projectsImg/portfolio/projectDetail/txt.png";
-import design1 from "../../../../public/img/projectsImg/portfolio/projectDetail/design.png";
-import features1 from "../../../../public/img/projectsImg/portfolio/projectDetail/features.png";
-import ImageDesktopUrl2 from "../../../../public/img/projectsImg/ecommerce/ecommerce-desktop.png";
-import ImageMobileUrl2 from "../../../../public/img/projectsImg/ecommerce/ecommerce-Mobile.png";
-import txt2 from "../../../../public/img/projectsImg/ecommerce/proyect/ecommerce-arquitecture.png";
-import design2 from "../../../../public/img/projectsImg/ecommerce/proyect/ecommerce-designe.png";
-import features2 from "../../../../public/img/projectsImg/ecommerce/proyect/ecommerce-funcionality.png";
+import { textLanguage } from "../../types";
 
-import imagePost1 from "/img/blogImg/OIG4.jpg";
-
-export const text = {
+export const text: { textEs: textLanguage; textEn: textLanguage } = {
   textEs: {
     header: {
       logo: "<JC>",
       nav: {
         li: {
           home: "INICIO",
-          proyects: "PROYECTOS",
+          projects: "PROYECTOS",
           blog: "BLOG",
           contactMe: "CONTÁCTAME",
         },
@@ -73,25 +62,25 @@ export const text = {
         title: "SOBRE MÍ",
         subtitle:
           "Soy José María Coronel, desarrollador web especializado en React, con 24 años y actualmente viviendo en Buenos Aires - Argentina. Mi enfoque está en crear interfaces prolijas y eficientes.",
-        sections: {
-          myBackground: {
+        sections: [
+          {
             title: "MI TRAYECTORIA",
             text: "Descubrí la programación por curiosidad y me formé de manera autodidacta en tecnologías y herramientas front-end, complementando con libros, documentación oficial, cursos online, videos, etc. Sigo ampliando mis habilidades a través de la práctica constante.",
           },
-          myFocus: {
+          {
             title: "FOCO EN CALIDAD Y ORGANIZACIÓN",
             text: "Me enfoco en escribir código limpio y eficiente, priorizando la claridad, la escalabilidad y la mantenibilidad. Creo que la prolijidad en el desarrollo es clave para construir soluciones sólidas y facilitar el trabajo en equipo.",
           },
-          tools: {
+          {
             title: "HERRAMIENTAS Y DISEÑO",
             text: "Utilizo Figma para diseñar y prototipar mis proyectos, apoyándome en una base sólida de diseño que me permite tomar decisiones coherentes y funcionales. Priorizo un estilo limpio y minimalista que optimiza la experiencia del usuario.",
           },
-        },
+        ],
       },
       techsAndSkills: {
         title: "TECNOLOGÍAS Y HABILIDADES",
-        sections: {
-          techs: {
+        sections: [
+          {
             title: "TECNOLOGÍAS",
             list: [
               {
@@ -151,10 +140,11 @@ export const text = {
                   "Uso de tipos primitivos y arrays",
                   "Configuración básica de TypeScript en el proyecto",
                 ],
+                mainProjects:["portfolio personal"]
               },
             ],
           },
-          frameworks: {
+          {
             title: "FRAMEWORKS Y LIBRERÍAS",
             list: [
               {
@@ -211,7 +201,7 @@ export const text = {
               },
             ],
           },
-          tools: {
+          {
             title: "HERRAMIENTAS",
             list: [
               {
@@ -271,7 +261,7 @@ export const text = {
               },
             ],
           },
-          conceptsAndMethodologies: {
+          {
             title: "CONCEPTOS Y METODOLOGÍAS",
             list: [
               {
@@ -356,7 +346,7 @@ export const text = {
               },
             ],
           },
-        },
+        ],
       },
     },
     projects: {
@@ -364,10 +354,13 @@ export const text = {
       list: [
         {
           id: 1,
-          imgDesktopUrl: ImageDesktopUrl1,
+          imgDesktopUrl:
+            "../../../public/imgprojects/Imgportfolio/screenShotDesktop.png",
           imgDesktopAlt:
             "captura de pantalla de vista de escritorio de página web de portfolio personal",
-          imgMobileUrl: ImageMobileUrl1,
+          imgMobileUrl:
+            "../../../public/imgprojects/Imgportfolio/screenShotDesktop.png",
+
           imgMobileAlt:
             "captura de pantalla de vista de móbil de página web de portfolio personal",
           title: "Portfolio Personal",
@@ -393,19 +386,22 @@ export const text = {
                 title: "Arquitectura de la información",
                 description:
                   "Inicié con un archivo TXT para esbozar las secciones principales: 'Inicio', 'Proyectos', 'Blog', y 'Contacto'. Desarrollé cada sección y sus subsecciones progresivamente, creando un esquema claro y relevante.",
-                imageUrl: txt1,
+                imageUrl:
+                  "../../../public/imgprojects/Imgportfolio/screenShotDesktop.png",
               },
               {
                 title: "Diseño visual",
                 description:
                   "El diseño visual buscó reflejar mi identidad personal y profesional. En un principio se decidió por una paleta de colores llamativa utilizando tonos violetas que siento que es un color que me representa bastante pero finalmente me decidí por una paleta clara y sencilla que asegura que la información relevante sea el foco, facilitando una comunicación visual efectiva sin distracciones.",
-                imageUrl: design1,
+                imageUrl:
+                  "../../../public/imgprojects/Imgportfolio/screenShotDesktop.png",
               },
               {
                 title: "Planificación de funcionalidades",
                 description:
                   "Desarrollé un diagrama para planificar funcionalidades, como el carrusel. Inicialmente, pensé en mostrar tres proyectos del JSON, pero decidí mostrar uno solo basado en el índice del JSON. También planeé un componente 'translate', lo que llevó a usar un contexto global y explorar Redux.",
-                imageUrl: features1,
+                imageUrl:
+                  "../../../public/imgprojects/Imgportfolio/screenShotDesktop.png",
               },
             ],
             mainFeatures: [
@@ -449,11 +445,13 @@ export const text = {
         },
         {
           id: 2,
-          imagePcUrl: ImageDesktopUrl2,
-          imageDesktopAlt:
+          imgDesktopUrl:
+            "../../../public/imgprojects/Imgportfolio/screenShotDesktop.png",
+          imgDesktopAlt:
             "captura de pantalla de vista de escritorio de proyecto ecommerce",
-          imageMobileUrl: ImageMobileUrl2,
-          imageMobileAlt:
+          imgMobileUrl:
+            "../../../public/imgprojects/Imgportfolio/screenShotDesktop.png",
+          imgMobileAlt:
             "captura de pantalla de vista de móbil de proyecto ecommerce",
           title: "Ecommerce",
           techs: [
@@ -481,19 +479,22 @@ export const text = {
                 title: "Arquitectura de la información",
                 description:
                   "Comencé delineando la estructura del ecommerce utilizando un archivo TXT, identificando las secciones clave como 'Inicio', 'Productos', 'Ofertas' y 'Nueva colección'. Esta etapa me permitió visualizar la jerarquía de información y asegurar una navegación intuitiva, facilitando el acceso a cada sección de forma fluida.",
-                imageUrl: txt2,
+                imageUrl:
+                  "../../../public/imgprojects/Imgportfolio/screenShotDesktop.png",
               },
               {
                 title: "Diseño visual",
                 description:
                   "La fase de diseño se centró en crear una identidad visual atractiva y coherente para la tienda online. Tras explorar varias paletas de colores, decidí optar por tonos suaves y elegantes que destacan los productos sin abrumar al visitante. La meta era lograr un entorno visual que invite a explorar y facilite la conversión.",
-                imageUrl: design2,
+                imageUrl:
+                  "../../../public/imgprojects/Imgportfolio/screenShotDesktop.png",
               },
               {
                 title: "Planificación de funcionalidades",
                 description:
                   "Para estructurar las funcionalidades del ecommerce, creé un diagrama que contemplaba aspectos como el carrusel de productos y la gestión del carrito de compras. En lugar de presentar varios productos a la vez, decidí centrarme en la experiencia del usuario al mostrar uno destacado. También incorporé un componente para el carrito, implementando un contexto global que mejora la interacción del usuario con el sitio.",
-                imageUrl: features2,
+                imageUrl:
+                  "../../../public/imgprojects/Imgportfolio/screenShotDesktop.png",
               },
             ],
 
@@ -545,7 +546,8 @@ export const text = {
         {
           id: 1,
           title: "Construyendo Fundamentos Sólidos",
-          image: imagePost1,
+          image:
+            "../../../public/imgprojects/Imgportfolio/screenShotDesktop.png",
           altImg: "Ímagen de posteo de programador estudiando",
           shortDescription:
             "Al mudarme a Portugal en abril sin computadora, utilicé libros, videos y documentación en línea para fortalecer mis conocimientos en desarrollo web. Con 'Fundamentos de Programación: Estructura de Datos y Algoritmos' y 'Eloquent JavaScript', construí una base sólida. Finalmente, adquirí una computadora y apliqué lo aprendido en mi primer proyecto: un portfolio personal.",
@@ -561,6 +563,7 @@ export const text = {
       ],
     },
     footer: {
+      title: "Navegación rápida",
       contactMe: {
         sectionTitle: "Información de contácto",
         email: {
@@ -698,6 +701,7 @@ export const text = {
                   "Using primitive types and arrays",
                   "Basic TypeScript setup in the project",
                 ],
+                mainProjects: ["personal portfolio"],
               },
             ],
           },
@@ -899,15 +903,17 @@ export const text = {
         },
       },
     },
-    proyects: {
+    projects: {
       title: "PROJECTS",
       list: [
         {
           id: 1,
-          imgDesktopUrl: ImageDesktopUrl1,
+          imgDesktopUrl:
+            "../../../public/imgprojects/Imgportfolio/screenShotDesktop.png",
           imgDesktopAlt:
             "screenshot of desktop view of personal portfolio website",
-          imgMobileUrl: ImageMobileUrl1,
+          imgMobileUrl:
+            "../../../public/imgprojects/Imgportfolio/screenShotDesktop.png",
           imgMobileAlt:
             "screenshot of mobile view of personal portfolio website",
           title: "Personal Portfolio",
@@ -933,19 +939,22 @@ export const text = {
                 title: "Information Architecture",
                 description:
                   "I started with a TXT file to outline the main sections: 'Home', 'Projects', 'Blog', and 'Contact'. I developed each section and its subsections progressively, creating a clear and relevant schema.",
-                imageUrl: txt1,
+                imageUrl:
+                  "../../../public/imgprojects/Imgportfolio/screenShotDesktop.png",
               },
               {
                 title: "Visual Design",
                 description:
                   "The visual design aimed to reflect my personal and professional identity. Initially, I chose a striking color palette with violet tones, which I felt represented me well. However, I ultimately decided on a simpler and cleaner palette to ensure that relevant information would be the focus, enabling effective visual communication without distractions.",
-                imageUrl: design1,
+                imageUrl:
+                  "../../../public/imgprojects/Imgportfolio/screenShotDesktop.png",
               },
               {
                 title: "Feature Planning",
                 description:
                   "I developed a diagram to plan features such as the carousel. Initially, I thought about displaying three projects from the JSON, but I decided to display just one based on the JSON index. I also planned a 'translate' component, which led to using a global context and exploring Redux.",
-                imageUrl: features1,
+                imageUrl:
+                  "../../../public/imgprojects/Imgportfolio/screenShotDesktop.png",
               },
             ],
             mainFeatures: [
@@ -989,10 +998,12 @@ export const text = {
         },
         {
           id: 2,
-          imagePcUrl: ImageDesktopUrl2,
-          imageDesktopAlt: "screenshot of desktop view of ecommerce project",
-          imageMobileUrl: ImageMobileUrl2,
-          imageMobileAlt: "screenshot of mobile view of ecommerce project",
+          imgDesktopUrl:
+            "../../../public/imgprojects/Imgportfolio/screenShotDesktop.png",
+          imgDesktopAlt: "screenshot of desktop view of ecommerce project",
+          imgMobileUrl:
+            "../../../public/imgprojects/Imgportfolio/screenShotDesktop.png",
+          imgMobileAlt: "screenshot of mobile view of ecommerce project",
           title: "Ecommerce",
           techs: [
             "html",
@@ -1019,19 +1030,22 @@ export const text = {
                 title: "Information Architecture",
                 description:
                   "I started by outlining the ecommerce structure using a TXT file, identifying key sections like 'Home', 'Products', 'Offers', and 'New Collection'. This step allowed me to visualize the information hierarchy and ensure intuitive navigation, making it easy to access each section smoothly.",
-                imageUrl: txt2,
+                imageUrl:
+                  "../../../public/imgprojects/Imgportfolio/screenShotDesktop.png",
               },
               {
                 title: "Visual Design",
                 description:
                   "The design phase focused on creating an attractive and coherent visual identity for the online store. After exploring several color palettes, I decided on soft and elegant tones that highlight the products without overwhelming the visitor. The goal was to create a visual environment that invites exploration and facilitates conversion.",
-                imageUrl: design2,
+                imageUrl:
+                  "../../../public/imgprojects/Imgportfolio/screenShotDesktop.png",
               },
               {
                 title: "Feature Planning",
                 description:
                   "To structure the ecommerce features, I created a diagram that included aspects such as the product carousel and the shopping cart management. Instead of showing multiple products at once, I decided to focus on the user experience by displaying one featured product. I also incorporated a cart component, implementing a global context that enhances user interaction with the site.",
-                imageUrl: features2,
+                imageUrl:
+                  "../../../public/imgprojects/Imgportfolio/screenShotDesktop.png",
               },
             ],
             mainFeatures: [
@@ -1082,7 +1096,8 @@ export const text = {
         {
           id: 1,
           title: "Building Solid Foundations",
-          image: imagePost1,
+          image:
+            "../../../public/imgprojects/Imgportfolio/screenShotDesktop.png",
           altImg: "Image of a post with a programmer studying",
           shortDescription:
             "When I moved to Portugal in April without a computer, I used books, videos, and online documentation to strengthen my web development knowledge. With 'Programming Fundamentals: Data Structures and Algorithms' and 'Eloquent JavaScript', I built a solid foundation. Eventually, I got a computer and applied what I learned to my first project: a personal portfolio.",
@@ -1098,6 +1113,7 @@ export const text = {
       ],
     },
     footer: {
+      title: "Quick navigation",
       contactMe: {
         sectionTitle: "Contact Information",
         email: {

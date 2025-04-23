@@ -1,15 +1,10 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { iconCopy } from "../../utilities/Icons";
-import useQuickTraduction from "../../Hooks/useQuickTraduction";
 
 const FooterLink = ({ icon, textForCopy, url, text }) => {
+  //todo: agrega textCopyAlert al tipado y al text
   const [copyAlert, setCopyAlert] = useState(false);
-
-  const textCopyAlert = useQuickTraduction({
-    textEs: "¡Copiado!",
-    textEn: "¡Copied!",
-  });
 
   const handlerCopyAlert = () => {
     setCopyAlert(true);
@@ -35,7 +30,7 @@ const FooterLink = ({ icon, textForCopy, url, text }) => {
         className="hover:scale-105 cursor-pointer opacity-50 hover:opacity-100 flex gap-1"
       >
         {iconCopy}
-        {copyAlert === true && <p className="text-sm font-light">{textCopyAlert}</p>}
+        {copyAlert === true && <p className="text-sm font-light">copiado</p>}
       </div>
     </div>
   );

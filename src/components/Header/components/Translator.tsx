@@ -1,15 +1,15 @@
 import React from "react";
 import { iconTranslate } from "../../../utilities/Icons";
-import { handlerChangeEnglish, handlerChangeSpanish } from "../../../languageContext";
+import { handlerChangeEnglish, handlerChangeSpanish } from "../../../Context/LanguageContext";
 import { useToggle } from "../../../Hooks/useToggle";
-import { useSelector } from "react-redux";
+import { useLanguage } from "../../../Context/LanguageContext";
 
 const Translate = () => {
   //uso de customhook para utilizar un estado toggle
   const { isToggleOpen, handlerToggle, setIsToggleOpen } = useToggle();
 
   //llamada al context del lenguaje
-  const language = useSelector((state) => state); 
+  const {language,textLanguage, changeToEnglish,changeToSpanish} = useLanguage()
   return (
     <div className="">
       <div
@@ -20,8 +20,8 @@ const Translate = () => {
         <div>{language.toUpperCase()}</div>
       </div>
       <div className={`${isToggleOpen === false && "hidden"}`}>
-        <p className="text-lightLight opacity-40 cursor-pointer hover:opacity-100" onClick={() => {handlerChangeSpanish();setIsToggleOpen(false);}}>ESPAÑOL</p>
-        <p className="text-lightLight opacity-40 cursor-pointer hover:opacity-100" onClick={() => {handlerChangeEnglish();setIsToggleOpen(false);}}>ENGLISH</p>
+        <p className="text-lightLight opacity-40 cursor-pointer hover:opacity-100" onClick={() => {changeToSpanish();setIsToggleOpen(false);}}>ESPAÑOL</p>
+        <p className="text-lightLight opacity-40 cursor-pointer hover:opacity-100" onClick={() => {changeToEnglish();setIsToggleOpen(false);}}>ENGLISH</p>
       </div>
     </div>
   );

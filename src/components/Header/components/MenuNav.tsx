@@ -3,7 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { iconMenu } from "../../../Utilities/Icons";
 import { useToggle } from "../../../Hooks/useToggle";
 import Modal from "../../ReutilizableComponents/Modal";
-import useLanguage from "../../../Hooks/useLanguage";
+import { useLanguage } from "../../../Context/LanguageContext";
 
 const MenuNav = () => {
   // Estado para obtener el tamaño de la pantalla y renderizar/aplicar estilos dependiendo de este
@@ -23,8 +23,8 @@ const MenuNav = () => {
     };
   }, []);
 
-  //texto global
-  const { globalText } = useLanguage({ typeText: "globalText" });
+  //texto
+  const { textLanguage } = useLanguage();
 
   // Uso de custom hook para manejar el estado toggle
   const { isToggleOpen, handlerToggle, setIsToggleOpen } = useToggle();
@@ -33,7 +33,7 @@ const MenuNav = () => {
   const location = useLocation().pathname;
 
   //componetiza li
-  const Li = ({ to, text } : {to:string, text:string}) => {
+  const Li = ({ to, text }: { to: string; text: string }) => {
     return (
       <li onClick={windowSize < 768 && handlerToggle}>
         <Link
@@ -68,10 +68,10 @@ const MenuNav = () => {
              : ""
          } justify-center gap-5 text-center text-lightLight flex`}
         >
-          <Li to={"/"} text={globalText.nav.home} />
-          <Li to={"/projects"} text={globalText.nav.projects} />
-          <Li to={"/blog"} text={globalText.nav.blog} />
-          <Li to={"/contact"} text={globalText.nav.contact} />
+          <Li to={"/"} text={textLanguage.header.nav.li.home} />
+          <Li to={"/projects"} text={textLanguage.header.nav.li.projects} />
+          <Li to={"/blog"} text={textLanguage.header.nav.li.blog} />
+          <Li to={"/contact"} text={textLanguage.header.nav.li.contactMe} />
         </ul>
       </nav>
     </Modal>

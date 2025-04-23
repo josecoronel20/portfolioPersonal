@@ -5,28 +5,26 @@ import Projects from "./Routes/Projects";
 import Blog from "./routes/Blog";
 import Contact from "./routes/Contact";
 import Header from "./components/Header/Header";
-import { store } from "./languageContext";
-import { Provider } from "react-redux";
 import Footer from "./components/Footer/Footer";
-import ProjectsDetail from "./components/ProjectsComponents/ProjectsDetail";
+// import ProjectsDetail from "./components/ProjectsComponents/ProjectsDetail";
 import PostDetail from "./components/BlogComponents/PostDetail";
-
+import { LanguageProvider } from "./Context/LanguageContext";
 const App = () => {
   return (
     <div>
       <BrowserRouter basename="/portfolioPersonal">
-        <Provider store={store}>
+        <LanguageProvider>
           <Header />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/projects/:id" element={<ProjectsDetail />} />
+            {/* <Route path="/projects/:id" element={<ProjectsDetail />} /> */}
             <Route path="/blog/:id" element={<PostDetail />} />
           </Routes>
           <Footer />
-        </Provider>
+        </LanguageProvider>
       </BrowserRouter>
     </div>
   );
