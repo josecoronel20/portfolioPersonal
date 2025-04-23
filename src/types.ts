@@ -24,7 +24,7 @@ type issueList = {
   description: string;
 };
 
-type project = {
+export type project = {
   id: number;
   imgDesktopUrl: string;
   imgDesktopAlt: string;

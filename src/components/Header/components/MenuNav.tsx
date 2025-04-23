@@ -35,7 +35,7 @@ const MenuNav = () => {
   //componetiza li
   const Li = ({ to, text }: { to: string; text: string }) => {
     return (
-      <li onClick={windowSize < 768 && handlerToggle}>
+      <li onClick={windowSize < 768 ? handlerToggle : undefined}>
         <Link
           className={`${
             location !== to && " opacity-40 "

@@ -355,7 +355,7 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
         {
           id: 1,
           imgDesktopUrl:
-            "../../../public/imgprojects/Imgportfolio/screenShotDesktop.png",
+            "public/img/projectsImg/portfolio/screenShotDesktop.png",
           imgDesktopAlt:
             "captura de pantalla de vista de escritorio de página web de portfolio personal",
           imgMobileUrl:
@@ -446,7 +446,7 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
         {
           id: 2,
           imgDesktopUrl:
-            "../../../public/imgprojects/Imgportfolio/screenShotDesktop.png",
+            "public/img/projectsImg/ecommerce/Ecommerce-Desktop.png",
           imgDesktopAlt:
             "captura de pantalla de vista de escritorio de proyecto ecommerce",
           imgMobileUrl:
