@@ -1,6 +1,5 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./Routes/Home";
 import Projects from "./Routes/Projects";
 import Blog from "./routes/Blog";
 import Contact from "./routes/Contact";
@@ -9,6 +8,7 @@ import Footer from "./components/Footer/Footer";
 // import ProjectsDetail from "./components/ProjectsComponents/ProjectsDetail";
 import PostDetail from "./components/BlogComponents/PostDetail";
 import { LanguageProvider } from "./Context/LanguageContext";
+import Home from "./routes/Home.tsx";
 const App = () => {
   return (
     <div>

@@ -1,7 +1,6 @@
 import React from "react";
 import { iconTranslate } from "../../../utilities/Icons";
-import { handlerChangeEnglish, handlerChangeSpanish } from "../../../Context/LanguageContext";
-import { useToggle } from "../../../Hooks/useToggle";
+import { useToggle } from "../../../Hooks/useToggle.ts";
 import { useLanguage } from "../../../Context/LanguageContext";
 
 const Translate = () => {

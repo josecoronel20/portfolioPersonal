@@ -1,5 +1,5 @@
 import React from "react";
-import { useToggle } from "../../Hooks/useToggle";
+import { useToggle } from "../../Hooks/useToggle.ts";
 
 const ImageModal = ({children}) => {
     const { isToggleOpen, handlerToggle } = useToggle();

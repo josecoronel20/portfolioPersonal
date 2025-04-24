@@ -1,8 +1,11 @@
-type tech = {
+import { ReactNode } from "react";
+
+export type tech = {
+  id:number,
   title: string;
   color: string;
-  iconWhite?: SVGAElement;
-  iconColor?: SVGAElement;
+  iconWhite?: ReactNode;
+  iconColor?: ReactNode;
   level: string;
   mainTopics: string[];
   mainProjects: string[];
@@ -63,7 +66,7 @@ type aboutMeSection = {
   text: string;
 };
 
-type techSection = {
+export type techSection = {
   title: string;
   list: tech[];
 };

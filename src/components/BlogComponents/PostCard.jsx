@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { styleButtonCard } from "../../Utilities/customStyles";
-import DescriptionToggle from "../ReutilizableComponents/DescriptionToggle";
 
 const PostCard = ({ postInfo }) => {
   return (
@@ -11,7 +10,6 @@ const PostCard = ({ postInfo }) => {
         <h2 className="text-lg font-bold text-darkDark">
           {postInfo.title.toUpperCase()}
         </h2>
-        <DescriptionToggle description={postInfo.shortDescription} />
         <div>
           <Link className={styleButtonCard} to={`/blog/${postInfo.id}`}>
             VER POST

@@ -1,6 +1,6 @@
 import { createRoot } from 'react-dom/client';
 import React from 'react';
-import App from '/src/App.jsx';
+import App from '/src/App.tsx';
 
 document.body.innerHTML = '<div id="app"></div>';
 

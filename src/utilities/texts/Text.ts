@@ -84,6 +84,7 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
             title: "TECNOLOGÍAS",
             list: [
               {
+                id:1,
                 title: "HTML5",
                 color: "#E34F26",
                 iconWhite: iconHtmlWhite,
@@ -98,6 +99,7 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
                 mainProjects: ["portfolio personal"],
               },
               {
+                                id:2,
                 title: "CSS3",
                 color: "#1572B6",
                 iconWhite: iconCssWhite,
@@ -114,6 +116,7 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
                 mainProjects: ["portfolio personal"],
               },
               {
+                                id:3,
                 title: "JavaScript",
                 color: "#F7DF1E",
                 iconWhite: iconJsWhite,
@@ -129,6 +132,7 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
                 mainProjects: ["portfolio personal"],
               },
               {
+                                id:4,
                 title: "TypeScript",
                 color: "#007ACC",
                 iconWhite: iconTsWhite,
@@ -140,7 +144,7 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
                   "Uso de tipos primitivos y arrays",
                   "Configuración básica de TypeScript en el proyecto",
                 ],
-                mainProjects:["portfolio personal"]
+                mainProjects: ["portfolio personal"],
               },
             ],
           },
@@ -148,7 +152,8 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
             title: "FRAMEWORKS Y LIBRERÍAS",
             list: [
               {
-                title: "React.js",
+                                id:5,
+title: "React.js",
                 color: "#61DAFB",
                 iconWhite: iconReactWhite,
                 iconColor: iconReactColor,
@@ -163,7 +168,8 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
                 mainProjects: ["portfolio personal"],
               },
               {
-                title: "Redux",
+                                id:6,
+title: "Redux",
                 color: "#764ABC",
                 iconWhite: iconReduxWhite,
                 iconColor: iconReduxColor,
@@ -172,7 +178,8 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
                 mainProjects: ["portfolio personal"],
               },
               {
-                title: "Tailwind",
+                                id:7,
+title: "Tailwind",
                 color: "#38B2AC",
                 iconWhite: iconTailwindWhite,
                 iconColor: iconTailwindColor,
@@ -186,7 +193,8 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
               },
 
               {
-                title: "Jest y Testing Library",
+                                id:8,
+title: "Jest y Testing Library",
                 color: "#99424F",
                 iconWhite: iconJestWhite,
                 iconColor: iconJestColor,
@@ -205,6 +213,8 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
             title: "HERRAMIENTAS",
             list: [
               {
+                                id:9,
+
                 title: "ChatGPT",
                 color: "#6C3F9D",
                 iconWhite: iconChatGptWhite,
@@ -219,6 +229,8 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
                 mainProjects: ["portfolio personal"],
               },
               {
+                                id:10,
+
                 title: "Git",
                 color: "#F05032",
                 iconWhite: iconGitWhite,
@@ -233,6 +245,8 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
               },
 
               {
+                                id:11,
+
                 title: "npm",
                 color: "#CB3837",
                 iconWhite: iconNpmWhite,
@@ -247,6 +261,8 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
               },
 
               {
+                                id:12,
+
                 title: "VS Code",
                 color: "#007ACC",
                 iconWhite: iconVsCodeWhite,
@@ -265,6 +281,8 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
             title: "CONCEPTOS Y METODOLOGÍAS",
             list: [
               {
+                                id:13,
+
                 title: "Diseño responsivo",
                 color: "#34A853",
                 level: "Intermedio",
@@ -276,6 +294,8 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
                 mainProjects: ["Portfolio Personal"],
               },
               {
+                                id:14,
+
                 title: "Componentes reutilizables",
                 color: "#007BFF",
                 level: "Intermedio",
@@ -287,6 +307,8 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
                 mainProjects: ["Portfolio Personal"],
               },
               {
+                                id:15,
+
                 title: "Manejo de estados",
                 color: "#6A1B9A",
                 level: "Básico",
@@ -298,6 +320,8 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
                 mainProjects: ["Ecommerce"],
               },
               {
+                                id:16,
+
                 title: "Consumo de APIs",
                 color: "#5C6BC0",
                 level: "Intermedio",
@@ -305,6 +329,8 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
                 mainProjects: ["Ecommerce"],
               },
               {
+                                id:17,
+
                 title: "Control de versiones (Git)",
                 color: "#F4511E",
                 level: "Intermedio",
@@ -312,6 +338,8 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
                 mainProjects: ["Portfolio Personal", "Ecommerce"],
               },
               {
+                                id:18,
+
                 title: "Testing (aprendiendo)",
                 color: "#9E9D24",
                 level: "Básico",
@@ -323,6 +351,8 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
                 mainProjects: ["Ecommerce"],
               },
               {
+                                id:19,
+
                 title: "Ruteo en SPA",
                 color: "#C62828",
                 level: "Básico",
@@ -334,6 +364,8 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
                 mainProjects: ["Ecommerce"],
               },
               {
+                                id:20,
+
                 title: "Buenas prácticas",
                 color: "#6D4C41",
                 level: "Básico",
@@ -351,10 +383,10 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
     },
     projects: {
       title: "PROYECTOS",
-      buttonText:{
-        seeProject:"VER PROYECTO",
-        seeDetails:"DETALLES",
-        seeRepo:"REPO"
+      buttonText: {
+        seeProject: "VER PROYECTO",
+        seeDetails: "DETALLES",
+        seeRepo: "REPO",
       },
       list: [
         {
