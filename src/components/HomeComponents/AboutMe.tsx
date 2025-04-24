@@ -20,7 +20,7 @@ const AboutMe = () => {
       className={`${styleContainer} flex flex-col justify-between gap-10 md:w-1/2`}
     >
       <h2 className="text-center">{textLanguage.home.aboutMe.title}</h2>
-      <h3>{textLanguage.home.aboutMe.subtitle}</h3>
+      <h3 className="font-light">{textLanguage.home.aboutMe.subtitle}</h3>
 
       {textLanguage.home.aboutMe.sections.map((section, index) => {
         return (
