@@ -20,7 +20,7 @@ const TechMap = ({ techProp }: { techProp: tech }) => {
       <h3 className={`${techProp.iconWhite && !isHover && "opacity-0"}`}>
         {techProp.title}
       </h3>
-      <Modal toggle={isToggleOpen}>
+      <Modal toggle={isToggleOpen} nav={false}>
         <TechCard techInfo={techProp}/>
       </Modal>
     </div>

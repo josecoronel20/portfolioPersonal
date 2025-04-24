@@ -11,7 +11,7 @@ import { LanguageProvider } from "./Context/LanguageContext";
 import Home from "./routes/Home.tsx";
 const App = () => {
   return (
-    <div>
+    <>
       <BrowserRouter basename="/portfolioPersonal">
         <LanguageProvider>
           <Header />
@@ -26,7 +26,7 @@ const App = () => {
           <Footer />
         </LanguageProvider>
       </BrowserRouter>
-    </div>
+    </>
   );
 };
 

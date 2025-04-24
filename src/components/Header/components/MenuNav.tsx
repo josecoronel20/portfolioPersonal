@@ -49,16 +49,16 @@ const MenuNav = () => {
   };
 
   return (
-    <Modal toggle={isToggleOpen} setToggle={setIsToggleOpen}>
-      <nav>
-        {windowSize < 768 ? (
-          <div onClick={handlerToggle} className="relative z-30 cursor-pointer">
-            {iconMenu}
-          </div>
-        ) : (
-          ""
-        )}
+    <nav>
+      {windowSize < 768 ? (
+        <div onClick={handlerToggle} className="relative z-30 cursor-pointer">
+          {iconMenu}
+        </div>
+      ) : (
+        ""
+      )}
 
+      <Modal toggle={isToggleOpen} setToggle={setIsToggleOpen} nav={true}>
         <ul
           className={`${windowSize < 768 && isToggleOpen === false && "hidden"} 
          
@@ -73,8 +73,8 @@ const MenuNav = () => {
           <Li to={"/blog"} text={textLanguage.header.nav.li.blog} />
           <Li to={"/contact"} text={textLanguage.header.nav.li.contactMe} />
         </ul>
-      </nav>
-    </Modal>
+      </Modal>
+    </nav>
   );
 };
 
