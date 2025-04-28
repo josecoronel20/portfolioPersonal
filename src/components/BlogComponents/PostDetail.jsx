@@ -13,7 +13,7 @@ const {textLanguage} = useLanguage()
 
   return (
     <div className={styleContainerTop}>
-      <div className="flex flex-col gap-10 justify-center items-center">
+      <div className="flex flex-col gap-10 justify-center items-center max-w-3xl">
         <h1 className="text-xl">{post.title.toUpperCase()}</h1>
         <div
           className={`flex flex-col gap-5 justify-center items-center ${

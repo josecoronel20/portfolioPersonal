@@ -14,7 +14,7 @@ export type tech = {
 type planningProcess = {
   title: string;
   description: string;
-  imageUrl: string;
+  imageUrl: string | null;
 };
 
 type mainFeatures = {
@@ -151,6 +151,7 @@ export type textLanguage = {
   };
   footer: {
     title: string;
+    copyText:string,
     contactMe: {
       sectionTitle: string;
       email: {

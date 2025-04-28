@@ -40,6 +40,10 @@ import imgfeatures2 from "/public/img/projectsImg/ecommerce/proyectDetail/ecomme
 import imgDesktopUrl3 from "/public/img/projectsImg/arenadosLucho/imgDesktop.png";
 import imgMobileUrl3 from "/public/img/projectsImg/arenadosLucho/imgMobile.png";
 
+import imgBlog1 from "/public/img/blogImg/OIG4.jpg";
+import imgBlog2 from "/public/img/blogImg/post2.png";
+import imgBlog3 from "/public/img/blogImg/post3.png";
+
 import { textLanguage } from "../../types";
 
 export const text: { textEs: textLanguage; textEn: textLanguage } = {
@@ -58,7 +62,7 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
     home: {
       hero: {
         heroImg: {
-          imgAlt: "Hero de hombre arenando",
+          imgAlt: "ilustracion de Jose Maria Coronel",
         },
         title: {
           beforeHiglight: "Soy ",
@@ -111,7 +115,11 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
                   "Formularios",
                   "Multimedia (audio, video)",
                 ],
-                mainProjects: ["portfolio personal"],
+                mainProjects: [
+                  "portfolio personal",
+                  "Ecommerce",
+                  "Arenados Lucho",
+                ],
               },
               {
                 id: 2,
@@ -128,7 +136,11 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
                   "Metodologías de CSS (BEM, SMACSS)",
                   "Responsive Design",
                 ],
-                mainProjects: ["portfolio personal"],
+                mainProjects: [
+                  "portfolio personal",
+                  "Ecommerce",
+                  "Arenados Lucho",
+                ],
               },
               {
                 id: 3,
@@ -144,7 +156,11 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
                   "Manipulación del DOM",
                   "Módulos ES6",
                 ],
-                mainProjects: ["portfolio personal"],
+                mainProjects: [
+                  "portfolio personal",
+                  "Ecommerce",
+                  "Arenados Lucho",
+                ],
               },
               {
                 id: 4,
@@ -159,7 +175,7 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
                   "Uso de tipos primitivos y arrays",
                   "Configuración básica de TypeScript en el proyecto",
                 ],
-                mainProjects: ["portfolio personal"],
+                mainProjects: ["portfolio personal", "Arenados Lucho"],
               },
             ],
           },
@@ -180,7 +196,11 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
                   "Rutas",
                   "JSX",
                 ],
-                mainProjects: ["portfolio personal"],
+                mainProjects: [
+                  "portfolio personal",
+                  "Ecommerce",
+                  "Arenados Lucho",
+                ],
               },
               {
                 id: 6,
@@ -190,7 +210,7 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
                 iconColor: iconReduxColor,
                 level: "Básico",
                 mainTopics: ["State Management", "Actions", "Reducers"],
-                mainProjects: ["portfolio personal"],
+                mainProjects: [""],
               },
               {
                 id: 7,
@@ -204,7 +224,11 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
                   "Personalización de temas",
                   "Responsive Design",
                 ],
-                mainProjects: ["portfolio personal"],
+                mainProjects: [
+                  "portfolio personal",
+                  "Ecommerce",
+                  "Arenados Lucho",
+                ],
               },
 
               {
@@ -220,7 +244,7 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
                   "Pruebas de renderizado de componentes",
                   "Verificación de propiedades y estados en pruebas",
                 ],
-                mainProjects: ["portfolio personal", "ecommerce project"],
+                mainProjects: ["Ecommerce"],
               },
             ],
           },
@@ -241,7 +265,11 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
                   "Automatización de tareas repetitivas",
                   "Personalización de respuestas según necesidades del proyecto",
                 ],
-                mainProjects: ["portfolio personal"],
+                mainProjects: [
+                  "portfolio personal",
+                  "Ecommerce",
+                  "Arenados Lucho",
+                ],
               },
               {
                 id: 10,
@@ -256,7 +284,11 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
                   "Branches",
                   "Merge",
                 ],
-                mainProjects: ["portfolio personal"],
+                mainProjects: [
+                  "portfolio personal",
+                  "Ecommerce",
+                  "Arenados Lucho",
+                ],
               },
 
               {
@@ -272,7 +304,11 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
                   "Scripts",
                   "Configuración de proyectos",
                 ],
-                mainProjects: ["portfolio personal"],
+                mainProjects: [
+                  "portfolio personal",
+                  "Ecommerce",
+                  "Arenados Lucho",
+                ],
               },
 
               {
@@ -288,7 +324,11 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
                   "Atajos de teclado",
                   "Configuraciones personalizadas",
                 ],
-                mainProjects: ["portfolio personal"],
+                mainProjects: [
+                  "portfolio personal",
+                  "Ecommerce",
+                  "Arenados Lucho",
+                ],
               },
             ],
           },
@@ -306,7 +346,11 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
                   "Diseño mobile-first",
                   "Flexbox y Grid",
                 ],
-                mainProjects: ["Portfolio Personal"],
+                mainProjects: [
+                  "portfolio personal",
+                  "Ecommerce",
+                  "Arenados Lucho",
+                ],
               },
               {
                 id: 14,
@@ -319,7 +363,11 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
                   "Estados básicos",
                   "Organización de componentes",
                 ],
-                mainProjects: ["Portfolio Personal"],
+                mainProjects: [
+                  "portfolio personal",
+                  "Ecommerce",
+                  "Arenados Lucho",
+                ],
               },
               {
                 id: 15,
@@ -332,7 +380,11 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
                   "useEffect",
                   "Redux (en proceso de aprendizaje)",
                 ],
-                mainProjects: ["Ecommerce"],
+                mainProjects: [
+                  "portfolio personal",
+                  "Ecommerce",
+                  "Arenados Lucho",
+                ],
               },
               {
                 id: 16,
@@ -341,7 +393,7 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
                 color: "#5C6BC0",
                 level: "Intermedio",
                 mainTopics: ["fetch", "axios", "manejo de loading/errores"],
-                mainProjects: ["Ecommerce"],
+                mainProjects: [""],
               },
               {
                 id: 17,
@@ -350,7 +402,11 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
                 color: "#F4511E",
                 level: "Intermedio",
                 mainTopics: ["Commits básicos", "Branches", "Merge a main"],
-                mainProjects: ["Portfolio Personal", "Ecommerce"],
+                mainProjects: [
+                  "portfolio personal",
+                  "Ecommerce",
+                  "Arenados Lucho",
+                ],
               },
               {
                 id: 18,
@@ -376,7 +432,11 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
                   "Rutas simples",
                   "Navegación entre páginas",
                 ],
-                mainProjects: ["Ecommerce"],
+                mainProjects: [
+                  "portfolio personal",
+                  "Ecommerce",
+                  "Arenados Lucho",
+                ],
               },
               {
                 id: 20,
@@ -389,7 +449,11 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
                   "Separación por componentes",
                   "Reutilización de lógica",
                 ],
-                mainProjects: ["Portfolio Personal"],
+                mainProjects: [
+                  "portfolio personal",
+                  "Ecommerce",
+                  "Arenados Lucho",
+                ],
               },
             ],
           },
@@ -614,7 +678,7 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
           ],
           description:
             "El sitio web para Arenados Lucho fue desarrollado como parte de un encargo real para una empresa dedicada al arenado y restauración de superficies. El enfoque estuvo puesto en reflejar profesionalismo y claridad en los servicios ofrecidos, optimizando la navegación para usuarios que buscan soluciones rápidas y confiables. El desarrollo incluyó diseño responsivo, integración de formularios de contacto, y una estructura visual centrada en la presentación de trabajos realizados. Este proyecto refleja la capacidad de traducir requerimientos del cliente en una solución concreta y funcional.",
-          siteUrl: "https://josecoronel20.github.io/ArenadosLucho2025/",
+          siteUrl: "https://arenadoslucho.com/",
           repoUrl: "https://github.com/josecoronel20/ArenadosLucho2025",
           isFinished: false,
           projectObjective:
@@ -690,8 +754,7 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
         {
           id: 1,
           title: "Construyendo Fundamentos Sólidos",
-          image:
-            "../../../public/imgprojects/Imgportfolio/screenShotDesktop.png",
+          image: imgBlog1,
           altImg: "Ímagen de posteo de programador estudiando",
           shortDescription:
             "Al mudarme a Portugal en abril sin computadora, utilicé libros, videos y documentación en línea para fortalecer mis conocimientos en desarrollo web. Con 'Fundamentos de Programación: Estructura de Datos y Algoritmos' y 'Eloquent JavaScript', construí una base sólida. Finalmente, adquirí una computadora y apliqué lo aprendido en mi primer proyecto: un portfolio personal.",
@@ -704,10 +767,45 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
           conclusion:
             "La combinación de estudios teóricos y recursos variados como libros, videos y documentación en línea fue clave para construir una base sólida en desarrollo web. Esta preparación exhaustiva me permitió enfrentar con éxito mi primer proyecto práctico. Al aplicar los conceptos aprendidos en 'Fundamentos de Programación: Estructura de Datos y Algoritmos' y 'Eloquent JavaScript', junto con otros recursos educativos, pude desarrollar un portfolio personal que refleja tanto mi formación como mi capacidad para implementar lo aprendido. Esta experiencia destaca la importancia de una formación integral y bien fundamentada para lograr una transición efectiva a la práctica profesional.",
         },
+        {
+          id: 2,
+          title: "Comienzo de la Búsqueda de Trabajo",
+          image: imgBlog2,
+          altImg:
+            "Imagen de posteo mostrando a un programador trabajando en su portafolio y perfil profesional",
+          shortDescription:
+            "Inicié la búsqueda activa de mi primer trabajo como programador, actualizando mi perfil de LinkedIn, finalizando mi portafolio y continuando con el desarrollo de nuevos proyectos.",
+          description:
+            "Con el objetivo de dar el siguiente paso en mi carrera como desarrollador web, comencé a buscar activamente mi primer trabajo en el sector. Como parte de este proceso, actualicé mi perfil de LinkedIn para reflejar de manera clara mis habilidades y proyectos, asegurándome de que mi perfil estuviera alineado con las mejores prácticas y optimizado para que los reclutadores pudieran encontrarme fácilmente. Además, finalicé mi portafolio, mostrando tres proyectos representativos de mi experiencia, que abarcan desde el desarrollo de páginas web hasta aplicaciones más complejas.",
+          subtitle:
+            "Búsqueda Activa: Perfil Profesional, Portafolio y Proyectos en Desarrollo",
+          content:
+            "El proceso comenzó con una actualización exhaustiva de mi perfil de LinkedIn. Me aseguré de destacar mis habilidades clave como React, TypeScript, Git, y las buenas prácticas que he aprendido a lo largo de mis proyectos. También realicé una limpieza en mi red de contactos, eliminando conexiones irrelevantes y conectando con profesionales del sector para ampliar mis oportunidades.\n\nSimultáneamente, finalicé mi portafolio, un elemento crucial para mostrar mis capacidades a futuros empleadores. En él, presenté tres proyectos destacados que no solo reflejan mi habilidad técnica, sino también mi enfoque en la calidad y la estructura del código. Estos proyectos, combinados con un diseño limpio y profesional, permiten que cualquier visitante tenga una visión clara de lo que soy capaz de hacer como desarrollador web.\n\nPor supuesto, la búsqueda de trabajo no se detuvo aquí. Aunque mi portafolio ya está completo, continúo desarrollando nuevos proyectos y mejorando los existentes. La práctica constante es clave para mantenerme actualizado y demostrar mi progreso continuo. Así, mi objetivo es mantenerme motivado, aplicar a múltiples ofertas laborales y perfeccionar cada aspecto de mi perfil y mis proyectos para destacarme en el competitivo mundo del desarrollo web.",
+          conclusion:
+            "La búsqueda activa de trabajo no es solo una cuestión de enviar currículums, sino un proceso continuo de preparación. Al actualizar mi perfil de LinkedIn, finalizar mi portafolio y seguir trabajando en nuevos proyectos, me siento cada vez más preparado para enfrentar las entrevistas y desafíos que vendrán. Mi meta es encontrar un lugar donde pueda seguir creciendo profesionalmente, aprendiendo de otros desarrolladores y contribuyendo a proyectos que realmente me apasionen.",
+        },
+        {
+          id: 3,
+          title: "Preparación para Entrevistas",
+          image: imgBlog3,
+          altImg:
+            "Imagen de posteo mostrando a un programador preparando su entrevista frente a la computadora",
+          shortDescription:
+            "Inicié un proceso de formación intensiva para entrevistas laborales, haciendo ejercicios prácticos, viendo simulaciones en video y utilizando ChatGPT como un reclutador virtual para enfrentar distintos escenarios.",
+          description:
+            "A medida que avanzaba en mi búsqueda de trabajo como desarrollador, me di cuenta de que la preparación para entrevistas es clave para destacar entre los candidatos. Por eso, comencé a entrenar con ejercicios prácticos, viendo videos de simulaciones de entrevistas y utilizando ChatGPT como un simulador de reclutador para practicar distintas situaciones y mejorar mis respuestas en tiempo real.",
+          subtitle:
+            "Formación en Entrevistas: Simulaciones y Prácticas para la Preparación Real",
+          content:
+            "La preparación para entrevistas es tan importante como la habilidad técnica, y no quería dejar pasar la oportunidad de mejorar en este aspecto. Comencé a buscar recursos sobre cómo enfrentar entrevistas de trabajo en el sector de tecnología, enfocándome en las preguntas más comunes y específicas para desarrolladores web. Para poner en práctica lo aprendido, hice ejercicios de preguntas y respuestas, simulando situaciones reales de entrevistas. Además, encontré videos de simulaciones de entrevistas con otros candidatos, lo que me permitió estudiar las respuestas y cómo mejorar las mías.\n\nLo más interesante de mi preparación fue usar ChatGPT como un reclutador virtual. Le pedí que me simulara diferentes tipos de entrevistas, desde entrevistas técnicas con preguntas de código hasta entrevistas de comportamiento, donde me hacía preguntas sobre mis experiencias pasadas, mis fortalezas y debilidades, y cómo me adapto a trabajar en equipo. Estas simulaciones me ayudaron a anticipar las preguntas que podrían surgir y a practicar mis respuestas en un entorno seguro, lo que me dio más confianza.\n\nA lo largo de este proceso, también busqué mejorar mi capacidad para comunicar de manera clara y concisa mis experiencias y conocimientos técnicos. Una entrevista no es solo sobre qué sabes, sino cómo lo transmites. Por eso, me enfoqué en transmitir mis habilidades y proyectos de una manera estructurada, sin divagar, y destacando siempre los logros más relevantes para cada puesto al que aplico.",
+          conclusion:
+            "La preparación para entrevistas no tiene que ser algo aterrador, sino una oportunidad para mostrar lo mejor de ti mismo. Al entrenar con simulaciones, ver ejemplos de entrevistas y utilizar herramientas como ChatGPT, me siento mucho más preparado para enfrentar cualquier entrevista que me presente. Además, cada simulación me permitió identificar áreas de mejora y pulir mis respuestas, acercándome más a mi objetivo de conseguir mi primer trabajo como desarrollador web. La práctica constante es la clave, y me seguiré preparando para aprovechar al máximo cada oportunidad que se presente.",
+        },
       ],
     },
     footer: {
       title: "Navegación rápida",
+      copyText: "copiado",
       contactMe: {
         sectionTitle: "Información de contácto",
         email: {
@@ -747,48 +845,48 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
     home: {
       hero: {
         heroImg: {
-          imgAlt: "Hero de hombre arenando",
+          imgAlt: "Illustration of Jose Maria Coronel",
         },
         title: {
-          beforeHiglight: "I'm ",
+          beforeHiglight: "I am ",
           higlight: "Jose Maria Coronel",
         },
         subtitle: {
           beforeHiglight: "Frontend developer specialized in ",
           higlight: "React",
         },
-        cta: "VIEW PROJECTS",
+        cta: "SEE PROJECTS",
       },
       lastProyects: {
-        title: "LATEST PROJECTS",
+        title: "LAST PROJECTS",
       },
       aboutMe: {
         title: "ABOUT ME",
         subtitle:
-          "I'm José María Coronel, a web developer specialized in React. I'm 24 years old and currently living in Buenos Aires, Argentina. My focus is on building clean and efficient interfaces.",
-        sections: {
-          myBackground: {
-            title: "MY BACKGROUND",
-            text: "I discovered programming out of curiosity and became self-taught in front-end technologies and tools, using books, official documentation, online courses, videos, and more. I continue to expand my skills through constant practice.",
+          "I am José María Coronel, a web developer specialized in React, 24 years old and currently living in Buenos Aires, Argentina. My focus is on creating clean and efficient interfaces.",
+        sections: [
+          {
+            title: "MY CAREER",
+            text: "I discovered programming out of curiosity and became self-taught in front-end technologies and tools, complementing my learning with books, official documentation, online courses, videos, etc. I continue expanding my skills through constant practice.",
           },
-          myFocus: {
+          {
             title: "FOCUS ON QUALITY AND ORGANIZATION",
-            text: "I focus on writing clean and efficient code, prioritizing clarity, scalability, and maintainability. I believe that neat development is key to building solid solutions and making teamwork easier.",
+            text: "I focus on writing clean and efficient code, prioritizing clarity, scalability, and maintainability. I believe that neatness in development is key to building solid solutions and facilitating teamwork.",
           },
-          tools: {
-            title: "TOOLS & DESIGN",
-            text: "I use Figma to design and prototype my projects, relying on a solid design foundation that helps me make consistent and functional decisions. I prioritize a clean and minimalist style that enhances the user experience.",
+          {
+            title: "TOOLS AND DESIGN",
+            text: "I use Figma to design and prototype my projects, relying on a solid design foundation that helps me make consistent and functional decisions. I prioritize a clean and minimalist style that optimizes the user experience.",
           },
-        },
+        ],
       },
-
       techsAndSkills: {
-        title: "TECHNOLOGIES AND SKILLS",
-        sections: {
-          techs: {
+        title: "TECHS AND ABILITIES",
+        sections: [
+          {
             title: "TECHNOLOGIES",
             list: [
               {
+                id: 1,
                 title: "HTML5",
                 color: "#E34F26",
                 iconWhite: iconHtmlWhite,
@@ -800,9 +898,14 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
                   "Forms",
                   "Multimedia (audio, video)",
                 ],
-                mainProjects: ["personal portfolio"],
+                mainProjects: [
+                  "personal portfolio",
+                  "Ecommerce",
+                  "Arenados Lucho",
+                ],
               },
               {
+                id: 2,
                 title: "CSS3",
                 color: "#1572B6",
                 iconWhite: iconCssWhite,
@@ -813,12 +916,17 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
                   "Flexbox and Grid",
                   "Libraries (Tailwind, Bootstrap)",
                   "Animations and transitions",
-                  "CSS Methodologies (BEM, SMACSS)",
+                  "CSS methodologies (BEM, SMACSS)",
                   "Responsive Design",
                 ],
-                mainProjects: ["personal portfolio"],
+                mainProjects: [
+                  "personal portfolio",
+                  "Ecommerce",
+                  "Arenados Lucho",
+                ],
               },
               {
+                id: 3,
                 title: "JavaScript",
                 color: "#F7DF1E",
                 iconWhite: iconJsWhite,
@@ -829,11 +937,16 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
                   "Destructuring",
                   "Promises and Async/Await",
                   "DOM manipulation",
-                  "ES6 modules",
+                  "ES6 Modules",
                 ],
-                mainProjects: ["personal portfolio"],
+                mainProjects: [
+                  "personal portfolio",
+                  "Ecommerce",
+                  "Arenados Lucho",
+                ],
               },
               {
+                id: 4,
                 title: "TypeScript",
                 color: "#007ACC",
                 iconWhite: iconTsWhite,
@@ -845,14 +958,15 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
                   "Using primitive types and arrays",
                   "Basic TypeScript setup in the project",
                 ],
-                mainProjects: ["personal portfolio"],
+                mainProjects: ["personal portfolio", "Arenados Lucho"],
               },
             ],
           },
-          frameworks: {
-            title: "FRAMEWORKS & LIBRARIES",
+          {
+            title: "FRAMEWORKS AND LIBRARIES",
             list: [
               {
+                id: 5,
                 title: "React.js",
                 color: "#61DAFB",
                 iconWhite: iconReactWhite,
@@ -865,64 +979,81 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
                   "Routing",
                   "JSX",
                 ],
-                mainProjects: ["personal portfolio"],
+                mainProjects: [
+                  "personal portfolio",
+                  "Ecommerce",
+                  "Arenados Lucho",
+                ],
               },
               {
+                id: 6,
                 title: "Redux",
                 color: "#764ABC",
                 iconWhite: iconReduxWhite,
                 iconColor: iconReduxColor,
                 level: "Basic",
-                mainTopics: ["State management", "Actions", "Reducers"],
-                mainProjects: ["personal portfolio"],
+                mainTopics: ["State Management", "Actions", "Reducers"],
+                mainProjects: [""],
               },
               {
+                id: 7,
                 title: "Tailwind",
                 color: "#38B2AC",
                 iconWhite: iconTailwindWhite,
                 iconColor: iconTailwindColor,
                 level: "Intermediate",
                 mainTopics: [
-                  "Utility-first CSS",
+                  "CSS utilities",
                   "Theme customization",
-                  "Responsive design",
+                  "Responsive Design",
                 ],
-                mainProjects: ["personal portfolio"],
+                mainProjects: [
+                  "personal portfolio",
+                  "Ecommerce",
+                  "Arenados Lucho",
+                ],
               },
               {
-                title: "Jest & Testing Library",
+                id: 8,
+                title: "Jest and Testing Library",
                 color: "#99424F",
                 iconWhite: iconJestWhite,
                 iconColor: iconJestColor,
                 level: "Basic",
                 mainTopics: [
                   "Writing basic unit tests for components",
-                  "Using event simulations (click, change)",
-                  "Component render testing",
-                  "Verifying props and state in tests",
+                  "Using event mocks (click, change)",
+                  "Component rendering tests",
+                  "Property and state verification in tests",
                 ],
-                mainProjects: ["personal portfolio", "ecommerce project"],
+                mainProjects: ["Ecommerce"],
               },
             ],
           },
-          tools: {
+          {
             title: "TOOLS",
             list: [
               {
+                id: 9,
                 title: "ChatGPT",
                 color: "#6C3F9D",
                 iconWhite: iconChatGptWhite,
                 iconColor: iconChatGptColor,
                 level: "Advanced",
                 mainTopics: [
-                  "Code development assistance",
+                  "Assistance in code development",
                   "Idea generation and problem-solving",
                   "Automation of repetitive tasks",
-                  "Response customization based on project needs",
+                  "Customization of responses based on project needs",
                 ],
-                mainProjects: ["personal portfolio"],
+                mainProjects: [
+                  "personal portfolio",
+                  "Ecommerce",
+                  "Arenados Lucho",
+                ],
               },
               {
+                id: 10,
                 title: "Git",
                 color: "#F05032",
                 iconWhite: iconGitWhite,
@@ -933,9 +1064,14 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
                   "Branches",
                   "Merge",
                 ],
-                mainProjects: ["personal portfolio"],
+                mainProjects: [
+                  "personal portfolio",
+                  "Ecommerce",
+                  "Arenados Lucho",
+                ],
               },
               {
+                id: 11,
                 title: "npm",
                 color: "#CB3837",
                 iconWhite: iconNpmWhite,
@@ -944,11 +1080,16 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
                 mainTopics: [
                   "Dependency management",
                   "Scripts",
-                  "Project configuration",
+                  "Project setup",
                 ],
-                mainProjects: ["personal portfolio"],
+                mainProjects: [
+                  "personal portfolio",
+                  "Ecommerce",
+                  "Arenados Lucho",
+                ],
               },
               {
+                id: 12,
                 title: "VS Code",
                 color: "#007ACC",
                 iconWhite: iconVsCodeWhite,
@@ -959,14 +1100,19 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
                   "Keyboard shortcuts",
                   "Custom configurations",
                 ],
-                mainProjects: ["personal portfolio"],
+                mainProjects: [
+                  "personal portfolio",
+                  "Ecommerce",
+                  "Arenados Lucho",
+                ],
               },
             ],
           },
-          conceptsAndMethodologies: {
-            title: "CONCEPTS & METHODOLOGIES",
+          {
+            title: "CONCEPTS AND METHODOLOGIES",
             list: [
               {
+                id: 13,
                 title: "Responsive Design",
                 color: "#34A853",
                 level: "Intermediate",
@@ -975,52 +1121,74 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
                   "Mobile-first design",
                   "Flexbox and Grid",
                 ],
-                mainProjects: ["Personal Portfolio"],
+                mainProjects: [
+                  "personal portfolio",
+                  "Ecommerce",
+                  "Arenados Lucho",
+                ],
               },
               {
+                id: 14,
                 title: "Reusable Components",
                 color: "#007BFF",
                 level: "Intermediate",
                 mainTopics: [
                   "Using props",
-                  "Basic state",
+                  "Basic states",
                   "Component organization",
                 ],
-                mainProjects: ["Personal Portfolio"],
+                mainProjects: [
+                  "personal portfolio",
+                  "Ecommerce",
+                  "Arenados Lucho",
+                ],
               },
               {
+                id: 15,
                 title: "State Management",
                 color: "#6A1B9A",
                 level: "Basic",
                 mainTopics: [
                   "useState",
                   "useEffect",
-                  "Redux (currently learning)",
+                  "Redux (learning in progress)",
                 ],
-                mainProjects: ["Ecommerce"],
+                mainProjects: [
+                  "personal portfolio",
+                  "Ecommerce",
+                  "Arenados Lucho",
+                ],
               },
               {
+                id: 16,
                 title: "API Consumption",
                 color: "#5C6BC0",
                 level: "Intermediate",
-                mainTopics: ["fetch", "axios", "loading/error handling"],
-                mainProjects: ["Ecommerce"],
+                mainTopics: ["fetch", "axios", "handling loading/errors"],
+                mainProjects: [""],
               },
               {
+                id: 17,
                 title: "Version Control (Git)",
                 color: "#F4511E",
                 level: "Intermediate",
-                mainTopics: ["Basic commits", "Branches", "Merging to main"],
-                mainProjects: ["Personal Portfolio", "Ecommerce"],
+                mainTopics: ["Basic commits", "Branches", "Merge to main"],
+                mainProjects: [
+                  "personal portfolio",
+                  "Ecommerce",
+                  "Arenados Lucho",
+                ],
               },
               {
-                title: "Testing (in progress)",
+                id: 18,
+                title: "Testing (learning)",
                 color: "#9E9D24",
                 level: "Basic",
                 mainTopics: ["Jest", "Testing Library", "Simple unit tests"],
                 mainProjects: ["Ecommerce"],
               },
               {
+                id: 19,
                 title: "Routing in SPA",
                 color: "#C62828",
                 level: "Basic",
@@ -1029,35 +1197,55 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
                   "Simple routes",
                   "Page navigation",
                 ],
-                mainProjects: ["Ecommerce"],
+                mainProjects: [
+                  "personal portfolio",
+                  "Ecommerce",
+                  "Arenados Lucho",
+                ],
               },
               {
+                id: 20,
                 title: "Best Practices",
                 color: "#6D4C41",
                 level: "Basic",
                 mainTopics: [
                   "Clean code",
                   "Component separation",
-                  "Logic reusability",
+                  "Logic reuse",
                 ],
-                mainProjects: ["Personal Portfolio"],
+                mainProjects: [
+                  "personal portfolio",
+                  "Ecommerce",
+                  "Arenados Lucho",
+                ],
               },
             ],
           },
-        },
+        ],
       },
     },
     projects: {
       title: "PROJECTS",
+      buttonText: {
+        seeProject: "SEE PROJECT",
+        seeDetails: "DETAILS",
+        seeRepo: "REPO",
+      },
+      projectDetailTexts: {
+        descriptionTitle: "DESCRIPTION",
+        isFinishText: "Completed",
+        isNotFinishText: "In Progress",
+        techsUsed: "TECHNOLOGIES USED",
+        plainingProcessTitle: "PLANNING PROCESS",
+      },
+
       list: [
         {
           id: 1,
-          imgDesktopUrl:
-            "../../../public/imgprojects/Imgportfolio/screenShotDesktop.png",
+          imgDesktopUrl: imgDesktopUrl1,
           imgDesktopAlt:
             "screenshot of desktop view of personal portfolio website",
-          imgMobileUrl:
-            "../../../public/imgprojects/Imgportfolio/screenShotDesktop.png",
+          imgMobileUrl: imgMobileUrl1,
           imgMobileAlt:
             "screenshot of mobile view of personal portfolio website",
           title: "Personal Portfolio",
@@ -1073,49 +1261,48 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
             "javascript",
           ],
           description:
-            "This personal portfolio presents a collection of projects and web development skills. It stands out for its focus on providing detailed and relevant information about each project, including initial planning, visual design, goals achieved, and more.",
+            "This personal portfolio showcases a collection of web development projects and skills. It stands out for its focus on providing detailed and relevant information about each project, including initial planning, visual design, objectives achieved, and more.",
           siteUrl: "https://josecoronel20.github.io/portfolioPersonal/",
           repoUrl: "https://github.com/josecoronel20/portfolioPersonal",
           isFinished: true,
+          projectObjective:
+            "The goal of this project was to create my personal portfolio, a platform to showcase my skills and projects as a web developer. The main focus was to design a clear and attractive interface that highlights my work, technological skills, and professional evolution. I aimed to create a space where potential employers or collaborators could learn about my experience and projects in a visually appealing and functional way.",
           details: {
             planningProcess: [
               {
                 title: "Information Architecture",
                 description:
-                  "I started with a TXT file to outline the main sections: 'Home', 'Projects', 'Blog', and 'Contact'. I developed each section and its subsections progressively, creating a clear and relevant schema.",
-                imageUrl:
-                  "../../../public/imgprojects/Imgportfolio/screenShotDesktop.png",
+                  "I started with a TXT file to outline the main sections: 'Home', 'Projects', 'Blog', and 'Contact'. I developed each section and its subsections progressively, creating a clear and relevant structure.",
+                imageUrl: imgTxt1,
               },
               {
                 title: "Visual Design",
                 description:
-                  "The visual design aimed to reflect my personal and professional identity. Initially, I chose a striking color palette with violet tones, which I felt represented me well. However, I ultimately decided on a simpler and cleaner palette to ensure that relevant information would be the focus, enabling effective visual communication without distractions.",
-                imageUrl:
-                  "../../../public/imgprojects/Imgportfolio/screenShotDesktop.png",
+                  "The visual design aimed to reflect my personal and professional identity. Initially, I chose a bold color palette with purple tones, which I felt represented me well, but ultimately opted for a simpler and cleaner palette to ensure that relevant information would be the focus, facilitating effective visual communication without distractions.",
+                imageUrl: imgdesign1,
               },
               {
-                title: "Feature Planning",
+                title: "Functionality Planning",
                 description:
-                  "I developed a diagram to plan features such as the carousel. Initially, I thought about displaying three projects from the JSON, but I decided to display just one based on the JSON index. I also planned a 'translate' component, which led to using a global context and exploring Redux.",
-                imageUrl:
-                  "../../../public/imgprojects/Imgportfolio/screenShotDesktop.png",
+                  "I created a diagram to plan functionalities, such as the carousel. Initially, I planned to show three projects from the JSON, but decided to display just one based on the JSON index. I also planned a 'translate' component, which led me to use a global context and explore Redux.",
+                imageUrl: imgfeatures1,
               },
             ],
             mainFeatures: [
               {
                 title: "Carousel",
                 description:
-                  "This section is designed for users to quickly and easily explore my projects. Its main goal is to capture attention by presenting an interactive interface that highlights my work right from the first glance.",
+                  "This section is designed for users to explore my projects quickly and easily. Its main goal is to capture attention by presenting an interactive interface that highlights my work at first glance.",
               },
               {
                 title: "Technology Mapping",
                 description:
-                  "In the technologies section, representative icons for each technology are displayed. Hovering over an icon changes its appearance, and clicking on it opens a modal window. Implementing this functionality required complex logic to render each icon with its respective features, based on information mapped from a JSON containing details of each technology.",
+                  "In the technology section, representative icons of each technology are displayed. When hovering over an icon, it changes appearance, and when clicked, a modal window opens. Implementing this functionality required complex logic to render each icon with its respective functionality, based on information mapped from a JSON containing details of each technology.",
               },
               {
                 title: "Modal Window",
                 description:
-                  "In the technologies section, each technology is linked to a popup ('Modal'). Clicking on any technology displays information about my skill level and a detailed section explaining the main topics and concepts I handle.",
+                  "In the technology section, each technology is linked to a modal window. When clicking on any technology, information about my knowledge level is displayed along with a detailed section explaining the main topics and concepts I handle.",
               },
             ],
             issues: {
@@ -1124,17 +1311,17 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
                 {
                   title: "Technology Icon Mapping",
                   description:
-                    "When mapping each technology, it was necessary to implement hover logic and modal functionality individually for each icon. This was done to ensure that each feature operated specifically and correctly. If applied globally, it could lead to erratic and undesirable behavior when interacting with the icons.",
+                    "When mapping each technology, it was necessary to implement hover logic and modal window functionality individually for each icon. This was done to ensure that each functionality operated correctly and specifically. If the logic were applied globally, it could result in erratic and undesirable behaviors in interaction with the icons.",
                 },
                 {
                   title: "Carousel",
                   description:
-                    "In the first stage, the carousel was designed to be more visually striking, rendering three 'cards' and adding animations for navigation between them. However, after testing various options with unsatisfactory results, I decided to simplify the functionality. Now, the carousel shows only one 'card' at a time, but with animations that add dynamism and appeal, maintaining visual interest without complicating the implementation.",
+                    "In an earlier stage, the carousel was designed to be more visually striking, rendering three 'cards' and adding animations for navigation. However, after testing various options and getting unsatisfactory results, I decided to simplify the functionality. Now, the carousel shows only one 'card' at a time, but with animations that add dynamism and appeal, keeping the visual interest without complicating the implementation.",
                 },
                 {
-                  title: "Starting to Apply What I Learned",
+                  title: "Starting Application of What I Learned",
                   description:
-                    "After developing web applications in a disorganized way with basic knowledge, I decided to improve my training through books, videos, and readings. This led me to adopt a more professional profile, better structuring my files, and using Git more effectively. I learned to compose projects in a modular way, reduce code with hooks, and manage development in separate branches to avoid mixing code and focus on each section individually.",
+                    "After developing web applications in a disorganized way with basic knowledge, I decided to improve my training through books, videos, and readings. This led me to adopt a more professional approach, structuring my files better and using Git more effectively. I learned to compose projects in a modular way, reduce code with hooks, and manage development in separate branches to avoid code mixing and focus on each section separately.",
                 },
               ],
             },
@@ -1142,12 +1329,12 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
         },
         {
           id: 2,
-          imgDesktopUrl:
-            "../../../public/imgprojects/Imgportfolio/screenShotDesktop.png",
-          imgDesktopAlt: "screenshot of desktop view of ecommerce project",
-          imgMobileUrl:
-            "../../../public/imgprojects/Imgportfolio/screenShotDesktop.png",
-          imgMobileAlt: "screenshot of mobile view of ecommerce project",
+          imgDesktopUrl: imgDesktopUrl2,
+          imgDesktopAlt:
+            "desktop view screenshot of the ecommerce project webpage",
+          imgMobileUrl: imgMobileUrl2,
+          imgMobileAlt:
+            "mobile view screenshot of the ecommerce project webpage",
           title: "Ecommerce",
           techs: [
             "html",
@@ -1164,69 +1351,152 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
             "javascript",
           ],
           description:
-            "This fictional ecommerce project offers an online shopping experience, covering everything from initial planning to final execution. It uses React and Next.js in a basic way to optimize performance and ensure a responsive design that facilitates navigation on both mobile and desktop devices. Additionally, basic TypeScript is incorporated for better typing, and basic unit tests are performed to ensure the project's functionality. The visual design is inspired by prototypes created in Figma, with attention to detail in each component.",
+            "This fictitious ecommerce project offers an online shopping experience, covering everything from initial planning to final execution. It uses React and Next.js in a basic way to optimize performance and ensure a responsive design that facilitates navigation on mobile and desktop devices. Basic TypeScript is also incorporated for better typing, and basic unit tests are conducted to ensure the functionality of the project. The visual design is inspired by prototypes created in Figma, emphasizing attention to detail in each component.",
           siteUrl: "https://ecommerce-woad-psi.vercel.app/ecommerce",
           repoUrl: "https://github.com/josecoronel20/ecommerce",
           isFinished: true,
+          projectObjective:
+            "The goal of this project was to create a basic ecommerce site where users could browse, select products, and make purchases easily. A clear structure was designed to display products, manage the shopping cart, and make payments. The main focus was to ensure a smooth and user-friendly experience, while maintaining a scalable architecture for future improvements.",
           details: {
             planningProcess: [
               {
                 title: "Information Architecture",
                 description:
-                  "I started by outlining the ecommerce structure using a TXT file, identifying key sections like 'Home', 'Products', 'Offers', and 'New Collection'. This step allowed me to visualize the information hierarchy and ensure intuitive navigation, making it easy to access each section smoothly.",
-                imageUrl:
-                  "../../../public/imgprojects/Imgportfolio/screenShotDesktop.png",
+                  "I began by outlining the structure of the ecommerce site using a TXT file, identifying key sections like 'Home', 'Products', 'Offers', and 'New Collection'. This stage helped me visualize the information hierarchy and ensured intuitive navigation, making it easy to access each section smoothly.",
+                imageUrl: imgTxt2,
               },
               {
                 title: "Visual Design",
                 description:
-                  "The design phase focused on creating an attractive and coherent visual identity for the online store. After exploring several color palettes, I decided on soft and elegant tones that highlight the products without overwhelming the visitor. The goal was to create a visual environment that invites exploration and facilitates conversion.",
-                imageUrl:
-                  "../../../public/imgprojects/Imgportfolio/screenShotDesktop.png",
+                  "The design phase focused on creating an attractive and consistent visual identity for the online store. After exploring various color palettes, I decided to opt for soft, elegant tones that highlight the products without overwhelming the visitor. The goal was to create a visual environment that invites exploration and facilitates conversion.",
+                imageUrl: imgdesign2,
               },
               {
                 title: "Feature Planning",
                 description:
-                  "To structure the ecommerce features, I created a diagram that included aspects such as the product carousel and the shopping cart management. Instead of showing multiple products at once, I decided to focus on the user experience by displaying one featured product. I also incorporated a cart component, implementing a global context that enhances user interaction with the site.",
-                imageUrl:
-                  "../../../public/imgprojects/Imgportfolio/screenShotDesktop.png",
+                  "To structure the features of the ecommerce site, I created a diagram that included aspects like the product carousel and shopping cart management. Instead of showing several products at once, I decided to focus on the user experience by displaying one featured product. I also incorporated a cart component, using a global context to enhance user interaction with the site.",
+                imageUrl: imgfeatures2,
               },
             ],
             mainFeatures: [
               {
                 title: "Carousel",
                 description:
-                  "This section is designed for users to quickly and easily explore featured products. Its purpose is to give an initial look at the product cards and add a simple functionality to allow users to browse them.",
+                  "This section is designed to allow users to quickly and easily explore featured products. Its main goal is to give a first glance at the product cards and add a simple functionality for users to explore them.",
               },
               {
                 title: "Shopping Cart",
                 description:
-                  "I implemented a shopping cart that uses a global context to manage the products selected by the user. This cart allows users to view added items, edit quantities, and see updated prices in real-time. Users can review the total before proceeding to checkout, where they enter their details to complete the transaction. Once finished, the system simulates the purchase and displays a confirmation message, thus enhancing the online shopping experience.",
+                  "I implemented a shopping cart that uses a global context to manage products selected by the user. This cart allows users to view added items, edit quantities, and see updated prices in real-time. Users can review the total before proceeding to checkout, where they enter their details to complete the transaction. After finishing, the system simulates the purchase and shows a confirmation message, enhancing the online shopping experience.",
               },
               {
                 title: "URL Filtering",
                 description:
-                  "Thanks to Next.js features, I implemented product filters through the URL. By including a category in the URL, the corresponding products are automatically filtered on the screen. I also used a similar approach to show items that match the text entered in the search component, making it easier for users to quickly and efficiently find what they're looking for.",
+                  "Thanks to Next.js features, I implemented product filters via the URL. By adding a category in the URL, the corresponding products are automatically filtered on the screen. I also used a similar approach to display items that match the text entered in the search component, making it easier for users to quickly and efficiently find what they're looking for.",
               },
             ],
             issues: {
-              title: "MAIN ISSUES ENCOUNTERED",
+              title: "MAIN CHALLENGES FACED",
               issueList: [
                 {
                   title: "Product Filtering",
                   description:
-                    "One of the challenges in developing the ecommerce project was implementing an effective product filtering system. I used Next.js capabilities, particularly dynamic folders, to manage filters through the URL. This allows products corresponding to a category to be automatically rendered when included in the URL, thus facilitating navigation. Additionally, I implemented a search bar that updates the URL and displays products that match the entered text. This combination of techniques significantly improves the user experience when searching and filtering options on the site.",
+                    "One of the challenges in developing the ecommerce site was implementing an effective product filtering system. I used Next.js capabilities, particularly dynamic folders, to manage filters through the URL. This allows for products to be automatically rendered when a category is included in the URL, improving navigation. Additionally, I implemented a search bar that updates the URL and displays products matching the entered text. This combination of techniques greatly enhances the user experience when searching and filtering options on the site.",
                 },
                 {
                   title: "Filter Component",
                   description:
-                    "I tried implementing a filtering component on the page that shows all products, which presented several challenges. I had to consider multiple parameters to filter the products already displayed. For example, adjusting the price parameter led to infinite rendering. To solve this, I added a boolean variable that allowed me to regenerate the price input value every time it was true. This way, when the input value changed, the variable was automatically set to false, except in some specific cases, thus preventing the infinite rendering issue and improving the filtering functionality.",
+                    "I tried implementing a filter component on the page that shows all products, which presented several challenges. I had to consider multiple parameters to filter the products already displayed. For instance, when adjusting the price parameter, an infinite render occurred. To solve this, I added a boolean variable that allowed the input value to regenerate every time it was true. This way, when the input value changed, the variable was automatically set to false, except in some specific cases, preventing the infinite render issue and improving the filtering functionality.",
                 },
                 {
                   title:
-                    "Starting with TypeScript, Next.js, Jest, and Testing Library",
+                    "Beginning Use of TypeScript, Next.js, and Jest with Testing Library",
                   description:
-                    "The development of the ecommerce project presented the exciting challenge of integrating TypeScript, Next.js, and Jest with Testing Library into a single project for the first time. Although I was a novice in these technologies, I managed to apply their features in a basic but effective way. TypeScript allowed me to implement static typing, improving code quality and facilitating early error detection. Next.js was essential for optimizing project structure and enhancing navigation with dynamic routes, while Jest, along with Testing Library, provided me with the necessary tools to create basic unit tests, ensuring each component worked as expected. This process not only enriched my learning but also helped me develop a more organized and reliable approach in my web development projects.",
+                    "The development of the ecommerce site presented the exciting challenge of integrating TypeScript, Next.js, and Jest with Testing Library for the first time in a single project. Despite being a beginner with these technologies, I applied their features in a basic but effective way. TypeScript allowed me to implement static typing, improving code quality and helping to catch errors early. Next.js was essential for optimizing the project structure and improving navigation with dynamic routes, while Jest and Testing Library provided the tools needed to create basic unit tests, ensuring each component worked as expected. This process not only enriched my learning but also helped me develop a more organized and reliable approach to my web development projects.",
+                },
+              ],
+            },
+          },
+        },
+        {
+          id: 3,
+          imgDesktopUrl: imgDesktopUrl3,
+          imgDesktopAlt: "screenshot of desktop view of Arenados Lucho website",
+          imgMobileUrl: imgMobileUrl3,
+          imgMobileAlt: "screenshot of mobile view of Arenados Lucho website",
+          title: "Arenados Lucho Website",
+          techs: [
+            "html",
+            "css",
+            "react",
+            "git",
+            "github",
+            "tailwind",
+            "npm",
+            "javascript",
+          ],
+          description:
+            "The Arenados Lucho website was developed as part of a real commission for a company dedicated to sandblasting and surface restoration. The focus was on reflecting professionalism and clarity in the services offered, optimizing navigation for users looking for fast and reliable solutions. The development included responsive design, contact form integration, and a visual structure centered around showcasing completed projects. This project demonstrates the ability to translate client requirements into a concrete and functional solution.",
+          siteUrl: "https://arenadoslucho.com/",
+          repoUrl: "https://github.com/josecoronel20/ArenadosLucho2025",
+          isFinished: false,
+          projectObjective:
+            "The objective of this project was to optimize SEO to improve search engine ranking. Key adjustments were implemented, such as improving semantic tags and optimizing images to facilitate indexing and increase site visibility. While progress has been made, SEO optimization is an ongoing process that will continue to improve over time.",
+          details: {
+            planningProcess: [
+              {
+                title: "Information Architecture",
+                description:
+                  "The site structure was defined following SEO optimization suggestions. I used recommendations based on best practices for local businesses, prioritizing clear navigation with sections like 'Home', 'Services', 'Gallery', and 'Contact'. A manual schema was not needed, as decisions were made directly based on the client's real needs.",
+                imageUrl: null,
+              },
+              {
+                title: "Visual Design",
+                description:
+                  "The visual design was not developed from scratch in tools like Figma. The decision was made to preserve and update the aesthetic of the previous version of the site, respecting the visual identity already recognized by clients. Minor adjustments were applied to modernize the interface and improve readability, prioritizing a professional, simple, and functional appearance.",
+                imageUrl: null,
+              },
+              {
+                title: "Functionality Planning",
+                description:
+                  "No new complex functionalities were incorporated. The focus was on updating and optimizing content to improve SEO, modernizing the 'Before and After' section of completed projects, and maintaining the inquiry form with minimal adjustments to ensure its functionality and accessibility.",
+                imageUrl: null,
+              },
+            ],
+            mainFeatures: [
+              {
+                title: "Updated 'Before and After' Section",
+                description:
+                  "An interactive component previously developed to display the 'Before and After' of completed projects was implemented. This improvement not only modernizes the visual presentation but also provides users with a clearer and more attractive experience when comparing results directly.",
+              },
+              {
+                title: "SEO Optimization",
+                description:
+                  "In this update, the primary focus was on optimization for search engines. Texts, titles, and descriptions were adjusted following SEO best practices, prioritizing semantic relevance and proper tag hierarchy. Each section was designed to improve indexing, maximizing the organic visibility of the company without compromising the user experience.",
+              },
+              {
+                title: "Code Refactoring",
+                description:
+                  "Although no new technologies were introduced, the focus was on cleaning and optimizing the existing code. The structure of the components was improved, redundancies were removed, and good React practices were applied to achieve a more maintainable, efficient, and scalable project.",
+              },
+            ],
+            issues: {
+              title: "MAIN CHALLENGES ENCOUNTERED",
+              issueList: [
+                {
+                  title: "SEO Ranking Optimization",
+                  description:
+                    "One of the main challenges was improving search engine ranking, as the previous content was scarce and poorly structured. To address this, I used suggestions from ChatGPT based on SEO best practices: texts were rewritten with relevant keywords, header structure (H1, H2, H3) was improved, and alt tags for images were optimized, creating a more Google-friendly page without breaking the original aesthetics.",
+                },
+                {
+                  title: "Progressive SEO Optimization",
+                  description:
+                    "Another challenge was improving search engine ranking. The initial content was scarce and poorly optimized. SEO improvement started by applying ChatGPT suggestions to rewrite texts with relevant keywords, but the process didn’t stop there: aspects such as proper use of semantic tags, image optimization (WebP, adequate compression), and header structure were gradually improved, all based on analysis results from online performance tools like PageSpeed Insights.",
+                },
+                {
+                  title: "Load Optimization",
+                  description:
+                    "Although improvements were already made in load optimization, such as image compression and the implementation of lazy loading, work is still ongoing in this area. The site's performance is constantly being evaluated using tools like Lighthouse, aiming to further reduce load times and improve user experience. The goal is to continue perfecting the site's performance while maintaining quality standards.",
                 },
               ],
             },
@@ -1235,29 +1505,63 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
       ],
     },
     blog: {
-      title: "MY PERSONAL BLOG POSTS",
+      title: "POSTS DE MI BLOG PERSONAL",
       blogList: [
         {
           id: 1,
           title: "Building Solid Foundations",
-          image:
-            "../../../public/imgprojects/Imgportfolio/screenShotDesktop.png",
-          altImg: "Image of a post with a programmer studying",
+          image: imgBlog1,
+          altImg: "Image of a programmer studying",
           shortDescription:
-            "When I moved to Portugal in April without a computer, I used books, videos, and online documentation to strengthen my web development knowledge. With 'Programming Fundamentals: Data Structures and Algorithms' and 'Eloquent JavaScript', I built a solid foundation. Eventually, I got a computer and applied what I learned to my first project: a personal portfolio.",
+            "When I moved to Portugal in April without a computer, I used books, videos, and online documentation to strengthen my knowledge in web development. With 'Programming Fundamentals: Data Structures and Algorithms' and 'Eloquent JavaScript', I built a solid foundation. Finally, I got a computer and applied what I learned in my first project: a personal portfolio.",
           description:
-            "In April, when I moved without a computer, I faced the challenge of continuing my web development education. I took advantage of various resources, including books, videos, and online documentation, to build a solid programming foundation. With a computer finally available, I was able to apply what I learned in a practical project: developing my personal portfolio.",
+            "In April, when I moved without a computer, I faced the challenge of continuing my web development education. I made use of various resources, including books, videos, and online documentation, to build a solid programming foundation. Once I finally got a computer, I applied what I had learned in a practical project: the development of my personal portfolio.",
           subtitle:
-            "From Theory to Practice: How a Diverse Education Boosted My First Web Project",
+            "From Theory to Practice: How a Diversified Education Boosted My First Web Project",
           content:
-            "When I moved to Portugal, I faced the challenge of continuing my education as a web developer. To overcome this limitation, I turned to various educational resources, including books, videos, and online documentation, to build a solid programming foundation. First, I delved into the book 'Programming Fundamentals: Data Structures and Algorithms', which provided me with a deep understanding of key concepts such as algorithms, control structures, and recursion. I also learned about linear data structures and got an introduction to non-linear data structures. Object-oriented programming (OOP) was another area of focus, where I explored concepts like encapsulation, inheritance, and polymorphism. Later, I read 'Eloquent JavaScript', which expanded my knowledge toward web development with JavaScript. This book covered JavaScript syntax, data types and structures, functions, and scope and closures. It also introduced me to objects and prototypes in JavaScript, asynchronous programming, DOM manipulation, event handling, and modularization and package management. I also explored functional programming concepts applied in JavaScript. With all this theoretical knowledge, I finally acquired a computer, which allowed me to dive deeper into React, focusing on componentization and custom Hooks, and put my learning into practice. I developed my first project, a personal portfolio, which consolidated my knowledge and demonstrated my ability to apply the concepts learned in a real-world environment. This experience highlights how a comprehensive and diverse education can facilitate a successful transition from theory to practice in web development.",
+            "When I moved to Portugal, I faced the challenge of continuing my training as a web developer. To overcome this limitation, I turned to various educational resources, including books, videos, and online documentation, to build a solid programming foundation. First, I immersed myself in the book 'Programming Fundamentals: Data Structures and Algorithms', which provided me with a deep understanding of key concepts such as algorithms, control structures, and recursion. I also learned about linear data structures and got an introduction to non-linear data structures. Object-Oriented Programming (OOP) was another focus of study, where I delved into topics like encapsulation, inheritance, and polymorphism. Later on, I read 'Eloquent JavaScript', which expanded my knowledge into web development with JavaScript. This book covered JavaScript syntax, data types and structures, functions, and scope and closure handling. It also introduced me to objects and prototypes in JavaScript, asynchronous programming, DOM manipulation, event handling, and modularization and package management. I also explored functional programming concepts applied in JavaScript. With all this theoretical training, I finally acquired a computer, which allowed me to dive deeper into React, focusing on componentization and custom Hooks, and put what I had learned into practice. I developed my first project, a personal portfolio, which consolidated my knowledge and demonstrated my ability to apply the concepts I had learned in a real-world setting. This experience highlights how comprehensive and diversified preparation can facilitate a successful transition from theory to practice in web development.",
           conclusion:
-            "The combination of theoretical studies and varied resources such as books, videos, and online documentation was key to building a solid foundation in web development. This thorough preparation allowed me to successfully tackle my first practical project. By applying the concepts learned in 'Programming Fundamentals: Data Structures and Algorithms' and 'Eloquent JavaScript', along with other educational resources, I was able to develop a personal portfolio that reflects both my education and my ability to implement what I learned. This experience emphasizes the importance of a well-rounded and well-grounded education to achieve an effective transition into professional practice.",
+            "The combination of theoretical studies and varied resources such as books, videos, and online documentation was key in building a solid foundation in web development. This thorough preparation allowed me to successfully tackle my first practical project. By applying the concepts learned in 'Programming Fundamentals: Data Structures and Algorithms' and 'Eloquent JavaScript', along with other educational resources, I was able to develop a personal portfolio that reflects both my education and my ability to implement what I had learned. This experience emphasizes the importance of a well-rounded and solid education for making an effective transition into professional practice.",
+        },
+        {
+          id: 2,
+          title: "Starting the Job Search",
+          image: imgBlog2,
+          altImg:
+            "Image of a post showing a programmer working on their portfolio and professional profile",
+          shortDescription:
+            "I started the active search for my first job as a programmer, updating my LinkedIn profile, finalizing my portfolio, and continuing the development of new projects.",
+          description:
+            "In order to take the next step in my career as a web developer, I began actively searching for my first job in the field. As part of this process, I updated my LinkedIn profile to clearly reflect my skills and projects, ensuring that my profile was aligned with best practices and optimized for recruiters to easily find me. I also finalized my portfolio, showcasing three representative projects of my experience, ranging from web page development to more complex applications.",
+          subtitle:
+            "Active Search: Professional Profile, Portfolio, and Ongoing Projects",
+          content:
+            "The process began with a thorough update of my LinkedIn profile. I made sure to highlight my key skills like React, TypeScript, Git, and the best practices I've learned throughout my projects. I also cleaned up my contact list, removing irrelevant connections and networking with professionals in the industry to expand my opportunities.\n\nSimultaneously, I completed my portfolio, a crucial element to showcase my abilities to potential employers. In it, I presented three standout projects that not only reflect my technical skill but also my focus on code quality and structure. These projects, combined with a clean and professional design, provide visitors with a clear view of what I am capable of as a web developer.\n\nOf course, the job search didn’t stop here. Although my portfolio is now complete, I continue to develop new projects and improve existing ones. Constant practice is key to staying up-to-date and demonstrating my ongoing progress. Therefore, my goal is to stay motivated, apply to multiple job offers, and perfect every aspect of my profile and projects to stand out in the competitive world of web development.",
+          conclusion:
+            "The active job search is not just about sending resumes; it’s a continuous process of preparation. By updating my LinkedIn profile, finalizing my portfolio, and continuing to work on new projects, I feel increasingly prepared to face the interviews and challenges ahead. My goal is to find a place where I can continue growing professionally, learning from other developers, and contributing to projects that truly excite me.",
+        },
+        {
+          id: 3,
+          title: "Interview Preparation",
+          image: imgBlog3,
+          altImg:
+            "Image of a post showing a programmer preparing for their interview in front of a computer",
+          shortDescription:
+            "I began an intensive training process for job interviews, doing practical exercises, watching interview simulations on video, and using ChatGPT as a virtual recruiter to face different scenarios.",
+          description:
+            "As I progressed in my job search as a developer, I realized that interview preparation is key to standing out among candidates. So, I began training with practical exercises, watching interview simulation videos, and using ChatGPT as a recruiter simulator to practice different situations and improve my responses in real time.",
+          subtitle:
+            "Interview Training: Simulations and Practices for Real-World Preparation",
+          content:
+            "Interview preparation is just as important as technical skill, and I didn’t want to miss the opportunity to improve in this area. I started looking for resources on how to face job interviews in the tech sector, focusing on the most common and specific questions for web developers. To put what I had learned into practice, I did question-and-answer exercises, simulating real interview situations. I also found interview simulation videos with other candidates, which allowed me to study their answers and see how I could improve mine.\n\nThe most interesting part of my preparation was using ChatGPT as a virtual recruiter. I asked it to simulate different types of interviews, from technical interviews with coding questions to behavioral interviews, where it asked me about my past experiences, strengths and weaknesses, and how I adapt to working in a team. These simulations helped me anticipate potential questions and practice my responses in a safe environment, which gave me more confidence.\n\nThroughout this process, I also focused on improving my ability to communicate my experiences and technical knowledge clearly and concisely. An interview is not just about what you know, but how you communicate it. That's why I focused on presenting my skills and projects in a structured way, without rambling, always highlighting the most relevant achievements for each position I apply for.",
+          conclusion:
+            "Interview preparation doesn’t have to be something daunting; it’s an opportunity to show the best of yourself. By training with simulations, watching interview examples, and using tools like ChatGPT, I feel much more prepared to face any interview that comes my way. Additionally, each simulation allowed me to identify areas for improvement and refine my answers, bringing me closer to my goal of landing my first job as a web developer. Constant practice is key, and I will continue to prepare to make the most of every opportunity that comes my way.",
         },
       ],
     },
     footer: {
-      title: "Quick navigation",
+      title: "Quick Navigation",
+      copyText: "copied",
       contactMe: {
         sectionTitle: "Contact Information",
         email: {

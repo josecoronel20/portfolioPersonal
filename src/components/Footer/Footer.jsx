@@ -1,5 +1,5 @@
 import React from "react";
-import ContactContent from "../../components/ReutilizableComponents/ContactContent";
+import ContactContent from "../../components/ReutilizableComponents/ContactContent.tsx";
 import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { useLanguage } from "../../Context/LanguageContext";

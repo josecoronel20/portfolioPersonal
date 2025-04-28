@@ -1,6 +1,6 @@
 import React from "react";
 import { styleContainerTop } from "../Utilities/customStyles";
-import ContactContent from "../components/ReutilizableComponents/ContactContent";
+import ContactContent from "../components/ReutilizableComponents/ContactContent.tsx";
 
 const Contact = () => {
   return (
