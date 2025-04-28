@@ -109,6 +109,9 @@ export type textLanguage = {
     };
     techsAndSkills: {
       title: string;
+      topicText: string;
+      levelText: string;
+      projectsText: string;
       sections: [
         {
           title: string;
@@ -151,7 +154,7 @@ export type textLanguage = {
   };
   footer: {
     title: string;
-    copyText:string,
+    copyText: string;
     contactMe: {
       sectionTitle: string;
       email: {

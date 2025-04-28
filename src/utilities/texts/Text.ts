@@ -98,6 +98,9 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
       },
       techsAndSkills: {
         title: "TECNOLOGÍAS Y HABILIDADES",
+        topicText: "Tópicos",
+        levelText:"Nivel",
+        projectsText:"Proyectos",
         sections: [
           {
             title: "TECNOLOGÍAS",
@@ -881,6 +884,9 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
       },
       techsAndSkills: {
         title: "TECHS AND ABILITIES",
+        topicText: "Topics",
+        levelText:"Level",
+        projectsText:"Projects",
         sections: [
           {
             title: "TECHNOLOGIES",
