@@ -25,6 +25,21 @@ import {
   iconVsCodeWhite,
 } from "../Icons";
 
+import imgDesktopUrl1 from "/public/img/projectsImg/portfolio/screenShotDesktop.png";
+import imgMobileUrl1 from "/public/img/projectsImg/portfolio/screenShotMobile.png";
+import imgTxt1 from "/public/img/projectsImg/portfolio/projectDetail/txt.png";
+import imgdesign1 from "/public/img/projectsImg/portfolio/projectDetail/design.png";
+import imgfeatures1 from "/public/img/projectsImg/portfolio/projectDetail/features.png";
+
+import imgDesktopUrl2 from "/public/img/projectsImg/ecommerce/Ecommerce-Desktop.png";
+import imgMobileUrl2 from "/public/img/projectsImg/ecommerce/Ecommerce-Mobile.png";
+import imgTxt2 from "/public/img/projectsImg/ecommerce/proyectDetail/ecommerce-arquitecture.png";
+import imgdesign2 from "/public/img/projectsImg/ecommerce/proyectDetail/ecommerce-designe.png";
+import imgfeatures2 from "/public/img/projectsImg/ecommerce/proyectDetail/ecommerce-funcionality.png";
+
+import imgDesktopUrl3 from "/public/img/projectsImg/arenadosLucho/imgDesktop.png";
+import imgMobileUrl3 from "/public/img/projectsImg/arenadosLucho/imgMobile.png";
+
 import { textLanguage } from "../../types";
 
 export const text: { textEs: textLanguage; textEn: textLanguage } = {
@@ -84,7 +99,7 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
             title: "TECNOLOGÍAS",
             list: [
               {
-                id:1,
+                id: 1,
                 title: "HTML5",
                 color: "#E34F26",
                 iconWhite: iconHtmlWhite,
@@ -99,7 +114,7 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
                 mainProjects: ["portfolio personal"],
               },
               {
-                                id:2,
+                id: 2,
                 title: "CSS3",
                 color: "#1572B6",
                 iconWhite: iconCssWhite,
@@ -116,7 +131,7 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
                 mainProjects: ["portfolio personal"],
               },
               {
-                                id:3,
+                id: 3,
                 title: "JavaScript",
                 color: "#F7DF1E",
                 iconWhite: iconJsWhite,
@@ -132,7 +147,7 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
                 mainProjects: ["portfolio personal"],
               },
               {
-                                id:4,
+                id: 4,
                 title: "TypeScript",
                 color: "#007ACC",
                 iconWhite: iconTsWhite,
@@ -152,8 +167,8 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
             title: "FRAMEWORKS Y LIBRERÍAS",
             list: [
               {
-                                id:5,
-title: "React.js",
+                id: 5,
+                title: "React.js",
                 color: "#61DAFB",
                 iconWhite: iconReactWhite,
                 iconColor: iconReactColor,
@@ -168,8 +183,8 @@ title: "React.js",
                 mainProjects: ["portfolio personal"],
               },
               {
-                                id:6,
-title: "Redux",
+                id: 6,
+                title: "Redux",
                 color: "#764ABC",
                 iconWhite: iconReduxWhite,
                 iconColor: iconReduxColor,
@@ -178,8 +193,8 @@ title: "Redux",
                 mainProjects: ["portfolio personal"],
               },
               {
-                                id:7,
-title: "Tailwind",
+                id: 7,
+                title: "Tailwind",
                 color: "#38B2AC",
                 iconWhite: iconTailwindWhite,
                 iconColor: iconTailwindColor,
@@ -193,8 +208,8 @@ title: "Tailwind",
               },
 
               {
-                                id:8,
-title: "Jest y Testing Library",
+                id: 8,
+                title: "Jest y Testing Library",
                 color: "#99424F",
                 iconWhite: iconJestWhite,
                 iconColor: iconJestColor,
@@ -213,7 +228,7 @@ title: "Jest y Testing Library",
             title: "HERRAMIENTAS",
             list: [
               {
-                                id:9,
+                id: 9,
 
                 title: "ChatGPT",
                 color: "#6C3F9D",
@@ -229,7 +244,7 @@ title: "Jest y Testing Library",
                 mainProjects: ["portfolio personal"],
               },
               {
-                                id:10,
+                id: 10,
 
                 title: "Git",
                 color: "#F05032",
@@ -245,7 +260,7 @@ title: "Jest y Testing Library",
               },
 
               {
-                                id:11,
+                id: 11,
 
                 title: "npm",
                 color: "#CB3837",
@@ -261,7 +276,7 @@ title: "Jest y Testing Library",
               },
 
               {
-                                id:12,
+                id: 12,
 
                 title: "VS Code",
                 color: "#007ACC",
@@ -281,7 +296,7 @@ title: "Jest y Testing Library",
             title: "CONCEPTOS Y METODOLOGÍAS",
             list: [
               {
-                                id:13,
+                id: 13,
 
                 title: "Diseño responsivo",
                 color: "#34A853",
@@ -294,7 +309,7 @@ title: "Jest y Testing Library",
                 mainProjects: ["Portfolio Personal"],
               },
               {
-                                id:14,
+                id: 14,
 
                 title: "Componentes reutilizables",
                 color: "#007BFF",
@@ -307,7 +322,7 @@ title: "Jest y Testing Library",
                 mainProjects: ["Portfolio Personal"],
               },
               {
-                                id:15,
+                id: 15,
 
                 title: "Manejo de estados",
                 color: "#6A1B9A",
@@ -320,7 +335,7 @@ title: "Jest y Testing Library",
                 mainProjects: ["Ecommerce"],
               },
               {
-                                id:16,
+                id: 16,
 
                 title: "Consumo de APIs",
                 color: "#5C6BC0",
@@ -329,7 +344,7 @@ title: "Jest y Testing Library",
                 mainProjects: ["Ecommerce"],
               },
               {
-                                id:17,
+                id: 17,
 
                 title: "Control de versiones (Git)",
                 color: "#F4511E",
@@ -338,7 +353,7 @@ title: "Jest y Testing Library",
                 mainProjects: ["Portfolio Personal", "Ecommerce"],
               },
               {
-                                id:18,
+                id: 18,
 
                 title: "Testing (aprendiendo)",
                 color: "#9E9D24",
@@ -351,7 +366,7 @@ title: "Jest y Testing Library",
                 mainProjects: ["Ecommerce"],
               },
               {
-                                id:19,
+                id: 19,
 
                 title: "Ruteo en SPA",
                 color: "#C62828",
@@ -364,7 +379,7 @@ title: "Jest y Testing Library",
                 mainProjects: ["Ecommerce"],
               },
               {
-                                id:20,
+                id: 20,
 
                 title: "Buenas prácticas",
                 color: "#6D4C41",
@@ -388,15 +403,21 @@ title: "Jest y Testing Library",
         seeDetails: "DETALLES",
         seeRepo: "REPO",
       },
+      projectDetailTexts: {
+        descriptionTitle: "DESCRIPCIÓN",
+        isFinishText: "Finalizado",
+        isNotFinishText: "En Proceso",
+        techsUsed: "TECNOLOGÍAS UTILIZADAS",
+        plainingProcessTitle: "PROCESO DE PLANIFICACIÓN",
+      },
+
       list: [
         {
           id: 1,
-          imgDesktopUrl:
-            "public/img/projectsImg/portfolio/screenShotDesktop.png",
+          imgDesktopUrl: imgDesktopUrl1,
           imgDesktopAlt:
             "captura de pantalla de vista de escritorio de página web de portfolio personal",
-          imgMobileUrl:
-            "../../../public/imgprojects/Imgportfolio/screenShotDesktop.png",
+          imgMobileUrl: imgMobileUrl1,
 
           imgMobileAlt:
             "captura de pantalla de vista de móbil de página web de portfolio personal",
@@ -417,28 +438,27 @@ title: "Jest y Testing Library",
           siteUrl: "https://josecoronel20.github.io/portfolioPersonal/",
           repoUrl: "https://github.com/josecoronel20/portfolioPersonal",
           isFinished: true,
+          projectObjective:
+            "El objetivo de este proyecto fue crear mi portfolio personal, una plataforma para mostrar mis habilidades y proyectos como desarrollador web. El enfoque principal fue diseñar una interfaz clara y atractiva que permita destacar mis trabajos, mis competencias tecnológicas y mi evolución profesional. Busqué crear un espacio donde futuros empleadores o colaboradores puedan conocer mi experiencia y proyectos de manera visualmente atractiva y funcional.",
           details: {
             planningProcess: [
               {
                 title: "Arquitectura de la información",
                 description:
                   "Inicié con un archivo TXT para esbozar las secciones principales: 'Inicio', 'Proyectos', 'Blog', y 'Contacto'. Desarrollé cada sección y sus subsecciones progresivamente, creando un esquema claro y relevante.",
-                imageUrl:
-                  "../../../public/imgprojects/Imgportfolio/screenShotDesktop.png",
+                imageUrl: imgTxt1,
               },
               {
                 title: "Diseño visual",
                 description:
                   "El diseño visual buscó reflejar mi identidad personal y profesional. En un principio se decidió por una paleta de colores llamativa utilizando tonos violetas que siento que es un color que me representa bastante pero finalmente me decidí por una paleta clara y sencilla que asegura que la información relevante sea el foco, facilitando una comunicación visual efectiva sin distracciones.",
-                imageUrl:
-                  "../../../public/imgprojects/Imgportfolio/screenShotDesktop.png",
+                imageUrl: imgdesign1,
               },
               {
                 title: "Planificación de funcionalidades",
                 description:
                   "Desarrollé un diagrama para planificar funcionalidades, como el carrusel. Inicialmente, pensé en mostrar tres proyectos del JSON, pero decidí mostrar uno solo basado en el índice del JSON. También planeé un componente 'translate', lo que llevó a usar un contexto global y explorar Redux.",
-                imageUrl:
-                  "../../../public/imgprojects/Imgportfolio/screenShotDesktop.png",
+                imageUrl: imgfeatures1,
               },
             ],
             mainFeatures: [
@@ -482,12 +502,10 @@ title: "Jest y Testing Library",
         },
         {
           id: 2,
-          imgDesktopUrl:
-            "public/img/projectsImg/ecommerce/Ecommerce-Desktop.png",
+          imgDesktopUrl: imgDesktopUrl2,
           imgDesktopAlt:
             "captura de pantalla de vista de escritorio de proyecto ecommerce",
-          imgMobileUrl:
-            "../../../public/imgprojects/Imgportfolio/screenShotDesktop.png",
+          imgMobileUrl: imgMobileUrl2,
           imgMobileAlt:
             "captura de pantalla de vista de móbil de proyecto ecommerce",
           title: "Ecommerce",
@@ -510,28 +528,27 @@ title: "Jest y Testing Library",
           siteUrl: "https://ecommerce-woad-psi.vercel.app/ecommerce",
           repoUrl: "https://github.com/josecoronel20/ecommerce",
           isFinished: true,
+          projectObjective:
+            "El objetivo de este proyecto fue crear un ecommerce básico que permita a los usuarios navegar, seleccionar productos y realizar compras de manera sencilla. Se diseñó una estructura clara para mostrar los productos, gestionar el carrito de compras y realizar pagos. El enfoque principal fue asegurar una experiencia de usuario fluida y fácil de usar, manteniendo una arquitectura escalable para futuras mejoras.",
           details: {
             planningProcess: [
               {
                 title: "Arquitectura de la información",
                 description:
                   "Comencé delineando la estructura del ecommerce utilizando un archivo TXT, identificando las secciones clave como 'Inicio', 'Productos', 'Ofertas' y 'Nueva colección'. Esta etapa me permitió visualizar la jerarquía de información y asegurar una navegación intuitiva, facilitando el acceso a cada sección de forma fluida.",
-                imageUrl:
-                  "../../../public/imgprojects/Imgportfolio/screenShotDesktop.png",
+                imageUrl: imgTxt2,
               },
               {
                 title: "Diseño visual",
                 description:
                   "La fase de diseño se centró en crear una identidad visual atractiva y coherente para la tienda online. Tras explorar varias paletas de colores, decidí optar por tonos suaves y elegantes que destacan los productos sin abrumar al visitante. La meta era lograr un entorno visual que invite a explorar y facilite la conversión.",
-                imageUrl:
-                  "../../../public/imgprojects/Imgportfolio/screenShotDesktop.png",
+                imageUrl: imgdesign2,
               },
               {
                 title: "Planificación de funcionalidades",
                 description:
                   "Para estructurar las funcionalidades del ecommerce, creé un diagrama que contemplaba aspectos como el carrusel de productos y la gestión del carrito de compras. En lugar de presentar varios productos a la vez, decidí centrarme en la experiencia del usuario al mostrar uno destacado. También incorporé un componente para el carrito, implementando un contexto global que mejora la interacción del usuario con el sitio.",
-                imageUrl:
-                  "../../../public/imgprojects/Imgportfolio/screenShotDesktop.png",
+                imageUrl: imgfeatures2,
               },
             ],
 
@@ -570,6 +587,96 @@ title: "Jest y Testing Library",
                     "Comienzo de utilización de typescript,next y jest con testing-library",
                   description:
                     "El desarrollo del ecommerce me presentó el emocionante desafío de integrar por primera vez TypeScript, Next.js y Jest con Testing Library en un solo proyecto. A pesar de ser un novato en estas tecnologías, logré aplicar sus características de manera básica pero efectiva. TypeScript me permitió implementar un tipado estático, lo que mejoró la calidad del código y facilitó la detección temprana de errores. Next.js fue fundamental para optimizar la estructura del proyecto y mejorar la navegación mediante rutas dinámicas, mientras que Jest, junto con Testing Library, me proporcionó las herramientas necesarias para crear pruebas unitarias basicas, asegurando que cada componente funcionara como se esperaba. Este proceso no solo enriqueció mi aprendizaje, sino que también me ayudó a desarrollar un enfoque más organizado y confiable en mis proyectos de desarrollo web.",
+                },
+              ],
+            },
+          },
+        },
+        {
+          id: 3,
+          imgDesktopUrl: imgDesktopUrl3,
+          imgDesktopAlt:
+            "captura de pantalla de vista de escritorio de página web de Arenados Lucho",
+          imgMobileUrl: imgMobileUrl3,
+
+          imgMobileAlt:
+            "captura de pantalla de vista de móbil de página web de Arenados Lucho",
+          title: "Página de Arenados Lucho",
+          techs: [
+            "html",
+            "css",
+            "react",
+            "git",
+            "github",
+            "tailwind",
+            "npm",
+            "javascript",
+          ],
+          description:
+            "El sitio web para Arenados Lucho fue desarrollado como parte de un encargo real para una empresa dedicada al arenado y restauración de superficies. El enfoque estuvo puesto en reflejar profesionalismo y claridad en los servicios ofrecidos, optimizando la navegación para usuarios que buscan soluciones rápidas y confiables. El desarrollo incluyó diseño responsivo, integración de formularios de contacto, y una estructura visual centrada en la presentación de trabajos realizados. Este proyecto refleja la capacidad de traducir requerimientos del cliente en una solución concreta y funcional.",
+          siteUrl: "https://josecoronel20.github.io/ArenadosLucho2025/",
+          repoUrl: "https://github.com/josecoronel20/ArenadosLucho2025",
+          isFinished: false,
+          projectObjective:
+            " El objetivo de este proyecto fue optimizar el SEO para mejorar el posicionamiento en los motores de búsqueda. Se implementaron ajustes clave, como la mejora de etiquetas semánticas y la optimización de imágenes, con el fin de facilitar la indexación y aumentar la visibilidad del sitio. Aunque se lograron avances, la optimización SEO es un proceso continuo que seguirá siendo mejorado con el tiempo.",
+
+          details: {
+            planningProcess: [
+              {
+                title: "Arquitectura de la información",
+                description:
+                  "La estructura del sitio se definió siguiendo sugerencias optimizadas para SEO. Utilicé recomendaciones basadas en buenas prácticas para negocios locales, priorizando una navegación clara con secciones como 'Inicio', 'Servicios', 'Galería' y 'Contacto'. No fue necesario un esquema manual previo, ya que las decisiones se tomaron directamente sobre las necesidades reales del cliente.",
+
+                imageUrl: null,
+              },
+              {
+                title: "Diseño visual",
+                description:
+                  "El diseño visual no se desarrolló desde cero en herramientas como Figma. Se optó por conservar y actualizar la estética de la versión anterior de la página, respetando la identidad visual ya reconocida por los clientes. Se aplicaron ajustes mínimos para modernizar la interfaz y mejorar la legibilidad, priorizando una apariencia profesional, sencilla y funcional.",
+
+                imageUrl: null,
+              },
+              {
+                title: "Planificación de funcionalidades",
+                description:
+                  "No se incorporaron funcionalidades complejas nuevas. El enfoque estuvo en actualizar y optimizar el contenido para mejorar el SEO, modernizar la sección de 'Antes y Después' de los trabajos realizados, y mantener el formulario de consultas con mínimos ajustes para asegurar su funcionamiento y accesibilidad.",
+                imageUrl: null,
+              },
+            ],
+            mainFeatures: [
+              {
+                title: "Actualización de 'Antes y Después'",
+                description:
+                  "Se implementó un componente interactivo previamente desarrollado para mostrar el 'Antes y Después' de los trabajos realizados. Esta mejora no solo moderniza la presentación visual, sino que también ofrece a los usuarios una experiencia más clara y atractiva al comparar resultados de manera directa.",
+              },
+              {
+                title: "Optimización SEO",
+                description:
+                  "En esta actualización, el enfoque principal fue la optimización para motores de búsqueda. Se ajustaron textos, títulos y descripciones siguiendo buenas prácticas de SEO, priorizando la relevancia semántica y la jerarquía correcta de etiquetas. Cada sección fue pensada para mejorar la indexación, maximizando así la visibilidad orgánica de la empresa sin sacrificar la experiencia del usuario.",
+              },
+              {
+                title: "Refactorización del código",
+                description:
+                  "Aunque no se incorporaron tecnologías nuevas, se puso el foco en limpiar y optimizar el código existente. Se mejoró la estructura de los componentes, se eliminaron redundancias y se aplicaron buenas prácticas de React para lograr un proyecto más mantenible, eficiente y fácil de escalar a futuro.",
+              },
+            ],
+            issues: {
+              title: "PRINCIPALES PROBLEMAS ENFRENTADOS",
+              issueList: [
+                {
+                  title: "Optimización del posicionamiento SEO",
+                  description:
+                    "Uno de los principales desafíos fue mejorar el posicionamiento en buscadores, dado que el contenido anterior era escaso y poco estructurado. Para solucionarlo, se recurrió a sugerencias de ChatGPT basadas en buenas prácticas SEO: se reescribieron textos con palabras clave relevantes, se mejoró la estructura de encabezados (H1, H2, H3) y se optimizaron las etiquetas alt en imágenes, logrando así una página más amigable para Google sin romper la estética original.",
+                },
+                {
+                  title: "Optimización progresiva de SEO",
+                  description:
+                    "Uno de los principales desafíos fue mejorar el posicionamiento en buscadores. El contenido inicial era escaso y poco optimizado. Se empezó aplicando sugerencias de ChatGPT para reescribir textos con palabras clave relevantes, pero el proceso no terminó ahí: poco a poco se fueron mejorando aspectos como el uso de etiquetas semánticas correctas, la optimización de formatos de imagen (WebP, compresión adecuada) y la estructura de encabezados. Todo basado en los resultados de herramientas de análisis de rendimiento online como PageSpeed Insights y similares.",
+                },
+                {
+                  title: "Optimización de carga",
+                  description:
+                    "Aunque ya se realizaron mejoras en la optimización de la carga, como la compresión de imágenes y la implementación de lazy loading, aún se sigue trabajando en este aspecto. Se está evaluando constantemente el rendimiento mediante herramientas como Lighthouse, buscando reducir aún más los tiempos de carga y mejorar la experiencia del usuario. El objetivo es continuar perfeccionando el rendimiento del sitio mientras se mantienen los estándares de calidad.",
                 },
               ],
             },

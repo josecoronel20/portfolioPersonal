@@ -1,7 +1,7 @@
 import { ReactNode } from "react";
 
 export type tech = {
-  id:number,
+  id: number;
   title: string;
   color: string;
   iconWhite?: ReactNode;
@@ -39,6 +39,7 @@ export type project = {
   siteUrl: string;
   repoUrl: string;
   isFinished: boolean;
+  projectObjective: string;
   details: {
     planningProcess: planningProcess[];
     mainFeatures: mainFeatures[];
@@ -134,6 +135,13 @@ export type textLanguage = {
       seeProject: string;
       seeDetails: string;
       seeRepo: string;
+    };
+    projectDetailTexts: {
+      descriptionTitle: string;
+      isFinishText: string;
+      isNotFinishText: string;
+      techsUsed: string;
+      plainingProcessTitle: string;
     };
     list: project[];
   };

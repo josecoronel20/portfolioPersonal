@@ -1,25 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { styleButtonLight } from "../../utilities/customStyles";
-import useQuickTraduction from "../../Hooks/useQuickTraduction";
 import ImageModal from "../ReutilizableComponents/ImageModal";
+import { project } from "../../types";
+import { useLanguage } from "../../Context/LanguageContext";
 
 const ProjectMockup = ({
-  imagePcUrl,
-  imageMobileUrl,
-  siteUrl,
-  repoUrl,
-  imageMobileAlt,
-  imageDesktopAlt,
-}) => {
-  const textVisite = useQuickTraduction({
-    textEs: "VISITAR SITIO",
-    textEn: "VISIT SITE",
-  });
-  const textRepo = useQuickTraduction({
-    textEs: "VISITAR REPO",
-    textEn: "VISIT REPO",
-  });
+ project
+}:{project:project}) => {
+  const {textLanguage} = useLanguage()
 
   return (
     <section className="w-fit ">
@@ -28,7 +17,7 @@ const ProjectMockup = ({
           <div className="flex flex-col items-center justify-end  w-4/6">
             <div className="border-x-[6px] border-t-[8px] md:border-x-[10px] md:border-t-[14px] rounded-t-md w-10/12 border-lightLight">
               <ImageModal>
-                <img src={imagePcUrl} alt={imageDesktopAlt} />
+                <img src={project.imgDesktopUrl} alt={project.imgDesktopAlt} />
               </ImageModal>
             </div>
             <div className="w-full h-[12px] rounded-sm bg-lightLight" />
@@ -40,20 +29,20 @@ const ProjectMockup = ({
             >
             <ImageModal>
               <img
-                src={imageMobileUrl}
-                alt={imageMobileAlt}
+                src={project.imgMobileUrl}
+                alt={project.imgMobileAlt}
               />
             </ImageModal></div>
           </div>
         </div>
 
         <div className="flex gap-1 w-full">
-          <Link target="_blank" className={styleButtonLight} to={siteUrl}>
-            {textVisite}
+          <Link target="_blank" className={styleButtonLight} to={project.siteUrl}>
+            {textLanguage.projects.buttonText.seeProject}
           </Link>
 
-          <Link target="_blank" className={styleButtonLight} to={repoUrl}>
-            {textRepo}
+          <Link target="_blank" className={`${styleButtonLight} content-center`} to={project.repoUrl}>
+          {textLanguage.projects.buttonText.seeRepo}
           </Link>
         </div>
       </div>
