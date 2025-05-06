@@ -23,7 +23,7 @@ import {
   iconTsWhite,
   iconVsCodeColor,
   iconVsCodeWhite,
-} from "../Icons";
+} from "./Icons";
 
 import imgDesktopUrl1 from "/public/img/projectsImg/portfolio/screenShotDesktop.png";
 import imgMobileUrl1 from "/public/img/projectsImg/portfolio/screenShotMobile.png";
@@ -39,12 +39,13 @@ import imgfeatures2 from "/public/img/projectsImg/ecommerce/proyectDetail/ecomme
 
 import imgDesktopUrl3 from "/public/img/projectsImg/arenadosLucho/imgDesktop.png";
 import imgMobileUrl3 from "/public/img/projectsImg/arenadosLucho/imgMobile.png";
+import imgDesign3 from "/public/img/projectsImg/arenadosLucho/projectDetail/design.png"
 
 import imgBlog1 from "/public/img/blogImg/OIG4.jpg";
 import imgBlog2 from "/public/img/blogImg/post2.png";
 import imgBlog3 from "/public/img/blogImg/post3.png";
 
-import { textLanguage } from "../../types";
+import { textLanguage } from "../types";
 
 export const text: { textEs: textLanguage; textEn: textLanguage } = {
   textEs: {
@@ -205,18 +206,9 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
                   "Arenados Lucho",
                 ],
               },
+              
               {
                 id: 6,
-                title: "Redux",
-                color: "#764ABC",
-                iconWhite: iconReduxWhite,
-                iconColor: iconReduxColor,
-                level: "Básico",
-                mainTopics: ["State Management", "Actions", "Reducers"],
-                mainProjects: [""],
-              },
-              {
-                id: 7,
                 title: "Tailwind",
                 color: "#38B2AC",
                 iconWhite: iconTailwindWhite,
@@ -235,7 +227,7 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
               },
 
               {
-                id: 8,
+                id: 7,
                 title: "Jest y Testing Library",
                 color: "#99424F",
                 iconWhite: iconJestWhite,
@@ -254,28 +246,9 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
           {
             title: "HERRAMIENTAS",
             list: [
+              
               {
-                id: 9,
-
-                title: "ChatGPT",
-                color: "#6C3F9D",
-                iconWhite: iconChatGptWhite,
-                iconColor: iconChatGptColor,
-                level: "Avanzado",
-                mainTopics: [
-                  "Asistencia en desarrollo de código",
-                  "Generación de ideas y resolución de problemas",
-                  "Automatización de tareas repetitivas",
-                  "Personalización de respuestas según necesidades del proyecto",
-                ],
-                mainProjects: [
-                  "portfolio personal",
-                  "Ecommerce",
-                  "Arenados Lucho",
-                ],
-              },
-              {
-                id: 10,
+                id: 8,
 
                 title: "Git",
                 color: "#F05032",
@@ -295,7 +268,7 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
               },
 
               {
-                id: 11,
+                id: 9,
 
                 title: "npm",
                 color: "#CB3837",
@@ -315,7 +288,7 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
               },
 
               {
-                id: 12,
+                id: 10,
 
                 title: "VS Code",
                 color: "#007ACC",
@@ -339,7 +312,7 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
             title: "CONCEPTOS Y METODOLOGÍAS",
             list: [
               {
-                id: 13,
+                id: 11,
 
                 title: "Diseño responsivo",
                 color: "#34A853",
@@ -356,7 +329,7 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
                 ],
               },
               {
-                id: 14,
+                id: 12,
 
                 title: "Componentes reutilizables",
                 color: "#007BFF",
@@ -373,7 +346,7 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
                 ],
               },
               {
-                id: 15,
+                id: 13,
 
                 title: "Manejo de estados",
                 color: "#6A1B9A",
@@ -390,7 +363,7 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
                 ],
               },
               {
-                id: 16,
+                id: 14,
 
                 title: "Consumo de APIs",
                 color: "#5C6BC0",
@@ -399,7 +372,7 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
                 mainProjects: [""],
               },
               {
-                id: 17,
+                id: 15,
 
                 title: "Control de versiones (Git)",
                 color: "#F4511E",
@@ -412,7 +385,7 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
                 ],
               },
               {
-                id: 18,
+                id: 16,
 
                 title: "Testing (aprendiendo)",
                 color: "#9E9D24",
@@ -425,7 +398,7 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
                 mainProjects: ["Ecommerce"],
               },
               {
-                id: 19,
+                id: 17,
 
                 title: "Ruteo en SPA",
                 color: "#C62828",
@@ -442,7 +415,7 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
                 ],
               },
               {
-                id: 20,
+                id: 18,
 
                 title: "Buenas prácticas",
                 color: "#6D4C41",
@@ -701,7 +674,7 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
                 description:
                   "El diseño visual no se desarrolló desde cero en herramientas como Figma. Se optó por conservar y actualizar la estética de la versión anterior de la página, respetando la identidad visual ya reconocida por los clientes. Se aplicaron ajustes mínimos para modernizar la interfaz y mejorar la legibilidad, priorizando una apariencia profesional, sencilla y funcional.",
 
-                imageUrl: null,
+                imageUrl: imgDesign3,
               },
               {
                 title: "Planificación de funcionalidades",
@@ -991,18 +964,9 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
                   "Arenados Lucho",
                 ],
               },
+              
               {
                 id: 6,
-                title: "Redux",
-                color: "#764ABC",
-                iconWhite: iconReduxWhite,
-                iconColor: iconReduxColor,
-                level: "Basic",
-                mainTopics: ["State Management", "Actions", "Reducers"],
-                mainProjects: [""],
-              },
-              {
-                id: 7,
                 title: "Tailwind",
                 color: "#38B2AC",
                 iconWhite: iconTailwindWhite,
@@ -1020,7 +984,7 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
                 ],
               },
               {
-                id: 8,
+                id: 7,
                 title: "Jest and Testing Library",
                 color: "#99424F",
                 iconWhite: iconJestWhite,
@@ -1039,27 +1003,8 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
           {
             title: "TOOLS",
             list: [
-              {
-                id: 9,
-                title: "ChatGPT",
-                color: "#6C3F9D",
-                iconWhite: iconChatGptWhite,
-                iconColor: iconChatGptColor,
-                level: "Advanced",
-                mainTopics: [
-                  "Assistance in code development",
-                  "Idea generation and problem-solving",
-                  "Automation of repetitive tasks",
-                  "Customization of responses based on project needs",
-                ],
-                mainProjects: [
-                  "personal portfolio",
-                  "Ecommerce",
-                  "Arenados Lucho",
-                ],
-              },
-              {
-                id: 10,
+                          {
+                id: 8,
                 title: "Git",
                 color: "#F05032",
                 iconWhite: iconGitWhite,
@@ -1077,7 +1022,7 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
                 ],
               },
               {
-                id: 11,
+                id: 9,
                 title: "npm",
                 color: "#CB3837",
                 iconWhite: iconNpmWhite,
@@ -1095,7 +1040,7 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
                 ],
               },
               {
-                id: 12,
+                id: 10,
                 title: "VS Code",
                 color: "#007ACC",
                 iconWhite: iconVsCodeWhite,
@@ -1118,7 +1063,7 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
             title: "CONCEPTS AND METHODOLOGIES",
             list: [
               {
-                id: 13,
+                id: 11,
                 title: "Responsive Design",
                 color: "#34A853",
                 level: "Intermediate",
@@ -1134,7 +1079,7 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
                 ],
               },
               {
-                id: 14,
+                id: 12,
                 title: "Reusable Components",
                 color: "#007BFF",
                 level: "Intermediate",
@@ -1150,7 +1095,7 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
                 ],
               },
               {
-                id: 15,
+                id: 13,
                 title: "State Management",
                 color: "#6A1B9A",
                 level: "Basic",
@@ -1166,7 +1111,7 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
                 ],
               },
               {
-                id: 16,
+                id: 14,
                 title: "API Consumption",
                 color: "#5C6BC0",
                 level: "Intermediate",
@@ -1174,7 +1119,7 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
                 mainProjects: [""],
               },
               {
-                id: 17,
+                id: 15,
                 title: "Version Control (Git)",
                 color: "#F4511E",
                 level: "Intermediate",
@@ -1186,7 +1131,7 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
                 ],
               },
               {
-                id: 18,
+                id: 16,
                 title: "Testing (learning)",
                 color: "#9E9D24",
                 level: "Basic",
@@ -1194,7 +1139,7 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
                 mainProjects: ["Ecommerce"],
               },
               {
-                id: 19,
+                id: 17,
                 title: "Routing in SPA",
                 color: "#C62828",
                 level: "Basic",
@@ -1210,7 +1155,7 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
                 ],
               },
               {
-                id: 20,
+                id: 18,
                 title: "Best Practices",
                 color: "#6D4C41",
                 level: "Basic",
@@ -1460,7 +1405,7 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
                 title: "Visual Design",
                 description:
                   "The visual design was not developed from scratch in tools like Figma. The decision was made to preserve and update the aesthetic of the previous version of the site, respecting the visual identity already recognized by clients. Minor adjustments were applied to modernize the interface and improve readability, prioritizing a professional, simple, and functional appearance.",
-                imageUrl: null,
+                imageUrl: imgDesign3,
               },
               {
                 title: "Functionality Planning",

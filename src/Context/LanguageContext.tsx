@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useState, ReactNode } from "react";
-import { text } from "../utilities/texts/Text";
+import { text } from "../utilities/Text";
 import { textLanguage } from "../types";
 
 type LanguageContextType = {
