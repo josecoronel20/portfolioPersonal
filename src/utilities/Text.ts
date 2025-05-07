@@ -1475,7 +1475,7 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
       ],
     },
     blog: {
-      title: "POSTS DE MI BLOG PERSONAL",
+      title: "POSTS FROM MY PERSONAL BLOG",
       blogList: [
         {
           id: 1,
