@@ -15,8 +15,8 @@ import {
   iconNpmWhite,
   iconReactColor,
   iconReactWhite,
-  iconReduxColor,
-  iconReduxWhite,
+  iconFigmaWhite,
+  iconFigmaColor,
   iconTailwindColor,
   iconTailwindWhite,
   iconTsColor,
@@ -306,13 +306,31 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
                   "Arenados Lucho",
                 ],
               },
+              {
+                id: 11,
+              
+                title: "Figma",
+                color: "#F24E1E",
+                iconWhite: iconFigmaWhite,
+                iconColor: iconFigmaColor,
+                level: "Intermedio",
+                mainTopics: [
+                  "Diseño de interfaces",
+                ],
+                mainProjects: [
+                  "Wireframes de portfolio",
+                  "Diseño de ecommerce",
+                  "Mockups para Arenados Lucho",
+                ],
+              }
+              
             ],
           },
           {
             title: "CONCEPTOS Y METODOLOGÍAS",
             list: [
               {
-                id: 11,
+                id: 12,
 
                 title: "Diseño responsivo",
                 color: "#34A853",
@@ -329,7 +347,7 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
                 ],
               },
               {
-                id: 12,
+                id: 13,
 
                 title: "Componentes reutilizables",
                 color: "#007BFF",
@@ -346,7 +364,7 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
                 ],
               },
               {
-                id: 13,
+                id: 14,
 
                 title: "Manejo de estados",
                 color: "#6A1B9A",
@@ -362,15 +380,7 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
                   "Arenados Lucho",
                 ],
               },
-              {
-                id: 14,
-
-                title: "Consumo de APIs",
-                color: "#5C6BC0",
-                level: "Intermedio",
-                mainTopics: ["fetch", "axios", "manejo de loading/errores"],
-                mainProjects: [""],
-              },
+              
               {
                 id: 15,
 
@@ -1056,14 +1066,31 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
                   "Ecommerce",
                   "Arenados Lucho",
                 ],
-              },
+              },{
+                id: 11,
+              
+                title: "Figma",
+                color: "#F24E1E",
+                iconWhite: iconFigmaWhite,
+                iconColor: iconFigmaColor,
+                level: "Intermediate",
+                mainTopics: [
+                  "Interface design",
+                ],
+                mainProjects: [
+                  "Portfolio wireframes",
+                  "Ecommerce design",
+                  "Mockups for Arenados Lucho",
+                ],
+              }
+              
             ],
           },
           {
             title: "CONCEPTS AND METHODOLOGIES",
             list: [
               {
-                id: 11,
+                id: 12,
                 title: "Responsive Design",
                 color: "#34A853",
                 level: "Intermediate",
@@ -1079,7 +1106,7 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
                 ],
               },
               {
-                id: 12,
+                id: 13,
                 title: "Reusable Components",
                 color: "#007BFF",
                 level: "Intermediate",
@@ -1095,7 +1122,7 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
                 ],
               },
               {
-                id: 13,
+                id: 14,
                 title: "State Management",
                 color: "#6A1B9A",
                 level: "Basic",
@@ -1110,14 +1137,7 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
                   "Arenados Lucho",
                 ],
               },
-              {
-                id: 14,
-                title: "API Consumption",
-                color: "#5C6BC0",
-                level: "Intermediate",
-                mainTopics: ["fetch", "axios", "handling loading/errors"],
-                mainProjects: [""],
-              },
+              
               {
                 id: 15,
                 title: "Version Control (Git)",
@@ -1146,7 +1166,6 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
                 mainTopics: [
                   "React Router",
                   "Simple routes",
-                  "Page navigation",
                 ],
                 mainProjects: [
                   "personal portfolio",
