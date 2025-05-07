@@ -132,7 +132,7 @@
 import { useParams } from "react-router-dom";
 import { styleContainerTop } from "../../Utilities/customStyles";
 import React from "react";
-import { useLanguage } from "../../Context/LanguageContext";
+import { useLanguage } from "../../context/LanguageContext";
 import ProjectMockup from "./ProjectMockup";
 import ProjectsDetailPlanning from "./ProjectsDetailPlanning";
 

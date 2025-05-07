@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import Translate from "./components/Translator";
-import MenuNav from "./components/MenuNav";
-import { textLanguage } from "../../types";
-import { useLanguage } from "../../Context/LanguageContext";
+import Translate from "./Translator";
+import MenuNav from "./MenuNav";
+import { textLanguage } from "../../utilities/types";
+import { useLanguage } from "../../context/LanguageContext";
 
 const Header = () => {
   const {textLanguage} = useLanguage()

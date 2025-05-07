@@ -1,7 +1,7 @@
 import React from "react";
-import { tech } from "../../types";
+import { tech } from "../../utilities/types";
 import { iconClose } from "../../utilities/Icons";
-import { useLanguage } from "../../Context/LanguageContext";
+import { useLanguage } from "../../context/LanguageContext";
 
 
 const TechCard = ({ techInfo }: { techInfo: tech }) => {

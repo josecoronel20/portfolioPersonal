@@ -1,7 +1,7 @@
 import React from "react";
-import { iconTranslate } from "../../../utilities/Icons";
-import { useToggle } from "../../../Hooks/useToggle.ts";
-import { useLanguage } from "../../../Context/LanguageContext";
+import { iconTranslate } from "../../utilities/Icons";
+import { useToggle } from "../../hooks/useToggle";
+import { useLanguage } from "../../context/LanguageContext";
 
 const Translate = () => {
   //uso de customhook para utilizar un estado toggle

@@ -45,7 +45,7 @@ import imgBlog1 from "/public/img/blogImg/OIG4.jpg";
 import imgBlog2 from "/public/img/blogImg/post2.png";
 import imgBlog3 from "/public/img/blogImg/post3.png";
 
-import { textLanguage } from "../types";
+import { textLanguage } from "./types";
 
 export const text: { textEs: textLanguage; textEn: textLanguage } = {
   textEs: {

@@ -1,7 +1,7 @@
 import React from "react";
 import ImageModal from "../ReutilizableComponents/ImageModal";
-import { useLanguage } from "../../Context/LanguageContext";
-import { project } from "../../types";
+import { useLanguage } from "../../context/LanguageContext";
+import { project } from "../../utilities/types";
 
 const ProjectsDetailPlanning = ({ project }:{project:project}) => {
   //todo:agregar texto de proceso de planificacion y "Mi objetivo fue 1desarrollar un sitio web que refleje mi identidad como diseñador y desarrollador, destacando mis habilidades y trabajos", agregar alt de imagen

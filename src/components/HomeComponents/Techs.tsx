@@ -1,7 +1,7 @@
 import React from "react";
 import { styleContainer } from "../../Utilities/customStyles.js";
-import { useLanguage } from "../../Context/LanguageContext.tsx";
-import { tech } from "../../types.js";
+import { useLanguage } from "../../context/LanguageContext.js";
+import { tech } from "../../utilities/types.js";
 import TechMap from "./TechMap.tsx";
 
 const Techs = () => {

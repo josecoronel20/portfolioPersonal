@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { iconCopy } from "../../utilities/Icons";
-import { useLanguage } from "../../Context/LanguageContext";
+import { useLanguage } from "../../context/LanguageContext";
 
 const FooterLink = ({ icon, textForCopy, url, text }) => {
   //todo: agrega textCopyAlert al tipado y al text

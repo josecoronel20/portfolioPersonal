@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { tech } from "../../types";
-import { useToggle } from "../../Hooks/useToggle";
+import { tech } from "../../utilities/types";
+import { useToggle } from "../../hooks/useToggle";
 import Modal from "../ReutilizableComponents/Modal";
 import TechCard from "./TechCard";
 

@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { iconMenu } from "../../../Utilities/Icons";
-import { useToggle } from "../../../Hooks/useToggle.ts";
-import Modal from "../../ReutilizableComponents/Modal";
-import { useLanguage } from "../../../Context/LanguageContext";
+import { iconMenu } from "../../Utilities/Icons";
+import { useToggle } from "../../hooks/useToggle";
+import Modal from "../ReutilizableComponents/Modal";
+import { useLanguage } from "../../context/LanguageContext";
 
 const MenuNav = () => {
   // Estado para obtener el tamaño de la pantalla y renderizar/aplicar estilos dependiendo de este

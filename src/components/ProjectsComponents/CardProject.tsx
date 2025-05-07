@@ -1,6 +1,6 @@
 import React from "react";
 import ButtonsCardProject from "./ButtonsCardProject";
-import { project } from "../../types";
+import { project } from "../../utilities/types";
 
 const CardProject = ({ project }: { project: project }) => {
   //todo:agregar finalizado y en proceso al tipado y al text

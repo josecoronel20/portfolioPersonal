@@ -2,8 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { styleButtonLight } from "../../utilities/customStyles";
 import ImageModal from "../ReutilizableComponents/ImageModal";
-import { project } from "../../types";
-import { useLanguage } from "../../Context/LanguageContext";
+import { project } from "../../utilities/types";
+import { useLanguage } from "../../context/LanguageContext";
 
 const ProjectMockup = ({
  project

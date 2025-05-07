@@ -1,7 +1,7 @@
 import React from "react";
 import { styleButtonCard } from "../../Utilities/customStyles";
 import { Link } from "react-router-dom";
-import { useLanguage} from "../../Context/LanguageContext"
+import { useLanguage} from "../../context/LanguageContext"
 
 const ButtonsCardProject = ({ urlSite, urlRepo, id }:{urlSite:string, urlRepo:string, id:number}) => {
   //todo: agregar visitar sitio,ver detalles y visitar repo a text y tipado

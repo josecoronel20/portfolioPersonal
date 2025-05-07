@@ -6,7 +6,7 @@ import Contact from "./routes/Contact";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import PostDetail from "./components/BlogComponents/PostDetail";
-import { LanguageProvider } from "./Context/LanguageContext";
+import { LanguageProvider } from "./context/LanguageContext";
 import Home from "./routes/Home.tsx";
 import ProjectsDetail from "./components/ProjectsComponents/ProjectsDetail";
 const App = () => {

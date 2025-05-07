@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useLanguage } from "../../Context/LanguageContext";
+import { useLanguage } from "../../context/LanguageContext";
 import CardProject from "../ProjectsComponents/CardProject";
 import { iconArrowLeft, iconArrowRight } from "../../utilities/Icons";
 

@@ -2,7 +2,7 @@ import React from "react";
 import FooterLink from "../Footer/FooterLink";
 import { iconLinkedin, iconMail, iconWpp } from "../../Utilities/Icons";
 import { useLocation } from "react-router-dom";
-import { useLanguage } from "../../Context/LanguageContext";
+import { useLanguage } from "../../context/LanguageContext";
 
 const ContactContent = () => {
   const {textLanguage} = useLanguage()

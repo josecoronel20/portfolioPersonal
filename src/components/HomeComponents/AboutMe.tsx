@@ -1,6 +1,6 @@
 import React from "react";
 import { styleContainer } from "../../Utilities/customStyles";
-import { useLanguage } from "../../Context/LanguageContext";
+import { useLanguage } from "../../context/LanguageContext";
 
 const AboutMe = () => {
   //variable con texto dependiendo del lenguaje
