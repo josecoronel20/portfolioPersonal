@@ -1,12 +1,13 @@
 import React from "react";
-import { styleContainer } from "../../Utilities/customStyles";
+import { styleContainer } from "../../utilities/customStyles";
 import { useLanguage } from "../../context/LanguageContext";
 
-const AboutMe = () => {
-  //variable con texto dependiendo del lenguaje
+const AboutMe = ():JSX.Element => {
+  //hook que importa el texto segun idioma
   const { textLanguage } = useLanguage();
+
   //componetizacion de parrafos
-  const Paragraph = ({ title, text }: { title: string; text: string }) => {
+  const Paragraph = ({ title, text }: { title: string; text: string }):JSX.Element => {
     return (
       <div>
         {title && <h3 className="text-green">{title}</h3>}

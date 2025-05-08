@@ -1,11 +1,11 @@
 import React from "react";
-import { styleButtonCard } from "../../Utilities/customStyles";
+import { styleButtonCard } from "../../utilities/customStyles";
 import { Link } from "react-router-dom";
 import { useLanguage} from "../../context/LanguageContext"
 
-const ButtonsCardProject = ({ urlSite, urlRepo, id }:{urlSite:string, urlRepo:string, id:number}) => {
-  //todo: agregar visitar sitio,ver detalles y visitar repo a text y tipado
-const {textLanguage} = useLanguage()
+const ButtonsCardProject = ({ urlSite, urlRepo, id }:{urlSite:string, urlRepo:string, id:number}):JSX.Element => {
+  //hook que importa el texto segun idioma
+  const {textLanguage} = useLanguage()
   return (
       <div className="flex flex-col gap-2 h-full  justify-center">
         <Link target="_blank" className={styleButtonCard} to={urlSite}>

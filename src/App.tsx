@@ -1,13 +1,13 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Projects from "./Routes/Projects";
+import Projects from "./routes/Projects";
 import Blog from "./routes/Blog";
 import Contact from "./routes/Contact";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import PostDetail from "./components/BlogComponents/PostDetail";
 import { LanguageProvider } from "./context/LanguageContext";
-import Home from "./routes/Home.tsx";
+import Home from "./routes/Home";
 import ProjectsDetail from "./components/ProjectsComponents/ProjectsDetail";
 const App = () => {
   return (

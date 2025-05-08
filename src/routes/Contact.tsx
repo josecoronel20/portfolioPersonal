@@ -1,8 +1,8 @@
 import React from "react";
-import { styleContainerTop } from "../Utilities/customStyles";
-import ContactContent from "../components/ReutilizableComponents/ContactContent.tsx";
+import { styleContainerTop } from "../utilities/customStyles";
+import ContactContent from "../components/ReutilizableComponents/ContactContent";
 
-const Contact = () => {
+const Contact = ():JSX.Element => {
   return (
     <main className={styleContainerTop}>
       <div className="flex justify-center">

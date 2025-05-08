@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { iconMenu } from "../../Utilities/Icons";
+import { iconMenu } from "../../utilities/Icons";
 import { useToggle } from "../../hooks/useToggle";
 import Modal from "../ReutilizableComponents/Modal";
 import { useLanguage } from "../../context/LanguageContext";
 
-const MenuNav = () => {
+const MenuNav = ():JSX.Element => {
   // Estado para obtener el tamaño de la pantalla y renderizar/aplicar estilos dependiendo de este
   const [windowSize, setWindowSize] = useState(window.innerWidth);
 
@@ -23,7 +23,7 @@ const MenuNav = () => {
     };
   }, []);
 
-  //texto
+  //hook que importa el texto segun idioma
   const { textLanguage } = useLanguage();
 
   // Uso de custom hook para manejar el estado toggle

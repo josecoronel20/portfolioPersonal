@@ -4,8 +4,12 @@ import { useToggle } from "../../hooks/useToggle";
 import Modal from "../ReutilizableComponents/Modal";
 import TechCard from "./TechCard";
 
-const TechMap = ({ techProp }: { techProp: tech }) => {
+const TechHover = ({ techProp }: { techProp: tech }):JSX.Element => {
+
+  //state que maneja si el icon esta hover
   const [isHover, setIsHover] = useState(false);
+
+  //hook de toggle
   const { isToggleOpen, setIsToggleOpen } = useToggle();
 
   return (
@@ -27,4 +31,4 @@ const TechMap = ({ techProp }: { techProp: tech }) => {
   );
 };
 
-export default TechMap;
+export default TechHover;

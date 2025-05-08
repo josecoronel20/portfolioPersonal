@@ -3,12 +3,24 @@ import ImageModal from "../ReutilizableComponents/ImageModal";
 import { useLanguage } from "../../context/LanguageContext";
 import { project } from "../../utilities/types";
 
-const ProjectsDetailPlanning = ({ project }:{project:project}) => {
-  //todo:agregar texto de proceso de planificacion y "Mi objetivo fue 1desarrollar un sitio web que refleje mi identidad como diseñador y desarrollador, destacando mis habilidades y trabajos", agregar alt de imagen
-  const {textLanguage} = useLanguage()
+const ProjectsDetailPlanning = ({
+  project,
+}: {
+  project: project;
+}): JSX.Element => {
+  //hook que importa el texto segun idioma
+  const { textLanguage } = useLanguage();
 
   //componetizacion de subtitle
-  const Subtitle = ({ title, paragraph, urlImg }) => {
+  const Subtitle = ({
+    title,
+    paragraph,
+    urlImg,
+  }: {
+    title: string;
+    paragraph: string;
+    urlImg: string | null;
+  }): JSX.Element => {
     return (
       <div className="flex flex-col gap-1 justify-between h-full">
         <div>
@@ -16,13 +28,15 @@ const ProjectsDetailPlanning = ({ project }:{project:project}) => {
           <p className="font-light">{paragraph}</p>
         </div>
 
-        <ImageModal>
-          <img
-            className="rounded custom-shadow hover:scale-105 transition-transform ease-in-out duration-150"
-            src={urlImg}
-            alt=""
-          />
-        </ImageModal>
+        {urlImg !== null ? (
+          <ImageModal>
+            <img
+              className="rounded custom-shadow hover:scale-105 transition-transform ease-in-out duration-150"
+              src={urlImg}
+              alt=""
+            />
+          </ImageModal>
+        ) : null}
       </div>
     );
   };
@@ -30,7 +44,9 @@ const ProjectsDetailPlanning = ({ project }:{project:project}) => {
   return (
     <section className="flex flex-col gap-5">
       <div>
-        <h3 className="text-green">{textLanguage.projects.projectDetailTexts.plainingProcessTitle}</h3>
+        <h3 className="text-green">
+          {textLanguage.projects.projectDetailTexts.plainingProcessTitle}
+        </h3>
         <p className="font-light">{project.projectObjective}</p>
       </div>
 

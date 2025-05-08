@@ -3,22 +3,39 @@ import { useLanguage } from "../../context/LanguageContext";
 import CardProject from "../ProjectsComponents/CardProject";
 import { iconArrowLeft, iconArrowRight } from "../../utilities/Icons";
 
-const Carrousel = () => {
+const Carousel = ():JSX.Element => {
+  //hook que importa el texto segun idioma
   const { textLanguage } = useLanguage();
-  const [projectId, setProjectId] = useState(1);
+
+  //state que maneja que id de projecto seleccionar
+  const [projectId, setProjectId] = useState<number>(1);
+
+  //extrae el largo del array de la lista de projectos
   const lenghtArrayProjects = textLanguage.projects.list.length;
 
-  const handlerLeftArrow = () => {
+  //handler de boton prev
+  const handlerLeftArrow = ():void => {
     setProjectId((prev) => (prev > 1 ? prev - 1 : lenghtArrayProjects));
   };
 
-  const handlerRightArrow = () => {
+  //handler de boton prev
+  const handlerRightArrow = ():void => {
     setProjectId((prev) => (prev < lenghtArrayProjects ? prev + 1 : 1));
   };
 
+  //filtra el projecto segun id
   const project = textLanguage.projects.list.find(
     (project) => project.id === projectId
   );
+
+  //guard clause
+  if (!project) {
+    return (
+      <p className="text-center w-full text-red-700">
+        No se encontró el proyecto
+      </p>
+    );
+  }
 
   return (
     <section className="flex flex-col justify-center items-center py-10 gap-4">
@@ -36,4 +53,4 @@ const Carrousel = () => {
   );
 };
 
-export default Carrousel;
+export default Carousel;

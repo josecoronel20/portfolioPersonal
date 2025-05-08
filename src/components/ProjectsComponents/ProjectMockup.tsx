@@ -7,7 +7,9 @@ import { useLanguage } from "../../context/LanguageContext";
 
 const ProjectMockup = ({
  project
-}:{project:project}) => {
+}:{project:project}):JSX.Element => {
+  //muestra el mockup del proyecto
+  //hook que importa el texto segun idioma
   const {textLanguage} = useLanguage()
 
   return (

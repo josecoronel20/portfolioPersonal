@@ -1,8 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { styleButtonCard } from "../../Utilities/customStyles";
+import { styleButtonCard } from "../../utilities/customStyles";
+import { post } from "../../utilities/types";
 
-const PostCard = ({ postInfo }) => {
+const PostCard = ({ postInfo }: {postInfo:post}):JSX.Element => {
+  //card que visualiza cada Post
   return (
     <div className="bg-lightLight rounded-md overflow-hidden flex flex-col  max-w-96 p-2 gap-2">
       <img className="rounded max-h-60 object-none" src={postInfo.image} alt="" />

@@ -1,13 +1,14 @@
 import React from "react";
-import illustration from "../../../public/img/illustration.png";
 import { Link } from "react-router-dom";
 import {
   styleButtonPrincipal,
   styleContainerTop,
-} from "../../Utilities/customStyles";
-import { useLanguage } from "../../Context/LanguageContext";
+} from "../../utilities/customStyles";
+import { useLanguage } from "../../context/LanguageContext";
 
-const Hero = () => {
+const Hero = ():JSX.Element => {
+
+//hook que importa el texto segun idioma  
 const {textLanguage} = useLanguage()
 
   return (
@@ -29,7 +30,7 @@ const {textLanguage} = useLanguage()
           
         </div>
         <div className="order-1 md:order-2 w-5/6 custom-shadow max-w-xs md:max-w-md">
-          <img src={illustration} alt={textLanguage.home.hero.heroImg.imgAlt} />
+          <img src="src\img\illustration.png" alt={textLanguage.home.hero.heroImg.imgAlt} />
         </div>
       </div>
     </section>

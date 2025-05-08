@@ -1,22 +1,25 @@
-import React, { useState } from "react";
+import React, { ReactNode, useState } from "react";
 import { Link } from "react-router-dom";
 import { iconCopy } from "../../utilities/Icons";
 import { useLanguage } from "../../context/LanguageContext";
 
-const FooterLink = ({ icon, textForCopy, url, text }) => {
-  //todo: agrega textCopyAlert al tipado y al text
+const FooterLink = ({ icon, textForCopy, url, text }:{icon:ReactNode,textForCopy:string,url:string,text:string}):JSX.Element => {
+  //hook que importa el texto segun idioma
   const {textLanguage} = useLanguage()
 
-  const [copyAlert, setCopyAlert] = useState(false);
+  //state para mostrar o no alerta de "copiado"
+  const [copyAlert, setCopyAlert] = useState<boolean>(false);
 
-  const handlerCopyAlert = () => {
+  //muestra alerta por un breve tiempo
+  const handlerCopyAlert = ():void => {
     setCopyAlert(true);
     setTimeout(() => {
       setCopyAlert(false);
     }, 1000);
   };
 
-  const copyClipBoard = () => {
+  //copia el texto en el clipboard
+  const copyClipBoard = ():void => {
     navigator.clipboard.writeText(textForCopy);
     handlerCopyAlert();
   };

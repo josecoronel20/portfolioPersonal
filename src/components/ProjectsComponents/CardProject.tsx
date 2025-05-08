@@ -2,9 +2,8 @@ import React from "react";
 import ButtonsCardProject from "./ButtonsCardProject";
 import { project } from "../../utilities/types";
 
-const CardProject = ({ project }: { project: project }) => {
-  //todo:agregar finalizado y en proceso al tipado y al text
-
+const CardProject = ({ project }: { project: project }):JSX.Element => {
+//card para mostrar proyectos
   return (
     <div
       key={project.id}

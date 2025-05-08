@@ -3,12 +3,12 @@ import { iconTranslate } from "../../utilities/Icons";
 import { useToggle } from "../../hooks/useToggle";
 import { useLanguage } from "../../context/LanguageContext";
 
-const Translate = () => {
+const Translate = ():JSX.Element => {
   //uso de customhook para utilizar un estado toggle
   const { isToggleOpen, handlerToggle, setIsToggleOpen } = useToggle();
 
-  //llamada al context del lenguaje
-  const {language,textLanguage, changeToEnglish,changeToSpanish} = useLanguage()
+  //hook que importa el texto segun idioma
+  const {language, changeToEnglish,changeToSpanish} = useLanguage()
   return (
     <div className="">
       <div

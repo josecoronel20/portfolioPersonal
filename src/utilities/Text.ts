@@ -25,25 +25,25 @@ import {
   iconVsCodeWhite,
 } from "./Icons";
 
-import imgDesktopUrl1 from "/public/img/projectsImg/portfolio/screenShotDesktop.png";
-import imgMobileUrl1 from "/public/img/projectsImg/portfolio/screenShotMobile.png";
-import imgTxt1 from "/public/img/projectsImg/portfolio/projectDetail/txt.png";
-import imgdesign1 from "/public/img/projectsImg/portfolio/projectDetail/design.png";
-import imgfeatures1 from "/public/img/projectsImg/portfolio/projectDetail/features.png";
+import imgDesktopUrl1 from '../img/projectsImg/portfolio/screenShotDesktop.png';
+import imgMobileUrl1 from '../img/projectsImg/portfolio/screenShotMobile.png';
+import imgTxt1 from '../img/projectsImg/portfolio/projectDetail/txt.png';
+import imgdesign1 from '../img/projectsImg/portfolio/projectDetail/design.png';
+import imgfeatures1 from '../img/projectsImg/portfolio/projectDetail/features.png';
 
-import imgDesktopUrl2 from "/public/img/projectsImg/ecommerce/Ecommerce-Desktop.png";
-import imgMobileUrl2 from "/public/img/projectsImg/ecommerce/Ecommerce-Mobile.png";
-import imgTxt2 from "/public/img/projectsImg/ecommerce/proyectDetail/ecommerce-arquitecture.png";
-import imgdesign2 from "/public/img/projectsImg/ecommerce/proyectDetail/ecommerce-designe.png";
-import imgfeatures2 from "/public/img/projectsImg/ecommerce/proyectDetail/ecommerce-funcionality.png";
+import imgDesktopUrl2 from '../img/projectsImg/ecommerce/Ecommerce-Desktop.png';
+import imgMobileUrl2 from '../img/projectsImg/ecommerce/Ecommerce-Mobile.png';
+import imgTxt2 from '../img/projectsImg/ecommerce/proyectDetail/ecommerce-arquitecture.png';
+import imgdesign2 from '../img/projectsImg/ecommerce/proyectDetail/ecommerce-designe.png';
+import imgfeatures2 from '../img/projectsImg/ecommerce/proyectDetail/ecommerce-funcionality.png';
 
-import imgDesktopUrl3 from "/public/img/projectsImg/arenadosLucho/imgDesktop.png";
-import imgMobileUrl3 from "/public/img/projectsImg/arenadosLucho/imgMobile.png";
-import imgDesign3 from "/public/img/projectsImg/arenadosLucho/projectDetail/design.png"
+import imgDesktopUrl3 from '../img/projectsImg/arenadosLucho/imgDesktop.png';
+import imgMobileUrl3 from '../img/projectsImg/arenadosLucho/imgMobile.png';
+import imgDesign3 from '../img/projectsImg/arenadosLucho/projectDetail/design.png'
 
-import imgBlog1 from "/public/img/blogImg/OIG4.jpg";
-import imgBlog2 from "/public/img/blogImg/post2.png";
-import imgBlog3 from "/public/img/blogImg/post3.png";
+import imgBlog1 from '../img/blogImg/OIG4.jpg';
+import imgBlog2 from '../img/blogImg/post2.png';
+import imgBlog3 from '../img/blogImg/post3.png';
 
 import { textLanguage } from "./types";
 
@@ -518,9 +518,9 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
                   "Esta sección está diseñada para que los usuarios exploren mis proyectos de manera rápida y sencilla. Su objetivo principal es captar la atención al presentar una interfaz interactiva que destaca mis trabajos desde el primer vistazo.",
               },
               {
-                title: "Mapeo de tecnologías",
+                title: "Hover de íconos",
                 description:
-                  "En la sección de tecnologías, se muestran iconos representativos de cada tecnología. Al pasar el cursor sobre un icono, este cambia de apariencia, y al hacer clic en él, se abre una ventana modal. Implementar esta funcionalidad requirió una lógica compleja para renderizar cada icono con sus respectivas funcionalidades, basándose en la información mapeada desde un JSON que contiene los detalles de cada tecnología. ",
+                  "En la sección de tecnologías, se muestran iconos representativos de cada tecnología. Al pasar el cursor sobre un icono, este cambia de apariencia, y al hacer clic en él, se abre una ventana modal. ",
               },
               {
                 title: "Ventana 'Modal'",
@@ -532,14 +532,14 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
               title: "PRINCIPALES PROBLEMAS ENFRENTADOS",
               issueList: [
                 {
-                  title: "Mapeo de iconos de tencologiás",
+                  title: "Archivo de texto",
                   description:
-                    "Al mapear cada tecnología, fue necesario implementar la lógica de hover y la funcionalidad de la ventana modal de manera individual para cada icono. Esto se hizo para asegurar que cada funcionalidad operara de forma específica y correcta. Si la lógica se aplicara de manera global, podría generar comportamientos erráticos y no deseados en la interacción con los iconos.",
+                    "Desarrollé un sistema multilenguaje creando un archivo de texto donde organizo todos los contenidos por secciones (como *home*, *projects*, *blog*, etc.) y en dos idiomas, español e inglés. Luego, implementé un contexto global con React Context para manejar el idioma activo y acceder dinámicamente a los textos desde cualquier componente. Esto me permite cambiar de idioma de forma centralizada y mantener la estructura escalable para seguir agregando contenido o nuevos idiomas sin romper nada.",
                 },
                 {
                   title: "Carrusel",
                   description:
-                    "En una primera etapa, el carrusel se diseñó para ser más llamativo visualmente, renderizando tres 'cards' y añadiendo animaciones para la navegación entre ellas. Sin embargo, al probar varias opciones para implementar esta complejidad con resultados insatisfactorios, decidí simplificar la funcionalidad. Ahora, el carrusel muestra solo una 'card' a la vez, pero con animaciones que añaden dinamismo y atractivo, manteniendo así el interés visual sin complicar la implementación.",
+                    "En una primera etapa, el carrusel se diseñó para ser más llamativo visualmente, renderizando tres 'cards' y añadiendo animaciones para la navegación entre ellas. Sin embargo, al probar varias opciones para implementar esta complejidad con resultados insatisfactorios, decidí simplificar la funcionalidad. Ahora, el carrusel muestra solo una 'card' a la vez manteniendo así el interés visual sin complicar la implementación.",
                 },
                 {
                   title: "Comienzo de aplicación de lo aprendido",

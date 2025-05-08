@@ -1,16 +1,18 @@
-import React from "react";
-import ContactContent from "../../components/ReutilizableComponents/ContactContent.tsx";
+import React, { ReactNode } from "react";
+import ContactContent from "../ReutilizableComponents/ContactContent.js";
 import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
-import { useLanguage } from "../../Context/LanguageContext";
+import { useLanguage } from "../../context/LanguageContext.js";
 
-const Footer = () => {
+const Footer = ():JSX.Element => {
+  //extrae el path del url
   const actualPath = useLocation().pathname;
 
+  //hook que importa el texto segun idioma
   const {textLanguage} = useLanguage()
 
   //componetizacion de li
-  const ListItem = ({ to, children }) => (
+  const ListItem = ({ to, children }:{to:string,children:ReactNode}):JSX.Element => (
     <li className="text-sm opacity-50 hover:opacity-100 hover:scale-105 ease-in-out transition-transform duration-200">
       <Link to={to}>{children}</Link>
     </li>

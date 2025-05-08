@@ -50,7 +50,7 @@ export type project = {
   };
 };
 
-type post = {
+export type post = {
   id: number;
   title: string;
   image: string;

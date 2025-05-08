@@ -1,10 +1,10 @@
 import React from "react";
 import { tech } from "../../utilities/types";
-import { iconClose } from "../../utilities/Icons";
 import { useLanguage } from "../../context/LanguageContext";
 
 
-const TechCard = ({ techInfo }: { techInfo: tech }) => {
+const TechCard = ({ techInfo }: { techInfo: tech }):JSX.Element => {
+  //hook que extrae el texto del idioma seleccionado
   const {textLanguage} = useLanguage()
 
   return (

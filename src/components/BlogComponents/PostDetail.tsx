@@ -1,15 +1,32 @@
 import React from "react";
-import { styleContainerTop } from "../../Utilities/customStyles";
+import { styleContainerTop } from "../../utilities/customStyles";
 import { useParams } from "react-router-dom";
 import ImageModal from "../ReutilizableComponents/ImageModal";
-import { useLanguage } from "../../Context/LanguageContext";
+import { useLanguage } from "../../context/LanguageContext";
 
-const PostDetail = () => {
-  const { id } = useParams();
-const {textLanguage} = useLanguage()
+const PostDetail = ():JSX.Element => {
+  //extrae el id del url
+  const { id } = useParams() ;
 
-  const post = textLanguage.blog.blogList.find((post) => post.id === parseInt(id));
-  const idPar = parseInt(post.id) % 2;
+  //hook que importa el texto segun idioma
+  const { textLanguage } = useLanguage();
+
+  //guard clause por si hay un error con id
+  if (!id) {
+    return <p className="w-full text-center text-red-700">no se encontró la id</p>;
+  }
+
+  //filtra el post segun id
+  const post = textLanguage.blog.blogList.find(
+    (post) => post.id ===  parseInt(id) 
+  );
+
+  //guard clause por si hay un error con el post filtrado
+  if (!post) {
+    return <p className="w-full text-center text-red-700">no se encontró el post</p>;
+  }
+
+  const idPar = post.id % 2;
 
   return (
     <div className={styleContainerTop}>
@@ -20,8 +37,7 @@ const {textLanguage} = useLanguage()
             idPar === 0 ? "md:flex-row-reverse" : "md:flex-row"
           }`}
         >
-
-          <p  className="font-light w-full">{post.description}</p>
+          <p className="font-light w-full">{post.description}</p>
 
           <div className="w-1/2">
             <ImageModal>

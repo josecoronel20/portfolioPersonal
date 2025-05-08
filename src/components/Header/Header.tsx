@@ -1,19 +1,18 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import Translate from "./Translator";
 import MenuNav from "./MenuNav";
-import { textLanguage } from "../../utilities/types";
 import { useLanguage } from "../../context/LanguageContext";
 
-const Header = () => {
+const Header = ():JSX.Element => {
+  //hook que importa el texto segun idioma
   const {textLanguage} = useLanguage()
   //logica para ir a la parte superior cada vez que se cambia de location
   const location = useLocation();
 
+  //scrollea hacia arriba de todo
   useEffect(() => {
     window.scrollTo(0, 0);
-
-    //logica de redireccionamiento
   }, [location]);
 
   return (

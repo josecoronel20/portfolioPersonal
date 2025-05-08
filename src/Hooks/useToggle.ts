@@ -1,10 +1,10 @@
 import {useState} from "react";
 
-export const useToggle = (initialState = false) =>{
+export const useToggle = (initialState:boolean = false) =>{
 
-const [isToggleOpen, setIsToggleOpen] = useState(initialState);
+const [isToggleOpen, setIsToggleOpen] = useState<boolean>(initialState);
 
-const handlerToggle = () => {
+const handlerToggle = ():void => {
     setIsToggleOpen(!isToggleOpen);
   };
 

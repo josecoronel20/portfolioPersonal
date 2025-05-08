@@ -1,19 +1,20 @@
 import React from "react";
-import { styleContainer } from "../../Utilities/customStyles.js";
+import { styleContainer } from "../../utilities/customStyles.js";
 import { useLanguage } from "../../context/LanguageContext.js";
 import { tech } from "../../utilities/types.js";
-import TechMap from "./TechMap.tsx";
+import TechHover from "./TechHover.js";
 
 const Techs = () => {
+  //hook que importa el texto segun idioma
   const { textLanguage } = useLanguage();
 
   //componetizacion de containers segun categorias
-  const ContainerCategory = ({ title, techList }) => {
+  const ContainerCategory = ({ title, techList }:{title:string,techList:tech[]}):JSX.Element => {
     return (
       <div className="flex flex-col gap-4 ">
         <h3 className=" text-green text-center">{title}</h3>
         <div className="grid grid-cols-2 gap-5">{techList.map((tech:tech) => {
-          return <TechMap techProp={tech}/>
+          return <TechHover techProp={tech}/>
         })}</div>
       </div>
     );

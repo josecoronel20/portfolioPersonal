@@ -2,6 +2,7 @@ import React, { createContext, useContext, useState, ReactNode } from "react";
 import { text } from "../utilities/Text";
 import { textLanguage } from "../utilities/types";
 
+//type de languageContext
 type LanguageContextType = {
   language: string;
   textLanguage: textLanguage;
@@ -9,14 +10,19 @@ type LanguageContextType = {
   changeToEnglish: () => void;
 };
 
+//crea el contexto
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
+//crea el provider del contexto
 export const LanguageProvider = ({ children }: { children: ReactNode }) => {
+  //set de language en "es" o "en"
   const [language, setLanguage] = useState<"es" | "en">("es");
 
+  //handlers para menejar el language
   const changeToSpanish = () => setLanguage("es");
   const changeToEnglish = () => setLanguage("en");
 
+  //elige el idioma segun contexto
   const textLanguage = {
     es: text.textEs,
     en: text.textEn,
