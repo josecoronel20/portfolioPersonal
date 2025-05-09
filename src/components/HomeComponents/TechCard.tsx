@@ -1,11 +1,11 @@
 import React from "react";
 import { tech } from "../../utilities/types";
-import { useLanguage } from "../../context/LanguageContext";
+import { useLanguageStore } from "../../store/useLanguageStore";
 
 
 const TechCard = ({ techInfo }: { techInfo: tech }):JSX.Element => {
-  //hook que extrae el texto del idioma seleccionado
-  const {textLanguage} = useLanguage()
+  //importa el idioma del store
+  const {textLanguage} = useLanguageStore()
 
   return (
     <div className="fixed z-30 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-10/12 max-w-96 min-h-96 bg-lightLight flex rounded overflow-hidden text-gray-800">

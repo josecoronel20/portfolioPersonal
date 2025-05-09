@@ -1,10 +1,10 @@
 import React from "react";
 import { styleContainer } from "../../utilities/customStyles";
-import { useLanguage } from "../../context/LanguageContext";
+import { useLanguageStore } from "../../store/useLanguageStore";
 
 const AboutMe = ():JSX.Element => {
-  //hook que importa el texto segun idioma
-  const { textLanguage } = useLanguage();
+  //importa el idioma del store
+  const { textLanguage } = useLanguageStore();
 
   //componetizacion de parrafos
   const Paragraph = ({ title, text }: { title: string; text: string }):JSX.Element => {

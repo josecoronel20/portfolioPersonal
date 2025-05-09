@@ -1,14 +1,18 @@
 import React from "react";
 import { iconTranslate } from "../../utilities/Icons";
 import { useToggle } from "../../hooks/useToggle";
-import { useLanguage } from "../../context/LanguageContext";
+import { useLanguageStore } from "../../store/useLanguageStore";
 
 const Translate = ():JSX.Element => {
   //uso de customhook para utilizar un estado toggle
   const { isToggleOpen, handlerToggle, setIsToggleOpen } = useToggle();
 
-  //hook que importa el texto segun idioma
-  const {language, changeToEnglish,changeToSpanish} = useLanguage()
+  //importacion del estado 
+const language = useLanguageStore((state) => state.language);
+const toSpanish = useLanguageStore((state) => state.toSpanish)
+const toEnglish = useLanguageStore((state) => state.toEnglish)
+
+  // const {language, changeToEnglish,changeToSpanish} = useLanguage()
   return (
     <div className="">
       <div
@@ -19,8 +23,8 @@ const Translate = ():JSX.Element => {
         <div>{language.toUpperCase()}</div>
       </div>
       <div className={`${isToggleOpen === false && "hidden"}`}>
-        <p className="text-lightLight opacity-40 cursor-pointer hover:opacity-100" onClick={() => {changeToSpanish();setIsToggleOpen(false);}}>ESPAÑOL</p>
-        <p className="text-lightLight opacity-40 cursor-pointer hover:opacity-100" onClick={() => {changeToEnglish();setIsToggleOpen(false);}}>ENGLISH</p>
+        <p className="text-lightLight opacity-40 cursor-pointer hover:opacity-100" onClick={() => {toSpanish();setIsToggleOpen(false);}}>ESPAÑOL</p>
+        <p className="text-lightLight opacity-40 cursor-pointer hover:opacity-100" onClick={() => {toEnglish();setIsToggleOpen(false);}}>ENGLISH</p>
       </div>
     </div>
   );

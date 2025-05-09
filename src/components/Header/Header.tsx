@@ -2,11 +2,11 @@ import React, { useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import Translate from "./Translator";
 import MenuNav from "./MenuNav";
-import { useLanguage } from "../../context/LanguageContext";
+import { useLanguageStore } from "../../store/useLanguageStore";
 
 const Header = ():JSX.Element => {
-  //hook que importa el texto segun idioma
-  const {textLanguage} = useLanguage()
+  //importa el idioma del store
+  const {textLanguage} = useLanguageStore()
   //logica para ir a la parte superior cada vez que se cambia de location
   const location = useLocation();
 

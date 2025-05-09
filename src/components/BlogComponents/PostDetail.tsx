@@ -2,14 +2,14 @@ import React from "react";
 import { styleContainerTop } from "../../utilities/customStyles";
 import { useParams } from "react-router-dom";
 import ImageModal from "../ReutilizableComponents/ImageModal";
-import { useLanguage } from "../../context/LanguageContext";
+import {  useLanguageStore } from "../../store/useLanguageStore";
 
 const PostDetail = ():JSX.Element => {
   //extrae el id del url
   const { id } = useParams() ;
 
-  //hook que importa el texto segun idioma
-  const { textLanguage } = useLanguage();
+  //importa el idioma del store
+  const { textLanguage } = useLanguageStore();
 
   //guard clause por si hay un error con id
   if (!id) {

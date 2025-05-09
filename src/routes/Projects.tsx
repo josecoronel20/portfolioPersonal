@@ -1,11 +1,11 @@
 import React from "react";
 import { styleContainerTop } from "../utilities/customStyles";
 import ProjectsSection from "../components/ProjectsComponents/ProjectsSection";
-import { useLanguage } from "../context/LanguageContext";
+import { useLanguageStore } from "../store/useLanguageStore";
 
 const Projects = ():JSX.Element => {
-//hook que importa el texto segun idioma
-const {textLanguage} = useLanguage()
+//importa el idioma del store
+const {textLanguage} = useLanguageStore()
 
   return (
     <main className={styleContainerTop}>

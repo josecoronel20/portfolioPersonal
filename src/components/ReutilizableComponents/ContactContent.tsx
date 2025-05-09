@@ -2,13 +2,13 @@ import React from "react";
 import FooterLink from "../Footer/FooterLink";
 import { iconLinkedin, iconMail, iconWpp } from "../../utilities/Icons";
 import { useLocation } from "react-router-dom";
-import { useLanguage } from "../../context/LanguageContext";
+import { useLanguageStore } from "../../store/useLanguageStore";
 
 const ContactContent = ():JSX.Element => {
   //muestra la info de contacto
 
-  //hook que importa el texto segun idioma
-  const {textLanguage} = useLanguage()
+  //importa el idioma del store
+  const {textLanguage} = useLanguageStore()
 
   //extrae el path de el url
   const currentPath = useLocation().pathname;

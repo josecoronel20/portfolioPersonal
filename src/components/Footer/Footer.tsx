@@ -2,14 +2,14 @@ import React, { ReactNode } from "react";
 import ContactContent from "../ReutilizableComponents/ContactContent.js";
 import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
-import { useLanguage } from "../../context/LanguageContext.js";
+import { useLanguageStore } from "../../store/useLanguageStore.js";
 
 const Footer = ():JSX.Element => {
   //extrae el path del url
   const actualPath = useLocation().pathname;
 
-  //hook que importa el texto segun idioma
-  const {textLanguage} = useLanguage()
+  //importa el idioma del store
+  const {textLanguage} = useLanguageStore()
 
   //componetizacion de li
   const ListItem = ({ to, children }:{to:string,children:ReactNode}):JSX.Element => (

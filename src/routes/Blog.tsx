@@ -1,11 +1,11 @@
 import React from "react";
 import PostCard from "../components/BlogComponents/PostCard";
 import { styleContainerTop } from "../utilities/customStyles";
-import { useLanguage } from "../context/LanguageContext";
+import { useLanguageStore } from "../store/useLanguageStore";
 
 const Blog = ():JSX.Element => {
-  //hook que importa el texto segun idioma
-    const { textLanguage } = useLanguage()
+  //importa el idioma del store
+    const { textLanguage } = useLanguageStore()
 
   return (
     <main className={styleContainerTop}>

@@ -23,6 +23,8 @@ import {
   iconTsWhite,
   iconVsCodeColor,
   iconVsCodeWhite,
+  iconZustandWhite,
+  iconZustandColor
 } from "./Icons";
 
 import imgDesktopUrl1 from '../img/projectsImg/portfolio/screenShotDesktop.png';
@@ -197,7 +199,7 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
                   "Componentes",
                   "Hooks",
                   "Manejo de estado",
-                  "Rutas",
+                  "React router dom",
                   "JSX",
                 ],
                 mainProjects: [
@@ -241,6 +243,22 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
                 ],
                 mainProjects: ["Ecommerce"],
               },
+              {
+                id: 8,
+                title: "Zustand",
+                color: "#444E8C",
+                iconWhite: iconZustandWhite,
+                iconColor: iconZustandColor,
+                level: "Básico",
+                mainTopics: [
+                  "Creación de stores globales con estado reactivo",
+                  "Lectura y actualización de estado desde componentes",
+                  "Separación de lógica de estado fuera del árbol de componentes",
+                  "Reemplazo limpio de contextos simples",
+                ],
+                mainProjects: ["Portfolio"],
+              }
+              
             ],
           },
           {
@@ -248,7 +266,7 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
             list: [
               
               {
-                id: 8,
+                id: 9,
 
                 title: "Git",
                 color: "#F05032",
@@ -268,7 +286,7 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
               },
 
               {
-                id: 9,
+                id: 10,
 
                 title: "npm",
                 color: "#CB3837",
@@ -288,7 +306,7 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
               },
 
               {
-                id: 10,
+                id: 11,
 
                 title: "VS Code",
                 color: "#007ACC",
@@ -307,7 +325,7 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
                 ],
               },
               {
-                id: 11,
+                id: 12,
               
                 title: "Figma",
                 color: "#F24E1E",
@@ -330,7 +348,7 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
             title: "CONCEPTOS Y METODOLOGÍAS",
             list: [
               {
-                id: 12,
+                id: 13,
 
                 title: "Diseño responsivo",
                 color: "#34A853",
@@ -347,7 +365,7 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
                 ],
               },
               {
-                id: 13,
+                id: 14,
 
                 title: "Componentes reutilizables",
                 color: "#007BFF",
@@ -364,7 +382,7 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
                 ],
               },
               {
-                id: 14,
+                id: 15,
 
                 title: "Manejo de estados",
                 color: "#6A1B9A",
@@ -382,7 +400,7 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
               },
               
               {
-                id: 15,
+                id: 16,
 
                 title: "Control de versiones (Git)",
                 color: "#F4511E",
@@ -395,7 +413,7 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
                 ],
               },
               {
-                id: 16,
+                id: 17,
 
                 title: "Testing (aprendiendo)",
                 color: "#9E9D24",
@@ -408,7 +426,7 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
                 mainProjects: ["Ecommerce"],
               },
               {
-                id: 17,
+                id: 18,
 
                 title: "Ruteo en SPA",
                 color: "#C62828",
@@ -425,7 +443,7 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
                 ],
               },
               {
-                id: 18,
+                id: 19,
 
                 title: "Buenas prácticas",
                 color: "#6D4C41",
@@ -965,7 +983,7 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
                   "Components",
                   "Hooks",
                   "State management",
-                  "Routing",
+                  "React router dom",
                   "JSX",
                 ],
                 mainProjects: [
@@ -1007,14 +1025,29 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
                   "Property and state verification in tests",
                 ],
                 mainProjects: ["Ecommerce"],
-              },
+              },{
+                id: 8,
+                title: "Zustand",
+                color: "#444E8C",
+                iconWhite: iconZustandWhite,
+                iconColor: iconZustandColor,
+                level: "Basic",
+                mainTopics: [
+                  "Creating global stores with reactive state",
+                  "Reading and updating state from components",
+                  "Decoupling state logic from the component tree",
+                  "Clean replacement for simple context usage",
+                ],
+                mainProjects: ["Portfolio"],
+              }
+              
             ],
           },
           {
             title: "TOOLS",
             list: [
                           {
-                id: 8,
+                id: 9,
                 title: "Git",
                 color: "#F05032",
                 iconWhite: iconGitWhite,
@@ -1032,7 +1065,7 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
                 ],
               },
               {
-                id: 9,
+                id: 10,
                 title: "npm",
                 color: "#CB3837",
                 iconWhite: iconNpmWhite,
@@ -1050,7 +1083,7 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
                 ],
               },
               {
-                id: 10,
+                id: 11,
                 title: "VS Code",
                 color: "#007ACC",
                 iconWhite: iconVsCodeWhite,
@@ -1067,7 +1100,7 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
                   "Arenados Lucho",
                 ],
               },{
-                id: 11,
+                id: 12,
               
                 title: "Figma",
                 color: "#F24E1E",
@@ -1090,7 +1123,7 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
             title: "CONCEPTS AND METHODOLOGIES",
             list: [
               {
-                id: 12,
+                id: 13,
                 title: "Responsive Design",
                 color: "#34A853",
                 level: "Intermediate",
@@ -1106,7 +1139,7 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
                 ],
               },
               {
-                id: 13,
+                id: 14,
                 title: "Reusable Components",
                 color: "#007BFF",
                 level: "Intermediate",
@@ -1122,7 +1155,7 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
                 ],
               },
               {
-                id: 14,
+                id: 15,
                 title: "State Management",
                 color: "#6A1B9A",
                 level: "Basic",
@@ -1139,7 +1172,7 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
               },
               
               {
-                id: 15,
+                id: 16,
                 title: "Version Control (Git)",
                 color: "#F4511E",
                 level: "Intermediate",
@@ -1151,7 +1184,7 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
                 ],
               },
               {
-                id: 16,
+                id: 17,
                 title: "Testing (learning)",
                 color: "#9E9D24",
                 level: "Basic",
@@ -1159,7 +1192,7 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
                 mainProjects: ["Ecommerce"],
               },
               {
-                id: 17,
+                id: 18,
                 title: "Routing in SPA",
                 color: "#C62828",
                 level: "Basic",
@@ -1174,7 +1207,7 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
                 ],
               },
               {
-                id: 18,
+                id: 19,
                 title: "Best Practices",
                 color: "#6D4C41",
                 level: "Basic",

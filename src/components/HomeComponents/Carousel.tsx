@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import { useLanguage } from "../../context/LanguageContext";
 import CardProject from "../ProjectsComponents/CardProject";
 import { iconArrowLeft, iconArrowRight } from "../../utilities/Icons";
+import { useLanguageStore } from "../../store/useLanguageStore";
 
 const Carousel = ():JSX.Element => {
-  //hook que importa el texto segun idioma
-  const { textLanguage } = useLanguage();
+  //importa el idioma del store
+  const { textLanguage } = useLanguageStore();
 
   //state que maneja que id de projecto seleccionar
   const [projectId, setProjectId] = useState<number>(1);

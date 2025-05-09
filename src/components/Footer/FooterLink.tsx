@@ -1,11 +1,11 @@
 import React, { ReactNode, useState } from "react";
 import { Link } from "react-router-dom";
 import { iconCopy } from "../../utilities/Icons";
-import { useLanguage } from "../../context/LanguageContext";
+import { useLanguageStore } from "../../store/useLanguageStore";
 
 const FooterLink = ({ icon, textForCopy, url, text }:{icon:ReactNode,textForCopy:string,url:string,text:string}):JSX.Element => {
-  //hook que importa el texto segun idioma
-  const {textLanguage} = useLanguage()
+  //importa el idioma del store
+  const {textLanguage} = useLanguageStore()
 
   //state para mostrar o no alerta de "copiado"
   const [copyAlert, setCopyAlert] = useState<boolean>(false);

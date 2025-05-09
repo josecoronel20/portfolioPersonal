@@ -1,12 +1,12 @@
 import React from "react";
 import { styleContainer } from "../../utilities/customStyles.js";
-import { useLanguage } from "../../context/LanguageContext.js";
 import { tech } from "../../utilities/types.js";
 import TechHover from "./TechHover.js";
+import { useLanguageStore } from "../../store/useLanguageStore.js";
 
 const Techs = () => {
-  //hook que importa el texto segun idioma
-  const { textLanguage } = useLanguage();
+  //importa el idioma del store
+  const { textLanguage } = useLanguageStore();
 
   //componetizacion de containers segun categorias
   const ContainerCategory = ({ title, techList }:{title:string,techList:tech[]}):JSX.Element => {

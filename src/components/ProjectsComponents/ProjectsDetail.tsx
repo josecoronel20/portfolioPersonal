@@ -1,9 +1,9 @@
 import { useParams } from "react-router-dom";
 import { styleContainerTop } from "../../utilities/customStyles";
 import React from "react";
-import { useLanguage } from "../../context/LanguageContext";
 import ProjectMockup from "./ProjectMockup";
 import ProjectsDetailPlanning from "./ProjectsDetailPlanning";
+import { useLanguageStore } from "../../store/useLanguageStore";
 
 const ProjectsDetail = () => {
   //muestra la informacion en detalle de los proyectos
@@ -11,8 +11,8 @@ const ProjectsDetail = () => {
   //extrae id del url
   const { id } = useParams();
 
-  //hook que importa el texto segun idioma
-  const { textLanguage } = useLanguage();
+  //importa el idioma del store
+  const { textLanguage } = useLanguageStore();
 
   //si hay id lo parsea
   const parsedId = id ? parseInt(id) : null;

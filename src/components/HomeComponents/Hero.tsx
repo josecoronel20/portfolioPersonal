@@ -4,12 +4,13 @@ import {
   styleButtonPrincipal,
   styleContainerTop,
 } from "../../utilities/customStyles";
-import { useLanguage } from "../../context/LanguageContext";
+import { useLanguageStore } from "../../store/useLanguageStore";
+import heroImage from "../../img/illustration.png"
 
 const Hero = ():JSX.Element => {
 
-//hook que importa el texto segun idioma  
-const {textLanguage} = useLanguage()
+//importa el idioma del store
+const {textLanguage} = useLanguageStore()
 
   return (
     <section className={styleContainerTop}>
@@ -30,7 +31,7 @@ const {textLanguage} = useLanguage()
           
         </div>
         <div className="order-1 md:order-2 w-5/6 custom-shadow max-w-xs md:max-w-md">
-          <img src="src\img\illustration.png" alt={textLanguage.home.hero.heroImg.imgAlt} />
+          <img src={heroImage} alt={textLanguage.home.hero.heroImg.imgAlt} />
         </div>
       </div>
     </section>

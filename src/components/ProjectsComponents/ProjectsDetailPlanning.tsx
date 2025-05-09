@@ -1,15 +1,16 @@
 import React from "react";
 import ImageModal from "../ReutilizableComponents/ImageModal";
-import { useLanguage } from "../../context/LanguageContext";
 import { project } from "../../utilities/types";
+import { useLanguageStore } from "../../store/useLanguageStore";
 
 const ProjectsDetailPlanning = ({
   project,
 }: {
   project: project;
 }): JSX.Element => {
-  //hook que importa el texto segun idioma
-  const { textLanguage } = useLanguage();
+
+  //importa el idioma del store
+  const { textLanguage } = useLanguageStore();
 
   //componetizacion de subtitle
   const Subtitle = ({

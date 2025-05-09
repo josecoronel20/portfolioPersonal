@@ -3,7 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { iconMenu } from "../../utilities/Icons";
 import { useToggle } from "../../hooks/useToggle";
 import Modal from "../ReutilizableComponents/Modal";
-import { useLanguage } from "../../context/LanguageContext";
+import { useLanguageStore } from "../../store/useLanguageStore";
 
 const MenuNav = ():JSX.Element => {
   // Estado para obtener el tamaño de la pantalla y renderizar/aplicar estilos dependiendo de este
@@ -23,8 +23,8 @@ const MenuNav = ():JSX.Element => {
     };
   }, []);
 
-  //hook que importa el texto segun idioma
-  const { textLanguage } = useLanguage();
+  //importa el idioma del store
+  const { textLanguage } = useLanguageStore();
 
   // Uso de custom hook para manejar el estado toggle
   const { isToggleOpen, handlerToggle, setIsToggleOpen } = useToggle();

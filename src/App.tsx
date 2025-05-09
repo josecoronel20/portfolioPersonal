@@ -6,14 +6,12 @@ import Contact from "./routes/Contact";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import PostDetail from "./components/BlogComponents/PostDetail";
-import { LanguageProvider } from "./context/LanguageContext";
 import Home from "./routes/Home";
 import ProjectsDetail from "./components/ProjectsComponents/ProjectsDetail";
 const App = () => {
   return (
     <>
       <BrowserRouter basename="/portfolioPersonal">
-        <LanguageProvider>
           <Header />
           <Routes>
             <Route path="/" element={<Home />} />
@@ -24,7 +22,6 @@ const App = () => {
             <Route path="/blog/:id" element={<PostDetail />} />
           </Routes>
           <Footer />
-        </LanguageProvider>
       </BrowserRouter>
     </>
   );

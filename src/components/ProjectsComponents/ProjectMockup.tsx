@@ -3,14 +3,15 @@ import { Link } from "react-router-dom";
 import { styleButtonLight } from "../../utilities/customStyles";
 import ImageModal from "../ReutilizableComponents/ImageModal";
 import { project } from "../../utilities/types";
-import { useLanguage } from "../../context/LanguageContext";
+import { useLanguageStore } from "../../store/useLanguageStore";
 
 const ProjectMockup = ({
  project
 }:{project:project}):JSX.Element => {
   //muestra el mockup del proyecto
-  //hook que importa el texto segun idioma
-  const {textLanguage} = useLanguage()
+
+  //importa el idioma del store
+  const {textLanguage} = useLanguageStore()
 
   return (
     <section className="w-fit ">
