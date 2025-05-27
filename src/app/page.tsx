@@ -4,7 +4,8 @@ import Carrousel from "./Components/Carousel";
 import AboutMe from "./Components/AboutMe";
 import Techs from "./Components/Techs";
 
-export default function Home() {
+//Componente Home que renderiza la página principal.
+const Home = (): JSX.Element => {
   return (
     <>
       <Hero />
@@ -17,3 +18,4 @@ export default function Home() {
   );
 };
 
+export default Home;

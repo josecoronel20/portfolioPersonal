@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import React from "react";
 import { styleContainer } from "@/app/lib/utilities/customStyles";
@@ -6,18 +6,27 @@ import { tech } from "@/app/lib/utilities/types";
 import TechHover from "@/app/Components/TechHover";
 import { useLanguageStore } from "@/app/lib/store/useLanguageStore";
 
-const Techs = () => {
+//Componente Techs que renderiza las tecnologías y habilidades.
+const Techs = (): JSX.Element => {
   //importa el idioma del store
   const { textLanguage } = useLanguageStore();
 
-  //componetizacion de containers segun categorias
-  const ContainerCategory = ({ title, techList }:{title:string,techList:tech[]}):JSX.Element => {
+  const ContainerCategory = ({
+    title,
+    techList,
+  }: {
+    title: string;
+    techList: tech[];
+  }): JSX.Element => {
+    //componetizacion de containers segun categorias
     return (
       <div className="flex flex-col gap-4 ">
         <h3 className=" text-green text-center">{title}</h3>
-        <div className="grid grid-cols-2 gap-5">{techList.map((tech:tech) => {
-          return <TechHover key={tech.id} techProp={tech}/>
-        })}</div>
+        <div className="grid grid-cols-2 gap-5">
+          {techList.map((tech: tech) => {
+            return <TechHover key={tech.id} techProp={tech} />;
+          })}
+        </div>
       </div>
     );
   };

@@ -1,0 +1,64 @@
+{
+  // Configuración base de ESLint
+  "root": true,  // Indica que este es el archivo de configuración raíz
+  "env": {
+    "browser": true,  // Permite variables globales del navegador (window, document, etc.)
+    "es2021": true,   // Habilita características de ES2021
+    "node": true      // Permite variables globales de Node.js
+  },
+  "extends": [
+    "eslint:recommended",  // Reglas recomendadas de ESLint
+    "plugin:@typescript-eslint/recommended" // Reglas recomendadas para TypeScript
+  ],
+  "parser": "@typescript-eslint/parser",  // Parser para TypeScript
+  "parserOptions": {
+    "ecmaVersion": "latest",  // Usar la última versión de ECMAScript
+    "sourceType": "module",   // Código usa módulos ES6
+    "ecmaFeatures": {
+      "jsx": true  // Habilita soporte para JSX
+    }
+  },
+  "plugins": ["@typescript-eslint", "jsdoc"],  // Plugins instalados
+  "settings": {
+    "react": {
+      "version": "detect"  // Detecta automáticamente la versión de React
+    }
+  },
+  "rules": {
+    // REGLAS DE FORMATO
+    "indent": ["error", 2],  // Indentación de 2 espacios
+    "quotes": ["error", "double"],  // Usar comillas dobles
+    "semi": ["error", "always"],  // Requerir punto y coma
+    "no-trailing-spaces": "error",  // No permitir espacios al final de las líneas
+    "comma-dangle": ["error", "always-multiline"],  // Requerir coma al final en objetos/arrays multilinea
+    "no-multiple-empty-lines": ["error", { "max": 1 }],  // Máximo 1 línea en blanco
+    "eol-last": ["error", "always"],  // Requerir línea vacía al final del archivo
+
+    // REGLAS DE TYPESCRIPT
+    "@typescript-eslint/explicit-function-return-type": "error",  // Requerir tipo de retorno explícito
+    "@typescript-eslint/no-explicit-any": "error",  // Prohibir uso de 'any'
+    "@typescript-eslint/no-unused-vars": ["error", { "argsIgnorePattern": "^_" }],  // Detectar variables no usadas
+    "@typescript-eslint/no-non-null-assertion": "error",  // Prohibir el operador !
+    "@typescript-eslint/consistent-type-definitions": ["error", "interface"],  // Preferir interfaces sobre types
+
+    // REGLAS GENERALES
+    "no-console": "error",  // Prohibir console.log
+    "prefer-const": "error",  // Preferir const sobre let
+    "no-var": "error",  // Prohibir var
+    "no-duplicate-imports": "error",  // Prohibir imports duplicados
+    "no-unused-expressions": "error",  // Detectar expresiones no usadas
+    "no-return-await": "error",  // Prohibir return await
+    "no-await-in-loop": "error",  // Prohibir await en loops
+    "no-constant-condition": "error",  // Detectar condiciones constantes
+    "no-duplicate-case": "error",  // Prohibir casos duplicados en switch
+    "no-empty": "error",  // Prohibir bloques vacíos
+    "no-extra-boolean-cast": "error",  // Prohibir cast booleano innecesario
+    "no-extra-semi": "error",  // Prohibir punto y coma extra
+    "no-func-assign": "error",  // Prohibir reasignar funciones
+    "no-invalid-regexp": "error",  // Detectar regex inválidos
+    "no-irregular-whitespace": "error",  // Detectar espacios irregulares
+    "no-sparse-arrays": "error",  // Prohibir arrays con huecos
+    "no-unreachable": "error",  // Detectar código inalcanzable
+    "valid-typeof": "error"  // Verificar uso correcto de typeof
+  }
+}

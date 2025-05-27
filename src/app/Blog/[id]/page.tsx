@@ -3,9 +3,11 @@
 import React from "react";
 import { styleContainerTop } from "@/app/lib/utilities/customStyles";
 import ImageModal from "@/app/Components/ImageModal";
-import {  useLanguageStore } from "@/app/lib/store/useLanguageStore";
+import { useLanguageStore } from "@/app/lib/store/useLanguageStore";
 import Image from "next/image";
-const PostDetail = ({params}:{params: {id: string}}):JSX.Element => {
+
+//Componente PostDetail que renderiza el detalle de un post.
+const PostDetail = ({ params }: { params: { id: string } }): JSX.Element => {
   //extrae el id del url
   const { id } = params;
 
@@ -14,17 +16,21 @@ const PostDetail = ({params}:{params: {id: string}}):JSX.Element => {
 
   //guard clause por si hay un error con id
   if (!id) {
-    return <p className="w-full text-center text-red-700">no se encontró la id</p>;
+    return (
+      <p className="w-full text-center text-red-700">no se encontró la id</p>
+    );
   }
 
   //filtra el post segun id
   const post = textLanguage.blog.blogList.find(
-    (post) => post.id ===  parseInt(id) 
+    (post) => post.id === parseInt(id),
   );
 
   //guard clause por si hay un error con el post filtrado
   if (!post) {
-    return <p className="w-full text-center text-red-700">no se encontró el post</p>;
+    return (
+      <p className="w-full text-center text-red-700">no se encontró el post</p>
+    );
   }
 
   const idPar = post.id % 2;
@@ -42,7 +48,13 @@ const PostDetail = ({params}:{params: {id: string}}):JSX.Element => {
 
           <div className="w-1/2">
             <ImageModal>
-              <Image width={500} height={500} className="rounded-xl" src={post.image} alt={post.altImg} />
+              <Image
+                width={500}
+                height={500}
+                className="rounded-xl"
+                src={post.image}
+                alt={post.altImg}
+              />
             </ImageModal>
           </div>
         </div>

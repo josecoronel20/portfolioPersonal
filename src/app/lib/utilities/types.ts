@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 
-export type tech = {
+export interface tech {
   id: number;
   title: string;
   color: string;
@@ -9,25 +9,25 @@ export type tech = {
   level: string;
   mainTopics: string[];
   mainProjects: string[];
-};
+}
 
-type planningProcess = {
+interface planningProcess {
   title: string;
   description: string;
   imageUrl: string | null;
-};
+}
 
-type mainFeatures = {
+interface mainFeatures {
   title: string;
   description: string;
-};
+}
 
-type issueList = {
+interface issueList {
   title: string;
   description: string;
-};
+}
 
-export type project = {
+export interface project {
   id: number;
   imgDesktopUrl: string;
   imgDesktopAlt: string;
@@ -48,9 +48,9 @@ export type project = {
       issueList: issueList[];
     };
   };
-};
+}
 
-export type post = {
+export interface post {
   id: number;
   title: string;
   image: string;
@@ -60,19 +60,19 @@ export type post = {
   subtitle: string;
   content: string;
   conclusion: string;
-};
+}
 
-type aboutMeSection = {
+interface aboutMeSection {
   title: string;
   text: string;
-};
+}
 
-export type techSection = {
+export interface techSection {
   title: string;
   list: tech[];
-};
+}
 
-export type textLanguage = {
+export interface textLanguage {
   header: {
     logo: string;
     nav: {
@@ -178,4 +178,4 @@ export type textLanguage = {
       };
     };
   };
-};
+}

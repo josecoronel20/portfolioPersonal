@@ -3,12 +3,13 @@ import ImageModal from "@/app/Components/ImageModal";
 import { project } from "@/app/lib/utilities/types";
 import { useLanguageStore } from "@/app/lib/store/useLanguageStore";
 import Image from "next/image";
+
+//Componente ProjectsDetailPlanning que renderiza el planning del proyecto.
 const ProjectsDetailPlanning = ({
   project,
 }: {
   project: project;
 }): JSX.Element => {
-
   //importa el idioma del store
   const { textLanguage } = useLanguageStore();
 
@@ -32,7 +33,7 @@ const ProjectsDetailPlanning = ({
         {urlImg !== null ? (
           <ImageModal>
             <Image
-            className="rounded custom-shadow hover:scale-105 transition-transform ease-in-out duration-150"
+              className="rounded custom-shadow hover:scale-105 transition-transform ease-in-out duration-150"
               src={urlImg}
               alt=""
               width={800}

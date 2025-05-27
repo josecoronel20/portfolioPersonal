@@ -6,7 +6,12 @@ import ProjectMockup from "./Components/ProjectMockup";
 import ProjectsDetailPlanning from "./Components/ProjectsDetailPlanning";
 import { useLanguageStore } from "@/app/lib/store/useLanguageStore";
 
-const ProjectsDetail = ({params}:{params: {id: string}}) => {
+//Componente ProjectsDetail que renderiza la información en detalle de los proyectos.
+const ProjectsDetail = ({
+  params,
+}: {
+  params: { id: string };
+}): JSX.Element => {
   //muestra la informacion en detalle de los proyectos
 
   //extrae id del url
@@ -20,8 +25,8 @@ const ProjectsDetail = ({params}:{params: {id: string}}) => {
 
   //filtra proyecto segun id
   const projectFinded = textLanguage.projects.list.find(
-    (project) => project.id === parsedId
-  ); 
+    (project) => project.id === parsedId,
+  );
 
   //componetizacion de title y paragraph
   const Subtitle = ({
@@ -30,7 +35,7 @@ const ProjectsDetail = ({params}:{params: {id: string}}) => {
   }: {
     title: string;
     paragraph: string;
-  }):JSX.Element => {
+  }): JSX.Element => {
     return (
       <div>
         <h4>{title}</h4>
@@ -40,8 +45,12 @@ const ProjectsDetail = ({params}:{params: {id: string}}) => {
   };
 
   //guard clause
-  if(!projectFinded){
-    return <p className="w-full text-center text-red-700">no se encontró ningun proyecto</p>
+  if (!projectFinded) {
+    return (
+      <p className="w-full text-center text-red-700">
+        no se encontró ningun proyecto
+      </p>
+    );
   }
 
   return (
@@ -49,7 +58,8 @@ const ProjectsDetail = ({params}:{params: {id: string}}) => {
       <div>
         <h2>
           {textLanguage.projects.title}:
-          <span className="text-green">{projectFinded?.title.toUpperCase()}
+          <span className="text-green">
+            {projectFinded?.title.toUpperCase()}
           </span>
         </h2>
         <p className="text-lightLight opacity-50 font-light">
@@ -76,7 +86,9 @@ const ProjectsDetail = ({params}:{params: {id: string}}) => {
         </div>
 
         <section className="order-4  md:col-span-3 lg:col-span-2">
-          <h2 className="text-green">{textLanguage.projects.projectDetailTexts.techsUsed}</h2>
+          <h2 className="text-green">
+            {textLanguage.projects.projectDetailTexts.techsUsed}
+          </h2>
           <div className="flex flex-wrap gap-3">
             {projectFinded?.techs.map((tech) => {
               return (
