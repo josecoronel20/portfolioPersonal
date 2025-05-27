@@ -1,5 +1,6 @@
 import React, { ReactNode } from "react";
 
+//Componente Modal que renderiza un modal.
 const Modal = ({
   children,
   toggle,
@@ -11,7 +12,6 @@ const Modal = ({
   nav: boolean;
   setToggle?: React.Dispatch<React.SetStateAction<boolean>>;
 }):JSX.Element => {
-  //ventana modal
 
   return (
     <div>

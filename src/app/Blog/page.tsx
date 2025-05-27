@@ -5,7 +5,8 @@ import PostCard from "./Components/PostCard";
 import { useLanguageStore } from "../lib/store/useLanguageStore";
 import { styleContainerTop } from "../lib/utilities/customStyles";
 
-const Blog = ():JSX.Element => {
+//Componente Blog que renderiza la sección de blog.
+const Blog = (): JSX.Element => {
   //importa el idioma del store
   const { textLanguage } = useLanguageStore();
 

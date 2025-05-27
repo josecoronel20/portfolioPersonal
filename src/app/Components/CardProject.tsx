@@ -3,20 +3,33 @@ import ButtonsCardProject from "../Projects/[id]/Components/ButtonsCardProject";
 import { project } from "../lib/utilities/types";
 import Image from "next/image";
 
-const CardProject = ({ project }: { project: project }):JSX.Element => {
-//card para mostrar proyectos
+//Componente CardProject que renderiza un proyecto en una tarjeta.
+const CardProject = ({ project }: { project: project }): JSX.Element => {
+  //card para mostrar proyectos
   return (
     <div
       key={project.id}
       className="rounded-md overflow-hidden bg-lightLight w-full max-w-64 h-[470px] custom-shadow"
     >
       <div className="h-1/3">
-        <Image className="object-cover h-full"
-          src={project.imgDesktopUrl}
-          alt={`img de portada de ${project.imgDesktopAlt}`}
-          width={300}
-          height={150}
-        />
+        {project.id === 1 ? (
+          <Image
+            className="object-cover h-full"
+            src={project.imgDesktopUrl}
+            alt={`img de portada de ${project.imgDesktopAlt}`}
+            width={300}
+            height={150}
+            priority
+          />
+        ) : (
+          <Image
+            className="object-cover h-full"
+            src={project.imgDesktopUrl}
+            alt={`img de portada de ${project.imgDesktopAlt}`}
+            width={300}
+            height={150}
+          />
+        )}
       </div>
       <div className="p-5 gap-2 flex flex-col h-2/3 justify-between">
         <section className="h-full">

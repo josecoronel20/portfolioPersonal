@@ -1,17 +1,18 @@
 import React from "react";
 import FooterLink from "./Footer/FooterLink";
 import { iconLinkedin, iconMail, iconWpp } from "@/app/lib/utilities/Icons";
-import { usePathname } from "next/navigation";  
+import { usePathname } from "next/navigation";
 import { useLanguageStore } from "@/app/lib/store/useLanguageStore";
 
+//Componente ContactContent que renderiza la información de contacto.
 const ContactContent = ():JSX.Element => {
   //muestra la info de contacto
 
   //importa el idioma del store
-  const {textLanguage} = useLanguageStore()
+  const {textLanguage} = useLanguageStore();
 
   //extrae el path de el url
-  const currentPath = usePathname()
+  const currentPath = usePathname();
 
   return (
     <div className={`flex gap-10 ${currentPath === "/contact" ? "flex-col sm:flex-row" : "flex-col"}`}>

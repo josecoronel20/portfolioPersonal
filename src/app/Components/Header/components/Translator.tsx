@@ -3,16 +3,13 @@ import { iconTranslate } from "@/app/lib/utilities/Icons";
 import { useToggle } from "@/app/lib/hooks/useToggle";
 import { useLanguageStore } from "@/app/lib/store/useLanguageStore";
 
+//Componente Translator que renderiza el botón de traducción.
 const Translate = ():JSX.Element => {
-  //uso de customhook para utilizar un estado toggle
   const { isToggleOpen, handlerToggle, setIsToggleOpen } = useToggle();
+  const language = useLanguageStore((state) => state.language);
+  const toSpanish = useLanguageStore((state) => state.toSpanish);
+  const toEnglish = useLanguageStore((state) => state.toEnglish);
 
-  //importacion del estado 
-const language = useLanguageStore((state) => state.language);
-const toSpanish = useLanguageStore((state) => state.toSpanish)
-const toEnglish = useLanguageStore((state) => state.toEnglish)
-
-  // const {language, changeToEnglish,changeToSpanish} = useLanguage()
   return (
     <div className="">
       <div

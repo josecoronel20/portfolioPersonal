@@ -1,15 +1,20 @@
 "use client";
 
-import {useState} from "react";
+import { useState } from "react";
 
-export const useToggle = (initialState:boolean = false) =>{
+// Hook para manejar el estado de un toggle
+export const useToggle = (
+  initialState: boolean = false,
+): {
+  isToggleOpen: boolean;
+  handlerToggle: () => void;
+  setIsToggleOpen: React.Dispatch<React.SetStateAction<boolean>>;
+} => {
+  const [isToggleOpen, setIsToggleOpen] = useState<boolean>(initialState);
 
-const [isToggleOpen, setIsToggleOpen] = useState<boolean>(initialState);
-
-const handlerToggle = ():void => {
+  const handlerToggle = (): void => {
     setIsToggleOpen(!isToggleOpen);
   };
 
-  return {isToggleOpen, handlerToggle, setIsToggleOpen}
-
-}
+  return { isToggleOpen, handlerToggle, setIsToggleOpen };
+};

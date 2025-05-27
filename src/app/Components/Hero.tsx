@@ -9,6 +9,7 @@ import {
 import { useLanguageStore } from "@/app/lib/store/useLanguageStore";
 import Image from "next/image";
 
+//Componente Hero que renderiza la sección principal de la página.
 const Hero = (): JSX.Element => {
   //importa el idioma del store
   const { textLanguage } = useLanguageStore();

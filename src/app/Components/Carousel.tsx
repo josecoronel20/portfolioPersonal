@@ -5,7 +5,8 @@ import CardProject from "./CardProject";
 import { iconArrowLeft, iconArrowRight } from "../lib/utilities/Icons";
 import { useLanguageStore } from "../lib/store/useLanguageStore";
 
-const Carousel = ():JSX.Element => {
+//Componente Carousel que renderiza el carrusel de proyectos.
+const Carousel = (): JSX.Element => {
   //importa el idioma del store
   const { textLanguage } = useLanguageStore();
 
@@ -16,18 +17,18 @@ const Carousel = ():JSX.Element => {
   const lenghtArrayProjects = textLanguage.projects.list.length;
 
   //handler de boton prev
-  const handlerLeftArrow = ():void => {
+  const handlerLeftArrow = (): void => {
     setProjectId((prev) => (prev > 1 ? prev - 1 : lenghtArrayProjects));
   };
 
   //handler de boton prev
-  const handlerRightArrow = ():void => {
+  const handlerRightArrow = (): void => {
     setProjectId((prev) => (prev < lenghtArrayProjects ? prev + 1 : 1));
   };
 
   //filtra el projecto segun id
   const project = textLanguage.projects.list.find(
-    (project) => project.id === projectId
+    (project) => project.id === projectId,
   );
 
   //guard clause

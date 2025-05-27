@@ -1,9 +1,10 @@
-"use client"
+"use client";
 
 import React from "react";
 import { styleContainer } from "@/app/lib/utilities/customStyles";
 import { useLanguageStore } from "@/app/lib/store/useLanguageStore";
 
+//Componente AboutMe que renderiza la sección de "Sobre mí".
 const AboutMe = ():JSX.Element => {
   //importa el idioma del store
   const { textLanguage } = useLanguageStore();

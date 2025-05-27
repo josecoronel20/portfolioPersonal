@@ -4,7 +4,8 @@ import React from "react";
 import { styleContainerTop } from "@/app/lib/utilities/customStyles";
 import ContactContent from "@/app/Components/ContactContent";
 
-const Contact = ():JSX.Element => {
+//Componente Contact que renderiza la sección de contacto.
+const Contact = (): JSX.Element => {
   return (
     <main className={styleContainerTop}>
       <div className="flex justify-center">
