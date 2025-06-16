@@ -4,6 +4,7 @@ import { useLanguageStore } from "@/app/lib/store/useLanguageStore";
 import { useToggle } from "@/app/lib/hooks/useToggle";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
+import Link from "next/link";
 
 const useWindowSize = (): number => {
   const [windowSize, setWindowSize] = useState<number>(0);
@@ -34,20 +35,20 @@ export const MenuNav = (): JSX.Element => {
 
   const NavItem = ({ to, text }: { to: string; text: string }): JSX.Element => (
     <li onClick={windowSize < 768 ? handlerToggle : undefined}>
-      <a
+      <Link
         href={to}
         className={`${
           pathname === to ? "text-primary" : "text-white"
         } hover:text-primary transition-colors duration-300`}
       >
         {text}
-      </a>
+      </Link>
     </li>
   );
 
   return (
     <nav className="flex items-center">
-      <ul className="flex gap-5 items-center">
+      <ul className="gap-5 items-center hidden md:flex">
         <NavItem to="/" text={textLanguage.header.nav.li.home} />
         <NavItem to="/Projects" text={textLanguage.header.nav.li.projects} />
         <NavItem to="/Blog" text={textLanguage.header.nav.li.blog} />
@@ -59,18 +60,20 @@ export const MenuNav = (): JSX.Element => {
           onClick={handlerToggle}
           className="ml-4 text-white hover:text-primary transition-colors duration-300"
         >
-          {isToggleOpen ? "✕" : "☰"}
+          <div className="text-2xl cursor-pointer hover:scale-110 transition-all duration-300 z-30 relative">
+            {isToggleOpen ? "✕" : "☰"}
+          </div>
         </button>
       ) : null}
 
       <div
         className={`${
           windowSize < 768 && isToggleOpen === false && "hidden"
-        } fixed top-16 left-0 w-full bg-darkDark p-4 ${
+        } fixed top-0 left-0 w-full h-screen bg-darkDark p-4 ${
           windowSize < 768 ? "block" : "hidden"
         }`}
       >
-        <ul className="flex flex-col gap-4">
+        <ul className="flex flex-col gap-4 h-full justify-center items-center">
           <NavItem to="/" text={textLanguage.header.nav.li.home} />
           <NavItem to="/Projects" text={textLanguage.header.nav.li.projects} />
           <NavItem to="/Blog" text={textLanguage.header.nav.li.blog} />

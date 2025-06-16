@@ -1,5 +1,5 @@
 import React from "react";
-import CardProject from "@/app/Components/CardProject";
+import CardProject from "@/app/Projects/[id]/Components/CardProject";
 import { useLanguageStore } from "@/app/lib/store/useLanguageStore";
 
 //Componente ProjectsSection que renderiza la sección de proyectos.

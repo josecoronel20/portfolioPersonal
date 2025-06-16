@@ -11,8 +11,7 @@ const Modal = ({
   toggle: boolean;
   nav: boolean;
   setToggle?: React.Dispatch<React.SetStateAction<boolean>>;
-}):JSX.Element => {
-
+}): JSX.Element => {
   return (
     <div>
       <div

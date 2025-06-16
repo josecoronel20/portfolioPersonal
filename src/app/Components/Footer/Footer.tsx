@@ -30,9 +30,9 @@ const Footer = ():JSX.Element => {
           <h3>{textLanguage.footer.title}</h3>
           <ul className="flex flex-col gap-1">
             <ListItem to={"/"}>{textLanguage.header.nav.li.home}</ListItem>
-            <ListItem to={"/projects"}>{textLanguage.header.nav.li.projects}</ListItem>
-            <ListItem to={"/blog"}>{textLanguage.header.nav.li.blog}</ListItem>
-            <ListItem to={"/contact"}>{textLanguage.header.nav.li.contactMe}</ListItem>
+            <ListItem to={"/Projects"}>{textLanguage.header.nav.li.projects}</ListItem>
+            <ListItem to={"/Blog"}>{textLanguage.header.nav.li.blog}</ListItem>
+            <ListItem to={"/ContactMe"}>{textLanguage.header.nav.li.contactMe}</ListItem>
           </ul>
         </div></div>
     </section>

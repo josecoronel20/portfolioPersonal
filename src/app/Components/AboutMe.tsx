@@ -21,7 +21,7 @@ const AboutMe = ():JSX.Element => {
 
   return (
     <section
-      className={`${styleContainer} flex flex-col justify-between gap-10 md:w-1/2`}
+      className={`${styleContainer} flex flex-col justify-between gap-10 lg:w-1/2`}
     >
       <h2 className="text-center">{textLanguage.home.aboutMe.title}</h2>
       <h3 className="font-light">{textLanguage.home.aboutMe.subtitle}</h3>

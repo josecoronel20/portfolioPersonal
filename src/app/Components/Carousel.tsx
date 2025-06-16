@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import CardProject from "./CardProject";
+import CardProject from "../Projects/[id]/Components/CardProject";
 import { iconArrowLeft, iconArrowRight } from "../lib/utilities/Icons";
 import { useLanguageStore } from "../lib/store/useLanguageStore";
 

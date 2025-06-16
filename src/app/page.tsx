@@ -9,7 +9,7 @@ const Home = (): JSX.Element => {
   return (
     <>
       <Hero />
-      <div className="bg-darkDark flex flex-col md:flex-row md:items-start justify-center">
+      <div className="bg-darkDark flex flex-col lg:flex-row lg:items-start justify-center">
         <Carrousel />
         <AboutMe />
       </div>

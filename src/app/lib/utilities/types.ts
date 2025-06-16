@@ -150,6 +150,7 @@ export interface textLanguage {
   };
   blog: {
     title: string;
+    seePost: string;
     blogList: post[];
   };
   footer: {

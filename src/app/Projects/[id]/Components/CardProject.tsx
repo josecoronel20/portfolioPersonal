@@ -1,6 +1,6 @@
 import React from "react";
-import ButtonsCardProject from "../Projects/[id]/Components/ButtonsCardProject";
-import { project } from "../lib/utilities/types";
+import ButtonsCardProject from "./ButtonsCardProject";
+import { project } from "../../../lib/utilities/types";
 import Image from "next/image";
 
 //Componente CardProject que renderiza un proyecto en una tarjeta.
@@ -32,11 +32,11 @@ const CardProject = ({ project }: { project: project }): JSX.Element => {
         )}
       </div>
       <div className="p-5 gap-2 flex flex-col h-2/3 justify-between">
-        <section className="h-full">
+        <section className="h-auto">
           <h3 className="text-lg font-extrabold text-darkDark">{`PROYECTO: ${project.title.toUpperCase()}`}</h3>
         </section>
 
-        <section className="flex gap-1 items-center h-full overflow-hidden">
+        <section className="flex gap-1 items-center h-full">
           <div className="flex gap-1 flex-wrap">
             {project.techs.map((tech) => (
               <p
@@ -47,10 +47,6 @@ const CardProject = ({ project }: { project: project }): JSX.Element => {
               </p>
             ))}
           </div>
-        </section>
-
-        <section className="max-h-20 overflow-hidden">
-          <p className="text-gray-700">{project.description}</p>
         </section>
 
         <ButtonsCardProject
