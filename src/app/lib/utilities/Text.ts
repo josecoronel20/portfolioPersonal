@@ -577,7 +577,7 @@ export const text: { textEs: textLanguage; textEn: textLanguage } = {
           ],
           description:
             "Portfolio personal que centraliza mis proyectos y competencias en desarrollo web. Diseñado para mostrar información detallada de cada proyecto: planificación, diseño, funcionalidades y objetivos alcanzados. Permite a futuros empleadores conocer mi evolución profesional de manera clara y visualmente atractiva.",
-          siteUrl: "https://josecoronel20.github.io/portfolioPersonal/",
+          siteUrl: "https://portfolio-personal-hill.vercel.app/",
           repoUrl: "https://github.com/josecoronel20/portfolioPersonal",
           isFinished: true,
           projectObjective:
