@@ -40,6 +40,25 @@ export default {
           700: "var(--color-cyan-700)",
           800: "var(--color-cyan-800)",
           900: "var(--color-cyan-900)",
+          // Variantes con opacidad
+          "900/10":
+            "color-mix(in srgb, var(--color-cyan-900) 10%, transparent)",
+          "900/20":
+            "color-mix(in srgb, var(--color-cyan-900) 20%, transparent)",
+          "900/30":
+            "color-mix(in srgb, var(--color-cyan-900) 30%, transparent)",
+          "900/40":
+            "color-mix(in srgb, var(--color-cyan-900) 40%, transparent)",
+          "900/50":
+            "color-mix(in srgb, var(--color-cyan-900) 50%, transparent)",
+          "900/60":
+            "color-mix(in srgb, var(--color-cyan-900) 60%, transparent)",
+          "900/70":
+            "color-mix(in srgb, var(--color-cyan-900) 70%, transparent)",
+          "900/80":
+            "color-mix(in srgb, var(--color-cyan-900) 80%, transparent)",
+          "900/90":
+            "color-mix(in srgb, var(--color-cyan-900) 90%, transparent)",
         },
         blue: {
           50: "var(--color-blue-50)",
@@ -52,9 +71,74 @@ export default {
           700: "var(--color-blue-700)",
           800: "var(--color-blue-800)",
           900: "var(--color-blue-900)",
+          // Variantes con opacidad para blue también
+          "900/10":
+            "color-mix(in srgb, var(--color-blue-900) 10%, transparent)",
+          "900/20":
+            "color-mix(in srgb, var(--color-blue-900) 20%, transparent)",
+          "900/30":
+            "color-mix(in srgb, var(--color-blue-900) 30%, transparent)",
+          "900/40":
+            "color-mix(in srgb, var(--color-blue-900) 40%, transparent)",
+          "900/50":
+            "color-mix(in srgb, var(--color-blue-900) 50%, transparent)",
+          "900/60":
+            "color-mix(in srgb, var(--color-blue-900) 60%, transparent)",
+          "900/70":
+            "color-mix(in srgb, var(--color-blue-900) 70%, transparent)",
+          "900/80":
+            "color-mix(in srgb, var(--color-blue-900) 80%, transparent)",
+          "900/90":
+            "color-mix(in srgb, var(--color-blue-900) 90%, transparent)",
         },
         slate: {
           950: "var(--color-slate-950)",
+        },
+        // Mantener colores existentes
+        green: "#73F6BE",
+        darkDark: "#2E3532",
+        darkLight: "#525754",
+        lightLight: "#E0E2DB",
+        darkFooter: "#232826",
+        background: "hsl(var(--background))",
+        foreground: "hsl(var(--foreground))",
+        card: {
+          DEFAULT: "hsl(var(--card))",
+          foreground: "hsl(var(--card-foreground))",
+        },
+        popover: {
+          DEFAULT: "hsl(var(--popover))",
+          foreground: "hsl(var(--popover-foreground))",
+        },
+        primary: {
+          DEFAULT: "hsl(var(--primary))",
+          foreground: "hsl(var(--primary-foreground))",
+        },
+        secondary: {
+          DEFAULT: "hsl(var(--secondary))",
+          foreground: "hsl(var(--secondary-foreground))",
+        },
+        muted: {
+          DEFAULT: "hsl(var(--muted))",
+          foreground: "hsl(var(--muted-foreground))",
+        },
+        accent: {
+          DEFAULT: "hsl(var(--accent))",
+          foreground: "hsl(var(--accent-foreground))",
+        },
+        destructive: {
+          DEFAULT: "hsl(var(--destructive))",
+          foreground: "hsl(var(--destructive-foreground))",
+        },
+        // border: "hsl(var(--border))",
+        input: "hsl(var(--input))",
+        ring: "hsl(var(--ring))",
+        chart: {
+          1: "hsl(var(--chart-1))",
+          2: "hsl(var(--chart-2))",
+          3: "hsl(var(--chart-3))",
+          4: "hsl(var(--chart-4))",
+          5: "hsl(var(--chart-5))",
         },
       },
       borderRadius: {
