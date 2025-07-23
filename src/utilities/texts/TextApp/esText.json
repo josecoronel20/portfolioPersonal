@@ -1,0 +1,78 @@
+{
+  "nav": {
+    "home": "INICIO",
+    "projects": "PROYECTOS",
+    "blog": "BLOG",
+    "contact": "CONTACTAME"
+  },
+  "home": {
+    "hero": {
+      "title": "Soy ",
+      "subtitle": "desarrollador frontend especializado en ",
+      "button": "VER PROYECTOS",
+      "altImg": "ilustracion de @josecoronel20"
+    },
+
+    "carrousel": {
+      "title": "ÚLTIMOS PROYECTOS"
+    },
+    "aboutMe": {
+      "title": "SOBRE MÍ",
+      "text": {
+        "paragraph1": {
+          "text": "Soy José María Coronel, desarrollador web especializado en React, con 24 años y actualmente viviendo en Portugal. Mi enfoque está en crear interfaces interactivas y eficientes."
+        },
+
+        "paragraph2": {
+          "title": "MI TRAYECTORIA",
+          "text": "Descubrí la programación por curiosidad y me formé de manera autodidacta en HTML, CSS, JavaScript y React, complementando con libros y documentación oficial. Sigo ampliando mis habilidades a través de la práctica constante."
+        },
+
+        "paragraph3": {
+          "title": "FOCO EN CALIDAD Y ORGANIZACIÓN",
+          "text": "Me comprometo con la accesibilidad, la reutilización de código y las mejores prácticas. Estoy perfeccionando mi manejo de Git, especialmente en la organización de ramas. Actualmente, me estoy introduciendo en testing con Jest y React Testing Library, así como en Vite y Redux."
+        },
+
+        "paragraph4": {
+          "title": "HERRAMIENTAS Y DISEÑO",
+          "text": "Utilizo Figma para diseñar y prototipar mis proyectos, priorizando un estilo limpio y minimalista que optimiza la experiencia del usuario."
+        }
+      }
+    },
+    "Techs": {
+      "title": "TECNOLOGIAS Y HABILIDADES",
+      "titleTechs": "Tecnologías",
+      "titleFrameworks": "Frameworks y librerías",
+      "titleTools": "Herramientas",
+      "titleConcepts": "Conceptos y metodologías"
+    }
+  },
+  "footer": {
+    "contactMe": {
+      "sectionTitle": "Información de contácto",
+      "email": {
+        "title": "Email",
+        "value": "josecoronel20@outlook.com"
+      },
+      "phone": {
+        "title": "Número de teléfono",
+        "value": "+351 912 981 851"
+      }
+    },
+    "followMe": {
+      "sectionTitle": "Sígueme",
+      "github": {
+        "title": "GitHub",
+        "url": "https://github.com/josecoronel20"
+      },
+      "linkedin": {
+        "title": "LinkedIn",
+        "url": "https://www.linkedin.com/in/jose-maria-coronel/"
+      }
+    }
+  },
+
+  "projects": {
+    "title": "PROYECTOS"
+  }
+}

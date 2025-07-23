@@ -1,0 +1,400 @@
+{
+  
+    "header": {
+      "nav": {
+        "home": "INICIO",
+        "projects": "PROYECTOS",
+        "blog": "BLOG",
+        "contact": "CONTACTAME"
+      },
+      "translate": {
+        "es": "ESPAÑOL",
+        "en": "INGLES",
+        "pt": "PORTUGUES"
+      }
+    },
+    "footer": {
+      "sectionFollowMe": {
+        "sectionTitle": "Sígueme",
+        "gitHub": {
+          "title": "GitHub",
+          "description": "https://github.com/josecoronel20"
+        },
+        "linkedin": {
+          "title": "Linkedin",
+          "description": "https://www.linkedin.com/in/jose-maria-coronel/"
+        }
+      },
+      "sectionContactMe": {
+        "sectionTitle": "Información de contacto",
+        "email": {
+          "title": "Email",
+          "description": "josecoronel@outlook.com"
+        },
+        "phoneNumber": {
+          "title": "Número de teléfono",
+          "description": "351912981851"
+        }
+      }
+    },
+    "pageHome": {
+      "sectionHero": {
+        "title": "Soy Jose Maria Coronel",
+        "subtitle": "desarrollador frontend especializado en React",
+        "buttonLabel": "VER PROYECTOS"
+      },
+      "sectionCarrousel": {
+        "title": "ÚLTIMOS PROYECTOS"
+      },
+      "sectionAboutMe": {
+        "introduction": {
+          "title": "SOBRE MÍ",
+          "text": "Soy José María Coronel, desarrollador web especializado en React, con 24 años y actualmente viviendo en Portugal. Mi enfoque está en la optimización de la aplicación y las buenas prácticas."
+        },
+        "sections": [
+          {
+            "title": "MI TRAYECTORIA",
+            "text": "Descubrí la programación por pura curiosidad, y desde entonces me he formado principalmente de manera autodidacta. He aprendido a través de cursos en línea, videos, libros y documentación. Me gusta resolver problemas, mejorar mi forma de trabajar y adoptar buenas prácticas que me ayuden a seguir creciendo como profesional. Cada nuevo reto es una oportunidad para afianzar mis conocimientos y seguir avanzando en este camino que me apasiona."
+          },
+          {
+            "title": "FOCO EN BUENAS PRÁCTICAS, ORGANIZACIÓN Y OPTIMIZACIÓN",
+            "text": "En mi trabajo, priorizo las buenas prácticas para mantener un código limpio y escalable. Me enfoco en organizar proyectos de forma modular, optimizar recursos y usar herramientas que aseguren eficiencia. Esto incluye estructurar bien los archivos, aplicar principios como DRY (Don't Repeat Yourself) y utilizar metodologías que faciliten el mantenimiento y la colaboración. Mi objetivo es garantizar que cada proyecto no solo funcione bien, sino que sea fácil de entender, extender y mejorar a lo largo del tiempo."
+          },
+          {
+            "title": "MI COMPROMISO CON EL APRENDIZAJE CONTINUO",
+            "text": "Desde mis primeros pasos en programación, me he dedicado a aprender y profundizar en los conocimientos necesarios para sentirme preparado en mi primer trabajo como frontend developer. Aunque soy junior, estoy explorando temas avanzados como el uso de React a profundidad, TypeScript y testing. Mi meta es cubrir no solo los requisitos más comunes para un puesto inicial, sino también complementar mi aprendizaje autodidacta con prácticas y tecnologías que me permitan aportar valor desde el primer día en un entorno profesional."
+          }
+        ]
+      },
+      "sectionTechs": {
+        "html": {
+          "title": "HTML",
+          "color": "#E34F26",
+          "level": "Avanzado",
+          "mainConcepts": [
+            "Estructura Semántica",
+            "Formularios",
+            "Atributos Globales",
+            "SEO Básico",
+            "Multimedia"
+          ]
+        },
+        "css": {
+          "title": "CSS",
+          "color": "#1572B6",
+          "level": "Avanzado",
+          "mainConcepts": [
+            "Diseño Responsivo",
+            "Flexbox y Grid",
+            "Animaciones y Transiciones",
+            "Variables CSS",
+            "Selectores Avanzados"
+          ]
+        },
+        "javascript": {
+          "title": "JavaScript",
+          "color": "#F7DF1E",
+          "level": "Avanzado",
+          "mainConcepts": [
+            "Manipulación del DOM",
+            "Eventos",
+            "Funciones y Promesas",
+            "Programación Asíncrona",
+            "ES6+"
+          ]
+        },
+        "typescript": {
+          "title": "TypeScript",
+          "color": "#3178C6",
+          "level": "Básico",
+          "mainConcepts": [
+            "Tipado Básico",
+            "Interfaces y Tipos",
+            "Generics",
+            "Módulos y Importaciones",
+            "Configuración TSConfig"
+          ]
+        },
+        "react": {
+          "title": "React",
+          "color": "#61DAFB",
+          "level": "Avanzado",
+          "mainConcepts": [
+            "Componentes Funcionales",
+            "Hooks",
+            "Estado y Props",
+            "Context API",
+            "React Router"
+          ]
+        },
+        "jest": {
+          "title": "Jest",
+          "color": "#99425B",
+          "level": "Básico",
+          "mainConcepts": [
+            "Test de Unidades",
+            "Matchers Básicos",
+            "Mocks",
+            "Snapshots",
+            "Ejecución y Configuración Básica"
+          ]
+        },
+        "testingLibrary": {
+          "title": "Testing Library",
+          "color": "#E33332",
+          "level": "Básico",
+          "mainConcepts": [
+            "Renderización de Componentes",
+            "Selectores",
+            "Eventos Simulados",
+            "Matchers Específicos",
+            "Pruebas Accesibles"
+          ]
+        },
+        "git": {
+          "title": "Git",
+          "color": "#F05032",
+          "level": "Intermedio",
+          "mainConcepts": [
+            "Control de Versiones",
+            "Ramas",
+            "Merge y Rebase",
+            "Stash y Restore",
+            "Resolución de Conflictos"
+          ]
+        },
+        "github": {
+          "title": "GitHub",
+          "color": "#181717",
+          "level": "Intermedio",
+          "mainConcepts": [
+            "Repositorios",
+            "Pull Requests",
+            "Issues",
+            "GitHub Pages",
+            "Colaboración en Equipos"
+          ]
+        },
+        "tailwind": {
+          "title": "Tailwind CSS",
+          "color": "#38B2AC",
+          "level": "Intermedio",
+          "mainConcepts": [
+            "Utilidades de Estilo",
+            "Configuración de Temas",
+            "Responsive Design",
+            "Animaciones",
+            "Integración con Frameworks"
+          ]
+        },
+        "figma": {
+          "title": "Figma",
+          "color": "#F24E1E",
+          "level": "Básico",
+          "mainConcepts": [
+            "Creación de Marcos",
+            "Diseño de Interfaces Básicas",
+            "Uso de Componentes Simples",
+            "Colaboración en Tiempo Real",
+            "Exportación de Imágenes y Recursos"
+          ]
+        },
+        "chatgpt": {
+          "title": "ChatGPT",
+          "color": "#4D4D4D",
+          "level": "Avanzado",
+          "mainConcepts": [
+            "Generación de Código",
+            "Resolución de Problemas",
+            "Optimización de Algoritmos",
+            "Aprendizaje Personalizado",
+            "Soporte en Desarrollo"
+          ]
+        }
+      },
+      "sectionProjectMethodology": {
+        "introduction": {
+          "title": "Mi metodología de desarrollo de proyectos",
+          "text": "Exploro cada etapa del proceso para garantizar que cada proyecto sea funcional, escalable y visualmente atractivo, desde la ideación hasta la implementación final."
+        },
+        "sections": [
+          {
+            "title": "Ideación y definición inicial",
+            "text": "En esta etapa establezco las bases del proyecto. Realizo un listado de las páginas, componentes, y contenidos principales que necesito. Esto incluye textos, imágenes, y datos esenciales. El objetivo es crear una guía inicial que me ayude a mantener el enfoque durante el desarrollo."
+          },
+          {
+            "title": "Diseño visual y estructura UI (Figma)",
+            "text": "Aquí traslado las ideas a un prototipo visual. En Figma diseño las páginas, defino los layouts y establezco el estilo visual. En esta etapa elijo colores, tipografías, y diseño la interacción básica para cada componente."
+          },
+          {
+            "title": "Estructuración técnica y conceptualización",
+            "text": "Paso del diseño visual a la planificación técnica. Elaboro un mapa conceptual o esquema técnico donde descompongo los componentes, defino su jerarquía, y planifico cómo interactuarán entre ellos. También identifico la lógica interna, props necesarias, estados y posibles herramientas como hooks, context API, o APIs externas."
+          },
+          {
+            "title": "Desarrollo y pruebas",
+            "text": "Es el momento de transformar el diseño y la planificación técnica en código. Construyo los componentes, implemento las funcionalidades necesarias y aseguro que el proyecto sea fiel al diseño. Realizo pruebas para garantizar que todo funcione correctamente y sea escalable."
+          }
+        ]
+      }
+    },
+    "pageProjects": {
+      "sectionProjects": {
+        "title": "Proyectos"
+      },
+      "proyects": [
+        {
+          "id": 1,
+          "title": "Portfolio Personal",
+          "description": "Este portafolio refleja mi experiencia en desarrollo web, incluyendo ejemplos prácticos que demuestran habilidades técnicas y enfoque en buenas prácticas de diseño y desarrollo.",
+          "objective": "Mostrar mi evolución profesional, destacando competencias clave y mi capacidad para planificar, diseñar y ejecutar proyectos de forma eficiente.",
+          "images": {
+            "desktop": {
+              "url": "ImageDesktopUrl1",
+              "alt": "captura de pantalla de vista de escritorio de página web de portfolio personal"
+            },
+            "mobile": {
+              "url": "ImageMobileUrl1",
+              "alt": "captura de pantalla de vista de móbil de página web de portfolio personal"
+            }
+          },
+          "techs": [
+            "HTML",
+            "CSS",
+            "React",
+            "Git",
+            "GitHub",
+            "Tailwind",
+            "JavaScript",
+            "typescript"
+          ],
+          "urls": {
+            "live": "https://josecoronel20.github.io/portfolioPersonal/",
+            "repo": "https://github.com/josecoronel20/portfolioPersonal"
+          },
+          "details": {
+            "mainFeatures": [
+              {
+                "title": "Carrusel",
+                "description": "Permite explorar mis proyectos de manera interactiva, captando la atención del usuario desde el primer vistazo."
+              },
+              {
+                "title": "Mapeo de tecnologías",
+                "description": "Iconos interactivos que muestran información al hacer clic, implementados con lógica basada en JSON."
+              },
+              {
+                "title": "Ventana Modal",
+                "description": "Ventanas emergentes para cada tecnología que detallan mi nivel de conocimiento y conceptos principales."
+              }
+            ],
+            "issues": [
+              {
+                "title": "Mapeo de iconos de tecnologías",
+                "description": "Implementé lógica individual para asegurar un comportamiento específico, evitando errores globales."
+              },
+              {
+                "title": "Carrusel",
+                "description": "Simplifiqué su diseño a una sola 'card' con animaciones tras resultados insatisfactorios en versiones más complejas."
+              },
+              {
+                "title": "Comienzo de aplicación de lo aprendido",
+                "description": "Mejoré la estructura de mis proyectos aplicando Git, modularización, y mejores prácticas en desarrollo."
+              }
+            ]
+          }
+        },
+        {
+          "id": 2,
+          "title": "Ecommerce",
+          "description": "Este proyecto simula una tienda online, ofreciendo una experiencia responsiva y un diseño moderno. Implementa funcionalidades clave para facilitar la navegación y el proceso de compra.",
+          "objective": "Demostrar habilidades en planificación, desarrollo y resolución de problemas usando tecnologías modernas como React, TypeScript y Next.js.",
+          "images": {
+            "desktop": {
+              "url": "ecommerceDesktop",
+              "alt": "captura de pantalla de vista de escritorio de proyecto ecommerce"
+            },
+            "mobile": {
+              "url": "ecommerceMobile",
+              "alt": "captura de pantalla de vista de móbil de proyecto ecommerce"
+            }
+          },
+          "techs": [
+            "HTML",
+            "CSS",
+            "React",
+            "TypeScript",
+            "Next.js",
+            "Git",
+            "GitHub",
+            "Tailwind",
+            "Jest",
+            "Testing Library",
+            "NPM",
+            "JavaScript"
+          ],
+          "urls": {
+            "live": "https://ecommerce-woad-psi.vercel.app/ecommerce",
+            "repo": "https://github.com/josecoronel20/ecommerce"
+          },
+          "details": {
+            "title": "FUNCIONES PRINCIPALES",
+            "mainFeatures": [
+              {
+                "title": "Carrusel",
+                "description": "Diseñado para explorar productos destacados fácilmente, ofreciendo un vistazo rápido y atractivo de las opciones disponibles."
+              },
+              {
+                "title": "Carrito de compras",
+                "description": "Utiliza un contexto global para gestionar productos, permitiendo editar cantidades y simular compras con una experiencia fluida."
+              },
+              {
+                "title": "Filtrado por URL",
+                "description": "Implementé filtros dinámicos mediante la URL, facilitando la búsqueda eficiente de productos por categorías o texto ingresado."
+              }
+            ],
+            "issues": {
+              "title": "PRINCIPALES PROBLEMAS ENFRENTADOS",
+              "issues": [
+                {
+                  "title": "Filtrado de productos",
+                  "description": "El mayor reto fue implementar filtros mediante rutas dinámicas y barra de búsqueda, optimizando la experiencia del usuario."
+                },
+                {
+                  "title": "Componente de filtro",
+                  "description": "Superé un problema de renderizado infinito en filtros con inputs ajustables, logrando una funcionalidad más estable y eficiente."
+                },
+                {
+                  "title": "Nuevas tecnologías",
+                  "description": "Fue desafiante integrar TypeScript, Next.js y Jest, pero enriqueció mi aprendizaje y mejoró la calidad del proyecto"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "pageBlog": {
+      "title": "POSTEOS DE MI BLOG PERSONAL",
+      "posts": [
+        {
+          "id": 1,
+          "title": "Mi camino hacia convertirme en desarrollador frontend",
+          "introduction": "Me mudé de Argentina a Portugal buscando un futuro mejor y decidí enfocarme en la programación, una disciplina que me ha fascinado desde siempre. Con una mentalidad lógica y analítica, siempre me ha intrigado cómo funcionan las cosas y cómo optimizarlas. Descubrir la programación fue un punto clave, ya que me ofreció la oportunidad de dar rienda suelta a mi curiosidad. Además, me motiva la sensación de lograr que aplicaciones \"complejas\" funcionen perfectamente",
+          "mainContent": {
+            "background": "Mi viaje comenzó con el objetivo de dominar la programación, especialmente React. Desde el principio, mi meta ha sido entender cómo funciona cada pieza del rompecabezas. Mi formación siempre ha sido autodidacta, y sentía la necesidad de estar a la altura de las expectativas en las candidaturas laborales. Por eso, me propuse profundizar en áreas clave para complementar lo más posible mi perfil profesional. Los primeros meses los pasé estudiando desde el celular con libros y videos, ya que, al mudarme a Portugal, comencé desde cero. Más tarde, pude conseguir una computadora y comenzar a escribir código de manera más práctica, complementando mi aprendizaje con tutoriales de YouTube y documentación oficial.",
+            "currentFocus": "Hoy en día, mi enfoque principal es profundizar en buenas prácticas y aprender tecnologías como TypeScript y Jest. He empezado a integrar TypeScript en mis proyectos, especialmente en un ecommerce, y estoy explorando la implementación de pruebas unitarias. Las pruebas me han resultado desafiantes, pero son una parte clave para asegurar que mi código sea robusto. Mi objetivo es aprender más sobre cómo escribir pruebas de integración y mejorar mi entendimiento de Jest y Typescript.",
+            "objective": "Mi meta final es conseguir mi primer trabajo como desarrollador frontend. Busco un puesto de junior frontend developer con especialización en React, preferentemente de manera remota. Aunque las empresas no me son indiferentes, la flexibilidad de trabajar desde Portugal me permite explorar oportunidades en España, donde me gustaría seguir creciendo profesionalmente."
+          },
+          "conclusion": "Este proceso ha sido una prueba de perseverancia, donde cada día me esfuerzo por aprender algo nuevo y seguir mejorando. Aunque todavía queda mucho por recorrer, cada avance es un paso más hacia mi objetivo. Estoy comprometido con este viaje y con adquirir las habilidades necesarias para convertirme en un desarrollador frontend competente y adaptable."
+        }
+      ]
+    }
+  }
+  
+
+
+
+
+
+
+
+

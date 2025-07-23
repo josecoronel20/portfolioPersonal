@@ -1,0 +1,78 @@
+{
+  "nav": {
+    "home": "HOME",
+    "projects": "PROJECTS",
+    "blog": "BLOG",
+    "contact": "CONTACT ME"
+  },
+  "home": {
+    "hero": {
+      "title": "I am ",
+      "subtitle": "a frontend developer specialized in ",
+      "button": "VIEW PROJECTS",
+      "altImg": "illustration by @josecoronel20"
+    },
+
+    "carrousel": {
+      "title": "LATEST PROJECTS"
+    },
+    "aboutMe": {
+      "title": "ABOUT ME",
+      "text": {
+        "paragraph1": {
+          "text": "I am José María Coronel, a web developer specialized in React, 24 years old, currently living in Portugal. My focus is on creating interactive and efficient interfaces."
+        },
+
+        "paragraph2": {
+          "title": "MY BACKGROUND",
+          "text": "I discovered programming out of curiosity and became self-taught in HTML, CSS, JavaScript, and React, complementing with books and official documentation. I continue to expand my skills through constant practice."
+        },
+
+        "paragraph3": {
+          "title": "FOCUS ON QUALITY AND ORGANIZATION",
+          "text": "I am committed to accessibility, code reusability, and best practices. I am improving my Git management, especially in branch organization. Currently, I am exploring testing with Jest and React Testing Library, as well as Vite and Redux."
+        },
+
+        "paragraph4": {
+          "title": "TOOLS AND DESIGN",
+          "text": "I use Figma to design and prototype my projects, prioritizing a clean and minimalist style that optimizes user experience."
+        }
+      }
+    },
+    "Techs": {
+      "title": "TECHNOLOGIES AND SKILLS",
+      "titleTechs": "Technologies",
+      "titleFrameworks": "Frameworks and Libraries",
+      "titleTools": "Tools",
+      "titleConcepts": "Concepts and Methodologies"
+    }
+  },
+  "footer": {
+    "contactMe": {
+      "sectionTitle": "Contact Information",
+      "email": {
+        "title": "Email",
+        "value": "josecoronel20@outlook.com"
+      },
+      "phone": {
+        "title": "Phone Number",
+        "value": "+351 912 981 851"
+      }
+    },
+    "followMe": {
+      "sectionTitle": "Follow Me",
+      "github": {
+        "title": "GitHub",
+        "url": "https://github.com/josecoronel20"
+      },
+      "linkedin": {
+        "title": "LinkedIn",
+        "url": "https://www.linkedin.com/in/jose-maria-coronel/"
+      }
+    }
+  },
+
+  "projects": {
+    "title": "PROJECTS"
+  }
+}
