@@ -1,7 +1,8 @@
 import React from "react";
-import { styleButtonCard } from "../../../lib/utilities/customStyles";
-import { useLanguageStore } from "../../../lib/store/useLanguageStore";
+import { styleButtonCard } from "@/styles/customStyles";
+import { useLanguageStore } from "@/store/useLanguageStore";
 import Link from "next/link";
+
 //Componente ButtonsCardProject que renderiza los botones de los proyectos.
 
 const ButtonsCardProject = ({

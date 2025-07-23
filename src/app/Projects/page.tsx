@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { useLanguageStore } from "@/app/lib/store/useLanguageStore";
+import { useLanguageStore } from "@/store/useLanguageStore";
 import ProjectsSection from "./Components/ProjectsSection";
 
 //Componente ProjectsPage que renderiza la sección de proyectos.

@@ -1,7 +1,6 @@
 import React from "react";
-import ImageModal from "@/app/Components/ImageModal";
-import { project } from "@/app/lib/utilities/types";
-import { useLanguageStore } from "@/app/lib/store/useLanguageStore";
+import { project } from "@/types/types";
+import { useLanguageStore } from "@/store/useLanguageStore";
 import Image from "next/image";
 
 //Componente ProjectsDetailPlanning que renderiza el planning del proyecto.
@@ -31,15 +30,13 @@ const ProjectsDetailPlanning = ({
         </div>
 
         {urlImg !== null ? (
-          <ImageModal>
-            <Image
-              className="rounded custom-shadow hover:scale-105 transition-transform ease-in-out duration-150"
-              src={urlImg}
-              alt=""
-              width={800}
-              height={100}
-            />
-          </ImageModal>
+          <Image
+            className="rounded custom-shadow hover:scale-105 transition-transform ease-in-out duration-150"
+            src={urlImg}
+            alt=""
+            width={800}
+            height={100}
+          />
         ) : null}
       </div>
     );

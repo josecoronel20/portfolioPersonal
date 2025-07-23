@@ -1,10 +1,10 @@
 "use client";
 
-import { styleContainerTop } from "@/app/lib/utilities/customStyles";
+import { styleContainerTop } from "@/styles/customStyles";
 import React from "react";
 import ProjectMockup from "./Components/ProjectMockup";
 import ProjectsDetailPlanning from "./Components/ProjectsDetailPlanning";
-import { useLanguageStore } from "@/app/lib/store/useLanguageStore";
+import { useLanguageStore } from "@/store/useLanguageStore";
 
 //Componente ProjectsDetail que renderiza la información en detalle de los proyectos.
 const ProjectsDetail = ({
@@ -104,7 +104,9 @@ const ProjectsDetail = ({
         </section>
 
         <section className="order-5 flex flex-col gap-1 md:col-span-3 ">
-          <h3 className="text-green">{textLanguage.projects.title}</h3>
+          <h3 className="text-green">
+            {textLanguage.projects.projectDetailTexts.mainFeaturesTitle}
+          </h3>
 
           <div className="flex flex-col gap-5 ">
             {projectFinded?.details.mainFeatures.map((feature) => {
@@ -121,7 +123,9 @@ const ProjectsDetail = ({
         </section>
 
         <section className="order-6 flex flex-col gap-1 sm:col-span-2 md:col-span-3 ">
-          <h3 className="text-green">{projectFinded?.details.issues.title}</h3>
+          <h3 className="text-green">
+            {textLanguage.projects.projectDetailTexts.issuesTitle}
+          </h3>
           <div className="flex flex-col gap-5">
             {projectFinded?.details.issues.issueList.map((issue, index) => {
               return (

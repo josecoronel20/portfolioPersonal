@@ -1,9 +1,9 @@
 import React from "react";
-import { styleButtonCard } from "../../lib/utilities/customStyles";
-import { post } from "../../lib/utilities/types";
+import { styleButtonCard } from "@/styles/customStyles";
+import { post } from "@/types/types";
 import Link from "next/link";
 import Image from "next/image";
-import { useLanguageStore } from "@/app/lib/store/useLanguageStore";
+import { useLanguageStore } from "@/store/useLanguageStore";
 
 //Componente PostCard que renderiza cada Post.
 const PostCard = ({ postInfo }: { postInfo: post }): JSX.Element => {

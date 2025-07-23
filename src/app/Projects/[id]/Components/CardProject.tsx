@@ -1,6 +1,6 @@
 import React from "react";
 import ButtonsCardProject from "./ButtonsCardProject";
-import { project } from "../../../lib/utilities/types";
+import { project } from "@/types/types";
 import Image from "next/image";
 
 //Componente CardProject que renderiza un proyecto en una tarjeta.

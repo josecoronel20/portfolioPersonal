@@ -1,21 +1,22 @@
 import React from "react";
-import Link from "next/link";
-import { styleButtonLight } from "@/app/lib/utilities/customStyles";
-import ImageModal from "@/app/Components/ImageModal";
-import { project } from "@/app/lib/utilities/types";
-import { useLanguageStore } from "@/app/lib/store/useLanguageStore";
-import Image from "next/image";
+// import Link from "next/link";
+// import { styleButtonLight } from "@/lib/utilities/customStyles";
+// import ImageModal from "@/app/Components/ImageModal";
+// import { project } from "@/lib/utilities/types";
+// import { useLanguageStore } from "@/store/useLanguageStore";
+// import Image from "next/image";
+// import { Project } from "next/dist/build/swc";
 
 //Componente ProjectMockup que renderiza el mockup del proyecto.
-const ProjectMockup = ({ project }: { project: project }): JSX.Element => {
+const ProjectMockup = (): JSX.Element => {
   //muestra el mockup del proyecto
 
   //importa el idioma del store
-  const { textLanguage } = useLanguageStore();
+  // const { textLanguage } = useLanguageStore();
 
   return (
     <section className="w-fit ">
-      <div className="flex flex-col gap-5 min-w-fit">
+      {/* <div className="flex flex-col gap-5 min-w-fit">
         <div className="flex  gap-5 justify-end max-w-lg">
           <div className="flex flex-col items-center justify-end  w-4/6">
             <div className="border-x-[6px] border-t-[8px] md:border-x-[10px] md:border-t-[14px] rounded-t-md w-10/12 border-lightLight">
@@ -23,9 +24,9 @@ const ProjectMockup = ({ project }: { project: project }): JSX.Element => {
                 <Image
                   src={project.imgDesktopUrl}
                   alt={project.imgDesktopAlt}
-                  width={400}
-                  height={200}
-                  className="w-full h-full object-cover"
+                  width={500}
+                  height={300}
+                  className="w-full object-cover rounded-t-md"
                 />
               </ImageModal>
             </div>
@@ -41,6 +42,7 @@ const ProjectMockup = ({ project }: { project: project }): JSX.Element => {
                   alt={project.imgMobileAlt}
                   width={150}
                   height={200}
+                  className="h-full w-fit rounded-t-md  max-w-screen object-cover"
                 />
               </ImageModal>
             </div>
@@ -64,7 +66,7 @@ const ProjectMockup = ({ project }: { project: project }): JSX.Element => {
             {textLanguage.projects.buttonText.seeRepo}
           </Link>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };

@@ -2,8 +2,8 @@
 
 import React from "react";
 import PostCard from "./Components/PostCard";
-import { useLanguageStore } from "../lib/store/useLanguageStore";
-import { styleContainerTop } from "../lib/utilities/customStyles";
+import { useLanguageStore } from "@/store/useLanguageStore";
+import { styleContainerTop } from "@/styles/customStyles";
 
 //Componente Blog que renderiza la sección de blog.
 const Blog = (): JSX.Element => {
