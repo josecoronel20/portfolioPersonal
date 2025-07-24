@@ -11,7 +11,7 @@ const Header = (): JSX.Element => {
   const { textLanguage } = useLanguageStore();
 
   return (
-    <header className="backdrop-blur-sm fixed top-0 left-0 w-full z-20">
+    <header className="backdrop-blur-sm fixed top-0 left-0 w-full z-20 bg-gradient-to-b from-slate-900 to-slate-950/0">
       <div className="p-3 flex justify-between">
         <Link href="/">
           <div className="inline-block text-green text-xl tracking-widest font-mcLaren py-1 px-5 order-solid border-green border-2 rounded-xl">
