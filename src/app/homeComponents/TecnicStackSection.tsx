@@ -25,14 +25,14 @@ const TecnicStackSection = (): JSX.Element => {
   const toolsSkills = ["Git", "GitHub", "Vite", "Docker"];
 
   return (
-    <section className="py-24 px-4 bg-gradient-to-r from-cyan-900/10 to-cyan-900/10">
+    <section className="py-24 px-4 ">
       <div className="container mx-auto max-w-6xl">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-cyan-300">
           <Settings className="w-10 h-10 inline mr-4" />
           Stack Técnico
         </h2>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid lg:grid-cols-2 gap-8">
           <Card className="bg-bg-card/50 backdrop-blur-sm hover:bg-bg-card-hover/30 transition-all duration-300 border-cyan-900 hover:border-cyan-600">
             <CardHeader className="pb-4">
               <CardTitle className="text-cyan-300 flex items-center text-xl">

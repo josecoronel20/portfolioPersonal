@@ -15,7 +15,7 @@ import illustration from "../../../public/img/illustration.png";
 
 const HeroSection = (): JSX.Element => {
   return (
-    <section className="min-h-screen flex items-center justify-center px-4 relative overflow-hidden pt">
+    <section className="min-h-screen flex items-center justify-center px-4 relative overflow-hidden pt-16 bg-gradient-to-br from-slate-950 via-cyan-950 to-slate-950">
       <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/3 to-blue-500/3"></div>
       <div className="container mx-auto text-center z-10 max-w-5xl">
         <div className="mb-12 animate-fade-in">

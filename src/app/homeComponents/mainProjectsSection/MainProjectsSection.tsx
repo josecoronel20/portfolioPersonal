@@ -40,7 +40,7 @@ const MainProjectsSection = (): JSX.Element => {
   ];
 
   return (
-    <section id="projects" className="py-24 px-4">
+    <section className="py-24 px-4 bg-gradient-to-br from-slate-950 via-cyan-950 to-slate-950">
       <div className="container mx-auto max-w-6xl">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-cyan-300">
           <Briefcase className="w-10 h-10 inline mr-4" />

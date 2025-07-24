@@ -9,7 +9,7 @@ const AboutMeSection = (): JSX.Element => {
           <User className="w-10 h-10 inline mr-4" />
           Sobre mí
         </h2>
-        <div className="grid md:grid-cols-2 gap-12 text-cyan-100/90 text-lg leading-relaxed">
+        <div className="grid lg:grid-cols-2 gap-12 text-cyan-100/90 text-lg leading-relaxed">
           <div className="space-y-6">
             <p className="text-xl leading-relaxed">
               Soy un desarrollador autodidacta apasionado por crear experiencias
