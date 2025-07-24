@@ -63,10 +63,7 @@ const HeroSection = (): JSX.Element => {
                 <div className="grid grid-cols-1  gap-2 justify-center items-center">
                   <div className="grid grid-cols-1 lg:grid-cols-2 gap-2">
                     <Link href="/projects">
-                      <Button
-                        size="lg"
-                        className="bg-cyan-600 hover:bg-cyan-700 text-white px-8 py-4 text-lg font-medium shadow-lg hover:shadow-xl transition-all duration-300"
-                      >
+                      <Button size="lg" className="button-principal text-xl">
                         <Code2 className="w-5 h-5" />
                         Ver Proyectos
                       </Button>
@@ -75,7 +72,7 @@ const HeroSection = (): JSX.Element => {
                     <Button
                       size="lg"
                       variant="outline"
-                      className="border-2 border-cyan-400/50 text-cyan-300 hover:bg-cyan-400/10 hover:border-cyan-400 px-8 py-4 text-lg font-medium bg-transparent transition-all duration-300"
+                      className="button-secondary text-xl"
                     >
                       <Download className="w-5 h-5" />
                       Descargar CV

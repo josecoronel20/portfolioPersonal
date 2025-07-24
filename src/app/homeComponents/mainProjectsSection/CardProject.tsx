@@ -76,7 +76,7 @@ const CardProject = ({
           <div className="flex gap-3">
             <Button
               size="sm"
-              className="bg-cyan-600 hover:bg-cyan-500 flex-1 font-medium transition-all duration-300"
+              className="button-principal"
             >
               <ExternalLink className="w-4 h-4 mr-2" />
               Demo
@@ -84,7 +84,7 @@ const CardProject = ({
             <Button
               size="sm"
               variant="outline"
-              className="border-cyan-600 text-cyan-300 hover:bg-cyan-900 hover:border-cyan-500 flex-1 bg-transparent font-medium transition-all duration-300 hover:text-cyan-100"
+              className="button-secondary"
             >
               <Github className="w-4 h-4 mr-2" />
               Código

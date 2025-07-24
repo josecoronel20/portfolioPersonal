@@ -33,26 +33,34 @@ export const MenuNav = (): JSX.Element => {
   const { isToggleOpen, handlerToggle } = useToggle();
   const pathname = usePathname();
 
-  const NavItem = ({ to, text }: { to: string; text: string }): JSX.Element => (
-    <li onClick={windowSize < 768 ? handlerToggle : undefined}>
-      <Link
-        href={to}
-        className={`${
-          pathname === to ? "text-primary" : "text-white"
-        } hover:text-primary transition-colors duration-300`}
-      >
-        {text}
-      </Link>
-    </li>
-  );
+  const navItems = [
+    { to: "/", text: textLanguage.header.nav.li.home },
+    { to: "/Projects", text: textLanguage.header.nav.li.projects },
+    { to: "/Blog", text: textLanguage.header.nav.li.blog },
+    { to: "/ContactMe", text: textLanguage.header.nav.li.contactMe },
+  ];
+
+  const NavItem = ({ to, text }: { to: string; text: string }): JSX.Element => {
+    return (
+      <li onClick={windowSize < 768 ? handlerToggle : undefined}>
+        <Link
+          href={to}
+          className={`${
+            pathname === to ? "text-primary" : "text-white"
+          } hover:text-primary transition-colors duration-300`}
+        >
+          {text}
+        </Link>
+      </li>
+    );
+  };
 
   return (
     <nav className="flex items-center">
       <ul className="gap-5 items-center hidden md:flex">
-        <NavItem to="/" text={textLanguage.header.nav.li.home} />
-        <NavItem to="/Projects" text={textLanguage.header.nav.li.projects} />
-        <NavItem to="/Blog" text={textLanguage.header.nav.li.blog} />
-        <NavItem to="/ContactMe" text={textLanguage.header.nav.li.contactMe} />
+        {navItems.map(({ to, text }) => (
+          <NavItem key={to} to={to} text={text} />
+        ))}
       </ul>
 
       {windowSize < 768 ? (
@@ -66,18 +74,18 @@ export const MenuNav = (): JSX.Element => {
         </button>
       ) : null}
 
+      {/* Menu mobile */}
       <div
         className={`${
           windowSize < 768 && isToggleOpen === false && "hidden"
-        } fixed top-0 left-0 w-full h-screen bg-darkDark p-4 ${
+        } fixed top-0 left-0 w-full h-screen bg-gradient-to-bl from-slate-900 to-cyan-950 p-4 ${
           windowSize < 768 ? "block" : "hidden"
         }`}
       >
         <ul className="flex flex-col gap-4 h-full justify-center items-center">
-          <NavItem to="/" text={textLanguage.header.nav.li.home} />
-          <NavItem to="/Projects" text={textLanguage.header.nav.li.projects} />
-          <NavItem to="/Blog" text={textLanguage.header.nav.li.blog} />
-          <NavItem to="/ContactMe" text={textLanguage.header.nav.li.contactMe} />
+          {navItems.map(({ to, text }) => (
+            <NavItem key={to} to={to} text={text} />
+          ))}
         </ul>
       </div>
     </nav>
