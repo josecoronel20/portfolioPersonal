@@ -35,7 +35,7 @@ const BlogSection = (): JSX.Element => {
           Contenido Técnico
         </h2>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 gap-8">
           {blogPosts.map((post, index) => (
             <Card
               key={index}
