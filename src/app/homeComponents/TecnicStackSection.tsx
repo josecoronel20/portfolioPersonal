@@ -33,7 +33,7 @@ const TecnicStackSection = (): JSX.Element => {
         </h2>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <Card className="bg-cyan-900/50 border-cyan-700 backdrop-blur-sm hover:bg-cyan-900/70 transition-all duration-300">
+          <Card className="bg-bg-card/50 backdrop-blur-sm hover:bg-bg-card-hover/30 transition-all duration-300 border-cyan-900 hover:border-cyan-600">
             <CardHeader className="pb-4">
               <CardTitle className="text-cyan-300 flex items-center text-xl">
                 <Code2 className="w-6 h-6 mr-3" />
@@ -46,7 +46,7 @@ const TecnicStackSection = (): JSX.Element => {
                   <Badge
                     key={skill}
                     variant="secondary"
-                    className="bg-cyan-900 text-cyan-200 border-cyan-600/50 text-sm font-semibold px-3 py-1 hover:bg-cyan-900/70"
+                    className="bg-cyan-900 text-cyan-200 border-cyan-600/50 text-sm font-semibold px-3 py-1 hover:bg-cyan-900/70 border-cyan-900 hover:border-cyan-600"
                   >
                     {skill}
                   </Badge>
@@ -55,7 +55,7 @@ const TecnicStackSection = (): JSX.Element => {
             </CardContent>
           </Card>
 
-          <Card className="bg-cyan-900/50 border-cyan-700 backdrop-blur-sm hover:bg-cyan-900/70 transition-all duration-300">
+          <Card className="bg-bg-card/50 backdrop-blur-sm hover:bg-bg-card-hover/30 transition-all duration-300 border-cyan-900 hover:border-cyan-600">
             <CardHeader className="pb-4">
               <CardTitle className="text-cyan-300 flex items-center text-xl">
                 <Database className="w-6 h-6 mr-3" />
@@ -68,7 +68,7 @@ const TecnicStackSection = (): JSX.Element => {
                   <Badge
                     key={skill}
                     variant="secondary"
-                    className="bg-cyan-900 text-cyan-200 border-cyan-600/50 text-sm font-semibold px-3 py-1 hover:bg-cyan-900/70"
+                    className="bg-cyan-900 text-cyan-200 border-cyan-600/50 text-sm font-semibold px-3 py-1 hover:bg-cyan-900/70 border-cyan-900 hover:border-cyan-600"
                   >
                     {skill}
                   </Badge>
@@ -77,7 +77,7 @@ const TecnicStackSection = (): JSX.Element => {
             </CardContent>
           </Card>
 
-          <Card className="bg-cyan-900/50 border-cyan-700 backdrop-blur-sm hover:bg-cyan-900/70 transition-all duration-300">
+          <Card className="bg-bg-card/50 backdrop-blur-sm hover:bg-bg-card-hover/30 transition-all duration-300 border-cyan-900 hover:border-cyan-600">
             <CardHeader className="pb-4">
               <CardTitle className="text-cyan-300 flex items-center text-xl">
                 <TestTube className="w-6 h-6 mr-3" />
@@ -90,7 +90,7 @@ const TecnicStackSection = (): JSX.Element => {
                   <Badge
                     key={skill}
                     variant="secondary"
-                    className="bg-cyan-900 text-cyan-200 border-cyan-600/50 text-sm font-semibold px-3 py-1 hover:bg-cyan-900/70"
+                    className="bg-cyan-900 text-cyan-200 border-cyan-600/50 text-sm font-semibold px-3 py-1 hover:bg-cyan-900/70 border-cyan-900 hover:border-cyan-600"
                   >
                     {skill}
                   </Badge>
@@ -99,7 +99,7 @@ const TecnicStackSection = (): JSX.Element => {
             </CardContent>
           </Card>
 
-          <Card className="bg-cyan-900/50 border-cyan-700 backdrop-blur-sm hover:bg-cyan-900/70 transition-all duration-300">
+          <Card className="bg-bg-card/50 backdrop-blur-sm hover:bg-bg-card-hover/30 transition-all duration-300 border-cyan-900 hover:border-cyan-600">
             <CardHeader className="pb-4">
               <CardTitle className="text-cyan-300 flex items-center text-xl">
                 <Settings className="w-6 h-6 mr-3" />
@@ -112,7 +112,7 @@ const TecnicStackSection = (): JSX.Element => {
                   <Badge
                     key={skill}
                     variant="secondary"
-                    className="bg-cyan-900 text-cyan-200 border-cyan-600/50 text-sm font-semibold px-3 py-1 hover:bg-cyan-900/70"
+                    className="bg-cyan-900 text-cyan-200 border-cyan-600/50 text-sm font-semibold px-3 py-1 hover:bg-cyan-900/70 border-cyan-900 hover:border-cyan-600"
                   >
                     {skill}
                   </Badge>

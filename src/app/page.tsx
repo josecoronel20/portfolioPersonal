@@ -15,52 +15,15 @@ import {
   Mail,
   Phone,
   ExternalLink,
-  Briefcase,
   BookOpen,
 } from "lucide-react";
-import Image from "next/image";
 import Link from "next/link";
 import HeroSection from "./homeComponents/HeroSection";
 import AboutMeSection from "./homeComponents/AboutMeSection";
 import TecnicStackSection from "./homeComponents/TecnicStackSection";
+import MainProjectsSection from "./homeComponents/mainProjectsSection/MainProjectsSection";
 
 export default function Portfolio(): JSX.Element {
-  const projects = [
-    {
-      title: "E-commerce Dashboard",
-      description:
-        "Dashboard administrativo completo con autenticación JWT, gestión de productos y análisis de ventas en tiempo real.",
-      achievement:
-        "Sistema de auth segura con refresh tokens y roles de usuario",
-      tech: ["Next.js", "TypeScript", "Supabase", "Tailwind"],
-      demo: "#",
-      repo: "#",
-      image: "/placeholder.svg?height=200&width=400&text=E-commerce+Dashboard",
-    },
-    {
-      title: "Task Management App",
-      description:
-        "Aplicación de gestión de tareas con drag & drop, colaboración en tiempo real y notificaciones push.",
-      achievement:
-        "Implementación de WebSockets para colaboración en tiempo real",
-      tech: ["React", "Node.js", "PostgreSQL", "Prisma"],
-      demo: "#",
-      repo: "#",
-      image: "/placeholder.svg?height=200&width=400&text=Task+Management",
-    },
-    {
-      title: "File Upload Service",
-      description:
-        "Servicio de subida de archivos con compresión automática, validación de tipos y almacenamiento en la nube.",
-      achievement:
-        "Optimización de carga con compresión automática y progress tracking",
-      tech: ["Express", "Multer", "Sharp", "AWS S3"],
-      demo: "#",
-      repo: "#",
-      image: "/placeholder.svg?height=200&width=400&text=File+Upload+Service",
-    },
-  ];
-
   const blogPosts = [
     {
       title: "Optimizando React con useMemo y useCallback",
@@ -91,84 +54,7 @@ export default function Portfolio(): JSX.Element {
       <TecnicStackSection />
 
       {/* Proyectos Destacados */}
-      <section id="projects" className="py-24 px-4">
-        <div className="container mx-auto max-w-6xl">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-cyan-300">
-            <Briefcase className="w-10 h-10 inline mr-4" />
-            Proyectos Destacados
-          </h2>
-
-          <div className="grid lg:grid-cols-3 gap-8">
-            {projects.map((project, index) => (
-              <Card
-                key={index}
-                className="bg-cyan-900/20 border-cyan-700/50 backdrop-blur-sm hover:bg-cyan-900/30 hover:border-cyan-600/70 transition-all duration-300 group overflow-hidden"
-              >
-                <div className="relative overflow-hidden">
-                  <Image
-                    src={project.image || "/placeholder.svg"}
-                    alt={project.title}
-                    width={400}
-                    height={200}
-                    className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-cyan-950/90 to-transparent"></div>
-                </div>
-
-                <CardHeader className="pb-4">
-                  <CardTitle className="text-cyan-100 text-xl">
-                    {project.title}
-                  </CardTitle>
-                  <CardDescription className="text-cyan-200/70 leading-relaxed">
-                    {project.description}
-                  </CardDescription>
-                </CardHeader>
-
-                <CardContent className="space-y-6">
-                  <div>
-                    <p className="text-cyan-400 font-semibold mb-2 flex items-center">
-                      🎯 Logro destacado:
-                    </p>
-                    <p className="text-cyan-100/80 text-sm leading-relaxed">
-                      {project.achievement}
-                    </p>
-                  </div>
-
-                  <div className="flex flex-wrap gap-2">
-                    {project.tech.map((tech) => (
-                      <Badge
-                        key={tech}
-                        variant="outline"
-                        className="border-cyan-600/50 text-cyan-200 bg-cyan-800/20 text-xs"
-                      >
-                        {tech}
-                      </Badge>
-                    ))}
-                  </div>
-
-                  <div className="flex gap-3 pt-2">
-                    <Button
-                      size="sm"
-                      className="bg-cyan-600 hover:bg-cyan-700 flex-1 font-medium transition-all duration-300"
-                    >
-                      <ExternalLink className="w-4 h-4 mr-2" />
-                      Demo
-                    </Button>
-                    <Button
-                      size="sm"
-                      variant="outline"
-                      className="border-cyan-600/50 text-cyan-300 hover:bg-cyan-600/10 hover:border-cyan-500 flex-1 bg-transparent font-medium transition-all duration-300"
-                    >
-                      <Github className="w-4 h-4 mr-2" />
-                      Código
-                    </Button>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
+      <MainProjectsSection />
 
       {/* Enfoque Actual */}
       <section className="py-24 px-4 bg-gradient-to-r from-cyan-900/10 to-blue-900/10">
