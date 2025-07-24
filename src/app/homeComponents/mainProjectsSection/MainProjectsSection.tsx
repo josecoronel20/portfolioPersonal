@@ -1,6 +1,7 @@
 import { Briefcase } from "lucide-react";
 import React from "react";
 import CardProject from "./CardProject";
+import FadeInSection from "@/components/reutilizable/FadeInSection";
 
 const MainProjectsSection = (): JSX.Element => {
   const projects = [
@@ -40,18 +41,22 @@ const MainProjectsSection = (): JSX.Element => {
   ];
 
   return (
-    <section className="py-24 px-4 bg-gradient-to-br from-slate-950 via-cyan-950 to-slate-950">
+    <section className="py-24 px-4 bg-gradient-to-b from-slate-950 to-cyan-950">
       <div className="container mx-auto max-w-6xl">
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-cyan-300">
-          <Briefcase className="w-10 h-10 inline mr-4" />
-          Proyectos Destacados
-        </h2>
+        <FadeInSection direction="right">
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-cyan-300">
+            <Briefcase className="w-10 h-10 inline mr-4" />
+            Proyectos Destacados
+          </h2>
+        </FadeInSection>
 
-        <div className="grid lg:grid-cols-3 gap-8">
-          {projects.map((project, index) => (
-            <CardProject key={index} project={project} index={index} />
-          ))}
-        </div>
+        <FadeInSection direction="left">
+          <div className="grid lg:grid-cols-3 gap-8">
+            {projects.map((project, index) => (
+              <CardProject key={index} project={project} index={index} />
+            ))}
+          </div>
+        </FadeInSection>
       </div>
     </section>
   );

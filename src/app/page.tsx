@@ -5,31 +5,40 @@ import MainProjectsSection from "./homeComponents/mainProjectsSection/MainProjec
 import FocusSection from "./homeComponents/FocusSection";
 import BlogSection from "./homeComponents/BlogSection";
 import ContactSection from "./homeComponents/ContactSection";
+import FadeInSection from "@/components/reutilizable/FadeInSection";
 
 export default function Portfolio(): JSX.Element {
-
   return (
     <div className="min-h-screen text-white ">
       {/* Hero Section */}
       <HeroSection />
 
-      <section className="grid grid-cols-1 md:grid-cols-2 gap-12 bg-gradient-to-tl from-slate-950 via-cyan-950 to-slate-950 ">
+      <section className="grid grid-cols-1 md:grid-cols-2 gap-12 bg-gradient-to-t from-slate-950 to-cyan-950 ">
         {/* About Me Section */}
-        <AboutMeSection />
+        <FadeInSection direction="right">
+          <AboutMeSection />
+        </FadeInSection>
 
         {/* Tecnic Stack */}
-        <TecnicStackSection />
+        <FadeInSection direction="left">
+          <TecnicStackSection />
+        </FadeInSection>
       </section>
 
       {/* Main Projects */}
+
       <MainProjectsSection />
 
-      <section className="grid grid-cols-1 md:grid-cols-2 gap-12 bg-gradient-to-tl from-slate-950 via-cyan-950 to-slate-950 ">
+      <section className="grid grid-cols-1 md:grid-cols-2 gap-12 bg-gradient-to-t from-slate-950 to-cyan-950 ">
         {/* Focus */}
-        <FocusSection />
+        <FadeInSection direction="right">
+          <FocusSection />
+        </FadeInSection>
 
         {/* Blog */}
-        <BlogSection />
+        <FadeInSection direction="left">
+          <BlogSection />
+        </FadeInSection>
       </section>
 
       {/* Contact */}

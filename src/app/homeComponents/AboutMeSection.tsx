@@ -9,6 +9,7 @@ const AboutMeSection = (): JSX.Element => {
           <User className="w-10 h-10 inline mr-4" />
           Sobre mí
         </h2>
+
         <div className="grid lg:grid-cols-2 gap-12 text-cyan-100/90 text-lg leading-relaxed">
           <div className="space-y-6">
             <p className="text-xl leading-relaxed">
@@ -18,6 +19,7 @@ const AboutMeSection = (): JSX.Element => {
               mantenimiento y escalabilidad de las aplicaciones.
             </p>
           </div>
+
           <div className="space-y-6">
             <p className="text-xl leading-relaxed">
               A través de proyectos reales, he desarrollado expertise en el

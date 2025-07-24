@@ -4,7 +4,7 @@ import React from "react";
 
 const ContactSection = (): JSX.Element => {
   return (
-    <section className="py-24 px-4 bg-gradient-to-tl from-slate-950 via-cyan-950 to-slate-950">
+    <section className="py-24 px-4 bg-gradient-to-b from-slate-950 to-black min-h-screen flex items-center justify-center">
       <div className="container mx-auto max-w-5xl text-center">
         <h2 className="text-4xl md:text-5xl font-bold mb-12 text-cyan-300">
           Contacto Directo

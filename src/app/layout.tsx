@@ -1,4 +1,3 @@
-import Footer from "../components/layout/Footer/Footer";
 import "./globals.css";
 import Header from "../components/layout/Header/Header";
 import React from "react";
@@ -27,7 +26,6 @@ export default function RootLayout({
       >
         <Header />
         {children}
-        <Footer />
       </body>
     </html>
   );

@@ -15,11 +15,11 @@ import illustration from "../../../public/img/illustration.png";
 
 const HeroSection = (): JSX.Element => {
   return (
-    <section className="min-h-screen flex items-center justify-center px-4 relative overflow-hidden pt-16 bg-gradient-to-br from-slate-950 via-cyan-950 to-slate-950">
+    <section className="min-h-screen flex items-center justify-center px-4 relative overflow-hidden pt-16 bg-gradient-to-b from-slate-950 to-cyan-950">
       <div className="container mx-auto text-center z-10 max-w-5xl">
         <div>
           <section className="grid grid-cols-1 items-center min-h-screen md:grid-cols-2 pb-12">
-            <div className="w-full max-w-xs md:max-w-lg mx-auto md:order-2">
+            <div className="w-full max-w-xs md:max-w-lg mx-auto md:order-2 animate-fade-left animate-ease-out">
               <Image
                 src={illustration}
                 alt="Hero Image"
@@ -29,9 +29,9 @@ const HeroSection = (): JSX.Element => {
               />
             </div>
 
-            <div className="md:order-1 flex flex-col gap-4">
+            <div className="md:order-1 flex flex-col gap-4 animate-fade-right animate-ease-out">
               <div className="flex flex-col gap-2">
-                <h1 className="text-5xl md:text-5xl font-bold bg-gradient-to-r from-cyan-400 to-blue-300 bg-clip-text text-transparent leading-tight">
+                <h1 className="text-5xl md:text-5xl font-bold bg-gradient-to-r from-cyan-400 to-blue-300 bg-clip-text text-transparent leading-tight ">
                   José María Coronel
                 </h1>
 
