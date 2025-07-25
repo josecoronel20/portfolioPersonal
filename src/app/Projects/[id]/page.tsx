@@ -1,145 +1,156 @@
 "use client";
 
-import { styleContainerTop } from "@/styles/customStyles";
-import React from "react";
-import ProjectMockup from "./Components/ProjectMockup";
-import ProjectsDetailPlanning from "./Components/ProjectsDetailPlanning";
-import { useLanguageStore } from "@/store/useLanguageStore";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Github, ExternalLink, User, Target, ShoppingCart } from "lucide-react";
+import ImagesCarousel from "./ProjectDetailComponents/ImagesCarousel";
+import TechStack from "./ProjectDetailComponents/TechStack";
+import { KeyFeatures } from "./ProjectDetailComponents/KeyFeatures";
+import ArchAndDevops from "./ProjectDetailComponents/ArchAndDevops";
+import TechnicalChallenge from "./ProjectDetailComponents/TechnicalChallenge";
 
-//Componente ProjectsDetail que renderiza la información en detalle de los proyectos.
-const ProjectsDetail = ({
-  params,
-}: {
-  params: { id: string };
-}): JSX.Element => {
-  //muestra la informacion en detalle de los proyectos
+export default function ProjectDetail(): JSX.Element {
+  const projectImages = [
+    "/placeholder.svg?height=400&width=800&text=Dashboard+Admin",
+    "/placeholder.svg?height=400&width=800&text=Catálogo+Productos",
+    "/placeholder.svg?height=400&width=800&text=Carrito+Compras",
+    "/placeholder.svg?height=400&width=800&text=Panel+Usuario",
+    "/placeholder.svg?height=400&width=800&text=Checkout+Proceso",
+  ];
 
-  //extrae id del url
-  const { id } = params;
+  const frontendTech = [
+    "Next.js (App Router)",
+    "TypeScript",
+    "Tailwind",
+    "Zustand",
+    "React Hook Form",
+  ];
+  const backendTech = ["Node.js", "Express", "API REST modular"];
+  const databaseAuth = [
+    "PostgreSQL + Prisma",
+    "JWT con cookies",
+    "Supabase Storage",
+  ];
 
-  //importa el idioma del store
-  const { textLanguage } = useLanguageStore();
+  const keyFeatures = [
+    "CRUD completo de productos (admin) con imágenes",
+    "Auth con JWT, cookies seguras y validaciones",
+    "Carrito persistente (localStorage + backend)",
+    "Checkout y órdenes con protección de rutas",
+    "Panel de usuario con historial de compras",
+  ];
 
-  //si hay id lo parsea
-  const parsedId = id ? parseInt(id) : null;
+  const architectureDevOps = [
+    "API desacoplada y modular",
+    "Validación con Zod (frontend/backend)",
+    "Despliegue: Vercel (frontend), Railway (backend), Supabase (storage)",
+  ];
 
-  //filtra proyecto segun id
-  const projectFinded = textLanguage.projects.list.find(
-    (project) => project.id === parsedId,
-  );
-
-  //componetizacion de title y paragraph
-  const Subtitle = ({
-    title,
-    paragraph,
-  }: {
-    title: string;
-    paragraph: string;
-  }): JSX.Element => {
-    return (
-      <div>
-        <h4>{title}</h4>
-        <p className="font-light">{paragraph}</p>
-      </div>
-    );
-  };
-
-  //guard clause
-  if (!projectFinded) {
-    return (
-      <p className="w-full text-center text-red-700">
-        no se encontró ningun proyecto
-      </p>
-    );
-  }
+  const challenges = [
+    "Implementación segura de auth y manejo de tokens",
+    "Modularización completa del backend",
+    "Estado global con Zustand sincronizado con localStorage",
+  ];
 
   return (
-    <main className={styleContainerTop}>
-      <div>
-        <h2>
-          {textLanguage.projects.title}:
-          <span className="text-green">
-            {projectFinded?.title.toUpperCase()}
-          </span>
-        </h2>
-        <p className="text-lightLight opacity-50 font-light">
-          {projectFinded?.isFinished === true
-            ? textLanguage.projects.projectDetailTexts.isFinishText
-            : textLanguage.projects.projectDetailTexts.isNotFinishText}
-        </p>
+    <div className="min-h-screen bg-color-to-b text-white pt-16">
+      <div className="container mx-auto px-4 py-8 max-w-6xl ">
+        {/* Header del Proyecto */}
+        <header className="mb-8 text-center">
+          <h1 className="text-3xl md:text-4xl font-bold mb-3 bg-gradient-to-r from-cyan-400 to-cyan-300 bg-clip-text text-transparent leading-tight">
+            Ecommerce Fullstack
+          </h1>
+          <p className="text-base md:text-lg text-cyan-100/90 leading-relaxed max-w-4xl mx-auto font-light mb-3">
+            App fullstack de ecommerce con catálogo, auth, carrito y panel
+            admin. Construida para simular un ecommerce real con foco en UX,
+            seguridad y arquitectura escalable.
+          </p>
+          <Badge className="bg-cyan-800/40 text-cyan-200 border-cyan-600/50 px-3 py-1 text-sm">
+            <ShoppingCart className="w-4 h-4 mr-2" />
+            E-commerce Completo
+          </Badge>
+        </header>
+
+        <main>
+          {/* Images carousel*/}
+          <ImagesCarousel projectImages={projectImages} />
+
+          {/* objective and role */}
+          <div className="grid lg:grid-cols-2 gap-4 mb-6">
+            <Card className="bg-cyan-900/20 border-cyan-700/50 backdrop-blur-sm">
+              <CardHeader className="pb-2">
+                <CardTitle className="text-cyan-300 flex items-center text-base">
+                  <Target className="w-4 h-4 mr-2" />
+                  Objetivo
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="pt-0">
+                <p className="text-cyan-200/90 text-sm leading-relaxed">
+                  Practicar una arquitectura completa y profesional, con
+                  autenticación robusta, roles, almacenamiento de imágenes y
+                  lógica de negocio desacoplada.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-cyan-900/20 border-cyan-700/50 backdrop-blur-sm">
+              <CardHeader className="pb-2">
+                <CardTitle className="text-cyan-300 flex items-center text-base">
+                  <User className="w-4 h-4 mr-2" />
+                  Rol
+                </CardTitle>
+              </CardHeader>
+              <CardContent className="pt-0">
+                <p className="text-cyan-200/90 text-sm leading-relaxed">
+                  <strong className="text-cyan-300">Proyecto individual</strong>{" "}
+                  – diseño y desarrollo fullstack.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+
+          {/* tech stack */}
+          <TechStack
+            frontendTech={frontendTech}
+            backendTech={backendTech}
+            databaseAuth={databaseAuth}
+          />
+
+          {/* key features, architecture and devops, technical challenges */}
+          <div className="grid lg:grid-cols-3 gap-4 mb-6">
+            {/* key features */}
+            <KeyFeatures keyFeatures={keyFeatures} />
+
+            {/* architecture and devops */}
+            <ArchAndDevops architectureDevOps={architectureDevOps} />
+
+            {/* technical challenges */}
+            <TechnicalChallenge challenges={challenges} />
+          </div>
+
+          {/* project links */}
+          <section className="text-center">
+            <div className="flex flex-col sm:flex-row gap-3 justify-center">
+              <Button
+                size="lg"
+                className="bg-cyan-600 hover:bg-cyan-700 text-white px-6 py-3 text-base font-medium shadow-lg hover:shadow-xl transition-all duration-300"
+              >
+                <Github className="w-4 h-4 mr-2" />
+                🔗 GitHub
+              </Button>
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-2 border-cyan-400/50 text-cyan-300 hover:bg-cyan-400/10 hover:border-cyan-400 px-6 py-3 text-base font-medium bg-transparent transition-all duration-300"
+              >
+                <ExternalLink className="w-4 h-4 mr-2" />
+                🚀 Demo
+              </Button>
+            </div>
+          </section>
+        </main>
       </div>
-
-      <div className="flex flex-col gap-20 sm:grid sm:grid-cols-2 md:grid-cols-3 items-center">
-        <div className="order-1 sm:order-2 flex justify-center md:col-span-2 lg:col-span-1">
-          <ProjectMockup project={projectFinded} />
-        </div>
-
-        <section className="flex flex-col order-2 sm:order-1 md:col-1 lg:col-span-2">
-          <h2 className="text-green">
-            {textLanguage.projects.projectDetailTexts.descriptionTitle}
-          </h2>
-          <p className="font-light">{projectFinded?.description}</p>
-        </section>
-
-        <div className="order-3 row-span-2  md:row-span-1 md:col-span-3">
-          <ProjectsDetailPlanning project={projectFinded} />
-        </div>
-
-        <section className="order-4  md:col-span-3 lg:col-span-2">
-          <h2 className="text-green">
-            {textLanguage.projects.projectDetailTexts.techsUsed}
-          </h2>
-          <div className="flex flex-wrap gap-3">
-            {projectFinded?.techs.map((tech) => {
-              return (
-                <div
-                  key={tech}
-                  className="bg-[#BCC0B9] font-light rounded text-darkLight px-3 inline-block"
-                >
-                  {tech}
-                </div>
-              );
-            })}
-          </div>
-        </section>
-
-        <section className="order-5 flex flex-col gap-1 md:col-span-3 ">
-          <h3 className="text-green">
-            {textLanguage.projects.projectDetailTexts.mainFeaturesTitle}
-          </h3>
-
-          <div className="flex flex-col gap-5 ">
-            {projectFinded?.details.mainFeatures.map((feature) => {
-              return (
-                <div key={feature.title}>
-                  <Subtitle
-                    title={feature.title}
-                    paragraph={feature.description}
-                  />
-                </div>
-              );
-            })}
-          </div>
-        </section>
-
-        <section className="order-6 flex flex-col gap-1 sm:col-span-2 md:col-span-3 ">
-          <h3 className="text-green">
-            {textLanguage.projects.projectDetailTexts.issuesTitle}
-          </h3>
-          <div className="flex flex-col gap-5">
-            {projectFinded?.details.issues.issueList.map((issue, index) => {
-              return (
-                <div key={index}>
-                  <h4>{issue.title}</h4>
-                  <p className="font-light">{issue.description}</p>
-                </div>
-              );
-            })}
-          </div>
-        </section>
-      </div>
-    </main>
+    </div>
   );
-};
-
-export default ProjectsDetail;
+}

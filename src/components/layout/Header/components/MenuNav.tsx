@@ -37,7 +37,6 @@ export const MenuNav = (): JSX.Element => {
     { to: "/", text: textLanguage.header.nav.li.home },
     { to: "/Projects", text: textLanguage.header.nav.li.projects },
     { to: "/Blog", text: textLanguage.header.nav.li.blog },
-    { to: "/ContactMe", text: textLanguage.header.nav.li.contactMe },
   ];
 
   const NavItem = ({ to, text }: { to: string; text: string }): JSX.Element => {

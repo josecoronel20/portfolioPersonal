@@ -15,7 +15,7 @@ import illustration from "../../../public/img/illustration.png";
 
 const HeroSection = (): JSX.Element => {
   return (
-    <section className="min-h-screen flex items-center justify-center px-4 relative overflow-hidden pt-16 bg-gradient-to-b from-slate-950 to-cyan-950">
+    <section className="min-h-screen flex items-center justify-center px-4 relative overflow-hidden pt-16 bg-color-to-b">
       <div className="container mx-auto text-center z-10 max-w-5xl">
         <div>
           <section className="grid grid-cols-1 items-center min-h-screen md:grid-cols-2 pb-12">

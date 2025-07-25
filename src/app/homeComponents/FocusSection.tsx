@@ -1,4 +1,5 @@
 import { Badge } from "@/components/ui/badge";
+import Link from "next/link";
 import React from "react";
 
 const FocusSection = (): JSX.Element => {
@@ -18,9 +19,14 @@ const FocusSection = (): JSX.Element => {
             arquitectura de sistemas escalables.
           </p>
           <div className="flex justify-center items-center">
-            <Badge className="bg-cyan-800/40 text-cyan-200 border-cyan-600/50 px-6 py-3 text-lg font-medium">
-              🚀 Disponible para nuevas oportunidades
-            </Badge>
+            <Link
+              href="/ContactMe"
+              className="cursor-pointer"
+            >
+              <Badge className="bg-cyan-800/40 text-cyan-200 border-cyan-600/50 px-6 py-3 text-lg font-medium">
+                🚀 Disponible para nuevas oportunidades
+              </Badge>
+            </Link>
           </div>
         </div>
       </div>

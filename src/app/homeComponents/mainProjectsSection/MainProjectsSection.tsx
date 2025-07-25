@@ -41,7 +41,7 @@ const MainProjectsSection = (): JSX.Element => {
   ];
 
   return (
-    <section className="py-24 px-4 bg-gradient-to-b from-slate-950 to-cyan-950">
+    <section className="py-24 px-4 bg-color-to-b">
       <div className="container mx-auto max-w-6xl">
         <FadeInSection direction="right">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-cyan-300">

@@ -9,6 +9,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Github } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 const CardProject = ({
   project,
@@ -36,11 +37,10 @@ const CardProject = ({
           height={200}
           className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500"
         />
-
       </div>
 
       {/* Card Header */}
-      <CardHeader >
+      <CardHeader>
         <CardTitle className="text-cyan-100 text-xl">{project.title}</CardTitle>
         <CardDescription className="text-cyan-200 leading-relaxed">
           {project.description}
@@ -73,22 +73,22 @@ const CardProject = ({
           </div>
 
           {/* Card Buttons */}
-          <div className="flex gap-3">
-            <Button
-              size="sm"
-              className="button-principal"
-            >
-              <ExternalLink className="w-4 h-4 mr-2" />
-              Demo
-            </Button>
-            <Button
-              size="sm"
-              variant="outline"
-              className="button-secondary"
-            >
-              <Github className="w-4 h-4 mr-2" />
-              Código
-            </Button>
+          <div className="flex flex-col gap-3">
+            <Link href={"/Projects/1"} className="w-full">
+              <Button size="sm" className="button-primary w-full">
+                Ver detalles
+              </Button>
+            </Link>
+            <div className="flex gap-3">
+              <Button size="sm" variant="outline" className="button-secondary">
+                <ExternalLink className="w-4 h-4 mr-2" />
+                Demo
+              </Button>
+              <Button size="sm" variant="outline" className="button-secondary">
+                <Github className="w-4 h-4 mr-2" />
+                Código
+              </Button>
+            </div>
           </div>
         </section>
       </CardContent>

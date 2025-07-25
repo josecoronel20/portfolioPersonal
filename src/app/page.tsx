@@ -13,7 +13,7 @@ export default function Portfolio(): JSX.Element {
       {/* Hero Section */}
       <HeroSection />
 
-      <section className="grid grid-cols-1 md:grid-cols-2 gap-12 bg-gradient-to-t from-slate-950 to-cyan-950 ">
+      <section className="grid grid-cols-1 md:grid-cols-2 gap-12 bg-color-to-t ">
         {/* About Me Section */}
         <FadeInSection direction="right">
           <AboutMeSection />
@@ -29,7 +29,7 @@ export default function Portfolio(): JSX.Element {
 
       <MainProjectsSection />
 
-      <section className="grid grid-cols-1 md:grid-cols-2 gap-12 bg-gradient-to-t from-slate-950 to-cyan-950 ">
+      <section className="grid grid-cols-1 md:grid-cols-2 gap-12 bg-color-to-t ">
         {/* Focus */}
         <FadeInSection direction="right">
           <FocusSection />
