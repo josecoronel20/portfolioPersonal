@@ -1,9 +1,10 @@
 "use client";
 
 import React from "react";
-import { styleContainerTop } from "@/app/lib/utilities/customStyles";
-import ImageModal from "@/app/Components/ImageModal";
-import { useLanguageStore } from "@/app/lib/store/useLanguageStore";
+import { styleContainerTop } from "@/styles/customStyles";
+// Eliminar esta línea:
+// import ImageModal from "@/app/Components/ImageModal";
+import { useLanguageStore } from "@/store/useLanguageStore";
 import Image from "next/image";
 
 //Componente PostDetail que renderiza el detalle de un post.
@@ -47,15 +48,13 @@ const PostDetail = ({ params }: { params: { id: string } }): JSX.Element => {
           <p className="font-light w-full">{post.description}</p>
 
           <div className="w-1/2">
-            <ImageModal>
-              <Image
-                width={500}
-                height={500}
-                className="rounded-xl"
-                src={post.image}
-                alt={post.altImg}
-              />
-            </ImageModal>
+            <Image
+              width={500}
+              height={500}
+              className="rounded-xl"
+              src={post.image}
+              alt={post.altImg}
+            />
           </div>
         </div>
         <div className="flex flex-col gap-5">

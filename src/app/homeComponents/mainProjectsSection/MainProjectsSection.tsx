@@ -1,12 +1,9 @@
-"use client";
+import { Briefcase } from "lucide-react";
 import React from "react";
-import { useLanguageStore } from "@/store/useLanguageStore";
-import CardProject from "../homeComponents/mainProjectsSection/CardProject";
+import CardProject from "./CardProject";
+import FadeInSection from "@/components/reutilizable/FadeInSection";
 
-//Componente ProjectsPage que renderiza la sección de proyectos.
-const ProjectsPage = (): JSX.Element => {
-  //importa el idioma del store
-  const { textLanguage } = useLanguageStore();
+const MainProjectsSection = (): JSX.Element => {
   const projects = [
     {
       title: "E-commerce Dashboard",
@@ -44,20 +41,25 @@ const ProjectsPage = (): JSX.Element => {
   ];
 
   return (
-    <main className="min-h-screen bg-color-to-b py-16 px-4 flex flex-col gap-12">
-      <h1 className="text-4xl font-bold text-cyan-300">
-        {textLanguage.projects.title}
-      </h1>
+    <section className="py-24 px-4 bg-color-to-b">
+      <div className="container mx-auto max-w-6xl">
+        <FadeInSection direction="right">
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-cyan-300">
+            <Briefcase className="w-10 h-10 inline mr-4" />
+            Proyectos Destacados
+          </h2>
+        </FadeInSection>
 
-      <section>
-        <div className="grid lg:grid-cols-3 gap-8">
-          {projects.map((project, index) => (
-            <CardProject key={index} project={project} index={index} />
-          ))}
-        </div>
-      </section>
-    </main>
+        <FadeInSection direction="left">
+          <div className="grid lg:grid-cols-3 gap-8">
+            {projects.map((project, index) => (
+              <CardProject key={index} project={project} index={index} />
+            ))}
+          </div>
+        </FadeInSection>
+      </div>
+    </section>
   );
 };
 
-export default ProjectsPage;
+export default MainProjectsSection;
