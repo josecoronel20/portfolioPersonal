@@ -9,6 +9,43 @@ const quicksand = Quicksand({
   subsets: ["latin"],
 });
 
+export const metadata = {
+  title: "Jose Coronel | Fullstack Developer",
+  description: "Portafolio de Jose Coronel, Fullstack Developer",
+  keywords: [
+    "Jose Coronel",
+    "Fullstack Developer",
+    "Portafolio",
+    "Desarrollador",
+    "React",
+    "Next.js",
+    "Tailwind CSS",
+    "TypeScript",
+    "JavaScript",
+    "HTML",
+    "CSS",
+    "Portafolio",
+    "Desarrollador",
+    "React",
+    "Next.js",
+    "Tailwind CSS",
+    "TypeScript",
+    "JavaScript",
+    "HTML",
+    "CSS",
+  ],
+  author: "Jose Coronel",
+  image: "/img/favicon.png",
+  icons: {
+    icon: "/img/favicon.png",
+  },
+  openGraph: {
+    title: "Jose Coronel | Fullstack Developer",
+    description: "Portafolio de Jose Coronel, Fullstack Developer",
+    image: "/img/favicon.png",
+  },
+};
+
 //Layout principal de la aplicación.
 export default function RootLayout({
   children,

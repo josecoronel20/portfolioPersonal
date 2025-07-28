@@ -33,14 +33,16 @@ body {
   @apply border-cyan-600 text-cyan-300 flex-1 bg-transparent font-medium transition-all duration-300 hover:bg-cyan-900 hover:border-cyan-500 hover:text-cyan-100;
 }
 
+/* gradient to top*/
 .bg-color-to-t {
   @apply bg-gradient-to-t from-slate-950 to-cyan-950
 }
 
+/* gradient to bottom*/
+
 .bg-color-to-b {
   @apply bg-gradient-to-b from-slate-950 to-cyan-950;
 }
-
 /* quitar scrollbar */
 .no-scrollbar {
   @apply overflow-x-scroll;
