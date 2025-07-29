@@ -10,7 +10,7 @@ const AllPosts = ({ regularPosts }: { regularPosts: blogPost[] }): JSX.Element =
         Todos los Artículos
       </h2>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {regularPosts.map((post: blogPost) => (
+        {regularPosts.slice().reverse().map((post: blogPost) => (
           <CardPost key={post.id} post={post} />
         ))}
       </div>
