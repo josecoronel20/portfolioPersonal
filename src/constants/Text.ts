@@ -138,7 +138,7 @@ export const text: textLanguage = {
           details: {
             images: [
               {
-                src: "/public/img/projects/ecommerce-1.png",
+                src: "/img/projects/ecommerce-1.png",
                 alt: "Imagen 1",
               },
               {
