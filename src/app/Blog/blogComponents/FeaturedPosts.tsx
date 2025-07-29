@@ -1,22 +1,12 @@
 import { Zap } from "lucide-react";
 import React from "react";
 import CardPost from "./CardPost";
-
-interface post {
-  id: number;
-  title: string;
-  date: string;
-  readTime: string;
-  excerpt: string;
-  category: string;
-  tags: string[];
-  image: string;
-}
+import { blogPost } from "@/types/types";
 
 const FeaturedPosts = ({
   featuredPosts,
 }: {
-  featuredPosts: post[];
+  featuredPosts: blogPost[];
 }): JSX.Element => {
   return (
     <section className="mb-12">
@@ -25,7 +15,7 @@ const FeaturedPosts = ({
         Posts Destacados
       </h2>
       <div className="grid lg:grid-cols-2 gap-6">
-        {featuredPosts.map((post) => (
+        {featuredPosts.map((post: blogPost) => (
           <CardPost key={post.id} post={post} />
         ))}
       </div>

@@ -40,6 +40,8 @@ export interface blogPost {
   description: string;
   image: string;
   content: object[];
+  featured: boolean;
+  tags: string[];
 }
 
 export interface textLanguage {
@@ -131,8 +133,14 @@ export interface textLanguage {
       projects: project[];
     };
     blogPage: {
-      posts: blogPost[];
       title: string;
+      subtitle: string;
+      posts: blogPost[];
+      callToAction: {
+        title: string;
+        subtitle: string;
+        cta: string;
+      };
     };
   };
 }

@@ -378,14 +378,37 @@ export const text: textLanguage = {
     },
     blogPage: {
       title: "BLOG",
+      subtitle:
+        "Artículos sobre desarrollo web, mejores prácticas y tecnologías modernas",
+      callToAction: {
+        title: "¿Te gustó el contenido?",
+        subtitle:
+          "Sígueme en mis redes sociales para más contenido sobre mi experiencia y crecimiento como desarrollador.",
+        cta: "Seguir en LinkedIn",
+      },
       posts: [
         {
           id: 1,
+          featured: false,
+          tags: [
+            "Fullstack",
+            "Backend",
+            "Frontend",
+            "Autenticación",
+            "Validaciones",
+            "Seguridad",
+            "Manejo de datos",
+            "Creación de endpoints",
+            "Despliegue de aplicaciones",
+            "Vercel",
+            "Render",
+            "Supabase",
+          ],
           title: "Mis primeros pasos como Fullstack Developer",
           category: "Carrera",
           description:
             "Así empecé a crear aplicaciones web fullstack con el objetivo de aumentar mi empleabilidad y poder tener más oportunidades para conseguir mi primer trabajo como desarrollador web",
-          image: "/img/blog/post-1.png",
+          image: "/img/blogImg/post3.png",
           content: [
             {
               p: "Un amigo dev senior me dijo que ahora esta dificil conseguir trabajo siendo frontend jr por lo que tenía que aprender sobre backend ya que en la industria se está buscando más perfiles que sepan un 'poco de todo' y tenía que empezar a aprender sobre backend y base de datos para poder tener más oportunidades de trabajo.",
@@ -401,6 +424,50 @@ export const text: textLanguage = {
             {
               h2: "Lo que aprendí",
               p: "Empecé con aplicaciones fullstack con el objetivo de aumentar mi empleabilidad y empecé a aprender sobre autenticación, validaciones, seguridad, manejo de datos, creación de endpoints y desplegue de aplicaciones en vercel, render y supabase.",
+            },
+          ],
+        },
+        {
+          id: 2,
+          featured: true,
+          tags: [
+            "Fullstack",
+            "Backend",
+            "Frontend",
+            "Autenticación",
+            "Validaciones",
+            "Seguridad",
+            "Manejo de datos",
+            "Creación de endpoints",
+            "Despliegue de aplicaciones",
+            "Vercel",
+            "Render",
+            "Supabase",
+          ],
+          title: "Desarrollando Chapel Fútbol: de frontend a backend",
+          category: "Proyectos",
+          description:
+            "Cómo construí una plataforma completa para la gestión de jugadores de fútbol, superando desafíos como datos anidados, control de roles y manejo de archivos multimedia.",
+          image: "/img/projects/chapel-5.png",
+          content: [
+            {
+              p: "Chapel Fútbol nació como una plataforma fullstack para que el Centro Formativo Chapel pudiera gestionar jugadores, estadísticas y contenido multimedia desde un único lugar. El desarrollo me permitió poner en práctica todo mi stack moderno, desde Next.js en el frontend hasta Node.js y Express en el backend.",
+            },
+            {
+              h2: "Desafío principal: datos anidados",
+              p: "Cada jugador no solo tiene información básica, sino también estadísticas y habilidades relacionadas. Para resolverlo diseñé un modelo de datos con Prisma y PostgreSQL que soporta relaciones y consultas eficientes, manteniendo la estructura limpia y escalable.",
+            },
+            {
+              h2: "Control de roles y CRUD seguro",
+              p: "La gestión de jugadores requería autenticación robusta y control de permisos. Implementé JWT con cookies HTTP-only y middleware de autorización para garantizar que solo los administradores pudieran crear, editar o eliminar perfiles de jugadores, mientras los usuarios generales solo podían visualizar información.",
+            },
+            {
+              h2: "Manejo de imágenes y videos",
+              p: "Otro reto importante fue el almacenamiento de archivos multimedia. Integré Supabase Storage para permitir la carga y recuperación de imágenes y videos de forma segura, optimizando el flujo de subida y el acceso desde el frontend con SWR y hooks personalizados.",
+            },
+            {
+              h2: "Resultados",
+              p: "Logré una plataforma estable, escalable y con una experiencia de usuario profesional, lista para evolucionar con futuras integraciones como tests automatizados y documentación API con Swagger.",
             },
           ],
         },

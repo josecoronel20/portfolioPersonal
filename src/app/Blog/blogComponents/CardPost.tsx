@@ -1,22 +1,12 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Calendar, Clock } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import { getCategoryColor, getCategoryIcon } from "@/utils/BlogFunctions";
+import { blogPost } from "@/types/types";
 
-interface post {
-  id: number;
-  title: string;
-  date: string;
-  readTime: string;
-  excerpt: string;
-  category: string;
-  tags: string[];
-  image: string;
-}
-
-const CardPost = ({ post }: { post: post }): JSX.Element => {
+const CardPost = ({ post }: { post: blogPost }): JSX.Element => {
   return (
     <Card
       key={post.id}
@@ -43,21 +33,11 @@ const CardPost = ({ post }: { post: post }): JSX.Element => {
         <CardTitle className="text-cyan-100 text-xl group-hover:text-cyan-200 transition-colors leading-tight">
           {post.title}
         </CardTitle>
-        <div className="flex items-center gap-4 text-cyan-300/70 text-sm">
-          <div className="flex items-center gap-1">
-            <Calendar className="w-4 h-4" />
-            <span>{post.date}</span>
-          </div>
-          <div className="flex items-center gap-1">
-            <Clock className="w-4 h-4" />
-            <span>{post.readTime}</span>
-          </div>
-        </div>
       </CardHeader>
 
       <CardContent className="space-y-4">
         <p className="text-cyan-200/80 text-sm leading-relaxed">
-          {post.excerpt}
+          {post.description}
         </p>
 
         <div className="flex flex-wrap gap-2">
