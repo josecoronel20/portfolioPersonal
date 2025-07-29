@@ -1,3 +1,4 @@
+"use client";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -6,8 +7,11 @@ import Image from "next/image";
 import { getCategoryColor, getCategoryIcon } from "@/utils/BlogFunctions";
 import { blogPost } from "@/types/types";
 import Link from "next/link";
+import { useLanguageStore } from "@/store/useLanguageStore";
 
 const CardPost = ({ post }: { post: blogPost }): JSX.Element => {
+  const { textLanguage } = useLanguageStore();
+
   return (
     <Card
       key={post.id}
@@ -55,7 +59,7 @@ const CardPost = ({ post }: { post: blogPost }): JSX.Element => {
 
         <Link href={`/Blog/${post.id}`}>
           <Button className="w-full bg-cyan-600 hover:bg-cyan-700 text-white font-medium transition-all duration-300 group">
-            Leer artículo
+            {textLanguage.blogPage.reutilizableText.cta.read}
             <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
           </Button>
         </Link>

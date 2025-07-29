@@ -1,3 +1,5 @@
+"use client";
+
 import {
   Card,
   CardContent,
@@ -11,6 +13,7 @@ import { ExternalLink, Github } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { project } from "@/types/types";
+import { useLanguageStore } from "@/store/useLanguageStore";
 
 const CardProject = ({
   project,
@@ -19,6 +22,8 @@ const CardProject = ({
   project: project;
   index: number;
 }): JSX.Element => {
+  const { textLanguage } = useLanguageStore();
+
   return (
     <Card
       key={index}
@@ -46,7 +51,7 @@ const CardProject = ({
       <CardContent className="h-full flex flex-col gap-4">
         <div>
           <p className="text-cyan-400 font-semibold flex items-center">
-            🎯 Logro destacado:
+            🎯 {textLanguage.projectsPage.reutilizableText.mainAchieve}
           </p>
           <p className="text-cyan-100 text-sm leading-relaxed">
             {project.mainAchieve}
@@ -71,7 +76,7 @@ const CardProject = ({
           <div className="flex flex-col gap-3">
             <Link href={`/Projects/${project.id}`} className="w-full">
               <Button size="sm" className="button-primary w-full">
-                Ver detalles
+                {textLanguage.projectsPage.reutilizableText.cta.details}
               </Button>
             </Link>
 
@@ -83,7 +88,7 @@ const CardProject = ({
                   className="button-secondary w-full"
                 >
                   <ExternalLink className="w-4 h-4 mr-2" />
-                  Demo
+                  {textLanguage.projectsPage.reutilizableText.cta.demo}
                 </Button>
               </Link>
 
@@ -94,7 +99,7 @@ const CardProject = ({
                   className="button-secondary w-full"
                 >
                   <Github className="w-4 h-4 mr-2" />
-                  Código
+                  {textLanguage.projectsPage.reutilizableText.cta.code}
                 </Button>
               </Link>
             </div>

@@ -2,18 +2,18 @@ import { text } from "../constants/Text";
 import { create } from "zustand";
 
 interface LanguageState {
-  language: "es" | "en"; // Idioma actual de la aplicación
-  toSpanish: () => void; // Función para cambiar el idioma a español
-  toEnglish: () => void; // Función para cambiar el idioma a inglés
-  textLanguage: typeof text.textEs; // Texto actual del idioma
+  language: "es" | "en"; // Language of the application
+  toSpanish: () => void; // Function to change the language to spanish
+  toEnglish: () => void; // Function to change the language to english
+  textLanguage: typeof text.textEs; // Text of the language
 }
 
-// Store para manejar el idioma de la aplicación
+// Store to handle the language of the application
 export const useLanguageStore = create<LanguageState>((set) => ({
-  language: "es", // Idioma por defecto
-  textLanguage: text.textEs, // Texto por defecto
+  language: "es", // Language by default
+  textLanguage: text.textEs, // Text by default
   toSpanish: (): void =>
-    set(() => ({ language: "es", textLanguage: text.textEs })), // Cambiar a español
+    set(() => ({ language: "es", textLanguage: text.textEs })), // Change to spanish
   toEnglish: (): void =>
-    set(() => ({ language: "en", textLanguage: text.textEs })), // Cambiar a inglés (temporalmente)
+    set(() => ({ language: "en", textLanguage: text.textEn })), // Change to english
 }));

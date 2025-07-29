@@ -46,7 +46,6 @@ export interface blogPost {
 }
 
 export interface textLanguage {
-  textEs: {
     contactInfo: {
       linkedin: string;
       github: string;
@@ -146,12 +145,12 @@ export interface textLanguage {
       reutilizableText: {
         cta: {
           back: string;
+          read: string;
         };
       };
     };
     callToAction: {
       subtitle: string;
-      cta: string;
-    };
+    cta: string;
   };
 }
