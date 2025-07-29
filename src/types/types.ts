@@ -104,6 +104,7 @@ export interface textLanguage {
     };
     projectsPage: {
       title: string;
+      subtitle: string;
       reutilizableText: {
         cta: {
           details: string;

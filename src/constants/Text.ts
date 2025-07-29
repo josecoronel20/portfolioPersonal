@@ -82,6 +82,8 @@ export const text: textLanguage = {
     },
     projectsPage: {
       title: "PROYECTOS",
+      subtitle:
+        "Trabaje en proyectos reales y personales que me permitieron aprender y reforzar conceptos claves en el diseño, desarrollo y despliegue de aplicaciones",
       reutilizableText: {
         cta: {
           details: "VER DETALLES",

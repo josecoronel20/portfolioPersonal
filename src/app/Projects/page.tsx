@@ -2,61 +2,37 @@
 import React from "react";
 import { useLanguageStore } from "@/store/useLanguageStore";
 import CardProject from "../homeComponents/mainProjectsSection/CardProject";
+import { project } from "@/types/types";
 
 //Componente ProjectsPage que renderiza la sección de proyectos.
 const ProjectsPage = (): JSX.Element => {
   //importa el idioma del store
   const { textLanguage } = useLanguageStore();
-  const projects = [
-    {
-      title: "E-commerce Dashboard",
-      description:
-        "Dashboard administrativo completo con autenticación JWT, gestión de productos y análisis de ventas en tiempo real.",
-      achievement:
-        "Sistema de auth segura con refresh tokens y roles de usuario",
-      tech: ["Next.js", "TypeScript", "Supabase", "Tailwind"],
-      demo: "#",
-      repo: "#",
-      image: "/placeholder.svg?height=200&width=400&text=E-commerce+Dashboard",
-    },
-    {
-      title: "Task Management App",
-      description:
-        "Aplicación de gestión de tareas con drag & drop, colaboración en tiempo real y notificaciones push.",
-      achievement:
-        "Implementación de WebSockets para colaboración en tiempo real",
-      tech: ["React", "Node.js", "PostgreSQL", "Prisma"],
-      demo: "#",
-      repo: "#",
-      image: "/placeholder.svg?height=200&width=400&text=Task+Management",
-    },
-    {
-      title: "File Upload Service",
-      description:
-        "Servicio de subida de archivos con compresión automática, validación de tipos y almacenamiento en la nube.",
-      achievement:
-        "Optimización de carga con compresión automática y progress tracking",
-      tech: ["Express", "Multer", "Sharp", "AWS S3"],
-      demo: "#",
-      repo: "#",
-      image: "/placeholder.svg?height=200&width=400&text=File+Upload+Service",
-    },
-  ];
 
   return (
-    <main className="min-h-screen bg-color-to-b py-16 px-4 flex flex-col gap-12">
-      <h1 className="text-4xl font-bold text-cyan-300">
-        {textLanguage.projects.title}
-      </h1>
+    <div className="min-h-screen bg-color-to-b text-white pt-16">
+      <div className="container mx-auto px-4 py-10 max-w-7xl">
+        {/* Header */}
+        <header className="mb-10 text-center">
+          <h1 className="text-3xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-cyan-400 to-cyan-300 bg-clip-text text-transparent leading-tight">
+            {textLanguage.projectsPage.title}
+          </h1>
+          <p className="text-lg md:text-xl text-cyan-100/90 leading-relaxed max-w-3xl mx-auto font-light">
+            {textLanguage.projectsPage.subtitle}
+          </p>
+        </header>
 
-      <section>
-        <div className="grid lg:grid-cols-3 gap-8">
-          {projects.map((project, index) => (
-            <CardProject key={index} project={project} index={index} />
-          ))}
-        </div>
-      </section>
-    </main>
+        <main>
+          <div className="grid lg:grid-cols-3 gap-8">
+            {textLanguage.projectsPage.projects.map(
+              (project: project, index: number) => (
+                <CardProject key={index} project={project} index={index} />
+              ),
+            )}
+          </div>
+        </main>
+      </div>
+    </div>
   );
 };
 
