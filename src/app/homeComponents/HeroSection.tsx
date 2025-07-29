@@ -1,3 +1,5 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
 import {
   Calendar,
@@ -12,8 +14,11 @@ import Link from "next/link";
 import React from "react";
 import Image from "next/image";
 import illustration from "../../../public/img/illustration.png";
+import { useLanguageStore } from "@/store/useLanguageStore";
 
 const HeroSection = (): JSX.Element => {
+  const { textLanguage } = useLanguageStore();
+
   return (
     <section className="min-h-screen flex items-center justify-center px-4 relative overflow-hidden pt-16 bg-color-to-b">
       <div className="container mx-auto text-center z-10 max-w-5xl">
@@ -32,31 +37,30 @@ const HeroSection = (): JSX.Element => {
             <div className="md:order-1 flex flex-col gap-4 animate-fade-right animate-ease-out">
               <div className="flex flex-col gap-2">
                 <h1 className="text-5xl md:text-5xl font-bold bg-gradient-to-r from-cyan-400 to-blue-300 bg-clip-text text-transparent leading-tight ">
-                  José María Coronel
+                  {textLanguage.homePage.heroSection.title}
                 </h1>
 
                 <h2 className="text-2xl md:text-2xl text-cyan-100 font-light">
-                  Fullstack Developer enfocado en Frontend
+                  {textLanguage.homePage.heroSection.subtitle}
                 </h2>
               </div>
 
               <section className="flex flex-col items-center justify-center gap-4">
                 <p className="text-lg md:text-xl text-cyan-200/80 font-medium">
-                  React • TypeScript • Next.js
+                  {textLanguage.homePage.heroSection.techs.join(" • ")}
                 </p>
 
                 <div className="flex items-center justify-center gap-3 text-cyan-300/70 text-sm md:text-base">
                   <MapPin className="w-4 h-4" />
-                  <span>Buenos Aires, Argentina</span>
+                  <span>{textLanguage.homePage.heroSection.location}</span>
                   <span>•</span>
                   <Calendar className="w-4 h-4" />
-                  <span>24 años</span>
+                  <span>{textLanguage.homePage.heroSection.age}</span>
                 </div>
 
                 <div>
                   <p className="text-xl md:text-2xl text-cyan-100/90 max-w-4xl mx-auto leading-relaxed font-light">
-                    "Buscando integrarme en un equipo donde aportar desde el
-                    frontend y crecer en arquitectura backend"
+                    "{textLanguage.homePage.heroSection.objective}"
                   </p>
                 </div>
 
@@ -65,35 +69,52 @@ const HeroSection = (): JSX.Element => {
                     <Link href="/projects">
                       <Button size="lg" className="button-principal text-xl">
                         <Code2 className="w-5 h-5" />
-                        Ver Proyectos
+                        {textLanguage.homePage.heroSection.ctaProjects}
                       </Button>
                     </Link>
 
-                    <Button
-                      size="lg"
-                      variant="outline"
-                      className="button-secondary text-xl"
+                    <Link
+                      href={textLanguage.contactInfo.cv}
+                      download
+                      target="_blank"
                     >
-                      <Download className="w-5 h-5" />
-                      Descargar CV
-                    </Button>
+                      <Button
+                        size="lg"
+                        variant="outline"
+                        className="button-secondary text-xl"
+                      >
+                        <Download className="w-5 h-5" />
+                        {textLanguage.homePage.heroSection.ctaCv}
+                      </Button>
+                    </Link>
                   </div>
 
                   <div className="flex gap-4 justify-center">
-                    <Button
-                      size="lg"
-                      variant="ghost"
-                      className="text-cyan-300/70 hover:text-cyan-300 hover:bg-cyan-400/10 p-3"
+                    <Link
+                      href={textLanguage.contactInfo.github}
+                      target="_blank"
                     >
-                      <Github className="w-6 h-6" />
-                    </Button>
-                    <Button
-                      size="lg"
-                      variant="ghost"
-                      className="text-cyan-300/70 hover:text-cyan-300 hover:bg-cyan-400/10 p-3"
+                      <Button
+                        size="lg"
+                        variant="ghost"
+                        className="text-cyan-300/70 hover:text-cyan-300 hover:bg-cyan-400/10 p-3"
+                      >
+                        <Github className="w-6 h-6" />
+                      </Button>
+                    </Link>
+
+                    <Link
+                      href={textLanguage.contactInfo.linkedin}
+                      target="_blank"
                     >
-                      <Linkedin className="w-6 h-6" />
-                    </Button>
+                      <Button
+                        size="lg"
+                        variant="ghost"
+                        className="text-cyan-300/70 hover:text-cyan-300 hover:bg-cyan-400/10 p-3"
+                      >
+                        <Linkedin className="w-6 h-6" />
+                      </Button>
+                    </Link>
                   </div>
                 </div>
               </section>

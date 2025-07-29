@@ -1,183 +1,136 @@
-import { ReactNode } from "react";
-
-export interface tech {
-  id: number;
-  title: string;
-  color: string;
-  iconWhite?: ReactNode;
-  iconColor?: ReactNode;
-  level: string;
-  mainTopics: string[];
-  mainProjects: string[];
-}
-
-interface planningProcess {
-  title: string;
-  description: string;
-  imageUrl: string | null;
-}
-
-interface mainFeatures {
-  title: string;
-  description: string;
-}
-
-interface issueList {
-  title: string;
-  description: string;
-}
-
 export interface project {
   id: number;
-  imgDesktopUrl: string;
-  imgDesktopAlt: string;
-  imgMobileUrl: string;
-  imgMobileAlt: string;
   title: string;
-  techs: string[];
   description: string;
-  siteUrl: string;
-  repoUrl: string;
-  isFinished: boolean;
-  projectObjective: string;
+  mainAchieve: string;
+  techs: string[];
+  links: {
+    demo: string;
+    code: string;
+  };
   details: {
-    planningProcess: planningProcess[];
-    mainFeatures: mainFeatures[];
-    issues: {
-      issueList: issueList[];
+    images: {
+      src: string;
+      alt: string;
+    }[];
+    objective: string;
+    role: string;
+    stack: {
+      frontend: string[];
+      backend: string[];
+      dbAndAuth: string[];
     };
+    mainFeatures: string[];
+    devops: {
+      dataBase: string;
+      backend: string;
+      frontend: string;
+      versionControl: string;
+      deploy: string;
+      enviromentVariables: string;
+    };
+    technicalChallenges: string[];
   };
 }
 
 export interface post {
   id: number;
   title: string;
-  image: string;
-  altImg: string;
-  shortDescription: string;
+  category: string;
   description: string;
-  subtitle: string;
-  content: string;
-  conclusion: string;
-}
-
-interface aboutMeSection {
-  title: string;
-  text: string;
-}
-
-export interface techSection {
-  title: string;
-  list: tech[];
+  image: string;
+  content: object[];
 }
 
 export interface textLanguage {
-  header: {
-    logo: string;
-    nav: {
-      li: {
-        home: string;
-        projects: string;
-        blog: string;
-        contactMe: string;
+  textEs: {
+    contactInfo: {
+      linkedin: string;
+      github: string;
+      email: string;
+      cv: string;
+    };
+    header: {
+      logo: string;
+      nav: {
+        li: {
+          home: string;
+          projects: string;
+          blog: string;
+        };
       };
     };
-  };
-  home: {
-    hero: {
-      heroImg: {
-        imgAlt: string;
+    homePage: {
+      heroSection: {
+        heroImg: {
+          imgAlt: string;
+        };
+        title: string;
+        subtitle: string;
+        techs: string[];
+        location: string;
+        age: string;
+        objective: string;
+        ctaProjects: string;
+        ctaCv: string;
       };
-      title: {
-        beforeHiglight: string;
-        higlight: string;
+      aboutMeSection: {
+        title: string;
+        text: string;
       };
-      subtitle: {
-        beforeHiglight: string;
-        higlight: string;
+      tecnicSkillsSection: {
+        title: string;
+        Frontend: string[];
+        Backend: string[];
+        Testing: string[];
+        Tools: string[];
       };
-      cta: string;
+      mainProjectsSection: {
+        title: string;
+      };
+      focusSection: {
+        title: string;
+        text: string;
+        cta: string;
+      };
+      blogSection: {
+        title: string;
+      };
+      contactSection: {
+        title: string;
+        subtitle: string;
+      };
     };
-    lastProyects: {
+    projectsPage: {
       title: string;
+      reutilizableText: {
+        cta: {
+          details: string;
+          code: string;
+          demo: string;
+        };
+        mainAchieve: string;
+        detail: {
+          title: string;
+          objective: string;
+          role: string;
+          mainFeatures: string;
+          devops: {
+            dataBase: string;
+            backend: string;
+            frontend: string;
+            versionControl: string;
+            Deploy: string;
+            enviromentVariables: string;
+          };
+          TechnicalChallenges: string;
+        };
+      };
+      projects: project[];
     };
-    aboutMe: {
+    blogPage: {
+      posts: post[];
       title: string;
-      subtitle: string;
-      sections: aboutMeSection[];
-    };
-    techsAndSkills: {
-      title: string;
-      topicText: string;
-      levelText: string;
-      projectsText: string;
-      sections: [
-        {
-          title: string;
-          list: tech[];
-        },
-        {
-          title: string;
-          list: tech[];
-        },
-        {
-          title: string;
-          list: tech[];
-        },
-        {
-          title: string;
-          list: tech[];
-        }
-      ];
-    };
-  };
-  projects: {
-    title: string;
-    buttonText: {
-      seeProject: string;
-      seeDetails: string;
-      seeRepo: string;
-    };
-    projectDetailTexts: {
-      descriptionTitle: string;
-      isFinishText: string;
-      isNotFinishText: string;
-      techsUsed: string;
-      plainingProcessTitle: string;
-      mainFeaturesTitle: string;
-      issuesTitle: string;
-    };
-    list: project[];
-  };
-  blog: {
-    title: string;
-    seePost: string;
-    blogList: post[];
-  };
-  footer: {
-    title: string;
-    copyText: string;
-    contactMe: {
-      sectionTitle: string;
-      email: {
-        title: string;
-        value: string;
-      };
-      phone: {
-        title: string;
-        value: string;
-      };
-    };
-    followMe: {
-      sectionTitle: string;
-      github: {
-        title: string;
-        url: string;
-      };
-      linkedin: {
-        title: string;
-        url: string;
-      };
     };
   };
 }

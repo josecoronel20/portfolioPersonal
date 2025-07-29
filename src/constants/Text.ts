@@ -1,9 +1,12 @@
-export const text: any = {
+import { textLanguage } from "../types/types";
+
+export const text: textLanguage = {
   textEs: {
     contactInfo: {
       linkedin: "https://www.linkedin.com/in/jose-maria-coronel",
       github: "https://github.com/josecoronel20",
-      email: "josemcoronel20@outlook.com",
+      email: "josecoronel20@outlook.com",
+      cv: "/CV_Jose_Maria_Coronel.pdf",
     },
     header: {
       logo: "<JC>",
@@ -23,7 +26,7 @@ export const text: any = {
         title: "Jose Maria Coronel",
         subtitle: "Fullstack Developer con foco en frontend",
         techs: ["Next.js", "TypeScript", "Node.js"],
-        ubication: "Buenos Aires, Argentina",
+        location: "Buenos Aires, Argentina",
         age: "25 años",
         objective:
           "Busco desarrollarme como programador perfeccionando mi código y profundizando en arquitectura de software, aportando desde el frontend y creciendo hacia el backend.",
