@@ -112,6 +112,7 @@ export interface textLanguage {
           details: string;
           code: string;
           demo: string;
+          back: string;
         };
         mainAchieve: string;
         detail: {

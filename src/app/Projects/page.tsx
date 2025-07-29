@@ -24,7 +24,7 @@ const ProjectsPage = (): JSX.Element => {
 
         <main>
           <div className="grid lg:grid-cols-3 gap-8">
-            {textLanguage.projectsPage.projects.map(
+            {textLanguage.projectsPage.projects.slice().reverse().map(
               (project: project, index: number) => (
                 <CardProject key={index} project={project} index={index} />
               ),

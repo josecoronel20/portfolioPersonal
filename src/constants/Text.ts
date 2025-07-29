@@ -89,6 +89,7 @@ export const text: textLanguage = {
           details: "VER DETALLES",
           code: "CÓDIGO",
           demo: "DEMO",
+          back: "VOLVER",
         },
         mainAchieve: "Logro destacado",
         detail: {
