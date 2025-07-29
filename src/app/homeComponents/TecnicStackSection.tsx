@@ -1,35 +1,19 @@
+"use client";
 import { Code2, Database, Settings, TestTube } from "lucide-react";
 import React from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { useLanguageStore } from "@/store/useLanguageStore";
 
 const TecnicStackSection = (): JSX.Element => {
-  const frontendSkills = [
-    "React",
-    "Next.js",
-    "TypeScript",
-    "Tailwind CSS",
-    "Zustand",
-    "React Hook Form",
-  ];
-  const backendSkills = [
-    "Node.js",
-    "Express",
-    "PostgreSQL",
-    "Prisma",
-    "Supabase",
-    "JWT",
-    "Auth",
-  ];
-  const testingSkills = ["Jest", "React Testing Library"];
-  const toolsSkills = ["Git", "GitHub", "Vite", "Docker"];
+  const { textLanguage } = useLanguageStore();
 
   return (
     <section className="py-24 px-4 ">
       <div className="container mx-auto max-w-6xl">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-cyan-300">
           <Settings className="w-10 h-10 inline mr-4" />
-          Stack Técnico
+          {textLanguage.homePage.tecnicSkillsSection.title}
         </h2>
 
         <div className="grid lg:grid-cols-2 gap-8">
@@ -42,15 +26,17 @@ const TecnicStackSection = (): JSX.Element => {
             </CardHeader>
             <CardContent>
               <div className="flex flex-wrap gap-3">
-                {frontendSkills.map((skill) => (
-                  <Badge
-                    key={skill}
-                    variant="secondary"
-                    className="bg-cyan-900 text-cyan-200 border-cyan-600/50 text-sm font-semibold px-3 py-1 hover:bg-cyan-900/70 border-cyan-900 hover:border-cyan-600"
-                  >
-                    {skill}
-                  </Badge>
-                ))}
+                {textLanguage.homePage.tecnicSkillsSection.Frontend.map(
+                  (skill) => (
+                    <Badge
+                      key={skill}
+                      variant="secondary"
+                      className="bg-cyan-900 text-cyan-200 border-cyan-600/50 text-sm font-semibold px-3 py-1 hover:bg-cyan-900/70 border-cyan-900 hover:border-cyan-600"
+                    >
+                      {skill}
+                    </Badge>
+                  )
+                )}
               </div>
             </CardContent>
           </Card>
@@ -64,15 +50,17 @@ const TecnicStackSection = (): JSX.Element => {
             </CardHeader>
             <CardContent>
               <div className="flex flex-wrap gap-3">
-                {backendSkills.map((skill) => (
-                  <Badge
-                    key={skill}
-                    variant="secondary"
-                    className="bg-cyan-900 text-cyan-200 border-cyan-600/50 text-sm font-semibold px-3 py-1 hover:bg-cyan-900/70 border-cyan-900 hover:border-cyan-600"
-                  >
-                    {skill}
-                  </Badge>
-                ))}
+                {textLanguage.homePage.tecnicSkillsSection.Backend.map(
+                  (skill) => (
+                    <Badge
+                      key={skill}
+                      variant="secondary"
+                      className="bg-cyan-900 text-cyan-200 border-cyan-600/50 text-sm font-semibold px-3 py-1 hover:bg-cyan-900/70 border-cyan-900 hover:border-cyan-600"
+                    >
+                      {skill}
+                    </Badge>
+                  )
+                )}
               </div>
             </CardContent>
           </Card>
@@ -86,15 +74,17 @@ const TecnicStackSection = (): JSX.Element => {
             </CardHeader>
             <CardContent>
               <div className="flex flex-wrap gap-3">
-                {testingSkills.map((skill) => (
-                  <Badge
-                    key={skill}
-                    variant="secondary"
-                    className="bg-cyan-900 text-cyan-200 border-cyan-600/50 text-sm font-semibold px-3 py-1 hover:bg-cyan-900/70 border-cyan-900 hover:border-cyan-600"
-                  >
-                    {skill}
-                  </Badge>
-                ))}
+                {textLanguage.homePage.tecnicSkillsSection.Testing.map(
+                  (skill) => (
+                    <Badge
+                      key={skill}
+                      variant="secondary"
+                      className="bg-cyan-900 text-cyan-200 border-cyan-600/50 text-sm font-semibold px-3 py-1 hover:bg-cyan-900/70 border-cyan-900 hover:border-cyan-600"
+                    >
+                      {skill}
+                    </Badge>
+                  )
+                )}
               </div>
             </CardContent>
           </Card>
@@ -103,20 +93,22 @@ const TecnicStackSection = (): JSX.Element => {
             <CardHeader className="pb-4">
               <CardTitle className="text-cyan-300 flex items-center text-xl">
                 <Settings className="w-6 h-6 mr-3" />
-                Herramientas
+                Tools
               </CardTitle>
             </CardHeader>
             <CardContent>
               <div className="flex flex-wrap gap-3">
-                {toolsSkills.map((skill) => (
-                  <Badge
-                    key={skill}
-                    variant="secondary"
-                    className="bg-cyan-900 text-cyan-200 border-cyan-600/50 text-sm font-semibold px-3 py-1 hover:bg-cyan-900/70 border-cyan-900 hover:border-cyan-600"
-                  >
-                    {skill}
-                  </Badge>
-                ))}
+                {textLanguage.homePage.tecnicSkillsSection.Tools.map(
+                  (skill) => (
+                    <Badge
+                      key={skill}
+                      variant="secondary"
+                      className="bg-cyan-900 text-cyan-200 border-cyan-600/50 text-sm font-semibold px-3 py-1 hover:bg-cyan-900/70 border-cyan-900 hover:border-cyan-600"
+                    >
+                      {skill}
+                    </Badge>
+                  )
+                )}
               </div>
             </CardContent>
           </Card>
