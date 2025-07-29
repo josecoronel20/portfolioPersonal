@@ -35,7 +35,7 @@ const TecnicStackSection = (): JSX.Element => {
                     >
                       {skill}
                     </Badge>
-                  )
+                  ),
                 )}
               </div>
             </CardContent>
@@ -59,7 +59,7 @@ const TecnicStackSection = (): JSX.Element => {
                     >
                       {skill}
                     </Badge>
-                  )
+                  ),
                 )}
               </div>
             </CardContent>
@@ -83,7 +83,7 @@ const TecnicStackSection = (): JSX.Element => {
                     >
                       {skill}
                     </Badge>
-                  )
+                  ),
                 )}
               </div>
             </CardContent>
@@ -107,7 +107,7 @@ const TecnicStackSection = (): JSX.Element => {
                     >
                       {skill}
                     </Badge>
-                  )
+                  ),
                 )}
               </div>
             </CardContent>
