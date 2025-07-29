@@ -10,29 +10,24 @@ import { Button } from "@/components/ui/button";
 import { ExternalLink, Github } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { project } from "@/types/types";
 
 const CardProject = ({
   project,
   index,
 }: {
-  project: {
-    title: string;
-    description: string;
-    achievement: string;
-    tech: string[];
-    image: string;
-  };
+  project: project;
   index: number;
 }): JSX.Element => {
   return (
     <Card
       key={index}
-      className="bg-cyan-900/20 border-cyan-900 backdrop-blur-sm hover:bg-cyan-900/30 hover:border-cyan-600 transition-all duration-300 flex flex-col gap-4"
+      className="bg-cyan-900/20 border-cyan-900 backdrop-blur-sm hover:bg-cyan-900/30 hover:border-cyan-600 transition-all duration-300 flex flex-col gap-4 overflow-hidden"
     >
       <div className="relative">
         <Image
-          src={project.image || "/placeholder.svg"}
-          alt={project.title}
+          src={project.details.images[0]?.src || "/placeholder.svg"}
+          alt={project.details.images[0]?.alt || project.title}
           width={400}
           height={200}
           className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500"
@@ -54,14 +49,14 @@ const CardProject = ({
             🎯 Logro destacado:
           </p>
           <p className="text-cyan-100 text-sm leading-relaxed">
-            {project.achievement}
+            {project.mainAchieve}
           </p>
         </div>
 
         <section className="flex flex-col gap-4 justify-between h-full">
           {/* Card Tech */}
           <div className="flex flex-wrap gap-2">
-            {project.tech.map((tech: string) => (
+            {project.techs.map((tech: string) => (
               <Badge
                 key={tech}
                 variant="outline"
@@ -74,20 +69,34 @@ const CardProject = ({
 
           {/* Card Buttons */}
           <div className="flex flex-col gap-3">
-            <Link href={"/Projects/1"} className="w-full">
+            <Link href={`/Projects/${project.id}`} className="w-full">
               <Button size="sm" className="button-primary w-full">
                 Ver detalles
               </Button>
             </Link>
+
             <div className="flex gap-3">
-              <Button size="sm" variant="outline" className="button-secondary">
-                <ExternalLink className="w-4 h-4 mr-2" />
-                Demo
-              </Button>
-              <Button size="sm" variant="outline" className="button-secondary">
-                <Github className="w-4 h-4 mr-2" />
-                Código
-              </Button>
+              <Link href={project.links.demo} target="_blank" className="w-full">
+                <Button
+                  size="sm"
+                  variant="outline"
+                  className="button-secondary w-full"
+                >
+                  <ExternalLink className="w-4 h-4 mr-2" />
+                  Demo
+                </Button>
+              </Link>
+
+              <Link href={project.links.code} target="_blank" className="w-full">
+                <Button
+                  size="sm"
+                  variant="outline"
+                  className="button-secondary w-full"
+                >
+                  <Github className="w-4 h-4 mr-2" />
+                  Código
+                </Button>
+              </Link>
             </div>
           </div>
         </section>
