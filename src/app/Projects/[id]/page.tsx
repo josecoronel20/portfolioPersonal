@@ -44,11 +44,16 @@ export default function ProjectDetail(): JSX.Element {
             </Link>
           </div>
 
-          <div>
-            <h1 className="text-3xl md:text-4xl font-bold mb-3 bg-gradient-to-r from-cyan-400 to-cyan-300 bg-clip-text text-transparent leading-tight">
+          <div className="flex flex-col gap-4">
+            <h1 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-cyan-400 to-cyan-300 bg-clip-text text-transparent leading-tight">
               {project.title}
             </h1>
-            <p className="text-base md:text-lg text-cyan-100/90 leading-relaxed max-w-4xl mx-auto font-light mb-3">
+            <span className="text-gray-400 ">
+              {project.isFinished
+                ? `${textLanguage.projectsPage.reutilizableText.isFinished}`
+                : `${textLanguage.projectsPage.reutilizableText.inProgress}`}
+            </span>
+            <p className="text-base md:text-lg text-cyan-100/90 leading-relaxed max-w-4xl mx-auto font-light">
               {project.description}
             </p>
           </div>

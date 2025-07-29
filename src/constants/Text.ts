@@ -98,6 +98,8 @@ export const text: {
           technicalChallenges: "Desafíos técnicos",
         },
         mainAchieve: "Logro destacado",
+        isFinished: "Finalizado",
+        inProgress: "En progreso",
         detail: {
           title: "Detalles del proyecto",
           objective: "Objetivo del proyecto",
@@ -117,6 +119,7 @@ export const text: {
       projects: [
         {
           id: 1,
+          isFinished: true,
           title: "Ecommerce",
           description:
             "Primer proyecto fullstack donde reforcé conceptos clave como autenticación segura con manejo de tokens y cookies, desarrollo de endpoints, consumo de APIs e implementación de lógica de negocio en el backend.",
@@ -204,6 +207,7 @@ export const text: {
         },
         {
           id: 2,
+          isFinished: true,
           title: "Chapel futbol",
           description:
             "proyecto real de un centro formativo de futbol que muestra la informacion de cada jugador con el objetivo de facilitar la visualizacion para equipos de futbol, contiene un sistema de autenticacion unico para el administrador del centro que le permite gestionar los jugadores y sus datos",
@@ -293,6 +297,7 @@ export const text: {
         },
         {
           id: 3,
+          isFinished: false,
           title: "hipertrofIA",
           description:
             "Aplicacion de generador de rutinas de hipertrofia con inteligencia artificial con sistema de login y registro, con la posibilidad de crear rutinas personalizadas y guardar las rutinas generadas",
@@ -585,6 +590,8 @@ export const text: {
           technicalChallenges: "Technical challenges",
         },
         mainAchieve: "Main achievement",
+        isFinished: "Finished",
+        inProgress: "In progress",
         detail: {
           title: "Project details",
           objective: "Project objective",
@@ -604,6 +611,7 @@ export const text: {
       projects: [
         {
           id: 1,
+          isFinished: true,
           title: "Ecommerce",
           description:
             "First fullstack project where I reinforced key concepts like secure authentication with token and cookie management, endpoint development, API consumption and business logic implementation in the backend.",
@@ -691,6 +699,7 @@ export const text: {
         },
         {
           id: 2,
+          isFinished: true,
           title: "Chapel futbol",
           description:
             "Real project of a football center that shows the information of each player to facilitate the visualization for football teams, it contains a unique authentication system for the center administrator that allows managing players and their data",
@@ -780,6 +789,7 @@ export const text: {
         },
         {
           id: 3,
+          isFinished: false,
           title: "hipertrofIA",
           description:
             "Application of a generator of hypertrophy routines with artificial intelligence with login and registration system, with the possibility of creating personalized routines and saving the generated routines",

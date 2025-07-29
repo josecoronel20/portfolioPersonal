@@ -1,6 +1,7 @@
 
 export interface project {
   id: number;
+  isFinished: boolean;
   title: string;
   description: string;
   mainAchieve: string;
@@ -118,6 +119,8 @@ export interface textLanguage {
           technicalChallenges: string;
         };
         mainAchieve: string;
+        isFinished: string;
+        inProgress: string;
         detail: {
           title: string;
           objective: string;

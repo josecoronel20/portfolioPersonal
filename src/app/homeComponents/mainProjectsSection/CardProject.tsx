@@ -41,7 +41,15 @@ const CardProject = ({
 
       {/* Card Header */}
       <CardHeader>
-        <CardTitle className="text-cyan-100 text-xl">{project.title}</CardTitle>
+        <span className="text-gray-400 text-xs">
+          {project.isFinished
+            ? `${textLanguage.projectsPage.reutilizableText.isFinished}`
+            : `${textLanguage.projectsPage.reutilizableText.inProgress}`}
+        </span>
+        <CardTitle className="text-cyan-100 text-xl">
+          {project.title}
+          <span className="text-cyan-400">{project.isFinished && "🎉"}</span>
+        </CardTitle>
         <CardDescription className="text-cyan-200 leading-relaxed">
           {project.description}
         </CardDescription>
@@ -81,7 +89,11 @@ const CardProject = ({
             </Link>
 
             <div className="flex gap-3">
-              <Link href={project.links.demo} target="_blank" className="w-full">
+              <Link
+                href={project.links.demo}
+                target="_blank"
+                className="w-full"
+              >
                 <Button
                   size="sm"
                   variant="outline"
@@ -92,7 +104,11 @@ const CardProject = ({
                 </Button>
               </Link>
 
-              <Link href={project.links.code} target="_blank" className="w-full">
+              <Link
+                href={project.links.code}
+                target="_blank"
+                className="w-full"
+              >
                 <Button
                   size="sm"
                   variant="outline"

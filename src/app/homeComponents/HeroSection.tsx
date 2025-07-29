@@ -66,7 +66,7 @@ const HeroSection = (): JSX.Element => {
 
                 <div className="grid grid-cols-1  gap-2 justify-center items-center">
                   <div className="grid grid-cols-1 lg:grid-cols-2 gap-2">
-                    <Link href="/projects">
+                    <Link href="/Projects">
                       <Button size="lg" className="button-principal text-xl">
                         <Code2 className="w-5 h-5" />
                         {textLanguage.homePage.heroSection.ctaProjects}
