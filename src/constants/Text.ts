@@ -224,11 +224,11 @@ export const text: textLanguage = {
           details: {
             images: [
               {
-                src: "/img/projects/chapel-1.png",
+                src: "/img/projects/chapel-3.png",
                 alt: "Imagen 1",
               },
               {
-                src: "/img/projects/chapel-2.png",
+                src: "/img/projects/chapel-5.png",
                 alt: "Imagen 2",
               },
               {
@@ -236,7 +236,7 @@ export const text: textLanguage = {
                 alt: "Imagen 3",
               },
               {
-                src: "/img/projects/chapel-4.png",
+                src: "/img/projects/chapel-5.png",
                 alt: "Imagen 4",
               },
               {
