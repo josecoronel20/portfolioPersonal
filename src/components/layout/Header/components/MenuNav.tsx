@@ -46,7 +46,7 @@ export const MenuNav = (): JSX.Element => {
           href={to}
           className={`${
             pathname === to ? "text-primary" : "text-white"
-          } hover:text-primary transition-colors duration-300`}
+          } hover:text-primary transition-colors duration-300 `}
         >
           {text}
         </Link>
