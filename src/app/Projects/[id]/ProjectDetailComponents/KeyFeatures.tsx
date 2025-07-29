@@ -1,17 +1,20 @@
+"use client";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { CheckCircle } from "lucide-react";
+import { useLanguageStore } from "@/store/useLanguageStore";
 
 export const KeyFeatures = ({
   keyFeatures,
 }: {
   keyFeatures: string[];
 }): JSX.Element => {
+  const { textLanguage } = useLanguageStore();
   return (
     <Card className="bg-cyan-900/20 border-cyan-700/50 backdrop-blur-sm">
       <CardHeader className="pb-2">
         <CardTitle className="text-cyan-300 flex items-center text-base">
           <CheckCircle className="w-4 h-4 mr-2" />
-          Funcionalidades clave
+          {textLanguage.projectsPage.reutilizableText.cta.keyFeatures}
         </CardTitle>
       </CardHeader>
       <CardContent className="pt-0">

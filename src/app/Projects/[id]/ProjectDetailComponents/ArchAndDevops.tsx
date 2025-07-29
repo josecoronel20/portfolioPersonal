@@ -1,17 +1,20 @@
+"use client";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Settings } from "lucide-react";
+import { useLanguageStore } from "@/store/useLanguageStore";
 
 const ArchAndDevops = ({
   architectureDevOps,
 }: {
   architectureDevOps: string[];
 }): JSX.Element => {
+  const { textLanguage } = useLanguageStore();
   return (
     <Card className="bg-cyan-900/20 border-cyan-700/50 backdrop-blur-sm">
       <CardHeader className="pb-2">
         <CardTitle className="text-cyan-300 flex items-center text-base">
           <Settings className="w-4 h-4 mr-2" />
-          Arquitectura y DevOps
+          {textLanguage.projectsPage.reutilizableText.cta.architectureAndDevops}
         </CardTitle>
       </CardHeader>
       <CardContent className="pt-0">

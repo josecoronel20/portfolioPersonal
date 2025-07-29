@@ -113,6 +113,9 @@ export interface textLanguage {
           code: string;
           demo: string;
           back: string;
+          keyFeatures: string;
+          architectureAndDevops: string;
+          technicalChallenges: string;
         };
         mainAchieve: string;
         detail: {

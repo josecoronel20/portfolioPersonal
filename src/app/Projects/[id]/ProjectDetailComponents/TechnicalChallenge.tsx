@@ -1,17 +1,20 @@
+"use client";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Lightbulb, Shield } from "lucide-react";
+import { useLanguageStore } from "@/store/useLanguageStore";
 
 const TechnicalChallenge = ({
   challenges,
 }: {
   challenges: string[];
 }): JSX.Element => {
+  const { textLanguage } = useLanguageStore();
   return (
     <Card className="bg-cyan-900/20 border-cyan-700/50 backdrop-blur-sm">
       <CardHeader className="pb-2">
         <CardTitle className="text-cyan-300 flex items-center text-base">
           <Lightbulb className="w-4 h-4 mr-2" />
-          Retos técnicos
+          {textLanguage.projectsPage.reutilizableText.cta.technicalChallenges}
         </CardTitle>
       </CardHeader>
       <CardContent className="pt-0">

@@ -93,6 +93,9 @@ export const text: {
           code: "CÓDIGO",
           demo: "DEMO",
           back: "VOLVER",
+          keyFeatures: "Funcionalidades clave",
+          architectureAndDevops: "Arquitectura y DevOps",
+          technicalChallenges: "Desafíos técnicos",
         },
         mainAchieve: "Logro destacado",
         detail: {
@@ -577,6 +580,9 @@ export const text: {
           code: "CODE",
           demo: "DEMO",
           back: "BACK",
+          keyFeatures: "Key features",
+          architectureAndDevops: "Architecture and DevOps",
+          technicalChallenges: "Technical challenges",
         },
         mainAchieve: "Main achievement",
         detail: {
