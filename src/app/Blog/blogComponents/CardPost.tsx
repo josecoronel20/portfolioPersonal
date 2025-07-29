@@ -5,6 +5,7 @@ import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import { getCategoryColor, getCategoryIcon } from "@/utils/BlogFunctions";
 import { blogPost } from "@/types/types";
+import Link from "next/link";
 
 const CardPost = ({ post }: { post: blogPost }): JSX.Element => {
   return (
@@ -35,7 +36,7 @@ const CardPost = ({ post }: { post: blogPost }): JSX.Element => {
         </CardTitle>
       </CardHeader>
 
-      <CardContent className="space-y-4">
+      <CardContent className="flex flex-col gap-4">
         <p className="text-cyan-200/80 text-sm leading-relaxed">
           {post.description}
         </p>
@@ -52,10 +53,12 @@ const CardPost = ({ post }: { post: blogPost }): JSX.Element => {
           ))}
         </div>
 
-        <Button className="w-full bg-cyan-600 hover:bg-cyan-700 text-white font-medium transition-all duration-300 group">
-          Leer artículo
-          <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-        </Button>
+        <Link href={`/Blog/${post.id}`}>
+          <Button className="w-full bg-cyan-600 hover:bg-cyan-700 text-white font-medium transition-all duration-300 group">
+            Leer artículo
+            <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+          </Button>
+        </Link>
       </CardContent>
     </Card>
   );

@@ -387,6 +387,11 @@ export const text: textLanguage = {
           "Sígueme en mis redes sociales para más contenido sobre mi experiencia y crecimiento como desarrollador.",
         cta: "Seguir en LinkedIn",
       },
+      reutilizableText: {
+        cta: {
+          back: "Volver",
+        },
+      },
       posts: [
         {
           id: 1,
@@ -473,6 +478,11 @@ export const text: textLanguage = {
           ],
         },
       ],
+    },
+    callToAction: {
+      subtitle:
+        "Te interesa mi trabajo? No dudes en contactarme",
+      cta: "Contactar",
     },
   },
 };

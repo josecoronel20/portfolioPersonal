@@ -1,19 +1,9 @@
 import { Badge } from "@/components/ui/badge";
-import { Calendar, Code2 } from "lucide-react";
+import { Code2 } from "lucide-react";
 import Image from "next/image";
+import { blogPost } from "@/types/types";
 
-interface Post {
-  category: string;
-  title: string;
-  excerpt: string;
-  date: string;
-  readTime: string;
-  image: string;
-  likes: number;
-  comments: number;
-}
-
-const PostHeader = ({ post }: { post: Post }): JSX.Element => {
+const PostHeader = ({ post }: { post: blogPost }): JSX.Element => {
   return (
     <header className="mb-8">
       <Badge className="bg-cyan-800/40 text-cyan-200 border-cyan-600/50 mb-4">
@@ -26,17 +16,8 @@ const PostHeader = ({ post }: { post: Post }): JSX.Element => {
       </h1>
 
       <p className="text-lg text-cyan-100/90 leading-relaxed mb-6 font-light">
-        {post.excerpt}
+        {post.description}
       </p>
-
-      <div className="flex items-center justify-between mb-6">
-        <div className="flex items-center gap-4 text-cyan-300/70 text-sm">
-          <div className="flex items-center gap-1">
-            <Calendar className="w-4 h-4" />
-            <span>{post.date}</span>
-          </div>
-        </div>
-      </div>
 
       {/* Imagen principal */}
       <div className="relative w-full h-64 md:h-80 rounded-lg overflow-hidden mb-8">

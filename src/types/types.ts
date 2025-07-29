@@ -142,6 +142,15 @@ export interface textLanguage {
         subtitle: string;
         cta: string;
       };
+      reutilizableText: {
+        cta: {
+          back: string;
+        };
+      };
+    };
+    callToAction: {
+      subtitle: string;
+      cta: string;
     };
   };
 }
