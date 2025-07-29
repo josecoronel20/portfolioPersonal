@@ -33,7 +33,7 @@ export interface project {
   };
 }
 
-export interface post {
+export interface blogPost {
   id: number;
   title: string;
   category: string;
@@ -95,6 +95,7 @@ export interface textLanguage {
       };
       blogSection: {
         title: string;
+        cta: string;
       };
       contactSection: {
         title: string;
@@ -129,7 +130,7 @@ export interface textLanguage {
       projects: project[];
     };
     blogPage: {
-      posts: post[];
+      posts: blogPost[];
       title: string;
     };
   };

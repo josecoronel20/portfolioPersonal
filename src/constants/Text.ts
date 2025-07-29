@@ -72,6 +72,7 @@ export const text: textLanguage = {
       },
       blogSection: {
         title: "CONTENIDO TÉCNICO",
+        cta: "LEER ARTÍCULO",
       },
       contactSection: {
         title: "CONTACTO DIRECTO",
